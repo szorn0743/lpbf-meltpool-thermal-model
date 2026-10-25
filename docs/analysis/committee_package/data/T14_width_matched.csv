@@ -1,0 +1,7 @@
+candidate,scope,coupons,frames,defined_share,median_of_coupon_H_ratio,pooled_median_H_ratio,pooled_H_ratio_p25,pooled_H_ratio_p75,median_level_K,fraction_level_below_liquidus,source,median_of_coupon_H_ratio_min,median_of_coupon_H_ratio_max,candidates_in_band_0_87_1_15,coded_distance_to_c1
+anchor_center,16 A8 calibration members,16,16299,0.9966255598502975,3.61839375547801,1.9876667313283956,1.2727272727272727,4.935195298876394,1744.9674527106731,0.41092095542969714,22.3.8 step3_level_free.json,,,,
+anchor_t_min,"4 corner coupons (20260904 parts 1, 3, 4, 6)",4,4433,0.9981953530340627,2.4523577256636186,1.9414509441006884,1.25,3.6629711786905923,1698.469558805668,0.4280225988700565,22.3.8 step3_level_free.json,,,,
+anchor_center,"4 corner coupons (20260904 parts 1, 3, 4, 6)",4,4433,0.9963907060681254,2.6158541146810954,1.25,1.041666625942212,1.6692818861741285,2062.2592256858916,0.17726964002716777,22.3.8 step3_level_free.json,,,,
+anchor_t_max,"4 corner coupons (20260904 parts 1, 3, 4, 6)",4,4433,0.9990976765170314,1.3787878077013578,1.1428571428571428,0.9899494171142578,1.4545454545454546,2534.141718655607,0.017159629713253556,22.3.8 step3_level_free.json,,,,
+17 frozen design candidates,4 corner coupons,4,,,,,,,,,22.3.8 step4_candidates.csv (reading Q-b),1.3787878077013578,2.7730692892363575,0,
+halton_02,4 corner coupons; nearest design candidate to c1,4,,,2.3972662819756403,,,,1862.6880774606889,,22.3.8 step4_candidates.csv,,,,1.0687156091700407

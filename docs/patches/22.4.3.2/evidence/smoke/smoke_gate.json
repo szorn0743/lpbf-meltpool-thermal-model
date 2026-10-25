@@ -1,0 +1,144 @@
+{
+  "checks": {
+    "dispatch_lock": {
+      "CAMPAIGN_DISPATCH_AUTHORIZED_BY": null,
+      "pass": true
+    },
+    "frozen_core": {
+      "files": 8,
+      "pass": true
+    },
+    "pixel_objective_matches_stage_a": true,
+    "stage_a_frame_records_bit_identical": true,
+    "unit_complete": true
+  },
+  "execution": {
+    "requested_workers": 1,
+    "start_method": "serial",
+    "units_reused": 0,
+    "units_run": 1,
+    "wall_time_s": 353.8,
+    "workers": 1
+  },
+  "full_test_suite": "run separately: python -m pytest -q",
+  "log_ratio_score": {
+    "H_component": 1.2025013932611328,
+    "J": 0.6227886949003064,
+    "W_component": 0.04307599653947997,
+    "candidate_id": "anchor_center",
+    "captured_frame_count": 1056,
+    "condition_rows": [
+      {
+        "H_mean_log": 1.0454496031368692,
+        "W_mean_log": 0.05598912046421596,
+        "condition_objective_contribution": 0.6227886949003064,
+        "e_H": 1.0965862452452761,
+        "e_W": 0.20754757656855446,
+        "exact_condition_id": "P140_V850",
+        "floored_frame_count": 0,
+        "median_H_ratio": 3.1650439590697905,
+        "median_W_ratio": 1.0178360696536315,
+        "member_identities": [
+          "20260730:part_1"
+        ]
+      }
+    ],
+    "coupon_rows": [
+      {
+        "coupon_scalar_objective": 0.6227886949003064,
+        "coverage": 1.0,
+        "e_H": 1.0965862452452761,
+        "e_W": 0.20754757656855446,
+        "exact_condition_id": "P140_V850",
+        "floored_frame_count": 0,
+        "median_H_ratio": 3.1650439590697905,
+        "median_W_ratio": 1.0178360696536315,
+        "median_r_H": 1.1521669443538807,
+        "median_r_W": 0.017678873087104016,
+        "member_identity": "20260730:part_1",
+        "scored_frame_count": 1056
+      }
+    ],
+    "coverage": 1.0,
+    "coverage_by_coupon": {
+      "20260730:part_1": 1.0
+    },
+    "coverage_flag": false,
+    "e_H": 1.0965862452452761,
+    "e_W": 0.20754757656855446,
+    "failures": [],
+    "floored_by_quantity": {
+      "experimental_H": 0,
+      "experimental_W": 0,
+      "simulated_H": 0,
+      "simulated_W": 0
+    },
+    "floored_frame_count": 0,
+    "fraction_peak_above_boiling": 0.05397727272727273,
+    "low_coverage_coupons": [],
+    "median_peak_surface_K": 2486.736527749854,
+    "no_laser_associated_melt_count": 0,
+    "penalty_applied": false,
+    "production_status_counts": {
+      "SELECTED": 1056
+    },
+    "scored_frame_count": 1056,
+    "sensitivity": {
+      "H_only": 1.2025013932611328,
+      "W_only": 0.04307599653947997,
+      "pixel_22_3_7": 283.83292065644497,
+      "pixel_22_3_7_status": "PASS"
+    },
+    "status": "PASS",
+    "zero_prediction_frame_count": 0
+  },
+  "patch": "22.4.3.2",
+  "pixel_coupon_objective": {
+    "observed": 283.83292065644497,
+    "stage_a": 283.83292065644497
+  },
+  "provenance": {
+    "beam_share_floor": 0.02,
+    "campaign_dispatch_lock": {
+      "CAMPAIGN_DISPATCH_AUTHORIZED_BY": null,
+      "pass": true
+    },
+    "coverage_floor": 0.95,
+    "design_sha256": "2fa0b8bc991a6bfdfeb2fa9191ba690ce20d18a1bddf08e7153fdae24ae3bf8c",
+    "git_commit": "bebec6deeba0041b07efa27344bcc93f1ff0d409",
+    "git_worktree_dirty": false,
+    "held_out_members_read": [],
+    "member_sha256": {
+      "20260730:part_1": "c8b2142e9736eb85c5c685152c521641a4757bdabe11949ede0e4472ee8ddb6b"
+    },
+    "members_read": [
+      "20260730:part_1"
+    ],
+    "module_sha256": "d31422f1513a83502f4cfcb67e7ad5dcbe33b91d4562aeb202fdb3d9320776a1",
+    "objective_contract_version": "22.4.3.2",
+    "objective_module_sha256": "fa7c356f5f711ed8b1ec864e0a02cbbf2296f9c3711d4b1a7a24c6aa115efcfb",
+    "pixel_floor": 1.0,
+    "plan_sha256": "ac103ea24ec30cd085562bce74ff2ab982e8a77ae04bc6ae865bde7122c7ce0d",
+    "production_hw_association_policy_version": "22.3.7",
+    "production_hw_semantics_version": "22.3.7",
+    "runtime": {
+      "numpy": "2.5.4",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.15"
+    },
+    "scored_frame_rule_version": "22.3.7",
+    "window_cells": 99
+  },
+  "schema": "lpbf_patch22_4_3_2_window_calibration",
+  "stage": "smoke",
+  "stage_a_comparison": {
+    "extra_unit_rows": 0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "pass": true,
+    "reference_rows": 1162,
+    "unit_rows": 1162
+  },
+  "status": "PASS_PATCH_22_4_3_2_SMOKE_GATE",
+  "unit": "anchor_center@20260730:part_1"
+}

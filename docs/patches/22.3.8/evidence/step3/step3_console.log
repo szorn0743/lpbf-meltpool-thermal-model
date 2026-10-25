@@ -1,0 +1,41 @@
+unit 1/24 done: anchor_center 20260730:part_6
+unit 2/24 done: anchor_center 20260730:part_1
+unit 3/24 done: anchor_center 20260730:part_5
+unit 4/24 done: anchor_center 20260730:part_3
+unit 5/24 done: anchor_center 20260731:part_3
+unit 6/24 done: anchor_center 20260731:part_1
+unit 7/24 done: anchor_center 20260731:part_5
+unit 8/24 done: anchor_center 20260731:part_6
+unit 9/24 done: anchor_center 20260904:part_3
+unit 10/24 done: anchor_center 20260904:part_6
+unit 11/24 done: anchor_center 20260904:part_1
+unit 12/24 done: anchor_center 20260910:part_1
+unit 13/24 done: anchor_center 20260910:part_4
+unit 14/24 done: anchor_center 20260910:part_6
+unit 15/24 done: anchor_center 20260904:part_4
+unit 16/24 done: anchor_center 20260910:part_3
+unit 17/24 done: anchor_t_max 20260904:part_3
+unit 18/24 done: anchor_t_max 20260904:part_6
+unit 19/24 done: anchor_t_min 20260904:part_1
+unit 20/24 done: anchor_t_min 20260904:part_3
+unit 21/24 done: anchor_t_max 20260904:part_1
+unit 22/24 done: anchor_t_min 20260904:part_6
+unit 23/24 done: anchor_t_min 20260904:part_4
+unit 24/24 done: anchor_t_max 20260904:part_4
+{
+  "reading": "R_B_MODEL_HOT_ZONE_TOO_ELONGATED_STOP_AND_RECONSIDER",
+  "grid_points": 1752,
+  "grid_points_core_pass": 0,
+  "grid_points_all_pass": 0,
+  "grid_points_pass_by_criterion": {
+    "M1_pass": 0,
+    "M1_150_pass": 0,
+    "M2_pass": 0,
+    "M3_pass": 0,
+    "M4_pass": 111,
+    "M5_pass": 0
+  }
+}
+exit=0 elapsed_s=3353
+
+[exited with code 0]

@@ -1,0 +1,5 @@
+objective,label,candidates,winner,winner_t,winner_ck,winner_eta,c1_rank,c1_value,winner_value,c2_rank,spearman_with_J_ranking
+J,"J (log ratio, contract 22.4.3.2)",19,confirm_c1,-3.0,2.4177408854166664,0.0,1,0.29807293620968767,0.29807293620968767,2,1.0
+H_only,H term only (e_H²),19,confirm_c1,-3.0,2.4177408854166664,0.0,1,0.42324158755994323,0.42324158755994323,2,1.0
+W_only,W term only (e_W²),19,halton_08,0.375,1.537037037037037,0.8400000000000001,14,0.1729042848594321,0.1245587900469195,15,0.21403508771929824
+pixel_22_3_7,"Pixel residual objective (22.3.7, superseded, S11)",19,confirm_c1,-3.0,2.4177408854166664,0.0,1,79.88655461956147,79.88655461956147,2,1.0

@@ -1,0 +1,52 @@
+unit 1/39: confirm_c1 20260904:part_4 (1611 frames, 1136.1 s)
+unit 2/39: confirm_c1 20260904:part_1 (1518 frames, 1208.7 s)
+unit 3/39: confirm_c2 20260904:part_4 (1611 frames, 1352.6 s)
+unit 4/39: confirm_c2 20260904:part_1 (1518 frames, 1416.1 s)
+unit 5/39: confirm_c1 20260910:part_3 (1376 frames, 2193.9 s)
+unit 6/39: confirm_c1 20260910:part_1 (1369 frames, 2414.7 s)
+unit 7/39: confirm_c2 20260910:part_3 (1376 frames, 2443.2 s)
+unit 8/39: confirm_c1 20260910:part_2 (1313 frames, 2483.0 s)
+unit 9/39: confirm_c1 20260731:part_1 (1115 frames, 3047.8 s)
+unit 10/39: confirm_c1 20260730:part_1 (1056 frames, 3078.2 s)
+unit 11/39: confirm_c2 20260910:part_2 (1313 frames, 3403.2 s)
+unit 12/39: confirm_c1 20260731:part_2 (1052 frames, 3484.5 s)
+unit 13/39: confirm_c1 20260730:part_2 (1000 frames, 4077.8 s)
+unit 14/39: confirm_c2 20260731:part_2 (1052 frames, 4163.9 s)
+unit 15/39: confirm_c1 20260731:part_3 (971 frames, 4464.7 s)
+unit 16/39: confirm_c2 20260730:part_2 (1000 frames, 4528.1 s)
+unit 17/39: confirm_c1 20260731:part_4 (946 frames, 4897.6 s)
+unit 18/39: confirm_c1 20260730:part_3 (964 frames, 5079.0 s)
+unit 19/39: confirm_c1 20260904:part_2 (936 frames, 5269.8 s)
+unit 20/39: confirm_c2 20260731:part_4 (946 frames, 5324.8 s)
+unit 21/39: confirm_c2 20260904:part_2 (936 frames, 5628.6 s)
+unit 22/39: confirm_c1 20260730:part_4 (914 frames, 5656.5 s)
+unit 23/39: confirm_c1 20260731:part_5 (896 frames, 5808.3 s)
+unit 24/39: confirm_c2 20260730:part_4 (914 frames, 5839.5 s)
+unit 25/39: confirm_c1 20260904:part_5 (884 frames, 6077.4 s)
+unit 26/39: confirm_c2 20260904:part_5 (884 frames, 6162.3 s)
+unit 27/39: confirm_c1 20260730:part_5 (869 frames, 6273.6 s)
+unit 28/39: confirm_c1 20260731:part_6 (856 frames, 6318.5 s)
+unit 29/39: confirm_c1 20260910:part_6 (779 frames, 6668.3 s)
+unit 30/39: confirm_c1 20260730:part_6 (847 frames, 6740.5 s)
+unit 31/39: confirm_c2 20260910:part_6 (779 frames, 6883.7 s)
+unit 32/39: confirm_c1 20260910:part_4 (776 frames, 7035.7 s)
+unit 33/39: confirm_c1 20260910:part_5 (776 frames, 7381.5 s)
+unit 34/39: confirm_c1 20260904:part_6 (657 frames, 7508.7 s)
+unit 35/39: confirm_c2 20260910:part_4 (776 frames, 7570.2 s)
+unit 36/39: confirm_c2 20260910:part_5 (776 frames, 7760.3 s)
+unit 37/39: confirm_c2 20260904:part_6 (657 frames, 7978.5 s)
+unit 38/39: confirm_c1 20260904:part_3 (648 frames, 8234.2 s)
+unit 39/39: confirm_c2 20260904:part_3 (648 frames, 8317.8 s)
+{
+  "stage": "evaluate",
+  "complete": true,
+  "execution": {
+    "requested_workers": 4,
+    "workers": 4,
+    "start_method": "spawn",
+    "units_run": 39,
+    "units_reused": 0,
+    "wall_time_s": 8318.3
+  }
+}
+exit 0

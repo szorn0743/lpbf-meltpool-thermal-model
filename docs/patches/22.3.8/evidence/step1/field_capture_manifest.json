@@ -1,0 +1,51 @@
+{
+  "execution": {
+    "start_method": "serial",
+    "workers": 1
+  },
+  "field_dtype": "float64",
+  "git_commit": "669f2fdcbacd9fa2faa8f177ef69cf2821972aef",
+  "git_worktree_dirty": true,
+  "guardrails": {
+    "full_campaign_dispatched": false,
+    "held_out_members_used": false,
+    "parameter_fitting_performed": false,
+    "parameter_selection_performed": false,
+    "production_semantics_changed": false,
+    "workers_wrote_files": false
+  },
+  "member_sha256": {
+    "20260730:part_1": "c8b2142e9736eb85c5c685152c521641a4757bdabe11949ede0e4472ee8ddb6b"
+  },
+  "module_sha256": "3f57e8f591388c5968df4b764ba118be2ddf49ae421550a1c096c92bb5b4fb13",
+  "patch_version": "22.3.8",
+  "plan_sha256": "9ac559c0b0810deb1db206478cfa0daa17ced755cef7cde801a55f1f16e83254",
+  "production_hw_association_policy_version": "22.3.7",
+  "production_hw_semantics_version": "22.3.7",
+  "runtime": {
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.15"
+  },
+  "schema": "lpbf_patch22_3_8_field_capture",
+  "scored_frame_rule_version": "22.3.7",
+  "step": "step1_field_capture",
+  "units": [
+    {
+      "candidate_id": "anchor_center",
+      "capture_file": {
+        "frames": 1056,
+        "path": "fields/anchor_center__20260730_part_1.npz",
+        "sha256": "f9ed2cbf2211fe1efc82c60098a0fee4330dba5e257eb3d171a8aab6921bd382"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1056,
+      "evaluation_status": "PASS",
+      "member_identity": "20260730:part_1",
+      "requested_frame_count": 1056,
+      "returned_frame_count": 1056,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_center__20260730_part_1.json"
+    }
+  ]
+}

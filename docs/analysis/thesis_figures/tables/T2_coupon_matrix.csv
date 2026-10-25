@@ -1,0 +1,25 @@
+coupon,date,part,power_W,speed_mm_s,ved_J_mm3,campaign,condition,replicate,a8_role,analysis_role,scored_frames,tracks_scored
+20260730:part_1,2026-07-30,1,140.0,850.0,68.62745098039215,"Jul 30, repeated set",P140_V850,repeated (Jul 30 and Jul 31),calibration,calibration,1056,51
+20260730:part_2,2026-07-30,2,150.0,900.0,69.44444444444444,"Jul 30, repeated set",P150_V900,repeated (Jul 30 and Jul 31),held_out,in_window_held_out,1000,52
+20260730:part_3,2026-07-30,3,160.0,950.0,70.17543859649123,"Jul 30, repeated set",P160_V950,repeated (Jul 30 and Jul 31),calibration,calibration,964,52
+20260730:part_4,2026-07-30,4,170.0,1000.0,70.83333333333334,"Jul 30, repeated set",P170_V1000,repeated (Jul 30 and Jul 31),held_out,in_window_held_out,914,49
+20260730:part_5,2026-07-30,5,180.0,1050.0,71.42857142857143,"Jul 30, repeated set",P180_V1050,repeated (Jul 30 and Jul 31),calibration,calibration,869,52
+20260730:part_6,2026-07-30,6,190.0,1100.0,71.96969696969698,"Jul 30, repeated set",P190_V1100,repeated (Jul 30 and Jul 31),calibration,calibration,847,52
+20260731:part_1,2026-07-31,1,140.0,850.0,68.62745098039215,"Jul 31, repeated set",P140_V850,repeated (Jul 30 and Jul 31),calibration,calibration,1115,53
+20260731:part_2,2026-07-31,2,150.0,900.0,69.44444444444444,"Jul 31, repeated set",P150_V900,repeated (Jul 30 and Jul 31),held_out,in_window_held_out,1052,52
+20260731:part_3,2026-07-31,3,160.0,950.0,70.17543859649123,"Jul 31, repeated set",P160_V950,repeated (Jul 30 and Jul 31),calibration,calibration,971,52
+20260731:part_4,2026-07-31,4,170.0,1000.0,70.83333333333334,"Jul 31, repeated set",P170_V1000,repeated (Jul 30 and Jul 31),held_out,in_window_held_out,946,52
+20260731:part_5,2026-07-31,5,180.0,1050.0,71.42857142857143,"Jul 31, repeated set",P180_V1050,repeated (Jul 30 and Jul 31),calibration,calibration,896,52
+20260731:part_6,2026-07-31,6,190.0,1100.0,71.96969696969698,"Jul 31, repeated set",P190_V1100,repeated (Jul 30 and Jul 31),calibration,calibration,856,52
+20260904:part_1,2026-09-04,1,140.0,600.0,97.22222222222223,"Sep 4, speed sweep",P140_V600,single,calibration,out_of_window_examined,1518,52
+20260904:part_2,2026-09-04,2,140.0,1000.0,58.333333333333336,"Sep 4, speed sweep",P140_V1000,single,held_out,out_of_window_blind,936,52
+20260904:part_3,2026-09-04,3,140.0,1400.0,41.66666666666667,"Sep 4, speed sweep",P140_V1400,single,calibration,out_of_window_examined,648,51
+20260904:part_4,2026-09-04,4,180.0,600.0,125.0,"Sep 4, speed sweep",P180_V600,single,calibration,out_of_window_examined,1611,52
+20260904:part_5,2026-09-04,5,180.0,1000.0,75.0,"Sep 4, speed sweep",P180_V1000,single,held_out,in_window_held_out,884,52
+20260904:part_6,2026-09-04,6,180.0,1400.0,53.57142857142858,"Sep 4, speed sweep",P180_V1400,single,calibration,out_of_window_examined,657,52
+20260910:part_1,2026-09-10,1,140.0,700.0,83.33333333333334,"Sep 10, power sweep",P140_V700,single,calibration,calibration,1369,53
+20260910:part_2,2026-09-10,2,160.0,700.0,95.23809523809524,"Sep 10, power sweep",P160_V700,single,held_out,out_of_window_blind,1313,52
+20260910:part_3,2026-09-10,3,180.0,700.0,107.14285714285715,"Sep 10, power sweep",P180_V700,single,calibration,out_of_window_examined,1376,52
+20260910:part_4,2026-09-10,4,140.0,1200.0,48.611111111111114,"Sep 10, power sweep",P140_V1200,single,calibration,out_of_window_examined,776,51
+20260910:part_5,2026-09-10,5,160.0,1200.0,55.55555555555556,"Sep 10, power sweep",P160_V1200,single,held_out,out_of_window_blind,776,52
+20260910:part_6,2026-09-10,6,180.0,1200.0,62.5,"Sep 10, power sweep",P180_V1200,single,calibration,out_of_window_examined,779,52

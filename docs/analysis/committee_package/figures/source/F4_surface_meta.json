@@ -1,0 +1,15 @@
+{
+  "guard_maximum": 0.95,
+  "grid": 61,
+  "guard_grid": 41,
+  "c1_coded": [
+    -1.0,
+    0.8354817708333329,
+    -1.0
+  ],
+  "slices": [
+    "t_ck",
+    "t_eta",
+    "ck_eta"
+  ]
+}

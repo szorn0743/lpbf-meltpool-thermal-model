@@ -1,0 +1,406 @@
+{
+  "member_layers": 32,
+  "paired_members": 16,
+  "mapping": "mirrored",
+  "axis_mapping_constant_deg": 29.677858774859413,
+  "axis_mapping_resultant_mirrored": 0.8929625407865731,
+  "axis_mapping_resultant_direct": 0.16029172106870732,
+  "median_abs_scan_rotation_deg": 45.237878255332774,
+  "discriminating": true,
+  "median_residual_follows_deg": 34.38526510157142,
+  "median_residual_fixed_deg": 21.38596549928282,
+  "fixed_preferred_by_deg": 12.999299602288602,
+  "members_closer_to_follows": 5,
+  "pooled_scan_direction_resultant": 0.9234663021603239,
+  "pooled_wing_follow_resultant": 0.7764147931415616,
+  "pooled_wing_follow_mean_offset_deg": 212.0411141423009,
+  "pooled_wing_fixed_resultant": 0.8220794871553757,
+  "pairs": [
+    {
+      "member_identity": "20260730:part_1",
+      "scan_rotation_deg": -45.2300433884414,
+      "predicted_image_rotation_if_follows_deg": 45.2300433884414,
+      "observed_asymmetry_rotation_deg": -2.2738986290473235,
+      "residual_follows_deg": 47.503942017488725,
+      "residual_fixed_deg": 2.2738986290473235
+    },
+    {
+      "member_identity": "20260730:part_3",
+      "scan_rotation_deg": -45.245713122224146,
+      "predicted_image_rotation_if_follows_deg": 45.245713122224146,
+      "observed_asymmetry_rotation_deg": 9.679632868163878,
+      "residual_follows_deg": 35.56608025406027,
+      "residual_fixed_deg": 9.679632868163878
+    },
+    {
+      "member_identity": "20260730:part_5",
+      "scan_rotation_deg": -44.39820911996449,
+      "predicted_image_rotation_if_follows_deg": 44.39820911996449,
+      "observed_asymmetry_rotation_deg": 22.525137611589344,
+      "residual_follows_deg": 21.873071508375148,
+      "residual_fixed_deg": 22.525137611589344
+    },
+    {
+      "member_identity": "20260730:part_6",
+      "scan_rotation_deg": -45.265336878525716,
+      "predicted_image_rotation_if_follows_deg": 45.265336878525716,
+      "observed_asymmetry_rotation_deg": 25.63759617810075,
+      "residual_follows_deg": 19.627740700424965,
+      "residual_fixed_deg": 25.63759617810075
+    },
+    {
+      "member_identity": "20260731:part_1",
+      "scan_rotation_deg": -44.61285755204807,
+      "predicted_image_rotation_if_follows_deg": 44.61285755204807,
+      "observed_asymmetry_rotation_deg": -17.51731055535754,
+      "residual_follows_deg": 62.13016810740561,
+      "residual_fixed_deg": 17.51731055535754
+    },
+    {
+      "member_identity": "20260731:part_3",
+      "scan_rotation_deg": -45.49408631689852,
+      "predicted_image_rotation_if_follows_deg": 45.49408631689852,
+      "observed_asymmetry_rotation_deg": 12.289636367815945,
+      "residual_follows_deg": 33.20444994908257,
+      "residual_fixed_deg": 12.289636367815945
+    },
+    {
+      "member_identity": "20260731:part_5",
+      "scan_rotation_deg": -44.78890832795156,
+      "predicted_image_rotation_if_follows_deg": 44.78890832795156,
+      "observed_asymmetry_rotation_deg": 26.489180898520004,
+      "residual_follows_deg": 18.299727429431556,
+      "residual_fixed_deg": 26.489180898520004
+    },
+    {
+      "member_identity": "20260731:part_6",
+      "scan_rotation_deg": -43.76019425586932,
+      "predicted_image_rotation_if_follows_deg": 43.76019425586932,
+      "observed_asymmetry_rotation_deg": 34.46734138982964,
+      "residual_follows_deg": 9.29285286603968,
+      "residual_fixed_deg": 34.46734138982964
+    },
+    {
+      "member_identity": "20260904:part_1",
+      "scan_rotation_deg": -45.1109364410903,
+      "predicted_image_rotation_if_follows_deg": 45.1109364410903,
+      "observed_asymmetry_rotation_deg": -14.166965737247466,
+      "residual_follows_deg": 59.27790217833777,
+      "residual_fixed_deg": 14.166965737247466
+    },
+    {
+      "member_identity": "20260904:part_3",
+      "scan_rotation_deg": -45.2102836695683,
+      "predicted_image_rotation_if_follows_deg": 45.2102836695683,
+      "observed_asymmetry_rotation_deg": 0.5199670237686576,
+      "residual_follows_deg": 44.69031664579964,
+      "residual_fixed_deg": 0.5199670237686576
+    },
+    {
+      "member_identity": "20260904:part_4",
+      "scan_rotation_deg": -45.32216701192155,
+      "predicted_image_rotation_if_follows_deg": 45.32216701192155,
+      "observed_asymmetry_rotation_deg": -16.577548726446025,
+      "residual_follows_deg": 61.899715738367576,
+      "residual_fixed_deg": 16.577548726446025
+    },
+    {
+      "member_identity": "20260904:part_6",
+      "scan_rotation_deg": -45.30085408042126,
+      "predicted_image_rotation_if_follows_deg": 45.30085408042126,
+      "observed_asymmetry_rotation_deg": 22.16249161792817,
+      "residual_follows_deg": 23.13836246249309,
+      "residual_fixed_deg": 22.16249161792817
+    },
+    {
+      "member_identity": "20260910:part_1",
+      "scan_rotation_deg": -45.29558805362316,
+      "predicted_image_rotation_if_follows_deg": 45.29558805362316,
+      "observed_asymmetry_rotation_deg": -44.19713428536454,
+      "residual_follows_deg": 89.4927223389877,
+      "residual_fixed_deg": 44.19713428536454
+    },
+    {
+      "member_identity": "20260910:part_3",
+      "scan_rotation_deg": -45.63601443644646,
+      "predicted_image_rotation_if_follows_deg": 45.63601443644646,
+      "observed_asymmetry_rotation_deg": -22.46821100115693,
+      "residual_follows_deg": 68.10422543760339,
+      "residual_fixed_deg": 22.46821100115693
+    },
+    {
+      "member_identity": "20260910:part_4",
+      "scan_rotation_deg": -45.125097121381316,
+      "predicted_image_rotation_if_follows_deg": 45.125097121381316,
+      "observed_asymmetry_rotation_deg": 20.60943938063747,
+      "residual_follows_deg": 24.515657740743848,
+      "residual_fixed_deg": 20.60943938063747
+    },
+    {
+      "member_identity": "20260910:part_6",
+      "scan_rotation_deg": -46.0398177737402,
+      "predicted_image_rotation_if_follows_deg": 46.0398177737402,
+      "observed_asymmetry_rotation_deg": 34.60066215028698,
+      "residual_follows_deg": 11.439155623453217,
+      "residual_fixed_deg": 34.60066215028698
+    }
+  ],
+  "per_member_layer": [
+    {
+      "member_identity": "20260730:part_1",
+      "layer": "layer53",
+      "scan_direction_deg": 44.92744506494322,
+      "blob_axis_deg": 160.31558778493005,
+      "wing_angle_deg": 180.4583259562386,
+      "wing_offset_from_scan_axis_deg": 195.70791224632242
+    },
+    {
+      "member_identity": "20260730:part_1",
+      "layer": "layer52",
+      "scan_direction_deg": 90.15748845338462,
+      "blob_axis_deg": 115.95173263010243,
+      "wing_angle_deg": 182.73222458528593,
+      "wing_offset_from_scan_axis_deg": 243.21185426381115
+    },
+    {
+      "member_identity": "20260730:part_3",
+      "layer": "layer53",
+      "scan_direction_deg": 44.411530368876804,
+      "blob_axis_deg": 163.32052727859622,
+      "wing_angle_deg": 161.22052717571148,
+      "wing_offset_from_scan_axis_deg": 175.95419876972886
+    },
+    {
+      "member_identity": "20260730:part_3",
+      "layer": "layer52",
+      "scan_direction_deg": 89.65724349110096,
+      "blob_axis_deg": 119.0217062868045,
+      "wing_angle_deg": 151.5408943075476,
+      "wing_offset_from_scan_axis_deg": 211.52027902378916
+    },
+    {
+      "member_identity": "20260730:part_5",
+      "layer": "layer53",
+      "scan_direction_deg": 45.505329266277606,
+      "blob_axis_deg": 157.8560820305758,
+      "wing_angle_deg": 153.8867466316586,
+      "wing_offset_from_scan_axis_deg": 169.7142171230768
+    },
+    {
+      "member_identity": "20260730:part_5",
+      "layer": "layer52",
+      "scan_direction_deg": 89.90353838624209,
+      "blob_axis_deg": 122.73706522726386,
+      "wing_angle_deg": 131.36160902006927,
+      "wing_offset_from_scan_axis_deg": 191.58728863145197
+    },
+    {
+      "member_identity": "20260730:part_6",
+      "layer": "layer53",
+      "scan_direction_deg": 43.97635930405813,
+      "blob_axis_deg": 160.1120780729646,
+      "wing_angle_deg": 145.26597817812538,
+      "wing_offset_from_scan_axis_deg": 159.56447870732407
+    },
+    {
+      "member_identity": "20260730:part_6",
+      "layer": "layer52",
+      "scan_direction_deg": 89.24169618258384,
+      "blob_axis_deg": 125.0097301678674,
+      "wing_angle_deg": 119.62838200002463,
+      "wing_offset_from_scan_axis_deg": 179.19221940774904
+    },
+    {
+      "member_identity": "20260731:part_1",
+      "layer": "layer53",
+      "scan_direction_deg": 44.68577608812849,
+      "blob_axis_deg": 161.13765777130124,
+      "wing_angle_deg": 168.601894866221,
+      "wing_offset_from_scan_axis_deg": 183.6098121794901
+    },
+    {
+      "member_identity": "20260731:part_1",
+      "layer": "layer52",
+      "scan_direction_deg": 89.29863364017658,
+      "blob_axis_deg": 114.43765494148437,
+      "wing_angle_deg": 186.11920542157853,
+      "wing_offset_from_scan_axis_deg": 245.7399802868957
+    },
+    {
+      "member_identity": "20260731:part_3",
+      "layer": "layer53",
+      "scan_direction_deg": 44.191426628864505,
+      "blob_axis_deg": 163.54318511571836,
+      "wing_angle_deg": 157.76702948174437,
+      "wing_offset_from_scan_axis_deg": 172.28059733574946
+    },
+    {
+      "member_identity": "20260731:part_3",
+      "layer": "layer52",
+      "scan_direction_deg": 89.68551294576301,
+      "blob_axis_deg": 120.51558496420292,
+      "wing_angle_deg": 145.47739311392843,
+      "wing_offset_from_scan_axis_deg": 205.48504728483204
+    },
+    {
+      "member_identity": "20260731:part_5",
+      "layer": "layer53",
+      "scan_direction_deg": 44.80094688428663,
+      "blob_axis_deg": 157.68609557794196,
+      "wing_angle_deg": 158.10549024669646,
+      "wing_offset_from_scan_axis_deg": 173.22857835612368
+    },
+    {
+      "member_identity": "20260731:part_5",
+      "layer": "layer52",
+      "scan_direction_deg": 89.58985521223818,
+      "blob_axis_deg": 121.73188191997369,
+      "wing_angle_deg": 131.61630934817646,
+      "wing_offset_from_scan_axis_deg": 191.52830578555523
+    },
+    {
+      "member_identity": "20260731:part_6",
+      "layer": "layer53",
+      "scan_direction_deg": 46.04597114335085,
+      "blob_axis_deg": 159.5873357825747,
+      "wing_angle_deg": 152.28694974754177,
+      "wing_offset_from_scan_axis_deg": 168.6550621160332
+    },
+    {
+      "member_identity": "20260731:part_6",
+      "layer": "layer52",
+      "scan_direction_deg": 89.80616539922018,
+      "blob_axis_deg": 125.00192248341412,
+      "wing_angle_deg": 117.81960835771213,
+      "wing_offset_from_scan_axis_deg": 177.94791498207292
+    },
+    {
+      "member_identity": "20260904:part_1",
+      "layer": "layer53",
+      "scan_direction_deg": 45.059657185418295,
+      "blob_axis_deg": 167.46132972228165,
+      "wing_angle_deg": 216.5367119603546,
+      "wing_offset_from_scan_axis_deg": 231.91851037091348
+    },
+    {
+      "member_identity": "20260904:part_1",
+      "layer": "layer52",
+      "scan_direction_deg": 90.1705936265086,
+      "blob_axis_deg": 163.81024913949403,
+      "wing_angle_deg": 230.70367769760207,
+      "wing_offset_from_scan_axis_deg": 291.19641254925125
+    },
+    {
+      "member_identity": "20260904:part_3",
+      "layer": "layer53",
+      "scan_direction_deg": 44.65602547559973,
+      "blob_axis_deg": 158.99899544680636,
+      "wing_angle_deg": 202.16918713060454,
+      "wing_offset_from_scan_axis_deg": 217.14735383134484
+    },
+    {
+      "member_identity": "20260904:part_3",
+      "layer": "layer52",
+      "scan_direction_deg": 89.86630914516802,
+      "blob_axis_deg": 138.5779604540954,
+      "wing_angle_deg": 201.64922010683588,
+      "wing_offset_from_scan_axis_deg": 261.83767047714446
+    },
+    {
+      "member_identity": "20260904:part_4",
+      "layer": "layer53",
+      "scan_direction_deg": 44.50856044124637,
+      "blob_axis_deg": 171.6769455385074,
+      "wing_angle_deg": 242.24798784715222,
+      "wing_offset_from_scan_axis_deg": 257.0786895135392
+    },
+    {
+      "member_identity": "20260904:part_4",
+      "layer": "layer52",
+      "scan_direction_deg": 89.83072745316791,
+      "blob_axis_deg": 167.53732657965548,
+      "wing_angle_deg": 258.82553657359824,
+      "wing_offset_from_scan_axis_deg": 318.97840525190674
+    },
+    {
+      "member_identity": "20260904:part_6",
+      "layer": "layer53",
+      "scan_direction_deg": 44.30893787531051,
+      "blob_axis_deg": 157.1019235439432,
+      "wing_angle_deg": 193.9340524867186,
+      "wing_offset_from_scan_axis_deg": 208.56513158716967
+    },
+    {
+      "member_identity": "20260904:part_6",
+      "layer": "layer52",
+      "scan_direction_deg": 89.60979195573178,
+      "blob_axis_deg": 111.04687464724938,
+      "wing_angle_deg": 171.77156086879043,
+      "wing_offset_from_scan_axis_deg": 231.7034940496628
+    },
+    {
+      "member_identity": "20260910:part_1",
+      "layer": "layer53",
+      "scan_direction_deg": 44.04825215252469,
+      "blob_axis_deg": 164.19078942828756,
+      "wing_angle_deg": 172.33997222344982,
+      "wing_offset_from_scan_axis_deg": 186.7103656011151
+    },
+    {
+      "member_identity": "20260910:part_1",
+      "layer": "layer52",
+      "scan_direction_deg": 89.34384020614785,
+      "blob_axis_deg": 140.99679651153525,
+      "wing_angle_deg": 216.53710650881436,
+      "wing_offset_from_scan_axis_deg": 276.20308794010276
+    },
+    {
+      "member_identity": "20260910:part_3",
+      "layer": "layer53",
+      "scan_direction_deg": 44.47542138276035,
+      "blob_axis_deg": 158.9132136619862,
+      "wing_angle_deg": 187.66501343796887,
+      "wing_offset_from_scan_axis_deg": 202.4625760458698
+    },
+    {
+      "member_identity": "20260910:part_3",
+      "layer": "layer52",
+      "scan_direction_deg": 90.1114358192068,
+      "blob_axis_deg": 128.5049910650676,
+      "wing_angle_deg": 210.1332244391258,
+      "wing_offset_from_scan_axis_deg": 270.56680148347317
+    },
+    {
+      "member_identity": "20260910:part_4",
+      "layer": "layer53",
+      "scan_direction_deg": 44.48911600454585,
+      "blob_axis_deg": 160.3059797710378,
+      "wing_angle_deg": 221.68032533165055,
+      "wing_offset_from_scan_axis_deg": 236.49158256133697
+    },
+    {
+      "member_identity": "20260910:part_4",
+      "layer": "layer52",
+      "scan_direction_deg": 89.61421312592718,
+      "blob_axis_deg": 98.7222195918921,
+      "wing_angle_deg": 201.07088595101308,
+      "wing_offset_from_scan_axis_deg": 261.00724030208085
+    },
+    {
+      "member_identity": "20260910:part_6",
+      "layer": "layer53",
+      "scan_direction_deg": 44.84341799416039,
+      "blob_axis_deg": 154.3676690450548,
+      "wing_angle_deg": 166.75619877114076,
+      "wing_offset_from_scan_axis_deg": 181.92175799044173
+    },
+    {
+      "member_identity": "20260910:part_6",
+      "layer": "layer52",
+      "scan_direction_deg": 90.88323576790059,
+      "blob_axis_deg": 102.26254075425342,
+      "wing_angle_deg": 132.15553662085378,
+      "wing_offset_from_scan_axis_deg": 193.36091361389495
+    }
+  ]
+}

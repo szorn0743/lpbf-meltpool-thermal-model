@@ -1,0 +1,4490 @@
+{
+  "schema": "lpbf_patch22_4_3_2_synthetic_camera",
+  "patch": "22.4.3.2",
+  "stage": "synthetic",
+  "reading_S": "S_DESCRIPTIVE",
+  "selected": "confirm_c1",
+  "cases": {
+    "lam850_uniform_sig0.0": {
+      "available": true,
+      "t150": {
+        "case": {
+          "case_id": "lam850_uniform_sig0.0",
+          "wavelength_nm": 850.0,
+          "emissivity": "uniform",
+          "sigma_px": 0.0
+        },
+        "rule": "22.3.8 closest approach on the 9 calibration members: |ln(median model/camera H/W at 150)| minimal, coverage at 150 >= 95 %",
+        "max_coverage_150": 0.9996644295302013,
+        "available": true,
+        "T150_K": 1950.0,
+        "grid_index": 22,
+        "M1_HW_ratio_150": 1.0315787737187436,
+        "coverage_150": 0.9809843400447428,
+        "M1_HW_ratio_by_threshold": {
+          "60": 1.4571428296183841,
+          "100": 1.2,
+          "150": 1.0315787737187436,
+          "200": 0.9446564790008183,
+          "250": 0.9333332808839194
+        }
+      },
+      "groups": {
+        "calibration": {
+          "status": "PASS",
+          "J": 1.2796097585459492,
+          "e_H": 1.103186208648286,
+          "e_W": 1.1585334290127836,
+          "coverage": 0.9809843400447428,
+          "coverage_by_coupon": {
+            "20260730:part_1": 0.9232954545454546,
+            "20260730:part_3": 1.0,
+            "20260730:part_5": 1.0,
+            "20260730:part_6": 1.0,
+            "20260731:part_1": 0.9219730941704036,
+            "20260731:part_3": 0.9989701338825953,
+            "20260731:part_5": 0.9988839285714286,
+            "20260731:part_6": 1.0,
+            "20260910:part_1": 1.0
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260730:part_1",
+            "20260731:part_1"
+          ],
+          "scored_frame_count": 8770,
+          "floored_frame_count": 621,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 3,
+            "PAIRED": 8770,
+            "SYNTHETIC_ABSENT": 169,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V700",
+              "member_identities": [
+                "20260910:part_1"
+              ],
+              "e_H": 0.7163551623403062,
+              "e_W": 0.7063704938121562,
+              "median_H_ratio": 0.45454545454545453,
+              "median_W_ratio": 0.4615384695189304,
+              "H_mean_log": -0.5872209260932248,
+              "W_mean_log": -0.5932692476958146
+            },
+            {
+              "exact_condition_id": "P140_V850",
+              "member_identities": [
+                "20260730:part_1",
+                "20260731:part_1"
+              ],
+              "e_H": 1.619388775765213,
+              "e_W": 1.644107299040132,
+              "median_H_ratio": 0.2,
+              "median_W_ratio": 0.1976423559718079,
+              "H_mean_log": -1.4060983765532309,
+              "W_mean_log": -1.4415584583330925
+            },
+            {
+              "exact_condition_id": "P160_V950",
+              "member_identities": [
+                "20260730:part_3",
+                "20260731:part_3"
+              ],
+              "e_H": 1.1481965568482553,
+              "e_W": 1.2319946302173383,
+              "median_H_ratio": 0.31250003161013956,
+              "median_W_ratio": 0.3,
+              "H_mean_log": -0.983791411852956,
+              "W_mean_log": -1.0486337466172766
+            },
+            {
+              "exact_condition_id": "P180_V1050",
+              "member_identities": [
+                "20260730:part_5",
+                "20260731:part_5"
+              ],
+              "e_H": 0.933853476830345,
+              "e_W": 1.037714452158285,
+              "median_H_ratio": 0.378942416750744,
+              "median_W_ratio": 0.3535533654239388,
+              "H_mean_log": -0.7993542616642189,
+              "W_mean_log": -0.8641546797053855
+            },
+            {
+              "exact_condition_id": "P190_V1100",
+              "member_identities": [
+                "20260730:part_6",
+                "20260731:part_6"
+              ],
+              "e_H": 0.8712500672749618,
+              "e_W": 0.9561842878402674,
+              "median_H_ratio": 0.38461538461538464,
+              "median_W_ratio": 0.37712365063761555,
+              "H_mean_log": -0.748830233348617,
+              "W_mean_log": -0.7878889013455423
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260730:part_1",
+              "exact_condition_id": "P140_V850",
+              "coverage": 0.9232954545454546,
+              "scored_frame_count": 975,
+              "e_H": 1.682480041527435,
+              "e_W": 1.7095662762984385,
+              "median_r_H": -1.6683294300067604,
+              "median_r_W": -1.7328680528078364,
+              "median_H_ratio": 0.1885618083645962,
+              "median_W_ratio": 0.1767766773700714
+            },
+            {
+              "member_identity": "20260730:part_3",
+              "exact_condition_id": "P160_V950",
+              "coverage": 1.0,
+              "scored_frame_count": 964,
+              "e_H": 1.188012802156373,
+              "e_W": 1.2802452958912711,
+              "median_r_H": -1.1786549963416462,
+              "median_r_W": -1.2527629925792836,
+              "median_H_ratio": 0.30769230769230765,
+              "median_W_ratio": 0.2857142788331671
+            },
+            {
+              "member_identity": "20260730:part_5",
+              "exact_condition_id": "P180_V1050",
+              "coverage": 1.0,
+              "scored_frame_count": 869,
+              "e_H": 0.9609271586477098,
+              "e_W": 1.0540731906482141,
+              "median_r_H": -0.987040498328799,
+              "median_r_W": -1.0498221701946908,
+              "median_H_ratio": 0.3726780017217,
+              "median_W_ratio": 0.34999998400639576
+            },
+            {
+              "member_identity": "20260730:part_6",
+              "exact_condition_id": "P190_V1100",
+              "coverage": 1.0,
+              "scored_frame_count": 847,
+              "e_H": 0.8909800789782483,
+              "e_W": 0.9805502036413368,
+              "median_r_H": -0.9555114450274363,
+              "median_r_W": -0.9808292530117262,
+              "median_H_ratio": 0.38461538461538464,
+              "median_W_ratio": 0.375
+            },
+            {
+              "member_identity": "20260731:part_1",
+              "exact_condition_id": "P140_V850",
+              "coverage": 0.9219730941704036,
+              "scored_frame_count": 1028,
+              "e_H": 1.5537377269058477,
+              "e_W": 1.575931714401727,
+              "median_r_H": -1.6094379124341003,
+              "median_r_W": -1.599336481451283,
+              "median_H_ratio": 0.2,
+              "median_W_ratio": 0.20203052453226147
+            },
+            {
+              "member_identity": "20260731:part_3",
+              "exact_condition_id": "P160_V950",
+              "coverage": 0.9989701338825953,
+              "scored_frame_count": 970,
+              "e_H": 1.1069490721026602,
+              "e_W": 1.1817755794214841,
+              "median_r_H": -1.1197635237256254,
+              "median_r_W": -1.2039728043259361,
+              "median_H_ratio": 0.3263569611769456,
+              "median_W_ratio": 0.3
+            },
+            {
+              "member_identity": "20260731:part_5",
+              "exact_condition_id": "P180_V1050",
+              "coverage": 0.9988839285714286,
+              "scored_frame_count": 895,
+              "e_H": 0.9059710967517046,
+              "e_W": 1.0210936671985746,
+              "median_r_H": -0.9555114450274363,
+              "median_r_W": -1.039720725627747,
+              "median_H_ratio": 0.38461538461538464,
+              "median_W_ratio": 0.35355340657819045
+            },
+            {
+              "member_identity": "20260731:part_6",
+              "exact_condition_id": "P190_V1100",
+              "coverage": 1.0,
+              "scored_frame_count": 856,
+              "e_H": 0.8510627816543064,
+              "e_W": 0.9311810150363525,
+              "median_r_H": -0.944461566025001,
+              "median_r_W": -0.943653197829415,
+              "median_H_ratio": 0.38888890553949773,
+              "median_W_ratio": 0.38920339805810134
+            },
+            {
+              "member_identity": "20260910:part_1",
+              "exact_condition_id": "P140_V700",
+              "coverage": 1.0,
+              "scored_frame_count": 1366,
+              "e_H": 0.7163551623403062,
+              "e_W": 0.7063704938121562,
+              "median_r_H": -0.7884573603642702,
+              "median_r_W": -0.773189870942466,
+              "median_H_ratio": 0.45454545454545453,
+              "median_W_ratio": 0.4615384695189304
+            }
+          ]
+        },
+        "in_window_held_out": {
+          "status": "PASS",
+          "J": 1.2587573855581944,
+          "e_H": 1.0718962964212146,
+          "e_W": 1.1698517431003264,
+          "coverage": 0.9997914059240718,
+          "coverage_by_coupon": {
+            "20260730:part_2": 0.999,
+            "20260730:part_4": 1.0,
+            "20260731:part_2": 1.0,
+            "20260731:part_4": 1.0,
+            "20260904:part_5": 1.0
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 4793,
+          "floored_frame_count": 227,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 2,
+            "PAIRED": 4793,
+            "SYNTHETIC_ABSENT": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P150_V900",
+              "member_identities": [
+                "20260730:part_2",
+                "20260731:part_2"
+              ],
+              "e_H": 1.351475001816612,
+              "e_W": 1.4832260902128491,
+              "median_H_ratio": 0.2727272727272727,
+              "median_W_ratio": 0.2222222222222222,
+              "H_mean_log": -1.1543004922377538,
+              "W_mean_log": -1.2714111858650026
+            },
+            {
+              "exact_condition_id": "P170_V1000",
+              "member_identities": [
+                "20260730:part_4",
+                "20260731:part_4"
+              ],
+              "e_H": 1.0668814963173283,
+              "e_W": 1.123542993903568,
+              "median_H_ratio": 0.3333333333333333,
+              "median_W_ratio": 0.3333333239673666,
+              "H_mean_log": -0.9379462602900236,
+              "W_mean_log": -0.9605149199994756
+            },
+            {
+              "exact_condition_id": "P180_V1000",
+              "member_identities": [
+                "20260904:part_5"
+              ],
+              "e_H": 0.6943804455232286,
+              "e_W": 0.8020915213781581,
+              "median_H_ratio": 0.48448137442270917,
+              "median_W_ratio": 0.43514266177413913,
+              "H_mean_log": -0.4981452951476397,
+              "W_mean_log": -0.5985666008456156
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260730:part_2",
+              "exact_condition_id": "P150_V900",
+              "coverage": 0.999,
+              "scored_frame_count": 999,
+              "e_H": 1.3835282801711952,
+              "e_W": 1.5285769030753373,
+              "median_r_H": -1.3274027418837258,
+              "median_r_W": -1.5040773967762742,
+              "median_H_ratio": 0.26516506983480626,
+              "median_W_ratio": 0.2222222222222222
+            },
+            {
+              "member_identity": "20260730:part_4",
+              "exact_condition_id": "P170_V1000",
+              "coverage": 1.0,
+              "scored_frame_count": 914,
+              "e_H": 1.108043445494233,
+              "e_W": 1.1705048126703135,
+              "median_r_H": -1.0986122886681098,
+              "median_r_W": -1.1197635197563574,
+              "median_H_ratio": 0.3333333333333333,
+              "median_W_ratio": 0.3263569624723439
+            },
+            {
+              "member_identity": "20260731:part_2",
+              "exact_condition_id": "P150_V900",
+              "coverage": 1.0,
+              "scored_frame_count": 1052,
+              "e_H": 1.3186428094965512,
+              "e_W": 1.4364441934028622,
+              "median_r_H": -1.2992829841302609,
+              "median_r_W": -1.4889394200198984,
+              "median_H_ratio": 0.2727272727272727,
+              "median_W_ratio": 0.2256119637064049
+            },
+            {
+              "member_identity": "20260731:part_4",
+              "exact_condition_id": "P170_V1000",
+              "coverage": 1.0,
+              "scored_frame_count": 946,
+              "e_H": 1.024066392996993,
+              "e_W": 1.0745306890988364,
+              "median_r_H": -1.0986122886681098,
+              "median_r_W": -1.0986122886681098,
+              "median_H_ratio": 0.3333333333333333,
+              "median_W_ratio": 0.3333333333333333
+            },
+            {
+              "member_identity": "20260904:part_5",
+              "exact_condition_id": "P180_V1000",
+              "coverage": 1.0,
+              "scored_frame_count": 882,
+              "e_H": 0.6943804455232286,
+              "e_W": 0.8020915213781581,
+              "median_r_H": -0.7246762912742479,
+              "median_r_W": -0.8320813435584867,
+              "median_H_ratio": 0.48448137442270917,
+              "median_W_ratio": 0.43514266177413913
+            }
+          ]
+        },
+        "cross_campaign_20260904_part_5": {
+          "status": "PASS",
+          "J": 0.5627575058958829,
+          "e_H": 0.6943804455232286,
+          "e_W": 0.8020915213781581,
+          "coverage": 1.0,
+          "coverage_by_coupon": {
+            "20260904:part_5": 1.0
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 882,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 2,
+            "PAIRED": 882
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1000",
+              "member_identities": [
+                "20260904:part_5"
+              ],
+              "e_H": 0.6943804455232286,
+              "e_W": 0.8020915213781581,
+              "median_H_ratio": 0.48448137442270917,
+              "median_W_ratio": 0.43514266177413913,
+              "H_mean_log": -0.4981452951476397,
+              "W_mean_log": -0.5985666008456156
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_5",
+              "exact_condition_id": "P180_V1000",
+              "coverage": 1.0,
+              "scored_frame_count": 882,
+              "e_H": 0.6943804455232286,
+              "e_W": 0.8020915213781581,
+              "median_r_H": -0.7246762912742479,
+              "median_r_W": -0.8320813435584867,
+              "median_H_ratio": 0.48448137442270917,
+              "median_W_ratio": 0.43514266177413913
+            }
+          ]
+        },
+        "out_of_window_examined": {
+          "status": "PASS",
+          "J": 0.604394570350095,
+          "e_H": 0.7846201670181439,
+          "e_W": 0.7701690296348005,
+          "coverage": 0.7661367033564342,
+          "coverage_by_coupon": {
+            "20260904:part_1": 0.9993412384716732,
+            "20260904:part_3": 0.19319938176197837,
+            "20260904:part_4": 0.9993792675356921,
+            "20260904:part_6": 0.4703196347031963,
+            "20260910:part_3": 1.0,
+            "20260910:part_4": 0.18685567010309279,
+            "20260910:part_6": 0.7187096774193549
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_3",
+            "20260904:part_6",
+            "20260910:part_4",
+            "20260910:part_6"
+          ],
+          "scored_frame_count": 5638,
+          "floored_frame_count": 180,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 6,
+            "PAIRED": 5638,
+            "SYNTHETIC_ABSENT": 1720,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1200",
+              "member_identities": [
+                "20260910:part_4"
+              ],
+              "e_H": 0.45680981786065195,
+              "e_W": 0.45807875469860115,
+              "median_H_ratio": 1.1111111111111112,
+              "median_W_ratio": 1.2298375006983875,
+              "H_mean_log": 0.05865535441859605,
+              "W_mean_log": 0.08772725133887323
+            },
+            {
+              "exact_condition_id": "P140_V1400",
+              "member_identities": [
+                "20260904:part_3"
+              ],
+              "e_H": 0.30542339030942417,
+              "e_W": 0.38644499554234957,
+              "median_H_ratio": 1.0794811600842256,
+              "median_W_ratio": 1.3131982258387975,
+              "H_mean_log": 0.03458598122416281,
+              "W_mean_log": 0.2236088290751968
+            },
+            {
+              "exact_condition_id": "P140_V600",
+              "member_identities": [
+                "20260904:part_1"
+              ],
+              "e_H": 0.4838737813992541,
+              "e_W": 0.407870993270955,
+              "median_H_ratio": 0.6363961219787597,
+              "median_W_ratio": 0.7071067094802856,
+              "H_mean_log": -0.3867723036896772,
+              "W_mean_log": -0.3055856919565395
+            },
+            {
+              "exact_condition_id": "P180_V1200",
+              "member_identities": [
+                "20260910:part_6"
+              ],
+              "e_H": 1.2524487888325138,
+              "e_W": 1.2982136212409814,
+              "median_H_ratio": 0.26516506983480626,
+              "median_W_ratio": 0.23570224973890516,
+              "H_mean_log": -0.8375565144861329,
+              "W_mean_log": -0.8731563196722488
+            },
+            {
+              "exact_condition_id": "P180_V1400",
+              "member_identities": [
+                "20260904:part_6"
+              ],
+              "e_H": 1.415297266215726,
+              "e_W": 1.3115384105959762,
+              "median_H_ratio": 0.20327890209045132,
+              "median_W_ratio": 0.1999999797695127,
+              "H_mean_log": -0.7674074986040461,
+              "W_mean_log": -0.6504164834959231
+            },
+            {
+              "exact_condition_id": "P180_V600",
+              "member_identities": [
+                "20260904:part_4"
+              ],
+              "e_H": 0.2976180055158827,
+              "e_W": 0.2561334618857558,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8770590281558186,
+              "H_mean_log": -0.002811672047839573,
+              "W_mean_log": -0.12350531255529325
+            },
+            {
+              "exact_condition_id": "P180_V700",
+              "member_identities": [
+                "20260910:part_3"
+              ],
+              "e_H": 0.336211770258673,
+              "e_W": 0.39432442617807023,
+              "median_H_ratio": 0.8333333333333334,
+              "median_W_ratio": 0.7,
+              "H_mean_log": -0.09350396322430682,
+              "W_mean_log": -0.2533760410946397
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_1",
+              "exact_condition_id": "P140_V600",
+              "coverage": 0.9993412384716732,
+              "scored_frame_count": 1517,
+              "e_H": 0.4838737813992541,
+              "e_W": 0.407870993270955,
+              "median_r_H": -0.4519340762222388,
+              "median_r_W": -0.34657369168794583,
+              "median_H_ratio": 0.6363961219787597,
+              "median_W_ratio": 0.7071067094802856
+            },
+            {
+              "member_identity": "20260904:part_3",
+              "exact_condition_id": "P140_V1400",
+              "coverage": 0.19319938176197837,
+              "scored_frame_count": 125,
+              "e_H": 0.30542339030942417,
+              "e_W": 0.38644499554234957,
+              "median_r_H": 0.07648051837413522,
+              "median_r_W": 0.27246555562306407,
+              "median_H_ratio": 1.0794811600842256,
+              "median_W_ratio": 1.3131982258387975
+            },
+            {
+              "member_identity": "20260904:part_4",
+              "exact_condition_id": "P180_V600",
+              "coverage": 0.9993792675356921,
+              "scored_frame_count": 1610,
+              "e_H": 0.2976180055158827,
+              "e_W": 0.2561334618857558,
+              "median_r_H": 0.0,
+              "median_r_W": -0.1311821688957609,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8770590281558186
+            },
+            {
+              "member_identity": "20260904:part_6",
+              "exact_condition_id": "P180_V1400",
+              "coverage": 0.4703196347031963,
+              "scored_frame_count": 309,
+              "e_H": 1.415297266215726,
+              "e_W": 1.3115384105959762,
+              "median_r_H": -1.5931763409566195,
+              "median_r_W": -1.609438013586542,
+              "median_H_ratio": 0.20327890209045132,
+              "median_W_ratio": 0.1999999797695127
+            },
+            {
+              "member_identity": "20260910:part_3",
+              "exact_condition_id": "P180_V700",
+              "coverage": 1.0,
+              "scored_frame_count": 1375,
+              "e_H": 0.336211770258673,
+              "e_W": 0.39432442617807023,
+              "median_r_H": -0.1823215567939546,
+              "median_r_W": -0.35667494393873245,
+              "median_H_ratio": 0.8333333333333334,
+              "median_W_ratio": 0.7
+            },
+            {
+              "member_identity": "20260910:part_4",
+              "exact_condition_id": "P140_V1200",
+              "coverage": 0.18685567010309279,
+              "scored_frame_count": 145,
+              "e_H": 0.45680981786065195,
+              "e_W": 0.45807875469860115,
+              "median_r_H": 0.10536051565782635,
+              "median_r_W": 0.20688204740325805,
+              "median_H_ratio": 1.1111111111111112,
+              "median_W_ratio": 1.2298375006983875
+            },
+            {
+              "member_identity": "20260910:part_6",
+              "exact_condition_id": "P180_V1200",
+              "coverage": 0.7187096774193549,
+              "scored_frame_count": 557,
+              "e_H": 1.2524487888325138,
+              "e_W": 1.2982136212409814,
+              "median_r_H": -1.3274027418837258,
+              "median_r_W": -1.4451859241602534,
+              "median_H_ratio": 0.26516506983480626,
+              "median_W_ratio": 0.23570224973890516
+            }
+          ]
+        },
+        "out_of_window_blind": {
+          "status": "PASS",
+          "J": 0.9805579798305549,
+          "e_H": 1.0259034029189988,
+          "e_W": 0.9532251400064562,
+          "coverage": 0.5972222222222222,
+          "coverage_by_coupon": {
+            "20260904:part_2": 0.23397435897435898,
+            "20260910:part_2": 1.0,
+            "20260910:part_5": 0.3543814432989691
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_2",
+            "20260910:part_5"
+          ],
+          "scored_frame_count": 1806,
+          "floored_frame_count": 180,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1806,
+            "SYNTHETIC_ABSENT": 1218
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1000",
+              "member_identities": [
+                "20260904:part_2"
+              ],
+              "e_H": 1.0965254970921008,
+              "e_W": 0.9923290888107795,
+              "median_H_ratio": 0.9,
+              "median_W_ratio": 1.0,
+              "H_mean_log": -0.4428001515539815,
+              "W_mean_log": -0.33410068005393473
+            },
+            {
+              "exact_condition_id": "P160_V1200",
+              "member_identities": [
+                "20260910:part_5"
+              ],
+              "e_H": 1.3281847342271276,
+              "e_W": 1.2369668791118504,
+              "median_H_ratio": 0.7071068528928167,
+              "median_W_ratio": 0.7499999438041994,
+              "H_mean_log": -0.6663531372303308,
+              "W_mean_log": -0.6065220088593352
+            },
+            {
+              "exact_condition_id": "P160_V700",
+              "member_identities": [
+                "20260910:part_2"
+              ],
+              "e_H": 0.43702462442667966,
+              "e_W": 0.45946754194528405,
+              "median_H_ratio": 0.6666666666666666,
+              "median_W_ratio": 0.6285392973158095,
+              "H_mean_log": -0.2762967114194697,
+              "W_mean_log": -0.33979094070605453
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_2",
+              "exact_condition_id": "P140_V1000",
+              "coverage": 0.23397435897435898,
+              "scored_frame_count": 219,
+              "e_H": 1.0965254970921008,
+              "e_W": 0.9923290888107795,
+              "median_r_H": -0.10536051565782628,
+              "median_r_W": 0.0,
+              "median_H_ratio": 0.9,
+              "median_W_ratio": 1.0
+            },
+            {
+              "member_identity": "20260910:part_2",
+              "exact_condition_id": "P160_V700",
+              "coverage": 1.0,
+              "scored_frame_count": 1312,
+              "e_H": 0.43702462442667966,
+              "e_W": 0.45946754194528405,
+              "median_r_H": -0.40546510810816444,
+              "median_r_W": -0.46435672734432926,
+              "median_H_ratio": 0.6666666666666666,
+              "median_W_ratio": 0.6285392973158095
+            },
+            {
+              "member_identity": "20260910:part_5",
+              "exact_condition_id": "P160_V1200",
+              "coverage": 0.3543814432989691,
+              "scored_frame_count": 275,
+              "e_H": 1.3281847342271276,
+              "e_W": 1.2369668791118504,
+              "median_r_H": -0.3465734888719994,
+              "median_r_W": -0.2876821473795178,
+              "median_H_ratio": 0.7071068528928167,
+              "median_W_ratio": 0.7499999438041994
+            }
+          ]
+        }
+      },
+      "per_coupon": {
+        "20260904:part_1": {
+          "status": "PASS",
+          "J": 0.20024629173872427,
+          "e_H": 0.4838737813992541,
+          "e_W": 0.407870993270955,
+          "coverage": 0.9993412384716732,
+          "coverage_by_coupon": {
+            "20260904:part_1": 0.9993412384716732
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1517,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "PAIRED": 1517,
+            "SYNTHETIC_ABSENT": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V600",
+              "member_identities": [
+                "20260904:part_1"
+              ],
+              "e_H": 0.4838737813992541,
+              "e_W": 0.407870993270955,
+              "median_H_ratio": 0.6363961219787597,
+              "median_W_ratio": 0.7071067094802856,
+              "H_mean_log": -0.3867723036896772,
+              "W_mean_log": -0.3055856919565395
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_1",
+              "exact_condition_id": "P140_V600",
+              "coverage": 0.9993412384716732,
+              "scored_frame_count": 1517,
+              "e_H": 0.4838737813992541,
+              "e_W": 0.407870993270955,
+              "median_r_H": -0.4519340762222388,
+              "median_r_W": -0.34657369168794583,
+              "median_H_ratio": 0.6363961219787597,
+              "median_W_ratio": 0.7071067094802856
+            }
+          ]
+        },
+        "20260904:part_3": {
+          "status": "PASS",
+          "J": 0.12131159096391472,
+          "e_H": 0.30542339030942417,
+          "e_W": 0.38644499554234957,
+          "coverage": 0.19319938176197837,
+          "coverage_by_coupon": {
+            "20260904:part_3": 0.19319938176197837
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_3"
+          ],
+          "scored_frame_count": 125,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 125,
+            "SYNTHETIC_ABSENT": 522
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1400",
+              "member_identities": [
+                "20260904:part_3"
+              ],
+              "e_H": 0.30542339030942417,
+              "e_W": 0.38644499554234957,
+              "median_H_ratio": 1.0794811600842256,
+              "median_W_ratio": 1.3131982258387975,
+              "H_mean_log": 0.03458598122416281,
+              "W_mean_log": 0.2236088290751968
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_3",
+              "exact_condition_id": "P140_V1400",
+              "coverage": 0.19319938176197837,
+              "scored_frame_count": 125,
+              "e_H": 0.30542339030942417,
+              "e_W": 0.38644499554234957,
+              "median_r_H": 0.07648051837413522,
+              "median_r_W": 0.27246555562306407,
+              "median_H_ratio": 1.0794811600842256,
+              "median_W_ratio": 1.3131982258387975
+            }
+          ]
+        },
+        "20260904:part_4": {
+          "status": "PASS",
+          "J": 0.07709041375241696,
+          "e_H": 0.2976180055158827,
+          "e_W": 0.2561334618857558,
+          "coverage": 0.9993792675356921,
+          "coverage_by_coupon": {
+            "20260904:part_4": 0.9993792675356921
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1610,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "PAIRED": 1610,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V600",
+              "member_identities": [
+                "20260904:part_4"
+              ],
+              "e_H": 0.2976180055158827,
+              "e_W": 0.2561334618857558,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8770590281558186,
+              "H_mean_log": -0.002811672047839573,
+              "W_mean_log": -0.12350531255529325
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_4",
+              "exact_condition_id": "P180_V600",
+              "coverage": 0.9993792675356921,
+              "scored_frame_count": 1610,
+              "e_H": 0.2976180055158827,
+              "e_W": 0.2561334618857558,
+              "median_r_H": 0.0,
+              "median_r_W": -0.1311821688957609,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8770590281558186
+            }
+          ]
+        },
+        "20260904:part_6": {
+          "status": "PASS",
+          "J": 1.8615996771131633,
+          "e_H": 1.415297266215726,
+          "e_W": 1.3115384105959762,
+          "coverage": 0.4703196347031963,
+          "coverage_by_coupon": {
+            "20260904:part_6": 0.4703196347031963
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_6"
+          ],
+          "scored_frame_count": 309,
+          "floored_frame_count": 125,
+          "synthetic_status_counts": {
+            "PAIRED": 309,
+            "SYNTHETIC_ABSENT": 348
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1400",
+              "member_identities": [
+                "20260904:part_6"
+              ],
+              "e_H": 1.415297266215726,
+              "e_W": 1.3115384105959762,
+              "median_H_ratio": 0.20327890209045132,
+              "median_W_ratio": 0.1999999797695127,
+              "H_mean_log": -0.7674074986040461,
+              "W_mean_log": -0.6504164834959231
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_6",
+              "exact_condition_id": "P180_V1400",
+              "coverage": 0.4703196347031963,
+              "scored_frame_count": 309,
+              "e_H": 1.415297266215726,
+              "e_W": 1.3115384105959762,
+              "median_r_H": -1.5931763409566195,
+              "median_r_W": -1.609438013586542,
+              "median_H_ratio": 0.20327890209045132,
+              "median_W_ratio": 0.1999999797695127
+            }
+          ]
+        },
+        "20260910:part_3": {
+          "status": "PASS",
+          "J": 0.13426505377056755,
+          "e_H": 0.336211770258673,
+          "e_W": 0.39432442617807023,
+          "coverage": 1.0,
+          "coverage_by_coupon": {
+            "20260910:part_3": 1.0
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1375,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1375
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V700",
+              "member_identities": [
+                "20260910:part_3"
+              ],
+              "e_H": 0.336211770258673,
+              "e_W": 0.39432442617807023,
+              "median_H_ratio": 0.8333333333333334,
+              "median_W_ratio": 0.7,
+              "H_mean_log": -0.09350396322430682,
+              "W_mean_log": -0.2533760410946397
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_3",
+              "exact_condition_id": "P180_V700",
+              "coverage": 1.0,
+              "scored_frame_count": 1375,
+              "e_H": 0.336211770258673,
+              "e_W": 0.39432442617807023,
+              "median_r_H": -0.1823215567939546,
+              "median_r_W": -0.35667494393873245,
+              "median_H_ratio": 0.8333333333333334,
+              "median_W_ratio": 0.7
+            }
+          ]
+        },
+        "20260910:part_4": {
+          "status": "PASS",
+          "J": 0.2092556776000516,
+          "e_H": 0.45680981786065195,
+          "e_W": 0.45807875469860115,
+          "coverage": 0.18685567010309279,
+          "coverage_by_coupon": {
+            "20260910:part_4": 0.18685567010309279
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_4"
+          ],
+          "scored_frame_count": 145,
+          "floored_frame_count": 1,
+          "synthetic_status_counts": {
+            "PAIRED": 145,
+            "SYNTHETIC_ABSENT": 631
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1200",
+              "member_identities": [
+                "20260910:part_4"
+              ],
+              "e_H": 0.45680981786065195,
+              "e_W": 0.45807875469860115,
+              "median_H_ratio": 1.1111111111111112,
+              "median_W_ratio": 1.2298375006983875,
+              "H_mean_log": 0.05865535441859605,
+              "W_mean_log": 0.08772725133887323
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_4",
+              "exact_condition_id": "P140_V1200",
+              "coverage": 0.18685567010309279,
+              "scored_frame_count": 145,
+              "e_H": 0.45680981786065195,
+              "e_W": 0.45807875469860115,
+              "median_r_H": 0.10536051565782635,
+              "median_r_W": 0.20688204740325805,
+              "median_H_ratio": 1.1111111111111112,
+              "median_W_ratio": 1.2298375006983875
+            }
+          ]
+        },
+        "20260910:part_6": {
+          "status": "PASS",
+          "J": 1.6269932875118267,
+          "e_H": 1.2524487888325138,
+          "e_W": 1.2982136212409814,
+          "coverage": 0.7187096774193549,
+          "coverage_by_coupon": {
+            "20260910:part_6": 0.7187096774193549
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_6"
+          ],
+          "scored_frame_count": 557,
+          "floored_frame_count": 54,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 4,
+            "PAIRED": 557,
+            "SYNTHETIC_ABSENT": 218
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1200",
+              "member_identities": [
+                "20260910:part_6"
+              ],
+              "e_H": 1.2524487888325138,
+              "e_W": 1.2982136212409814,
+              "median_H_ratio": 0.26516506983480626,
+              "median_W_ratio": 0.23570224973890516,
+              "H_mean_log": -0.8375565144861329,
+              "W_mean_log": -0.8731563196722488
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_6",
+              "exact_condition_id": "P180_V1200",
+              "coverage": 0.7187096774193549,
+              "scored_frame_count": 557,
+              "e_H": 1.2524487888325138,
+              "e_W": 1.2982136212409814,
+              "median_r_H": -1.3274027418837258,
+              "median_r_W": -1.4451859241602534,
+              "median_H_ratio": 0.26516506983480626,
+              "median_W_ratio": 0.23570224973890516
+            }
+          ]
+        },
+        "20260904:part_2": {
+          "status": "PASS",
+          "J": 1.0935425931365552,
+          "e_H": 1.0965254970921008,
+          "e_W": 0.9923290888107795,
+          "coverage": 0.23397435897435898,
+          "coverage_by_coupon": {
+            "20260904:part_2": 0.23397435897435898
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_2"
+          ],
+          "scored_frame_count": 219,
+          "floored_frame_count": 64,
+          "synthetic_status_counts": {
+            "PAIRED": 219,
+            "SYNTHETIC_ABSENT": 717
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1000",
+              "member_identities": [
+                "20260904:part_2"
+              ],
+              "e_H": 1.0965254970921008,
+              "e_W": 0.9923290888107795,
+              "median_H_ratio": 0.9,
+              "median_W_ratio": 1.0,
+              "H_mean_log": -0.4428001515539815,
+              "W_mean_log": -0.33410068005393473
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_2",
+              "exact_condition_id": "P140_V1000",
+              "coverage": 0.23397435897435898,
+              "scored_frame_count": 219,
+              "e_H": 1.0965254970921008,
+              "e_W": 0.9923290888107795,
+              "median_r_H": -0.10536051565782628,
+              "median_r_W": 0.0,
+              "median_H_ratio": 0.9,
+              "median_W_ratio": 1.0
+            }
+          ]
+        },
+        "20260910:part_2": {
+          "status": "PASS",
+          "J": 0.2010504722282609,
+          "e_H": 0.43702462442667966,
+          "e_W": 0.45946754194528405,
+          "coverage": 1.0,
+          "coverage_by_coupon": {
+            "20260910:part_2": 1.0
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1312,
+          "floored_frame_count": 1,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1312
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P160_V700",
+              "member_identities": [
+                "20260910:part_2"
+              ],
+              "e_H": 0.43702462442667966,
+              "e_W": 0.45946754194528405,
+              "median_H_ratio": 0.6666666666666666,
+              "median_W_ratio": 0.6285392973158095,
+              "H_mean_log": -0.2762967114194697,
+              "W_mean_log": -0.33979094070605453
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_2",
+              "exact_condition_id": "P160_V700",
+              "coverage": 1.0,
+              "scored_frame_count": 1312,
+              "e_H": 0.43702462442667966,
+              "e_W": 0.45946754194528405,
+              "median_r_H": -0.40546510810816444,
+              "median_r_W": -0.46435672734432926,
+              "median_H_ratio": 0.6666666666666666,
+              "median_W_ratio": 0.6285392973158095
+            }
+          ]
+        },
+        "20260910:part_5": {
+          "status": "PASS",
+          "J": 1.6470808741268483,
+          "e_H": 1.3281847342271276,
+          "e_W": 1.2369668791118504,
+          "coverage": 0.3543814432989691,
+          "coverage_by_coupon": {
+            "20260910:part_5": 0.3543814432989691
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_5"
+          ],
+          "scored_frame_count": 275,
+          "floored_frame_count": 115,
+          "synthetic_status_counts": {
+            "PAIRED": 275,
+            "SYNTHETIC_ABSENT": 501
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P160_V1200",
+              "member_identities": [
+                "20260910:part_5"
+              ],
+              "e_H": 1.3281847342271276,
+              "e_W": 1.2369668791118504,
+              "median_H_ratio": 0.7071068528928167,
+              "median_W_ratio": 0.7499999438041994,
+              "H_mean_log": -0.6663531372303308,
+              "W_mean_log": -0.6065220088593352
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_5",
+              "exact_condition_id": "P160_V1200",
+              "coverage": 0.3543814432989691,
+              "scored_frame_count": 275,
+              "e_H": 1.3281847342271276,
+              "e_W": 1.2369668791118504,
+              "median_r_H": -0.3465734888719994,
+              "median_r_W": -0.2876821473795178,
+              "median_H_ratio": 0.7071068528928167,
+              "median_W_ratio": 0.7499999438041994
+            }
+          ]
+        }
+      },
+      "out_of_window": [
+        {
+          "member_identity": "20260904:part_1",
+          "group": "examined",
+          "condition_id": "P140_V600",
+          "power_W": 140.0,
+          "speed_mm_s": 600.0,
+          "ved_J_mm3": 97.22222222222223,
+          "synthetic_median_r_H": -0.4519340762222388,
+          "synthetic_median_r_W": -0.34657369168794583,
+          "synthetic_e_H": 0.4838737813992541,
+          "synthetic_e_W": 0.407870993270955,
+          "synthetic_coverage": 0.9993412384716732,
+          "liquidus_median_r_H": 0.8321471328299399,
+          "liquidus_median_r_W": 0.09111680970595017,
+          "liquidus_e_H": 0.8035495244302324,
+          "liquidus_e_W": 0.2601754778189027
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "group": "examined",
+          "condition_id": "P140_V1400",
+          "power_W": 140.0,
+          "speed_mm_s": 1400.0,
+          "ved_J_mm3": 41.66666666666667,
+          "synthetic_median_r_H": 0.07648051837413522,
+          "synthetic_median_r_W": 0.27246555562306407,
+          "synthetic_e_H": 0.30542339030942417,
+          "synthetic_e_W": 0.38644499554234957,
+          "synthetic_coverage": 0.19319938176197837,
+          "liquidus_median_r_H": -1.9809979509233138,
+          "liquidus_median_r_W": -1.6905188189879716,
+          "liquidus_e_H": 1.5628142358903518,
+          "liquidus_e_W": 1.3682603008198626
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "group": "examined",
+          "condition_id": "P180_V600",
+          "power_W": 180.0,
+          "speed_mm_s": 600.0,
+          "ved_J_mm3": 125.0,
+          "synthetic_median_r_H": 0.0,
+          "synthetic_median_r_W": -0.1311821688957609,
+          "synthetic_e_H": 0.2976180055158827,
+          "synthetic_e_W": 0.2561334618857558,
+          "synthetic_coverage": 0.9993792675356921,
+          "liquidus_median_r_H": 1.093031646674602,
+          "liquidus_median_r_W": 0.18602897454973344,
+          "liquidus_e_H": 1.0312735157161625,
+          "liquidus_e_W": 0.29008150938744187
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "group": "examined",
+          "condition_id": "P180_V1400",
+          "power_W": 180.0,
+          "speed_mm_s": 1400.0,
+          "ved_J_mm3": 53.57142857142858,
+          "synthetic_median_r_H": -1.5931763409566195,
+          "synthetic_median_r_W": -1.609438013586542,
+          "synthetic_e_H": 1.415297266215726,
+          "synthetic_e_W": 1.3115384105959762,
+          "synthetic_coverage": 0.4703196347031963,
+          "liquidus_median_r_H": 0.24424405343035452,
+          "liquidus_median_r_W": -0.4524354100004646,
+          "liquidus_e_H": 0.6367902772004593,
+          "liquidus_e_W": 0.6462984355863889
+        },
+        {
+          "member_identity": "20260910:part_3",
+          "group": "examined",
+          "condition_id": "P180_V700",
+          "power_W": 180.0,
+          "speed_mm_s": 700.0,
+          "ved_J_mm3": 107.14285714285715,
+          "synthetic_median_r_H": -0.1823215567939546,
+          "synthetic_median_r_W": -0.35667494393873245,
+          "synthetic_e_H": 0.336211770258673,
+          "synthetic_e_W": 0.39432442617807023,
+          "synthetic_coverage": 1.0,
+          "liquidus_median_r_H": 0.9647901646742847,
+          "liquidus_median_r_W": -0.011887941327487349,
+          "liquidus_e_H": 0.950160003340718,
+          "liquidus_e_W": 0.29576794881370255
+        },
+        {
+          "member_identity": "20260910:part_4",
+          "group": "examined",
+          "condition_id": "P140_V1200",
+          "power_W": 140.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 48.611111111111114,
+          "synthetic_median_r_H": 0.10536051565782635,
+          "synthetic_median_r_W": 0.20688204740325805,
+          "synthetic_e_H": 0.45680981786065195,
+          "synthetic_e_W": 0.45807875469860115,
+          "synthetic_coverage": 0.18685567010309279,
+          "liquidus_median_r_H": -0.03635766963685402,
+          "liquidus_median_r_W": -0.6413800749320309,
+          "liquidus_e_H": 0.8469114346280523,
+          "liquidus_e_W": 0.8689485020337571
+        },
+        {
+          "member_identity": "20260910:part_6",
+          "group": "examined",
+          "condition_id": "P180_V1200",
+          "power_W": 180.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 62.5,
+          "synthetic_median_r_H": -1.3274027418837258,
+          "synthetic_median_r_W": -1.4451859241602534,
+          "synthetic_e_H": 1.2524487888325138,
+          "synthetic_e_W": 1.2982136212409814,
+          "synthetic_coverage": 0.7187096774193549,
+          "liquidus_median_r_H": 0.4778249401848296,
+          "liquidus_median_r_W": -0.39577086131740996,
+          "liquidus_e_H": 0.6129426541428474,
+          "liquidus_e_W": 0.4653472108057367
+        },
+        {
+          "member_identity": "20260904:part_2",
+          "group": "blind",
+          "condition_id": "P140_V1000",
+          "power_W": 140.0,
+          "speed_mm_s": 1000.0,
+          "ved_J_mm3": 58.333333333333336,
+          "synthetic_median_r_H": -0.10536051565782628,
+          "synthetic_median_r_W": 0.0,
+          "synthetic_e_H": 1.0965254970921008,
+          "synthetic_e_W": 0.9923290888107795,
+          "synthetic_coverage": 0.23397435897435898,
+          "liquidus_median_r_H": 0.30035502921330964,
+          "liquidus_median_r_W": -0.38611894541476277,
+          "liquidus_e_H": 0.4717482002557256,
+          "liquidus_e_W": 0.46293774350342387
+        },
+        {
+          "member_identity": "20260910:part_2",
+          "group": "blind",
+          "condition_id": "P160_V700",
+          "power_W": 160.0,
+          "speed_mm_s": 700.0,
+          "ved_J_mm3": 95.23809523809524,
+          "synthetic_median_r_H": -0.40546510810816444,
+          "synthetic_median_r_W": -0.46435672734432926,
+          "synthetic_e_H": 0.43702462442667966,
+          "synthetic_e_W": 0.45946754194528405,
+          "synthetic_coverage": 1.0,
+          "liquidus_median_r_H": 0.837274061450584,
+          "liquidus_median_r_W": -0.05008094736543894,
+          "liquidus_e_H": 0.845271893371465,
+          "liquidus_e_W": 0.2653173898527077
+        },
+        {
+          "member_identity": "20260910:part_5",
+          "group": "blind",
+          "condition_id": "P160_V1200",
+          "power_W": 160.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 55.55555555555556,
+          "synthetic_median_r_H": -0.3465734888719994,
+          "synthetic_median_r_W": -0.2876821473795178,
+          "synthetic_e_H": 1.3281847342271276,
+          "synthetic_e_W": 1.2369668791118504,
+          "synthetic_coverage": 0.3543814432989691,
+          "liquidus_median_r_H": 0.3094125222209625,
+          "liquidus_median_r_W": -0.47633502835265173,
+          "liquidus_e_H": 0.49814162664031997,
+          "liquidus_e_W": 0.5200264479326233
+        }
+      ],
+      "out_of_window_spearman_on_ved_descriptive": {
+        "synthetic_median_r_H": -0.2121212121212121,
+        "synthetic_median_r_W": -0.34545454545454546,
+        "liquidus_median_r_H": 0.9757575757575757,
+        "liquidus_median_r_W": 0.9636363636363635
+      }
+    },
+    "lam850_uniform_sig2.0": {
+      "available": true,
+      "t150": {
+        "case": {
+          "case_id": "lam850_uniform_sig2.0",
+          "wavelength_nm": 850.0,
+          "emissivity": "uniform",
+          "sigma_px": 2.0
+        },
+        "rule": "22.3.8 closest approach on the 9 calibration members: |ln(median model/camera H/W at 150)| minimal, coverage at 150 >= 95 %",
+        "max_coverage_150": 0.9942953020134229,
+        "available": true,
+        "T150_K": 1825.0,
+        "grid_index": 17,
+        "M1_HW_ratio_150": 1.0666665587707345,
+        "coverage_150": 0.9714765100671141,
+        "M1_HW_ratio_by_threshold": {
+          "60": 1.4999999241356687,
+          "100": 1.1785714285714286,
+          "150": 1.0666665587707345,
+          "200": 0.9696969152040722,
+          "250": 0.9020979020979021
+        }
+      },
+      "groups": {
+        "calibration": {
+          "status": "PASS",
+          "J": 0.7604566503707362,
+          "e_H": 0.8343076659341954,
+          "e_W": 0.9082092376236367,
+          "coverage": 0.9714765100671141,
+          "coverage_by_coupon": {
+            "20260730:part_1": 0.8835227272727273,
+            "20260730:part_3": 0.9979253112033195,
+            "20260730:part_5": 0.997698504027618,
+            "20260730:part_6": 0.9952774498229043,
+            "20260731:part_1": 0.9013452914798207,
+            "20260731:part_3": 0.9979402677651905,
+            "20260731:part_5": 0.9977678571428571,
+            "20260731:part_6": 0.9894859813084113,
+            "20260910:part_1": 0.9992679355783309
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260730:part_1",
+            "20260731:part_1"
+          ],
+          "scored_frame_count": 8685,
+          "floored_frame_count": 400,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 3,
+            "PAIRED": 8685,
+            "SYNTHETIC_ABSENT": 235,
+            "SYNTHETIC_EDGE": 20
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V700",
+              "member_identities": [
+                "20260910:part_1"
+              ],
+              "e_H": 0.41361197657380405,
+              "e_W": 0.4026712502959533,
+              "median_H_ratio": 0.7071067810058593,
+              "median_W_ratio": 0.6956655714246962,
+              "H_mean_log": -0.1969711313694729,
+              "W_mean_log": -0.22008866265693905
+            },
+            {
+              "exact_condition_id": "P140_V850",
+              "member_identities": [
+                "20260730:part_1",
+                "20260731:part_1"
+              ],
+              "e_H": 1.3968197078172149,
+              "e_W": 1.4857077090015807,
+              "median_H_ratio": 0.28284271254689425,
+              "median_W_ratio": 0.23570224311616683,
+              "H_mean_log": -1.1038898492497222,
+              "W_mean_log": -1.2064336326548948
+            },
+            {
+              "exact_condition_id": "P160_V950",
+              "member_identities": [
+                "20260730:part_3",
+                "20260731:part_3"
+              ],
+              "e_H": 0.8166239505109062,
+              "e_W": 0.9298697133211665,
+              "median_H_ratio": 0.44997700777920807,
+              "median_W_ratio": 0.42591772320929,
+              "H_mean_log": -0.607423827084693,
+              "W_mean_log": -0.6945373929435141
+            },
+            {
+              "exact_condition_id": "P180_V1050",
+              "member_identities": [
+                "20260730:part_5",
+                "20260731:part_5"
+              ],
+              "e_H": 0.6154050181066312,
+              "e_W": 0.7168294263415373,
+              "median_H_ratio": 0.5454545454545454,
+              "median_W_ratio": 0.513870120048523,
+              "H_mean_log": -0.4325305140242397,
+              "W_mean_log": -0.48620655824732206
+            },
+            {
+              "exact_condition_id": "P190_V1100",
+              "member_identities": [
+                "20260730:part_6",
+                "20260731:part_6"
+              ],
+              "e_H": 0.5590780187166223,
+              "e_W": 0.613389316748979,
+              "median_H_ratio": 0.5714285714285714,
+              "median_W_ratio": 0.5555555555555556,
+              "H_mean_log": -0.3989040416741353,
+              "W_mean_log": -0.40166753257493926
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260730:part_1",
+              "exact_condition_id": "P140_V850",
+              "coverage": 0.8835227272727273,
+              "scored_frame_count": 933,
+              "e_H": 1.453482055741771,
+              "e_W": 1.5352289124717664,
+              "median_r_H": -1.2992829841302609,
+              "median_r_W": -1.4451859241602534,
+              "median_H_ratio": 0.2727272727272727,
+              "median_W_ratio": 0.23570224973890516
+            },
+            {
+              "member_identity": "20260730:part_3",
+              "exact_condition_id": "P160_V950",
+              "coverage": 0.9979253112033195,
+              "scored_frame_count": 962,
+              "e_H": 0.8385029055187031,
+              "e_W": 0.958029782138467,
+              "median_r_H": -0.816577118117735,
+              "median_r_W": -0.8981891078597792,
+              "median_H_ratio": 0.4419417830580104,
+              "median_W_ratio": 0.40730723232851584
+            },
+            {
+              "member_identity": "20260730:part_5",
+              "exact_condition_id": "P180_V1050",
+              "coverage": 0.997698504027618,
+              "scored_frame_count": 867,
+              "e_H": 0.629117077030316,
+              "e_W": 0.7222656126964756,
+              "median_r_H": -0.6166666621858101,
+              "median_r_W": -0.6931471805599453,
+              "median_H_ratio": 0.5397405800421128,
+              "median_W_ratio": 0.5
+            },
+            {
+              "member_identity": "20260730:part_6",
+              "exact_condition_id": "P190_V1100",
+              "coverage": 0.9952774498229043,
+              "scored_frame_count": 843,
+              "e_H": 0.5677922821403187,
+              "e_W": 0.6209552329972238,
+              "median_r_H": -0.5596157879354228,
+              "median_r_W": -0.587786664902119,
+              "median_H_ratio": 0.5714285714285714,
+              "median_W_ratio": 0.5555555555555556
+            },
+            {
+              "member_identity": "20260731:part_1",
+              "exact_condition_id": "P140_V850",
+              "coverage": 0.9013452914798207,
+              "scored_frame_count": 1005,
+              "e_H": 1.3377595097512165,
+              "e_W": 1.434477946670568,
+              "median_r_H": -1.2039728043259361,
+              "median_r_W": -1.4451859803560556,
+              "median_H_ratio": 0.3,
+              "median_W_ratio": 0.23570223649342853
+            },
+            {
+              "member_identity": "20260731:part_3",
+              "exact_condition_id": "P160_V950",
+              "coverage": 0.9979402677651905,
+              "scored_frame_count": 969,
+              "e_H": 0.7941424497738241,
+              "e_W": 0.9008297863856957,
+              "median_r_H": -0.7884573603642702,
+              "median_r_W": -0.8320813435584867,
+              "median_H_ratio": 0.45454545454545453,
+              "median_W_ratio": 0.43514266177413913
+            },
+            {
+              "member_identity": "20260731:part_5",
+              "exact_condition_id": "P180_V1050",
+              "coverage": 0.9977678571428571,
+              "scored_frame_count": 894,
+              "e_H": 0.6013803921067576,
+              "e_W": 0.7113516975831715,
+              "median_r_H": -0.5978878984209707,
+              "median_r_W": -0.6102397174564316,
+              "median_H_ratio": 0.5499720069964527,
+              "median_W_ratio": 0.543221094305347
+            },
+            {
+              "member_identity": "20260731:part_6",
+              "exact_condition_id": "P190_V1100",
+              "coverage": 0.9894859813084113,
+              "scored_frame_count": 847,
+              "e_H": 0.5502257594534232,
+              "e_W": 0.6057289050531781,
+              "median_r_H": -0.5596157879354228,
+              "median_r_W": -0.5542129910671575,
+              "median_H_ratio": 0.5714285714285714,
+              "median_W_ratio": 0.5745242390260604
+            },
+            {
+              "member_identity": "20260910:part_1",
+              "exact_condition_id": "P140_V700",
+              "coverage": 0.9992679355783309,
+              "scored_frame_count": 1365,
+              "e_H": 0.41361197657380405,
+              "e_W": 0.4026712502959533,
+              "median_r_H": -0.34657359053550435,
+              "median_r_W": -0.3628862349518183,
+              "median_H_ratio": 0.7071067810058593,
+              "median_W_ratio": 0.6956655714246962
+            }
+          ]
+        },
+        "in_window_held_out": {
+          "status": "PASS",
+          "J": 0.6844611475073162,
+          "e_H": 0.7841364551186458,
+          "e_W": 0.8683618570438227,
+          "coverage": 0.9924906132665833,
+          "coverage_by_coupon": {
+            "20260730:part_2": 0.992,
+            "20260730:part_4": 0.9945295404814004,
+            "20260731:part_2": 0.9847908745247148,
+            "20260731:part_4": 0.9968287526427061,
+            "20260904:part_5": 0.9954648526077098
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 4758,
+          "floored_frame_count": 45,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 2,
+            "PAIRED": 4758,
+            "SYNTHETIC_ABSENT": 26,
+            "SYNTHETIC_EDGE": 10
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P150_V900",
+              "member_identities": [
+                "20260730:part_2",
+                "20260731:part_2"
+              ],
+              "e_H": 1.0441041802381381,
+              "e_W": 1.1494204030441095,
+              "median_H_ratio": 0.37712361672919237,
+              "median_W_ratio": 0.3441928699462375,
+              "H_mean_log": -0.7935214370279879,
+              "W_mean_log": -0.8793242607538945
+            },
+            {
+              "exact_condition_id": "P170_V1000",
+              "member_identities": [
+                "20260730:part_4",
+                "20260731:part_4"
+              ],
+              "e_H": 0.735268176346902,
+              "e_W": 0.8141740789020538,
+              "median_H_ratio": 0.496903993591185,
+              "median_W_ratio": 0.45725654472163335,
+              "H_mean_log": -0.5682273042656252,
+              "W_mean_log": -0.6060782652923069
+            },
+            {
+              "exact_condition_id": "P180_V1000",
+              "member_identities": [
+                "20260904:part_5"
+              ],
+              "e_H": 0.46242524844438904,
+              "e_W": 0.5273615938004004,
+              "median_H_ratio": 0.7,
+              "median_W_ratio": 0.6304974026150174,
+              "H_mean_log": -0.1366870941684853,
+              "W_mean_log": -0.22823926570869843
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260730:part_2",
+              "exact_condition_id": "P150_V900",
+              "coverage": 0.992,
+              "scored_frame_count": 992,
+              "e_H": 1.0865039922123336,
+              "e_W": 1.1830305240009356,
+              "median_r_H": -1.0116009116784799,
+              "median_r_W": -1.0986122886681098,
+              "median_H_ratio": 0.36363636363636365,
+              "median_W_ratio": 0.3333333333333333
+            },
+            {
+              "member_identity": "20260730:part_4",
+              "exact_condition_id": "P170_V1000",
+              "coverage": 0.9945295404814004,
+              "scored_frame_count": 909,
+              "e_H": 0.7557245568001094,
+              "e_W": 0.828888639953026,
+              "median_r_H": -0.7094598549473512,
+              "median_r_W": -0.8047189415348444,
+              "median_H_ratio": 0.4919098283750409,
+              "median_W_ratio": 0.44721360206604005
+            },
+            {
+              "member_identity": "20260731:part_2",
+              "exact_condition_id": "P150_V900",
+              "coverage": 0.9847908745247148,
+              "scored_frame_count": 1036,
+              "e_H": 0.9999080724187446,
+              "e_W": 1.1147974278541541,
+              "median_r_H": -0.9343602554376232,
+              "median_r_W": -1.03972084414999,
+              "median_H_ratio": 0.39283710055881077,
+              "median_W_ratio": 0.3535533646742503
+            },
+            {
+              "member_identity": "20260731:part_4",
+              "exact_condition_id": "P170_V1000",
+              "coverage": 0.9968287526427061,
+              "scored_frame_count": 943,
+              "e_H": 0.714226138240737,
+              "e_W": 0.7991886411034871,
+              "median_r_H": -0.6948802525585586,
+              "median_r_W": -0.7520387436003081,
+              "median_H_ratio": 0.4991342144517403,
+              "median_W_ratio": 0.4714044994778103
+            },
+            {
+              "member_identity": "20260904:part_5",
+              "exact_condition_id": "P180_V1000",
+              "coverage": 0.9954648526077098,
+              "scored_frame_count": 878,
+              "e_H": 0.46242524844438904,
+              "e_W": 0.5273615938004004,
+              "median_r_H": -0.35667494393873245,
+              "median_r_W": -0.46125106570880375,
+              "median_H_ratio": 0.7,
+              "median_W_ratio": 0.6304974026150174
+            }
+          ]
+        },
+        "cross_campaign_20260904_part_5": {
+          "status": "PASS",
+          "J": 0.2459736805072767,
+          "e_H": 0.46242524844438904,
+          "e_W": 0.5273615938004004,
+          "coverage": 0.9954648526077098,
+          "coverage_by_coupon": {
+            "20260904:part_5": 0.9954648526077098
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 878,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 2,
+            "PAIRED": 878,
+            "SYNTHETIC_EDGE": 4
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1000",
+              "member_identities": [
+                "20260904:part_5"
+              ],
+              "e_H": 0.46242524844438904,
+              "e_W": 0.5273615938004004,
+              "median_H_ratio": 0.7,
+              "median_W_ratio": 0.6304974026150174,
+              "H_mean_log": -0.1366870941684853,
+              "W_mean_log": -0.22823926570869843
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_5",
+              "exact_condition_id": "P180_V1000",
+              "coverage": 0.9954648526077098,
+              "scored_frame_count": 878,
+              "e_H": 0.46242524844438904,
+              "e_W": 0.5273615938004004,
+              "median_r_H": -0.35667494393873245,
+              "median_r_W": -0.46125106570880375,
+              "median_H_ratio": 0.7,
+              "median_W_ratio": 0.6304974026150174
+            }
+          ]
+        },
+        "out_of_window_examined": {
+          "status": "PASS",
+          "J": 0.3690020248188862,
+          "e_H": 0.6035598427873583,
+          "e_W": 0.6113260715954062,
+          "coverage": 0.7452099470036689,
+          "coverage_by_coupon": {
+            "20260904:part_1": 0.9986824769433466,
+            "20260904:part_3": 0.2071097372488408,
+            "20260904:part_4": 0.9851024208566108,
+            "20260904:part_6": 0.2541856925418569,
+            "20260910:part_3": 0.9934545454545455,
+            "20260910:part_4": 0.19716494845360824,
+            "20260910:part_6": 0.7238709677419355
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_3",
+            "20260904:part_6",
+            "20260910:part_4",
+            "20260910:part_6"
+          ],
+          "scored_frame_count": 5484,
+          "floored_frame_count": 73,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 6,
+            "PAIRED": 5484,
+            "SYNTHETIC_ABSENT": 1836,
+            "SYNTHETIC_EDGE": 39
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1200",
+              "member_identities": [
+                "20260910:part_4"
+              ],
+              "e_H": 0.5153678146670924,
+              "e_W": 0.5657949845036859,
+              "median_H_ratio": 1.4583052286292757,
+              "median_W_ratio": 1.625,
+              "H_mean_log": 0.32525672615378126,
+              "W_mean_log": 0.37063659085425776
+            },
+            {
+              "exact_condition_id": "P140_V1400",
+              "member_identities": [
+                "20260904:part_3"
+              ],
+              "e_H": 0.4897858225200276,
+              "e_W": 0.6412749006985192,
+              "median_H_ratio": 1.380681037902832,
+              "median_W_ratio": 1.7142857142857142,
+              "H_mean_log": 0.26560980807013546,
+              "W_mean_log": 0.4630719021473974
+            },
+            {
+              "exact_condition_id": "P140_V600",
+              "member_identities": [
+                "20260904:part_1"
+              ],
+              "e_H": 0.25737975272586266,
+              "e_W": 0.2299077301534869,
+              "median_H_ratio": 0.9333333333333333,
+              "median_W_ratio": 1.0,
+              "H_mean_log": -0.01431851349259539,
+              "W_mean_log": 0.054207861885943294
+            },
+            {
+              "exact_condition_id": "P180_V1200",
+              "member_identities": [
+                "20260910:part_6"
+              ],
+              "e_H": 1.1310729292664132,
+              "e_W": 1.126995298921466,
+              "median_H_ratio": 0.352941171803809,
+              "median_W_ratio": 0.3333333333333333,
+              "H_mean_log": -0.5831940592305174,
+              "W_mean_log": -0.5712464297542612
+            },
+            {
+              "exact_condition_id": "P180_V1400",
+              "member_identities": [
+                "20260904:part_6"
+              ],
+              "e_H": 0.6086423396463985,
+              "e_W": 0.6487746638153229,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.7,
+              "H_mean_log": 0.30915851949255385,
+              "W_mean_log": 0.4265268311872342
+            },
+            {
+              "exact_condition_id": "P180_V600",
+              "member_identities": [
+                "20260904:part_4"
+              ],
+              "e_H": 0.43479118953340606,
+              "e_W": 0.2695079936410078,
+              "median_H_ratio": 1.4166666666666667,
+              "median_W_ratio": 1.2222222222222223,
+              "H_mean_log": 0.32588589874597673,
+              "W_mean_log": 0.18433766696252438
+            },
+            {
+              "exact_condition_id": "P180_V700",
+              "member_identities": [
+                "20260910:part_3"
+              ],
+              "e_H": 0.3734140676293593,
+              "e_W": 0.26107548086708704,
+              "median_H_ratio": 1.1740733904716296,
+              "median_W_ratio": 1.0,
+              "H_mean_log": 0.23288297380361755,
+              "W_mean_log": 0.08486656964650063
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_1",
+              "exact_condition_id": "P140_V600",
+              "coverage": 0.9986824769433466,
+              "scored_frame_count": 1516,
+              "e_H": 0.25737975272586266,
+              "e_W": 0.2299077301534869,
+              "median_r_H": -0.06899287148695143,
+              "median_r_W": 0.0,
+              "median_H_ratio": 0.9333333333333333,
+              "median_W_ratio": 1.0
+            },
+            {
+              "member_identity": "20260904:part_3",
+              "exact_condition_id": "P140_V1400",
+              "coverage": 0.2071097372488408,
+              "scored_frame_count": 134,
+              "e_H": 0.4897858225200276,
+              "e_W": 0.6412749006985192,
+              "median_r_H": 0.32256841786228885,
+              "median_r_W": 0.5389965007326869,
+              "median_H_ratio": 1.380681037902832,
+              "median_W_ratio": 1.7142857142857142
+            },
+            {
+              "member_identity": "20260904:part_4",
+              "exact_condition_id": "P180_V600",
+              "coverage": 0.9851024208566108,
+              "scored_frame_count": 1587,
+              "e_H": 0.43479118953340606,
+              "e_W": 0.2695079936410078,
+              "median_r_H": 0.3483066942682158,
+              "median_r_W": 0.20067069546215124,
+              "median_H_ratio": 1.4166666666666667,
+              "median_W_ratio": 1.2222222222222223
+            },
+            {
+              "member_identity": "20260904:part_6",
+              "exact_condition_id": "P180_V1400",
+              "coverage": 0.2541856925418569,
+              "scored_frame_count": 167,
+              "e_H": 0.6086423396463985,
+              "e_W": 0.6487746638153229,
+              "median_r_H": 0.36290550101925595,
+              "median_r_W": 0.5306282510621704,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.7
+            },
+            {
+              "member_identity": "20260910:part_3",
+              "exact_condition_id": "P180_V700",
+              "coverage": 0.9934545454545455,
+              "scored_frame_count": 1366,
+              "e_H": 0.3734140676293593,
+              "e_W": 0.26107548086708704,
+              "median_r_H": 0.16047208865712081,
+              "median_r_W": 0.0,
+              "median_H_ratio": 1.1740733904716296,
+              "median_W_ratio": 1.0
+            },
+            {
+              "member_identity": "20260910:part_4",
+              "exact_condition_id": "P140_V1200",
+              "coverage": 0.19716494845360824,
+              "scored_frame_count": 153,
+              "e_H": 0.5153678146670924,
+              "e_W": 0.5657949845036859,
+              "median_r_H": 0.3772749591586965,
+              "median_r_W": 0.4855078157817008,
+              "median_H_ratio": 1.4583052286292757,
+              "median_W_ratio": 1.625
+            },
+            {
+              "member_identity": "20260910:part_6",
+              "exact_condition_id": "P180_V1200",
+              "coverage": 0.7238709677419355,
+              "scored_frame_count": 561,
+              "e_H": 1.1310729292664132,
+              "e_W": 1.126995298921466,
+              "median_r_H": -1.0414538880507023,
+              "median_r_W": -1.0986122886681098,
+              "median_H_ratio": 0.352941171803809,
+              "median_W_ratio": 0.3333333333333333
+            }
+          ]
+        },
+        "out_of_window_blind": {
+          "status": "PASS",
+          "J": 0.23254238490346557,
+          "e_H": 0.4721888082065654,
+          "e_W": 0.49205944682669644,
+          "coverage": 0.5443121693121693,
+          "coverage_by_coupon": {
+            "20260904:part_2": 0.1752136752136752,
+            "20260910:part_2": 0.9984756097560976,
+            "20260910:part_5": 0.22164948453608246
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_2",
+            "20260910:part_5"
+          ],
+          "scored_frame_count": 1646,
+          "floored_frame_count": 2,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1646,
+            "SYNTHETIC_ABSENT": 1377,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1000",
+              "member_identities": [
+                "20260904:part_2"
+              ],
+              "e_H": 0.49503976793737625,
+              "e_W": 0.5819685984744352,
+              "median_H_ratio": 1.386362075805664,
+              "median_W_ratio": 1.5555555555555556,
+              "H_mean_log": 0.25322229310440664,
+              "W_mean_log": 0.34897107214278417
+            },
+            {
+              "exact_condition_id": "P160_V1200",
+              "member_identities": [
+                "20260910:part_5"
+              ],
+              "e_H": 0.5684904751277603,
+              "e_W": 0.5578499763815976,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.522999316209487,
+              "H_mean_log": 0.31910541345898624,
+              "W_mean_log": 0.3464579142202082
+            },
+            {
+              "exact_condition_id": "P160_V700",
+              "member_identities": [
+                "20260910:part_2"
+              ],
+              "e_H": 0.31723968799021957,
+              "e_W": 0.27655641716462886,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8888888888888888,
+              "H_mean_log": 0.08215891374255214,
+              "W_mean_log": -0.021756883588853478
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_2",
+              "exact_condition_id": "P140_V1000",
+              "coverage": 0.1752136752136752,
+              "scored_frame_count": 164,
+              "e_H": 0.49503976793737625,
+              "e_W": 0.5819685984744352,
+              "median_r_H": 0.3266831046060431,
+              "median_r_W": 0.44183275227903923,
+              "median_H_ratio": 1.386362075805664,
+              "median_W_ratio": 1.5555555555555556
+            },
+            {
+              "member_identity": "20260910:part_2",
+              "exact_condition_id": "P160_V700",
+              "coverage": 0.9984756097560976,
+              "scored_frame_count": 1310,
+              "e_H": 0.31723968799021957,
+              "e_W": 0.27655641716462886,
+              "median_r_H": 0.0,
+              "median_r_W": -0.11778303565638351,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8888888888888888
+            },
+            {
+              "member_identity": "20260910:part_5",
+              "exact_condition_id": "P160_V1200",
+              "coverage": 0.22164948453608246,
+              "scored_frame_count": 172,
+              "e_H": 0.5684904751277603,
+              "e_W": 0.5578499763815976,
+              "median_r_H": 0.36290550101925595,
+              "median_r_W": 0.4206816249368813,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.522999316209487
+            }
+          ]
+        }
+      },
+      "per_coupon": {
+        "20260904:part_1": {
+          "status": "PASS",
+          "J": 0.05955095074877738,
+          "e_H": 0.25737975272586266,
+          "e_W": 0.2299077301534869,
+          "coverage": 0.9986824769433466,
+          "coverage_by_coupon": {
+            "20260904:part_1": 0.9986824769433466
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1516,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "PAIRED": 1516,
+            "SYNTHETIC_ABSENT": 1,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V600",
+              "member_identities": [
+                "20260904:part_1"
+              ],
+              "e_H": 0.25737975272586266,
+              "e_W": 0.2299077301534869,
+              "median_H_ratio": 0.9333333333333333,
+              "median_W_ratio": 1.0,
+              "H_mean_log": -0.01431851349259539,
+              "W_mean_log": 0.054207861885943294
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_1",
+              "exact_condition_id": "P140_V600",
+              "coverage": 0.9986824769433466,
+              "scored_frame_count": 1516,
+              "e_H": 0.25737975272586266,
+              "e_W": 0.2299077301534869,
+              "median_r_H": -0.06899287148695143,
+              "median_r_W": 0.0,
+              "median_H_ratio": 0.9333333333333333,
+              "median_W_ratio": 1.0
+            }
+          ]
+        },
+        "20260904:part_3": {
+          "status": "PASS",
+          "J": 0.32556182510375786,
+          "e_H": 0.4897858225200276,
+          "e_W": 0.6412749006985192,
+          "coverage": 0.2071097372488408,
+          "coverage_by_coupon": {
+            "20260904:part_3": 0.2071097372488408
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_3"
+          ],
+          "scored_frame_count": 134,
+          "floored_frame_count": 2,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 134,
+            "SYNTHETIC_ABSENT": 513
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1400",
+              "member_identities": [
+                "20260904:part_3"
+              ],
+              "e_H": 0.4897858225200276,
+              "e_W": 0.6412749006985192,
+              "median_H_ratio": 1.380681037902832,
+              "median_W_ratio": 1.7142857142857142,
+              "H_mean_log": 0.26560980807013546,
+              "W_mean_log": 0.4630719021473974
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_3",
+              "exact_condition_id": "P140_V1400",
+              "coverage": 0.2071097372488408,
+              "scored_frame_count": 134,
+              "e_H": 0.4897858225200276,
+              "e_W": 0.6412749006985192,
+              "median_r_H": 0.32256841786228885,
+              "median_r_W": 0.5389965007326869,
+              "median_H_ratio": 1.380681037902832,
+              "median_W_ratio": 1.7142857142857142
+            }
+          ]
+        },
+        "20260904:part_4": {
+          "status": "PASS",
+          "J": 0.13083896856613786,
+          "e_H": 0.43479118953340606,
+          "e_W": 0.2695079936410078,
+          "coverage": 0.9851024208566108,
+          "coverage_by_coupon": {
+            "20260904:part_4": 0.9851024208566108
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1587,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "PAIRED": 1587,
+            "SYNTHETIC_EDGE": 24
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V600",
+              "member_identities": [
+                "20260904:part_4"
+              ],
+              "e_H": 0.43479118953340606,
+              "e_W": 0.2695079936410078,
+              "median_H_ratio": 1.4166666666666667,
+              "median_W_ratio": 1.2222222222222223,
+              "H_mean_log": 0.32588589874597673,
+              "W_mean_log": 0.18433766696252438
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_4",
+              "exact_condition_id": "P180_V600",
+              "coverage": 0.9851024208566108,
+              "scored_frame_count": 1587,
+              "e_H": 0.43479118953340606,
+              "e_W": 0.2695079936410078,
+              "median_r_H": 0.3483066942682158,
+              "median_r_W": 0.20067069546215124,
+              "median_H_ratio": 1.4166666666666667,
+              "median_W_ratio": 1.2222222222222223
+            }
+          ]
+        },
+        "20260904:part_6": {
+          "status": "PASS",
+          "J": 0.3956770310094635,
+          "e_H": 0.6086423396463985,
+          "e_W": 0.6487746638153229,
+          "coverage": 0.2541856925418569,
+          "coverage_by_coupon": {
+            "20260904:part_6": 0.2541856925418569
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_6"
+          ],
+          "scored_frame_count": 167,
+          "floored_frame_count": 5,
+          "synthetic_status_counts": {
+            "PAIRED": 167,
+            "SYNTHETIC_ABSENT": 489,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1400",
+              "member_identities": [
+                "20260904:part_6"
+              ],
+              "e_H": 0.6086423396463985,
+              "e_W": 0.6487746638153229,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.7,
+              "H_mean_log": 0.30915851949255385,
+              "W_mean_log": 0.4265268311872342
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_6",
+              "exact_condition_id": "P180_V1400",
+              "coverage": 0.2541856925418569,
+              "scored_frame_count": 167,
+              "e_H": 0.6086423396463985,
+              "e_W": 0.6487746638153229,
+              "median_r_H": 0.36290550101925595,
+              "median_r_W": 0.5306282510621704,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.7
+            }
+          ]
+        },
+        "20260910:part_3": {
+          "status": "PASS",
+          "J": 0.10379923630674222,
+          "e_H": 0.3734140676293593,
+          "e_W": 0.26107548086708704,
+          "coverage": 0.9934545454545455,
+          "coverage_by_coupon": {
+            "20260910:part_3": 0.9934545454545455
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1366,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1366,
+            "SYNTHETIC_EDGE": 9
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V700",
+              "member_identities": [
+                "20260910:part_3"
+              ],
+              "e_H": 0.3734140676293593,
+              "e_W": 0.26107548086708704,
+              "median_H_ratio": 1.1740733904716296,
+              "median_W_ratio": 1.0,
+              "H_mean_log": 0.23288297380361755,
+              "W_mean_log": 0.08486656964650063
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_3",
+              "exact_condition_id": "P180_V700",
+              "coverage": 0.9934545454545455,
+              "scored_frame_count": 1366,
+              "e_H": 0.3734140676293593,
+              "e_W": 0.26107548086708704,
+              "median_r_H": 0.16047208865712081,
+              "median_r_W": 0.0,
+              "median_H_ratio": 1.1740733904716296,
+              "median_W_ratio": 1.0
+            }
+          ]
+        },
+        "20260910:part_4": {
+          "status": "PASS",
+          "J": 0.2928639744421303,
+          "e_H": 0.5153678146670924,
+          "e_W": 0.5657949845036859,
+          "coverage": 0.19716494845360824,
+          "coverage_by_coupon": {
+            "20260910:part_4": 0.19716494845360824
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_4"
+          ],
+          "scored_frame_count": 153,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "PAIRED": 153,
+            "SYNTHETIC_ABSENT": 623
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1200",
+              "member_identities": [
+                "20260910:part_4"
+              ],
+              "e_H": 0.5153678146670924,
+              "e_W": 0.5657949845036859,
+              "median_H_ratio": 1.4583052286292757,
+              "median_W_ratio": 1.625,
+              "H_mean_log": 0.32525672615378126,
+              "W_mean_log": 0.37063659085425776
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_4",
+              "exact_condition_id": "P140_V1200",
+              "coverage": 0.19716494845360824,
+              "scored_frame_count": 153,
+              "e_H": 0.5153678146670924,
+              "e_W": 0.5657949845036859,
+              "median_r_H": 0.3772749591586965,
+              "median_r_W": 0.4855078157817008,
+              "median_H_ratio": 1.4583052286292757,
+              "median_W_ratio": 1.625
+            }
+          ]
+        },
+        "20260910:part_6": {
+          "status": "PASS",
+          "J": 1.2747221875551946,
+          "e_H": 1.1310729292664132,
+          "e_W": 1.126995298921466,
+          "coverage": 0.7238709677419355,
+          "coverage_by_coupon": {
+            "20260910:part_6": 0.7238709677419355
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_6"
+          ],
+          "scored_frame_count": 561,
+          "floored_frame_count": 66,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 4,
+            "PAIRED": 561,
+            "SYNTHETIC_ABSENT": 210,
+            "SYNTHETIC_EDGE": 4
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P180_V1200",
+              "member_identities": [
+                "20260910:part_6"
+              ],
+              "e_H": 1.1310729292664132,
+              "e_W": 1.126995298921466,
+              "median_H_ratio": 0.352941171803809,
+              "median_W_ratio": 0.3333333333333333,
+              "H_mean_log": -0.5831940592305174,
+              "W_mean_log": -0.5712464297542612
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_6",
+              "exact_condition_id": "P180_V1200",
+              "coverage": 0.7238709677419355,
+              "scored_frame_count": 561,
+              "e_H": 1.1310729292664132,
+              "e_W": 1.126995298921466,
+              "median_r_H": -1.0414538880507023,
+              "median_r_W": -1.0986122886681098,
+              "median_H_ratio": 0.352941171803809,
+              "median_W_ratio": 0.3333333333333333
+            }
+          ]
+        },
+        "20260904:part_2": {
+          "status": "PASS",
+          "J": 0.2918759107248948,
+          "e_H": 0.49503976793737625,
+          "e_W": 0.5819685984744352,
+          "coverage": 0.1752136752136752,
+          "coverage_by_coupon": {
+            "20260904:part_2": 0.1752136752136752
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260904:part_2"
+          ],
+          "scored_frame_count": 164,
+          "floored_frame_count": 1,
+          "synthetic_status_counts": {
+            "PAIRED": 164,
+            "SYNTHETIC_ABSENT": 772
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P140_V1000",
+              "member_identities": [
+                "20260904:part_2"
+              ],
+              "e_H": 0.49503976793737625,
+              "e_W": 0.5819685984744352,
+              "median_H_ratio": 1.386362075805664,
+              "median_W_ratio": 1.5555555555555556,
+              "H_mean_log": 0.25322229310440664,
+              "W_mean_log": 0.34897107214278417
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260904:part_2",
+              "exact_condition_id": "P140_V1000",
+              "coverage": 0.1752136752136752,
+              "scored_frame_count": 164,
+              "e_H": 0.49503976793737625,
+              "e_W": 0.5819685984744352,
+              "median_r_H": 0.3266831046060431,
+              "median_r_W": 0.44183275227903923,
+              "median_H_ratio": 1.386362075805664,
+              "median_W_ratio": 1.5555555555555556
+            }
+          ]
+        },
+        "20260910:part_2": {
+          "status": "PASS",
+          "J": 0.08856223575553404,
+          "e_H": 0.31723968799021957,
+          "e_W": 0.27655641716462886,
+          "coverage": 0.9984756097560976,
+          "coverage_by_coupon": {
+            "20260910:part_2": 0.9984756097560976
+          },
+          "coverage_flag": false,
+          "low_coverage_coupons": [],
+          "scored_frame_count": 1310,
+          "floored_frame_count": 0,
+          "synthetic_status_counts": {
+            "CAMERA_BLOB_150_ABSENT_OR_EDGE": 1,
+            "PAIRED": 1310,
+            "SYNTHETIC_ABSENT": 1,
+            "SYNTHETIC_EDGE": 1
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P160_V700",
+              "member_identities": [
+                "20260910:part_2"
+              ],
+              "e_H": 0.31723968799021957,
+              "e_W": 0.27655641716462886,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8888888888888888,
+              "H_mean_log": 0.08215891374255214,
+              "W_mean_log": -0.021756883588853478
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_2",
+              "exact_condition_id": "P160_V700",
+              "coverage": 0.9984756097560976,
+              "scored_frame_count": 1310,
+              "e_H": 0.31723968799021957,
+              "e_W": 0.27655641716462886,
+              "median_r_H": 0.0,
+              "median_r_W": -0.11778303565638351,
+              "median_H_ratio": 1.0,
+              "median_W_ratio": 0.8888888888888888
+            }
+          ]
+        },
+        "20260910:part_5": {
+          "status": "PASS",
+          "J": 0.3171890082299679,
+          "e_H": 0.5684904751277603,
+          "e_W": 0.5578499763815976,
+          "coverage": 0.22164948453608246,
+          "coverage_by_coupon": {
+            "20260910:part_5": 0.22164948453608246
+          },
+          "coverage_flag": true,
+          "low_coverage_coupons": [
+            "20260910:part_5"
+          ],
+          "scored_frame_count": 172,
+          "floored_frame_count": 1,
+          "synthetic_status_counts": {
+            "PAIRED": 172,
+            "SYNTHETIC_ABSENT": 604
+          },
+          "condition_rows": [
+            {
+              "exact_condition_id": "P160_V1200",
+              "member_identities": [
+                "20260910:part_5"
+              ],
+              "e_H": 0.5684904751277603,
+              "e_W": 0.5578499763815976,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.522999316209487,
+              "H_mean_log": 0.31910541345898624,
+              "W_mean_log": 0.3464579142202082
+            }
+          ],
+          "coupon_rows": [
+            {
+              "member_identity": "20260910:part_5",
+              "exact_condition_id": "P160_V1200",
+              "coverage": 0.22164948453608246,
+              "scored_frame_count": 172,
+              "e_H": 0.5684904751277603,
+              "e_W": 0.5578499763815976,
+              "median_r_H": 0.36290550101925595,
+              "median_r_W": 0.4206816249368813,
+              "median_H_ratio": 1.4375000105367133,
+              "median_W_ratio": 1.522999316209487
+            }
+          ]
+        }
+      },
+      "out_of_window": [
+        {
+          "member_identity": "20260904:part_1",
+          "group": "examined",
+          "condition_id": "P140_V600",
+          "power_W": 140.0,
+          "speed_mm_s": 600.0,
+          "ved_J_mm3": 97.22222222222223,
+          "synthetic_median_r_H": -0.06899287148695143,
+          "synthetic_median_r_W": 0.0,
+          "synthetic_e_H": 0.25737975272586266,
+          "synthetic_e_W": 0.2299077301534869,
+          "synthetic_coverage": 0.9986824769433466,
+          "liquidus_median_r_H": 0.8321471328299399,
+          "liquidus_median_r_W": 0.09111680970595017,
+          "liquidus_e_H": 0.8035495244302324,
+          "liquidus_e_W": 0.2601754778189027
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "group": "examined",
+          "condition_id": "P140_V1400",
+          "power_W": 140.0,
+          "speed_mm_s": 1400.0,
+          "ved_J_mm3": 41.66666666666667,
+          "synthetic_median_r_H": 0.32256841786228885,
+          "synthetic_median_r_W": 0.5389965007326869,
+          "synthetic_e_H": 0.4897858225200276,
+          "synthetic_e_W": 0.6412749006985192,
+          "synthetic_coverage": 0.2071097372488408,
+          "liquidus_median_r_H": -1.9809979509233138,
+          "liquidus_median_r_W": -1.6905188189879716,
+          "liquidus_e_H": 1.5628142358903518,
+          "liquidus_e_W": 1.3682603008198626
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "group": "examined",
+          "condition_id": "P180_V600",
+          "power_W": 180.0,
+          "speed_mm_s": 600.0,
+          "ved_J_mm3": 125.0,
+          "synthetic_median_r_H": 0.3483066942682158,
+          "synthetic_median_r_W": 0.20067069546215124,
+          "synthetic_e_H": 0.43479118953340606,
+          "synthetic_e_W": 0.2695079936410078,
+          "synthetic_coverage": 0.9851024208566108,
+          "liquidus_median_r_H": 1.093031646674602,
+          "liquidus_median_r_W": 0.18602897454973344,
+          "liquidus_e_H": 1.0312735157161625,
+          "liquidus_e_W": 0.29008150938744187
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "group": "examined",
+          "condition_id": "P180_V1400",
+          "power_W": 180.0,
+          "speed_mm_s": 1400.0,
+          "ved_J_mm3": 53.57142857142858,
+          "synthetic_median_r_H": 0.36290550101925595,
+          "synthetic_median_r_W": 0.5306282510621704,
+          "synthetic_e_H": 0.6086423396463985,
+          "synthetic_e_W": 0.6487746638153229,
+          "synthetic_coverage": 0.2541856925418569,
+          "liquidus_median_r_H": 0.24424405343035452,
+          "liquidus_median_r_W": -0.4524354100004646,
+          "liquidus_e_H": 0.6367902772004593,
+          "liquidus_e_W": 0.6462984355863889
+        },
+        {
+          "member_identity": "20260910:part_3",
+          "group": "examined",
+          "condition_id": "P180_V700",
+          "power_W": 180.0,
+          "speed_mm_s": 700.0,
+          "ved_J_mm3": 107.14285714285715,
+          "synthetic_median_r_H": 0.16047208865712081,
+          "synthetic_median_r_W": 0.0,
+          "synthetic_e_H": 0.3734140676293593,
+          "synthetic_e_W": 0.26107548086708704,
+          "synthetic_coverage": 0.9934545454545455,
+          "liquidus_median_r_H": 0.9647901646742847,
+          "liquidus_median_r_W": -0.011887941327487349,
+          "liquidus_e_H": 0.950160003340718,
+          "liquidus_e_W": 0.29576794881370255
+        },
+        {
+          "member_identity": "20260910:part_4",
+          "group": "examined",
+          "condition_id": "P140_V1200",
+          "power_W": 140.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 48.611111111111114,
+          "synthetic_median_r_H": 0.3772749591586965,
+          "synthetic_median_r_W": 0.4855078157817008,
+          "synthetic_e_H": 0.5153678146670924,
+          "synthetic_e_W": 0.5657949845036859,
+          "synthetic_coverage": 0.19716494845360824,
+          "liquidus_median_r_H": -0.03635766963685402,
+          "liquidus_median_r_W": -0.6413800749320309,
+          "liquidus_e_H": 0.8469114346280523,
+          "liquidus_e_W": 0.8689485020337571
+        },
+        {
+          "member_identity": "20260910:part_6",
+          "group": "examined",
+          "condition_id": "P180_V1200",
+          "power_W": 180.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 62.5,
+          "synthetic_median_r_H": -1.0414538880507023,
+          "synthetic_median_r_W": -1.0986122886681098,
+          "synthetic_e_H": 1.1310729292664132,
+          "synthetic_e_W": 1.126995298921466,
+          "synthetic_coverage": 0.7238709677419355,
+          "liquidus_median_r_H": 0.4778249401848296,
+          "liquidus_median_r_W": -0.39577086131740996,
+          "liquidus_e_H": 0.6129426541428474,
+          "liquidus_e_W": 0.4653472108057367
+        },
+        {
+          "member_identity": "20260904:part_2",
+          "group": "blind",
+          "condition_id": "P140_V1000",
+          "power_W": 140.0,
+          "speed_mm_s": 1000.0,
+          "ved_J_mm3": 58.333333333333336,
+          "synthetic_median_r_H": 0.3266831046060431,
+          "synthetic_median_r_W": 0.44183275227903923,
+          "synthetic_e_H": 0.49503976793737625,
+          "synthetic_e_W": 0.5819685984744352,
+          "synthetic_coverage": 0.1752136752136752,
+          "liquidus_median_r_H": 0.30035502921330964,
+          "liquidus_median_r_W": -0.38611894541476277,
+          "liquidus_e_H": 0.4717482002557256,
+          "liquidus_e_W": 0.46293774350342387
+        },
+        {
+          "member_identity": "20260910:part_2",
+          "group": "blind",
+          "condition_id": "P160_V700",
+          "power_W": 160.0,
+          "speed_mm_s": 700.0,
+          "ved_J_mm3": 95.23809523809524,
+          "synthetic_median_r_H": 0.0,
+          "synthetic_median_r_W": -0.11778303565638351,
+          "synthetic_e_H": 0.31723968799021957,
+          "synthetic_e_W": 0.27655641716462886,
+          "synthetic_coverage": 0.9984756097560976,
+          "liquidus_median_r_H": 0.837274061450584,
+          "liquidus_median_r_W": -0.05008094736543894,
+          "liquidus_e_H": 0.845271893371465,
+          "liquidus_e_W": 0.2653173898527077
+        },
+        {
+          "member_identity": "20260910:part_5",
+          "group": "blind",
+          "condition_id": "P160_V1200",
+          "power_W": 160.0,
+          "speed_mm_s": 1200.0,
+          "ved_J_mm3": 55.55555555555556,
+          "synthetic_median_r_H": 0.36290550101925595,
+          "synthetic_median_r_W": 0.4206816249368813,
+          "synthetic_e_H": 0.5684904751277603,
+          "synthetic_e_W": 0.5578499763815976,
+          "synthetic_coverage": 0.22164948453608246,
+          "liquidus_median_r_H": 0.3094125222209625,
+          "liquidus_median_r_W": -0.47633502835265173,
+          "liquidus_e_H": 0.49814162664031997,
+          "liquidus_e_W": 0.5200264479326233
+        }
+      ],
+      "out_of_window_spearman_on_ved_descriptive": {
+        "synthetic_median_r_H": -0.47416632407045034,
+        "synthetic_median_r_W": -0.7416447632896789,
+        "liquidus_median_r_H": 0.9757575757575757,
+        "liquidus_median_r_W": 0.9636363636363635
+      }
+    }
+  },
+  "liquidus": {
+    "groups": {
+      "calibration": {
+        "status": "PASS",
+        "J": 0.29807293620968767,
+        "e_H": 0.6505702018690552,
+        "e_W": 0.41581761008816365,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 8943,
+        "floored_frame_count": 16,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V700",
+            "member_identities": [
+              "20260910:part_1"
+            ],
+            "e_H": 0.7180091864569607,
+            "e_W": 0.30945089918048757,
+            "H_mean_log": 0.6273568366179891,
+            "W_mean_log": 0.028348799493724725,
+            "median_H_ratio": 1.9553585398602134,
+            "median_W_ratio": 0.8800381740411393,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.30564852542009935
+          },
+          {
+            "exact_condition_id": "P140_V850",
+            "member_identities": [
+              "20260730:part_1",
+              "20260731:part_1"
+            ],
+            "e_H": 0.6578322939570956,
+            "e_W": 0.4894248343386053,
+            "H_mean_log": 0.4270504445554411,
+            "W_mean_log": -0.2727500703111022,
+            "median_H_ratio": 1.6930006932764423,
+            "median_W_ratio": 0.7286766469065606,
+            "floored_frame_count": 7,
+            "condition_objective_contribution": 0.33613999772011294
+          },
+          {
+            "exact_condition_id": "P160_V950",
+            "member_identities": [
+              "20260730:part_3",
+              "20260731:part_3"
+            ],
+            "e_H": 0.6374479263685912,
+            "e_W": 0.4312540896566226,
+            "H_mean_log": 0.48530708962193425,
+            "W_mean_log": -0.22559076249129,
+            "median_H_ratio": 1.7600872744002145,
+            "median_W_ratio": 0.7360805247634447,
+            "floored_frame_count": 3,
+            "condition_objective_contribution": 0.29615997433858954
+          },
+          {
+            "exact_condition_id": "P180_V1050",
+            "member_identities": [
+              "20260730:part_5",
+              "20260731:part_5"
+            ],
+            "e_H": 0.5968692019799569,
+            "e_W": 0.37044279093124216,
+            "H_mean_log": 0.5136974977419193,
+            "W_mean_log": -0.18081553919268392,
+            "median_H_ratio": 1.7657022414039707,
+            "median_W_ratio": 0.7482468818019843,
+            "floored_frame_count": 2,
+            "condition_objective_contribution": 0.24674035281255924
+          },
+          {
+            "exact_condition_id": "P190_V1100",
+            "member_identities": [
+              "20260730:part_6",
+              "20260731:part_6"
+            ],
+            "e_H": 0.6366590263920459,
+            "e_W": 0.45389089617185174,
+            "H_mean_log": 0.4481105184358144,
+            "W_mean_log": -0.2047645827822047,
+            "median_H_ratio": 1.735245119576356,
+            "median_W_ratio": 0.7432196935017904,
+            "floored_frame_count": 4,
+            "condition_objective_contribution": 0.3056758307570772
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260730:part_1",
+            "exact_condition_id": "P140_V850",
+            "coverage": 1.0,
+            "scored_frame_count": 1056,
+            "e_H": 0.55447691461339,
+            "e_W": 0.35565207262215465,
+            "median_r_H": 0.5267428695402046,
+            "median_r_W": -0.32566688747364414,
+            "median_H_ratio": 1.6934076949360681,
+            "median_W_ratio": 0.722045669834534,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.21696652279980944
+          },
+          {
+            "member_identity": "20260730:part_3",
+            "exact_condition_id": "P160_V950",
+            "coverage": 1.0,
+            "scored_frame_count": 964,
+            "e_H": 0.5875339426168122,
+            "e_W": 0.34106539865881585,
+            "median_r_H": 0.5684309809575213,
+            "median_r_W": -0.31245628333164777,
+            "median_H_ratio": 1.7654947906871639,
+            "median_W_ratio": 0.7316476206636764,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.23076086994457629
+          },
+          {
+            "member_identity": "20260730:part_5",
+            "exact_condition_id": "P180_V1050",
+            "coverage": 1.0,
+            "scored_frame_count": 869,
+            "e_H": 0.584648845758773,
+            "e_W": 0.3386896797454191,
+            "median_r_H": 0.5684491303388438,
+            "median_r_W": -0.29611680193218587,
+            "median_H_ratio": 1.7655268251269982,
+            "median_W_ratio": 0.7437005572848849,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.22826248600656002
+          },
+          {
+            "member_identity": "20260730:part_6",
+            "exact_condition_id": "P190_V1100",
+            "coverage": 1.0,
+            "scored_frame_count": 847,
+            "e_H": 0.5662378606310868,
+            "e_W": 0.3507817797818501,
+            "median_r_H": 0.55593318608352,
+            "median_r_W": -0.29927226968241394,
+            "median_H_ratio": 1.7435672985680586,
+            "median_W_ratio": 0.7413575327738069,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.22183658591949623
+          },
+          {
+            "member_identity": "20260731:part_1",
+            "exact_condition_id": "P140_V850",
+            "coverage": 1.0,
+            "scored_frame_count": 1115,
+            "e_H": 0.7470220914447744,
+            "e_W": 0.5937886325741745,
+            "median_r_H": 0.5250256502833858,
+            "median_r_W": -0.3077690491510427,
+            "median_H_ratio": 1.6905022096837168,
+            "median_W_ratio": 0.7350850669267485,
+            "floored_frame_count": 7,
+            "coupon_scalar_objective": 0.45531347264041644
+          },
+          {
+            "member_identity": "20260731:part_3",
+            "exact_condition_id": "P160_V950",
+            "coverage": 1.0,
+            "scored_frame_count": 971,
+            "e_H": 0.6837277118388415,
+            "e_W": 0.5056031779259577,
+            "median_r_H": 0.5572075375836267,
+            "median_r_W": -0.29990387147486286,
+            "median_H_ratio": 1.745790632524121,
+            "median_W_ratio": 0.7408894378676134,
+            "floored_frame_count": 3,
+            "coupon_scalar_objective": 0.36155907873260273
+          },
+          {
+            "member_identity": "20260731:part_5",
+            "exact_condition_id": "P180_V1050",
+            "coverage": 1.0,
+            "scored_frame_count": 896,
+            "e_H": 0.6088443279667763,
+            "e_W": 0.3996811523449679,
+            "median_r_H": 0.5694409465789267,
+            "median_r_W": -0.2833046172404329,
+            "median_H_ratio": 1.7672787773437233,
+            "median_W_ratio": 0.7532903163270841,
+            "floored_frame_count": 2,
+            "coupon_scalar_objective": 0.26521821961855846
+          },
+          {
+            "member_identity": "20260731:part_6",
+            "exact_condition_id": "P190_V1100",
+            "coverage": 1.0,
+            "scored_frame_count": 856,
+            "e_H": 0.7000315114056406,
+            "e_W": 0.5375742127636435,
+            "median_r_H": 0.5487020532826647,
+            "median_r_W": -0.29130850541300757,
+            "median_H_ratio": 1.7310048554763715,
+            "median_W_ratio": 0.7472851011488173,
+            "floored_frame_count": 4,
+            "coupon_scalar_objective": 0.38951507559465826
+          },
+          {
+            "member_identity": "20260910:part_1",
+            "exact_condition_id": "P140_V700",
+            "coverage": 1.0,
+            "scored_frame_count": 1369,
+            "e_H": 0.7180091864569607,
+            "e_W": 0.30945089918048757,
+            "median_r_H": 0.6705735729702099,
+            "median_r_W": -0.12778999285854847,
+            "median_H_ratio": 1.9553585398602134,
+            "median_W_ratio": 0.8800381740411393,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.30564852542009935
+          }
+        ]
+      },
+      "in_window_held_out": {
+        "status": "PASS",
+        "J": 0.3150312164898543,
+        "e_H": 0.6717428409046978,
+        "e_W": 0.4228758549184317,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 4796,
+        "floored_frame_count": 11,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P150_V900",
+            "member_identities": [
+              "20260730:part_2",
+              "20260731:part_2"
+            ],
+            "e_H": 0.6029226882332488,
+            "e_W": 0.37105377213461704,
+            "H_mean_log": 0.49658462136857967,
+            "W_mean_log": -0.20737253209180972,
+            "median_H_ratio": 1.7615521543948875,
+            "median_W_ratio": 0.7419393765443236,
+            "floored_frame_count": 6,
+            "condition_objective_contribution": 0.25059833490086786
+          },
+          {
+            "exact_condition_id": "P170_V1000",
+            "member_identities": [
+              "20260730:part_4",
+              "20260731:part_4"
+            ],
+            "e_H": 0.6555487213502887,
+            "e_W": 0.5040004118715653,
+            "H_mean_log": 0.4237499576236813,
+            "W_mean_log": -0.2582345982810761,
+            "median_H_ratio": 1.6970871394113969,
+            "median_W_ratio": 0.7380876134156442,
+            "floored_frame_count": 5,
+            "condition_objective_contribution": 0.341880270615353
+          },
+          {
+            "exact_condition_id": "P180_V1000",
+            "member_identities": [
+              "20260904:part_5"
+            ],
+            "e_H": 0.7486357184036416,
+            "e_W": 0.38049263992480553,
+            "H_mean_log": 0.6722238199332242,
+            "W_mean_log": 0.02883913341646605,
+            "median_H_ratio": 2.0309037145784234,
+            "median_W_ratio": 0.8107891639429639,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.35261504395334214
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260730:part_2",
+            "exact_condition_id": "P150_V900",
+            "coverage": 1.0,
+            "scored_frame_count": 1000,
+            "e_H": 0.5938068482889698,
+            "e_W": 0.34328428497413954,
+            "median_r_H": 0.5672362639644686,
+            "median_r_W": -0.30305335638343145,
+            "median_H_ratio": 1.7633867831521148,
+            "median_W_ratio": 0.7385597299999354,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.23522533669254295
+          },
+          {
+            "member_identity": "20260730:part_4",
+            "exact_condition_id": "P170_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 914,
+            "e_H": 0.54942623306723,
+            "e_W": 0.3436487137242497,
+            "median_r_H": 0.5357927338322821,
+            "median_r_W": -0.3099099509200477,
+            "median_H_ratio": 1.708802369924692,
+            "median_W_ratio": 0.7335130724595873,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.20998181201338878
+          },
+          {
+            "member_identity": "20260731:part_2",
+            "exact_condition_id": "P150_V900",
+            "coverage": 1.0,
+            "scored_frame_count": 1052,
+            "e_H": 0.6119027397372356,
+            "e_W": 0.39688500012024946,
+            "median_r_H": 0.5648167379200166,
+            "median_r_W": -0.2928183489745326,
+            "median_H_ratio": 1.7591253730347698,
+            "median_W_ratio": 0.7461576695065482,
+            "floored_frame_count": 6,
+            "coupon_scalar_objective": 0.2659713331091928
+          },
+          {
+            "member_identity": "20260731:part_4",
+            "exact_condition_id": "P170_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 946,
+            "e_H": 0.746738954752965,
+            "e_W": 0.6244504719263839,
+            "median_r_H": 0.5210527152166922,
+            "median_r_W": -0.2967721166692521,
+            "median_H_ratio": 1.6837992863096272,
+            "median_W_ratio": 0.7432133619781514,
+            "floored_frame_count": 5,
+            "coupon_scalar_objective": 0.4737787292173172
+          },
+          {
+            "member_identity": "20260904:part_5",
+            "exact_condition_id": "P180_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 884,
+            "e_H": 0.7486357184036416,
+            "e_W": 0.38049263992480553,
+            "median_r_H": 0.7084808734698522,
+            "median_r_W": -0.20974722914327404,
+            "median_H_ratio": 2.0309037145784234,
+            "median_W_ratio": 0.8107891639429639,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.35261504395334214
+          }
+        ]
+      },
+      "cross_campaign_20260904_part_5": {
+        "status": "PASS",
+        "J": 0.35261504395334214,
+        "e_H": 0.7486357184036416,
+        "e_W": 0.38049263992480553,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 884,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P180_V1000",
+            "member_identities": [
+              "20260904:part_5"
+            ],
+            "e_H": 0.7486357184036416,
+            "e_W": 0.38049263992480553,
+            "H_mean_log": 0.6722238199332242,
+            "W_mean_log": 0.02883913341646605,
+            "median_H_ratio": 2.0309037145784234,
+            "median_W_ratio": 0.8107891639429639,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.35261504395334214
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_5",
+            "exact_condition_id": "P180_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 884,
+            "e_H": 0.7486357184036416,
+            "e_W": 0.38049263992480553,
+            "median_r_H": 0.7084808734698522,
+            "median_r_W": -0.20974722914327404,
+            "median_H_ratio": 2.0309037145784234,
+            "median_W_ratio": 0.8107891639429639,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.35261504395334214
+          }
+        ]
+      },
+      "out_of_window_examined": {
+        "status": "PASS",
+        "J": 0.7181173920080561,
+        "e_H": 0.9675350715524526,
+        "e_W": 0.7071850318920097,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 7365,
+        "floored_frame_count": 457,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V1200",
+            "member_identities": [
+              "20260910:part_4"
+            ],
+            "e_H": 0.8469114346280523,
+            "e_W": 0.8689485020337571,
+            "H_mean_log": -0.09081934252572761,
+            "W_mean_log": -0.39350307026353404,
+            "median_H_ratio": 0.9642953709714045,
+            "median_W_ratio": 0.5265652241833227,
+            "floored_frame_count": 86,
+            "condition_objective_contribution": 0.736165238645228
+          },
+          {
+            "exact_condition_id": "P140_V1400",
+            "member_identities": [
+              "20260904:part_3"
+            ],
+            "e_H": 1.5628142358903518,
+            "e_W": 1.3682603008198626,
+            "H_mean_log": -1.0739419898924984,
+            "W_mean_log": -0.8577269718155938,
+            "median_H_ratio": 0.1379320049532815,
+            "median_W_ratio": 0.1844238517206368,
+            "floored_frame_count": 348,
+            "condition_objective_contribution": 2.1572622933506023
+          },
+          {
+            "exact_condition_id": "P140_V600",
+            "member_identities": [
+              "20260904:part_1"
+            ],
+            "e_H": 0.8035495244302324,
+            "e_W": 0.2601754778189027,
+            "H_mean_log": 0.7201761151968419,
+            "W_mean_log": 0.15113813607308618,
+            "median_H_ratio": 2.2982480915035968,
+            "median_W_ratio": 1.0953969508726793,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.3566915587351735
+          },
+          {
+            "exact_condition_id": "P180_V1200",
+            "member_identities": [
+              "20260910:part_6"
+            ],
+            "e_H": 0.6129426541428474,
+            "e_W": 0.4653472108057367,
+            "H_mean_log": 0.51123679425357,
+            "W_mean_log": -0.08163680320741455,
+            "median_H_ratio": 1.6125631636635436,
+            "median_W_ratio": 0.6731609254743695,
+            "floored_frame_count": 1,
+            "condition_objective_contribution": 0.29612336193617855
+          },
+          {
+            "exact_condition_id": "P180_V1400",
+            "member_identities": [
+              "20260904:part_6"
+            ],
+            "e_H": 0.6367902772004593,
+            "e_W": 0.6462984355863889,
+            "H_mean_log": 0.23169936920182985,
+            "W_mean_log": -0.1607566461418415,
+            "median_H_ratio": 1.2766558647155761,
+            "median_W_ratio": 0.6360771550676039,
+            "floored_frame_count": 22,
+            "condition_objective_contribution": 0.41160176248922575
+          },
+          {
+            "exact_condition_id": "P180_V600",
+            "member_identities": [
+              "20260904:part_4"
+            ],
+            "e_H": 1.0312735157161625,
+            "e_W": 0.29008150938744187,
+            "H_mean_log": 0.9166029989368323,
+            "W_mean_log": 0.19331951430382072,
+            "median_H_ratio": 2.983304702587628,
+            "median_W_ratio": 1.204457158475889,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.5738361731530354
+          },
+          {
+            "exact_condition_id": "P180_V700",
+            "member_identities": [
+              "20260910:part_3"
+            ],
+            "e_H": 0.950160003340718,
+            "e_W": 0.29576794881370255,
+            "H_mean_log": 0.8525753699509236,
+            "W_mean_log": 0.11165082008126928,
+            "median_H_ratio": 2.624237048347559,
+            "median_W_ratio": 0.988182446648994,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.4951413557469492
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_1",
+            "exact_condition_id": "P140_V600",
+            "coverage": 1.0,
+            "scored_frame_count": 1518,
+            "e_H": 0.8035495244302324,
+            "e_W": 0.2601754778189027,
+            "median_r_H": 0.8321471328299399,
+            "median_r_W": 0.09111680970595017,
+            "median_H_ratio": 2.2982480915035968,
+            "median_W_ratio": 1.0953969508726793,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.3566915587351735
+          },
+          {
+            "member_identity": "20260904:part_3",
+            "exact_condition_id": "P140_V1400",
+            "coverage": 1.0,
+            "scored_frame_count": 648,
+            "e_H": 1.5628142358903518,
+            "e_W": 1.3682603008198626,
+            "median_r_H": -1.9809979509233138,
+            "median_r_W": -1.6905188189879716,
+            "median_H_ratio": 0.1379320049532815,
+            "median_W_ratio": 0.1844238517206368,
+            "floored_frame_count": 348,
+            "coupon_scalar_objective": 2.1572622933506023
+          },
+          {
+            "member_identity": "20260904:part_4",
+            "exact_condition_id": "P180_V600",
+            "coverage": 1.0,
+            "scored_frame_count": 1611,
+            "e_H": 1.0312735157161625,
+            "e_W": 0.29008150938744187,
+            "median_r_H": 1.093031646674602,
+            "median_r_W": 0.18602897454973344,
+            "median_H_ratio": 2.983304702587628,
+            "median_W_ratio": 1.204457158475889,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.5738361731530354
+          },
+          {
+            "member_identity": "20260904:part_6",
+            "exact_condition_id": "P180_V1400",
+            "coverage": 1.0,
+            "scored_frame_count": 657,
+            "e_H": 0.6367902772004593,
+            "e_W": 0.6462984355863889,
+            "median_r_H": 0.24424405343035452,
+            "median_r_W": -0.4524354100004646,
+            "median_H_ratio": 1.2766558647155761,
+            "median_W_ratio": 0.6360771550676039,
+            "floored_frame_count": 22,
+            "coupon_scalar_objective": 0.41160176248922575
+          },
+          {
+            "member_identity": "20260910:part_3",
+            "exact_condition_id": "P180_V700",
+            "coverage": 1.0,
+            "scored_frame_count": 1376,
+            "e_H": 0.950160003340718,
+            "e_W": 0.29576794881370255,
+            "median_r_H": 0.9647901646742847,
+            "median_r_W": -0.011887941327487349,
+            "median_H_ratio": 2.624237048347559,
+            "median_W_ratio": 0.988182446648994,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.4951413557469492
+          },
+          {
+            "member_identity": "20260910:part_4",
+            "exact_condition_id": "P140_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 776,
+            "e_H": 0.8469114346280523,
+            "e_W": 0.8689485020337571,
+            "median_r_H": -0.03635766963685402,
+            "median_r_W": -0.6413800749320309,
+            "median_H_ratio": 0.9642953709714045,
+            "median_W_ratio": 0.5265652241833227,
+            "floored_frame_count": 86,
+            "coupon_scalar_objective": 0.736165238645228
+          },
+          {
+            "member_identity": "20260910:part_6",
+            "exact_condition_id": "P180_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 779,
+            "e_H": 0.6129426541428474,
+            "e_W": 0.4653472108057367,
+            "median_r_H": 0.4778249401848296,
+            "median_r_W": -0.39577086131740996,
+            "median_H_ratio": 1.6125631636635436,
+            "median_W_ratio": 0.6731609254743695,
+            "floored_frame_count": 1,
+            "coupon_scalar_objective": 0.29612336193617855
+          }
+        ]
+      },
+      "out_of_window_blind": {
+        "status": "PASS",
+        "J": 0.29005136610464644,
+        "e_H": 0.6285369303284577,
+        "e_W": 0.4301674783413692,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 3025,
+        "floored_frame_count": 1,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V1000",
+            "member_identities": [
+              "20260904:part_2"
+            ],
+            "e_H": 0.4717482002557256,
+            "e_W": 0.46293774350342387,
+            "H_mean_log": 0.3505076146741161,
+            "W_mean_log": -0.1091563503193384,
+            "median_H_ratio": 1.3503381499632252,
+            "median_W_ratio": 0.6796896755695343,
+            "floored_frame_count": 1,
+            "condition_objective_contribution": 0.21842885940227902
+          },
+          {
+            "exact_condition_id": "P160_V1200",
+            "member_identities": [
+              "20260910:part_5"
+            ],
+            "e_H": 0.49814162664031997,
+            "e_W": 0.5200264479326233,
+            "H_mean_log": 0.37218644348572344,
+            "W_mean_log": -0.14655564376975247,
+            "median_H_ratio": 1.3626244496266973,
+            "median_W_ratio": 0.6210553833812469,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.2592862933706427
+          },
+          {
+            "exact_condition_id": "P160_V700",
+            "member_identities": [
+              "20260910:part_2"
+            ],
+            "e_H": 0.845271893371465,
+            "e_W": 0.2653173898527077,
+            "H_mean_log": 0.7512648131815702,
+            "W_mean_log": 0.06175999556924445,
+            "median_H_ratio": 2.3100613010913644,
+            "median_W_ratio": 0.9511524281012426,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.39243894554101755
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_2",
+            "exact_condition_id": "P140_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 936,
+            "e_H": 0.4717482002557256,
+            "e_W": 0.46293774350342387,
+            "median_r_H": 0.30035502921330964,
+            "median_r_W": -0.38611894541476277,
+            "median_H_ratio": 1.3503381499632252,
+            "median_W_ratio": 0.6796896755695343,
+            "floored_frame_count": 1,
+            "coupon_scalar_objective": 0.21842885940227902
+          },
+          {
+            "member_identity": "20260910:part_2",
+            "exact_condition_id": "P160_V700",
+            "coverage": 1.0,
+            "scored_frame_count": 1313,
+            "e_H": 0.845271893371465,
+            "e_W": 0.2653173898527077,
+            "median_r_H": 0.837274061450584,
+            "median_r_W": -0.05008094736543894,
+            "median_H_ratio": 2.3100613010913644,
+            "median_W_ratio": 0.9511524281012426,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.39243894554101755
+          },
+          {
+            "member_identity": "20260910:part_5",
+            "exact_condition_id": "P160_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 776,
+            "e_H": 0.49814162664031997,
+            "e_W": 0.5200264479326233,
+            "median_r_H": 0.3094125222209625,
+            "median_r_W": -0.47633502835265173,
+            "median_H_ratio": 1.3626244496266973,
+            "median_W_ratio": 0.6210553833812469,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.2592862933706427
+          }
+        ]
+      }
+    },
+    "per_coupon": {
+      "20260904:part_1": {
+        "status": "PASS",
+        "J": 0.3566915587351735,
+        "e_H": 0.8035495244302324,
+        "e_W": 0.2601754778189027,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 1518,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V600",
+            "member_identities": [
+              "20260904:part_1"
+            ],
+            "e_H": 0.8035495244302324,
+            "e_W": 0.2601754778189027,
+            "H_mean_log": 0.7201761151968419,
+            "W_mean_log": 0.15113813607308618,
+            "median_H_ratio": 2.2982480915035968,
+            "median_W_ratio": 1.0953969508726793,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.3566915587351735
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_1",
+            "exact_condition_id": "P140_V600",
+            "coverage": 1.0,
+            "scored_frame_count": 1518,
+            "e_H": 0.8035495244302324,
+            "e_W": 0.2601754778189027,
+            "median_r_H": 0.8321471328299399,
+            "median_r_W": 0.09111680970595017,
+            "median_H_ratio": 2.2982480915035968,
+            "median_W_ratio": 1.0953969508726793,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.3566915587351735
+          }
+        ]
+      },
+      "20260904:part_3": {
+        "status": "PASS",
+        "J": 2.1572622933506023,
+        "e_H": 1.5628142358903518,
+        "e_W": 1.3682603008198626,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 648,
+        "floored_frame_count": 348,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V1400",
+            "member_identities": [
+              "20260904:part_3"
+            ],
+            "e_H": 1.5628142358903518,
+            "e_W": 1.3682603008198626,
+            "H_mean_log": -1.0739419898924984,
+            "W_mean_log": -0.8577269718155938,
+            "median_H_ratio": 0.1379320049532815,
+            "median_W_ratio": 0.1844238517206368,
+            "floored_frame_count": 348,
+            "condition_objective_contribution": 2.1572622933506023
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_3",
+            "exact_condition_id": "P140_V1400",
+            "coverage": 1.0,
+            "scored_frame_count": 648,
+            "e_H": 1.5628142358903518,
+            "e_W": 1.3682603008198626,
+            "median_r_H": -1.9809979509233138,
+            "median_r_W": -1.6905188189879716,
+            "median_H_ratio": 0.1379320049532815,
+            "median_W_ratio": 0.1844238517206368,
+            "floored_frame_count": 348,
+            "coupon_scalar_objective": 2.1572622933506023
+          }
+        ]
+      },
+      "20260904:part_4": {
+        "status": "PASS",
+        "J": 0.5738361731530354,
+        "e_H": 1.0312735157161625,
+        "e_W": 0.29008150938744187,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 1611,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P180_V600",
+            "member_identities": [
+              "20260904:part_4"
+            ],
+            "e_H": 1.0312735157161625,
+            "e_W": 0.29008150938744187,
+            "H_mean_log": 0.9166029989368323,
+            "W_mean_log": 0.19331951430382072,
+            "median_H_ratio": 2.983304702587628,
+            "median_W_ratio": 1.204457158475889,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.5738361731530354
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_4",
+            "exact_condition_id": "P180_V600",
+            "coverage": 1.0,
+            "scored_frame_count": 1611,
+            "e_H": 1.0312735157161625,
+            "e_W": 0.29008150938744187,
+            "median_r_H": 1.093031646674602,
+            "median_r_W": 0.18602897454973344,
+            "median_H_ratio": 2.983304702587628,
+            "median_W_ratio": 1.204457158475889,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.5738361731530354
+          }
+        ]
+      },
+      "20260904:part_6": {
+        "status": "PASS",
+        "J": 0.41160176248922575,
+        "e_H": 0.6367902772004593,
+        "e_W": 0.6462984355863889,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 657,
+        "floored_frame_count": 22,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P180_V1400",
+            "member_identities": [
+              "20260904:part_6"
+            ],
+            "e_H": 0.6367902772004593,
+            "e_W": 0.6462984355863889,
+            "H_mean_log": 0.23169936920182985,
+            "W_mean_log": -0.1607566461418415,
+            "median_H_ratio": 1.2766558647155761,
+            "median_W_ratio": 0.6360771550676039,
+            "floored_frame_count": 22,
+            "condition_objective_contribution": 0.41160176248922575
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_6",
+            "exact_condition_id": "P180_V1400",
+            "coverage": 1.0,
+            "scored_frame_count": 657,
+            "e_H": 0.6367902772004593,
+            "e_W": 0.6462984355863889,
+            "median_r_H": 0.24424405343035452,
+            "median_r_W": -0.4524354100004646,
+            "median_H_ratio": 1.2766558647155761,
+            "median_W_ratio": 0.6360771550676039,
+            "floored_frame_count": 22,
+            "coupon_scalar_objective": 0.41160176248922575
+          }
+        ]
+      },
+      "20260910:part_3": {
+        "status": "PASS",
+        "J": 0.4951413557469492,
+        "e_H": 0.950160003340718,
+        "e_W": 0.29576794881370255,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 1376,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P180_V700",
+            "member_identities": [
+              "20260910:part_3"
+            ],
+            "e_H": 0.950160003340718,
+            "e_W": 0.29576794881370255,
+            "H_mean_log": 0.8525753699509236,
+            "W_mean_log": 0.11165082008126928,
+            "median_H_ratio": 2.624237048347559,
+            "median_W_ratio": 0.988182446648994,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.4951413557469492
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260910:part_3",
+            "exact_condition_id": "P180_V700",
+            "coverage": 1.0,
+            "scored_frame_count": 1376,
+            "e_H": 0.950160003340718,
+            "e_W": 0.29576794881370255,
+            "median_r_H": 0.9647901646742847,
+            "median_r_W": -0.011887941327487349,
+            "median_H_ratio": 2.624237048347559,
+            "median_W_ratio": 0.988182446648994,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.4951413557469492
+          }
+        ]
+      },
+      "20260910:part_4": {
+        "status": "PASS",
+        "J": 0.736165238645228,
+        "e_H": 0.8469114346280523,
+        "e_W": 0.8689485020337571,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 776,
+        "floored_frame_count": 86,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V1200",
+            "member_identities": [
+              "20260910:part_4"
+            ],
+            "e_H": 0.8469114346280523,
+            "e_W": 0.8689485020337571,
+            "H_mean_log": -0.09081934252572761,
+            "W_mean_log": -0.39350307026353404,
+            "median_H_ratio": 0.9642953709714045,
+            "median_W_ratio": 0.5265652241833227,
+            "floored_frame_count": 86,
+            "condition_objective_contribution": 0.736165238645228
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260910:part_4",
+            "exact_condition_id": "P140_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 776,
+            "e_H": 0.8469114346280523,
+            "e_W": 0.8689485020337571,
+            "median_r_H": -0.03635766963685402,
+            "median_r_W": -0.6413800749320309,
+            "median_H_ratio": 0.9642953709714045,
+            "median_W_ratio": 0.5265652241833227,
+            "floored_frame_count": 86,
+            "coupon_scalar_objective": 0.736165238645228
+          }
+        ]
+      },
+      "20260910:part_6": {
+        "status": "PASS",
+        "J": 0.29612336193617855,
+        "e_H": 0.6129426541428474,
+        "e_W": 0.4653472108057367,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 779,
+        "floored_frame_count": 1,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P180_V1200",
+            "member_identities": [
+              "20260910:part_6"
+            ],
+            "e_H": 0.6129426541428474,
+            "e_W": 0.4653472108057367,
+            "H_mean_log": 0.51123679425357,
+            "W_mean_log": -0.08163680320741455,
+            "median_H_ratio": 1.6125631636635436,
+            "median_W_ratio": 0.6731609254743695,
+            "floored_frame_count": 1,
+            "condition_objective_contribution": 0.29612336193617855
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260910:part_6",
+            "exact_condition_id": "P180_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 779,
+            "e_H": 0.6129426541428474,
+            "e_W": 0.4653472108057367,
+            "median_r_H": 0.4778249401848296,
+            "median_r_W": -0.39577086131740996,
+            "median_H_ratio": 1.6125631636635436,
+            "median_W_ratio": 0.6731609254743695,
+            "floored_frame_count": 1,
+            "coupon_scalar_objective": 0.29612336193617855
+          }
+        ]
+      },
+      "20260904:part_2": {
+        "status": "PASS",
+        "J": 0.21842885940227902,
+        "e_H": 0.4717482002557256,
+        "e_W": 0.46293774350342387,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 936,
+        "floored_frame_count": 1,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P140_V1000",
+            "member_identities": [
+              "20260904:part_2"
+            ],
+            "e_H": 0.4717482002557256,
+            "e_W": 0.46293774350342387,
+            "H_mean_log": 0.3505076146741161,
+            "W_mean_log": -0.1091563503193384,
+            "median_H_ratio": 1.3503381499632252,
+            "median_W_ratio": 0.6796896755695343,
+            "floored_frame_count": 1,
+            "condition_objective_contribution": 0.21842885940227902
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260904:part_2",
+            "exact_condition_id": "P140_V1000",
+            "coverage": 1.0,
+            "scored_frame_count": 936,
+            "e_H": 0.4717482002557256,
+            "e_W": 0.46293774350342387,
+            "median_r_H": 0.30035502921330964,
+            "median_r_W": -0.38611894541476277,
+            "median_H_ratio": 1.3503381499632252,
+            "median_W_ratio": 0.6796896755695343,
+            "floored_frame_count": 1,
+            "coupon_scalar_objective": 0.21842885940227902
+          }
+        ]
+      },
+      "20260910:part_2": {
+        "status": "PASS",
+        "J": 0.39243894554101755,
+        "e_H": 0.845271893371465,
+        "e_W": 0.2653173898527077,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 1313,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P160_V700",
+            "member_identities": [
+              "20260910:part_2"
+            ],
+            "e_H": 0.845271893371465,
+            "e_W": 0.2653173898527077,
+            "H_mean_log": 0.7512648131815702,
+            "W_mean_log": 0.06175999556924445,
+            "median_H_ratio": 2.3100613010913644,
+            "median_W_ratio": 0.9511524281012426,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.39243894554101755
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260910:part_2",
+            "exact_condition_id": "P160_V700",
+            "coverage": 1.0,
+            "scored_frame_count": 1313,
+            "e_H": 0.845271893371465,
+            "e_W": 0.2653173898527077,
+            "median_r_H": 0.837274061450584,
+            "median_r_W": -0.05008094736543894,
+            "median_H_ratio": 2.3100613010913644,
+            "median_W_ratio": 0.9511524281012426,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.39243894554101755
+          }
+        ]
+      },
+      "20260910:part_5": {
+        "status": "PASS",
+        "J": 0.2592862933706427,
+        "e_H": 0.49814162664031997,
+        "e_W": 0.5200264479326233,
+        "coverage": 1.0,
+        "coverage_flag": false,
+        "scored_frame_count": 776,
+        "floored_frame_count": 0,
+        "condition_rows": [
+          {
+            "exact_condition_id": "P160_V1200",
+            "member_identities": [
+              "20260910:part_5"
+            ],
+            "e_H": 0.49814162664031997,
+            "e_W": 0.5200264479326233,
+            "H_mean_log": 0.37218644348572344,
+            "W_mean_log": -0.14655564376975247,
+            "median_H_ratio": 1.3626244496266973,
+            "median_W_ratio": 0.6210553833812469,
+            "floored_frame_count": 0,
+            "condition_objective_contribution": 0.2592862933706427
+          }
+        ],
+        "coupon_rows": [
+          {
+            "member_identity": "20260910:part_5",
+            "exact_condition_id": "P160_V1200",
+            "coverage": 1.0,
+            "scored_frame_count": 776,
+            "e_H": 0.49814162664031997,
+            "e_W": 0.5200264479326233,
+            "median_r_H": 0.3094125222209625,
+            "median_r_W": -0.47633502835265173,
+            "median_H_ratio": 1.3626244496266973,
+            "median_W_ratio": 0.6210553833812469,
+            "floored_frame_count": 0,
+            "coupon_scalar_objective": 0.2592862933706427
+          }
+        ]
+      }
+    }
+  },
+  "units": [
+    {
+      "member_identity": "20260730:part_1",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 1056,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "c6ca02a41018deb281d985c66440d869cb7161d4e02e823a77614e20ed3df709"
+    },
+    {
+      "member_identity": "20260730:part_2",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1000,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "98442ee9e9caea5b525fb66263b1a2d19f0aaf71e5afc8983d79e709515270fa"
+    },
+    {
+      "member_identity": "20260730:part_3",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 964,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "a39cac1dcf825de202711c2f0c9a21595364e30d87a141dd23cf8a1b81054782"
+    },
+    {
+      "member_identity": "20260730:part_4",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 914,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "20b762a3ee8ef000c0505fda322daf55867c07456845e43268efa2f76f82b10d"
+    },
+    {
+      "member_identity": "20260730:part_5",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 869,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "3059f93a96dc15533af1cc3546fbf6a2f3e3b8c2e9f459668fbce6704479ccc2"
+    },
+    {
+      "member_identity": "20260730:part_6",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 847,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "e38db4bcdf9a3a0a3e0abe423bbc6cc35d8740961dc03bfcf9826250d2e49a0c"
+    },
+    {
+      "member_identity": "20260731:part_1",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 1115,
+      "row_maps_back_to_frame_fraction": 0.9991031390134529,
+      "field_sha256": "edeb5b09a7475434daaa4f5b52840a1683f4ded6ed119a090215ebf7ac8417f1"
+    },
+    {
+      "member_identity": "20260731:part_2",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1052,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "8befd962ce3a1cd2bcca264cb73a1262b1c05a73723bc78f5554c2fd97b05453"
+    },
+    {
+      "member_identity": "20260731:part_3",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 971,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "cb78246a64792a5861cba3f193e16de1f18ba6d8d450275bb2642e388491028c"
+    },
+    {
+      "member_identity": "20260731:part_4",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 946,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "410ff921dff92ff863e4eb4975be31bb20a82fc2f51b63b6ec35211a0e9a61f2"
+    },
+    {
+      "member_identity": "20260731:part_5",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 896,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "e11066bf9ea5ff4cce964919a39a62ea8b80d02e6494837e36d3d657cc7270c9"
+    },
+    {
+      "member_identity": "20260731:part_6",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 856,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "5b7ad34499ab8c28e98c8cd41420f3115ad79508c29d61d52a872804cc537c41"
+    },
+    {
+      "member_identity": "20260904:part_1",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1518,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "439c698a47938afe034c5998b9e513c00e9c6dcbaf00f975851cb0fd53de39bc"
+    },
+    {
+      "member_identity": "20260904:part_2",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 936,
+      "row_maps_back_to_frame_fraction": 0.9967948717948718,
+      "field_sha256": "25b9779f40d6df84a1ea30c821b97ad7c531fa19c963bd03cfcbf7fb5ed8c369"
+    },
+    {
+      "member_identity": "20260904:part_3",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 648,
+      "row_maps_back_to_frame_fraction": 0.9583333333333334,
+      "field_sha256": "d8344b86c64f43eb2a931b861f208011ca11576921a8ca423acb2373dca45b47"
+    },
+    {
+      "member_identity": "20260904:part_4",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1611,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "39aa851de9a58164c00c00d7fb62a0d4af3dd02c149b9f5cb84b7d3b1288afe0"
+    },
+    {
+      "member_identity": "20260904:part_5",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 884,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "be42e5abb7bd2d88cd6fdd90f1c27b0a036a67b7397987a66bf1844dd03e7f6c"
+    },
+    {
+      "member_identity": "20260904:part_6",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 657,
+      "row_maps_back_to_frame_fraction": 0.9969558599695586,
+      "field_sha256": "f12f65d657894b88e5840e4bdd887ba5f69b0f4def1d92bca75f4b241965cfc6"
+    },
+    {
+      "member_identity": "20260910:part_1",
+      "phase": "calibration",
+      "t150_grid_size": 73,
+      "frames": 1369,
+      "row_maps_back_to_frame_fraction": 0.9992695398100804,
+      "field_sha256": "37982bea8af296fe356242fc12e93e3adcea1040d152fe84f59e8dd635418c43"
+    },
+    {
+      "member_identity": "20260910:part_2",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1313,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "780ffd96663e2fd85d284cbced96fafacdd9ad346445cd148dbda8b607ac6a9a"
+    },
+    {
+      "member_identity": "20260910:part_3",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 1376,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "939c7a92321d9d88367551a067b506cd63f5450204b56e5e282fae5ed3750eff"
+    },
+    {
+      "member_identity": "20260910:part_4",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 776,
+      "row_maps_back_to_frame_fraction": 0.9729381443298969,
+      "field_sha256": "edff0ca77630d7cbc6f02216a3aa80c4b7d3ca5bdaf9b41874d959c951cd0bc3"
+    },
+    {
+      "member_identity": "20260910:part_5",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 776,
+      "row_maps_back_to_frame_fraction": 0.9974226804123711,
+      "field_sha256": "cc19a12c4148015358f2c7da4862c0749e95a32ab5ddf37b333b65503efe77e0"
+    },
+    {
+      "member_identity": "20260910:part_6",
+      "phase": "evaluation",
+      "t150_grid_size": 2,
+      "frames": 779,
+      "row_maps_back_to_frame_fraction": 1.0,
+      "field_sha256": "6f7bfc7516783f67a6272e1f67870c242b47cb98bb3ca9a0d56e0a9632e59b19"
+    }
+  ],
+  "inputs": {
+    "freeze_sha256": "43184dff94c9d3b75cee1c8924abf7b195b72fbb5b32d301733fc21dad4292a8",
+    "freeze_content_sha256": "754e2a4a5b6274df65c0c7a90a34b84f98247e02e46fd2c85beaf43620de9de2",
+    "evaluate_manifest_sha256": "d4408c946847351daa6767d5a80bdbd56fbd514229ed221fb5ba5923408e577a",
+    "member_sha256": {
+      "20260730:part_1": "c8b2142e9736eb85c5c685152c521641a4757bdabe11949ede0e4472ee8ddb6b",
+      "20260730:part_2": "a328662ca33360938ad0fa314f4087e37fd5f049427818971c3ca43dd7eb0faa",
+      "20260730:part_3": "75f079f2f634a33ecb4e4dff433e86ee1efb913572194064ca4cd4848b761b3d",
+      "20260730:part_4": "12f0c296144722bc69748efd926ab4c359a71295501803a9d2ea185dc65061c6",
+      "20260730:part_5": "73af67d01388335c4aaba36e43f0109d3a3fb070887e7e9718e6963e8e3a7b1e",
+      "20260730:part_6": "eaaaace6db115145639f5c3417752cf066d03e098f1c5d5483af1113de9be589",
+      "20260731:part_1": "a37f51d37cf23c8c87f0867c166c1917132229b43764fce6a648b7993b7c7a69",
+      "20260731:part_2": "c12915e64e7f03ae3ed2c157f5286d8840ed63284e62a051b15e3e370c29fa5a",
+      "20260731:part_3": "edc6fe77788b24eb21b5465c27934606aa6226a84878502a2f97dff5e6112780",
+      "20260731:part_4": "46eee3aa7b0fbfa6609554b90da5f3a96be41a33d757ccf8ed4de0111473663d",
+      "20260731:part_5": "48585ec5a93ee676aa46250693327377c8e4403be76dc9fef09e963a0516fac4",
+      "20260731:part_6": "2e20de47186921a4fc5110164585050d0c4d05bf2d92385a1a35aa851e81d2f8",
+      "20260904:part_1": "497fa0e5fcfe00456fdc89964b5023557fb180254a2b6a09a4d51410707719f2",
+      "20260904:part_2": "02e5a243c46c508b917c6d80b8bc4c42d3cb383ffe42aba3f79c8c02b754961e",
+      "20260904:part_3": "8626d2153f0ae188cc3bba5af747d7dc589d73876dec396fc3c3038632828759",
+      "20260904:part_4": "207be7398b527a6fb76d0d1928f6bec6c78ab12b75cc8cbcced97ae260ddced1",
+      "20260904:part_5": "c6b0d472d47d0632d1f4ede42267df5066442c6b16ca55627cbc297dd5691c51",
+      "20260904:part_6": "45675033e7a925bab1319f6c86d2b88416bb3894acdf29bfa4e8c7bc55b97afd",
+      "20260910:part_1": "3bf156a6acaa8b5158f5f647b63b365acfe3026591044e95761a9deba398a927",
+      "20260910:part_2": "a993d377e759e3f855907dd1eaf91fca3baa94a3df8ff0226ad709bde8e2a5b6",
+      "20260910:part_3": "989558912063f9dd7f4586c9c3e57e4d5b4616369a7b83a58f074ebf7126a34f",
+      "20260910:part_4": "f2892aca0242bab1b6227e5f8feb045ee3058deb6d2f96b026848c4a8ae607b4",
+      "20260910:part_5": "351eb0929d4d2056468d3d17f9b43318082d641cfbef9ed8c4e563a5cc5561ff",
+      "20260910:part_6": "fb9f8e75d7c43c838a52bdc86f365e3f517c4509a843159c780490a21a2305bf"
+    },
+    "camera_checks_against_step0_evidence": [
+      {
+        "member_identity": "20260730:part_1",
+        "pass": true,
+        "scored_frames": [
+          1056,
+          1056
+        ],
+        "median_H_150_um": [
+          80.95430755615234,
+          80.95430755615234
+        ],
+        "median_W_150_um": [
+          72.0,
+          72.0
+        ]
+      },
+      {
+        "member_identity": "20260730:part_3",
+        "pass": true,
+        "scored_frames": [
+          964,
+          964
+        ],
+        "median_H_150_um": [
+          90.50965881347656,
+          90.50965881347656
+        ],
+        "median_W_150_um": [
+          72.0,
+          72.0
+        ]
+      },
+      {
+        "member_identity": "20260730:part_5",
+        "pass": true,
+        "scored_frames": [
+          869,
+          869
+        ],
+        "median_H_150_um": [
+          101.8233642578125,
+          101.8233642578125
+        ],
+        "median_W_150_um": [
+          73.53910064697266,
+          73.53910064697266
+        ]
+      },
+      {
+        "member_identity": "20260730:part_6",
+        "pass": true,
+        "scored_frames": [
+          847,
+          847
+        ],
+        "median_H_150_um": [
+          107.33125305175781,
+          107.33125305175781
+        ],
+        "median_W_150_um": [
+          75.13188171386719,
+          75.13188171386719
+        ]
+      },
+      {
+        "member_identity": "20260731:part_1",
+        "pass": true,
+        "scored_frames": [
+          1115,
+          1115
+        ],
+        "median_H_150_um": [
+          80.0,
+          80.0
+        ],
+        "median_W_150_um": [
+          67.9764633178711,
+          67.9764633178711
+        ]
+      },
+      {
+        "member_identity": "20260731:part_3",
+        "pass": true,
+        "scored_frames": [
+          971,
+          971
+        ],
+        "median_H_150_um": [
+          90.50965881347656,
+          90.50965881347656
+        ],
+        "median_W_150_um": [
+          72.0,
+          72.0
+        ]
+      },
+      {
+        "member_identity": "20260731:part_5",
+        "pass": true,
+        "scored_frames": [
+          896,
+          896
+        ],
+        "median_H_150_um": [
+          101.8233642578125,
+          101.8233642578125
+        ],
+        "median_W_150_um": [
+          72.0,
+          72.0
+        ]
+      },
+      {
+        "member_identity": "20260731:part_6",
+        "pass": true,
+        "scored_frames": [
+          856,
+          856
+        ],
+        "median_H_150_um": [
+          107.48021697998047,
+          107.48021697998047
+        ],
+        "median_W_150_um": [
+          75.13188171386719,
+          75.13188171386719
+        ]
+      },
+      {
+        "member_identity": "20260904:part_1",
+        "pass": true,
+        "scored_frames": [
+          1518,
+          1518
+        ],
+        "median_H_150_um": [
+          88.0,
+          88.0
+        ],
+        "median_W_150_um": [
+          64.0,
+          64.0
+        ]
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "pass": true,
+        "scored_frames": [
+          648,
+          648
+        ],
+        "median_H_150_um": [
+          72.0,
+          72.0
+        ],
+        "median_W_150_um": [
+          56.0,
+          56.0
+        ]
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "pass": true,
+        "scored_frames": [
+          1611,
+          1611
+        ],
+        "median_H_150_um": [
+          96.0,
+          96.0
+        ],
+        "median_W_150_um": [
+          79.19595336914062,
+          79.19595336914062
+        ]
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "pass": true,
+        "scored_frames": [
+          657,
+          657
+        ],
+        "median_H_150_um": [
+          88.0,
+          88.0
+        ],
+        "median_W_150_um": [
+          64.39875793457031,
+          64.39875793457031
+        ]
+      },
+      {
+        "member_identity": "20260910:part_1",
+        "pass": true,
+        "scored_frames": [
+          1369,
+          1369
+        ],
+        "median_H_150_um": [
+          88.0,
+          88.0
+        ],
+        "median_W_150_um": [
+          72.0,
+          72.0
+        ]
+      },
+      {
+        "member_identity": "20260910:part_3",
+        "pass": true,
+        "scored_frames": [
+          1376,
+          1376
+        ],
+        "median_H_150_um": [
+          101.82337951660156,
+          101.82337951660156
+        ],
+        "median_W_150_um": [
+          80.0,
+          80.0
+        ]
+      },
+      {
+        "member_identity": "20260910:part_4",
+        "pass": true,
+        "scored_frames": [
+          776,
+          776
+        ],
+        "median_H_150_um": [
+          72.0,
+          72.0
+        ],
+        "median_W_150_um": [
+          62.22539520263672,
+          62.22539520263672
+        ]
+      },
+      {
+        "member_identity": "20260910:part_6",
+        "pass": true,
+        "scored_frames": [
+          779,
+          779
+        ],
+        "median_H_150_um": [
+          96.0,
+          96.0
+        ],
+        "median_W_150_um": [
+          73.53910064697266,
+          73.53910064697266
+        ]
+      }
+    ],
+    "members_without_step0_reference": [
+      "20260730:part_2",
+      "20260730:part_4",
+      "20260731:part_2",
+      "20260731:part_4",
+      "20260904:part_2",
+      "20260904:part_5",
+      "20260910:part_2",
+      "20260910:part_5"
+    ],
+    "image_mapping": {
+      "mapping": "mirrored",
+      "axial_constant_deg": 29.677858774859413,
+      "wake_offset_from_mapped_motion_deg": 212.0411141423009,
+      "full_circle_constant_deg": 29.677858774859413,
+      "sha256": "15dc704a2c3359f25ca08f7dce037059bdc60c0d7f38406bae921edce0e36582"
+    }
+  },
+  "parameters": {
+    "cases": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "wavelength_nm": 850.0,
+        "emissivity": "uniform",
+        "sigma_px": 0.0
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "wavelength_nm": 850.0,
+        "emissivity": "uniform",
+        "sigma_px": 2.0
+      }
+    ],
+    "t150_rule": "22.3.8 closest approach on the 9 calibration members: |ln(median model/camera H/W at 150)| minimal, coverage at 150 >= 95 %",
+    "t150_calibration_grid_K": [
+      1400.0,
+      1425.0,
+      1450.0,
+      1475.0,
+      1500.0,
+      1525.0,
+      1550.0,
+      1575.0,
+      1600.0,
+      1625.0,
+      1650.0,
+      1675.0,
+      1700.0,
+      1725.0,
+      1750.0,
+      1775.0,
+      1800.0,
+      1825.0,
+      1850.0,
+      1875.0,
+      1900.0,
+      1925.0,
+      1950.0,
+      1975.0,
+      2000.0,
+      2025.0,
+      2050.0,
+      2075.0,
+      2100.0,
+      2125.0,
+      2150.0,
+      2175.0,
+      2200.0,
+      2225.0,
+      2250.0,
+      2275.0,
+      2300.0,
+      2325.0,
+      2350.0,
+      2375.0,
+      2400.0,
+      2425.0,
+      2450.0,
+      2475.0,
+      2500.0,
+      2525.0,
+      2550.0,
+      2575.0,
+      2600.0,
+      2625.0,
+      2650.0,
+      2675.0,
+      2700.0,
+      2725.0,
+      2750.0,
+      2775.0,
+      2800.0,
+      2825.0,
+      2850.0,
+      2875.0,
+      2900.0,
+      2925.0,
+      2950.0,
+      2975.0,
+      3000.0,
+      3025.0,
+      3050.0,
+      3075.0,
+      3100.0,
+      3125.0,
+      3150.0,
+      3175.0,
+      3200.0
+    ],
+    "reference_threshold": 150,
+    "coverage_floor": 0.95,
+    "synthetic_coverage_floor": 0.95,
+    "objective_contract_version": "22.4.3.2",
+    "pixel_floor": 1.0
+  },
+  "execution": {
+    "requested_workers": 4,
+    "start_method": "spawn",
+    "units": 24,
+    "wall_time_s": 269.3
+  },
+  "provenance": {
+    "git_commit": "2fdc58c5a9e43b92493335a5f7bb517d5be85927",
+    "git_worktree_dirty": false,
+    "module_sha256": "89c0b29d4e78fb1ffe614066d8b4fd2d6051c8c4a7e84ccc6b55af911b32a396",
+    "synthetic_camera_module_sha256": "854c8011477aa7c3a033ad661e26aa5a82391269aec1c7588d84c072bc937378",
+    "plan_sha256": "ac103ea24ec30cd085562bce74ff2ab982e8a77ae04bc6ae865bde7122c7ce0d",
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.4",
+      "opencv": "5.0.0",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "campaign_dispatch_lock": {
+      "CAMPAIGN_DISPATCH_AUTHORIZED_BY": null,
+      "pass": true
+    }
+  },
+  "guardrails": {
+    "held_out_read_after_committed_freeze_and_complete_evaluate_only": true,
+    "t150_fixed_on_calibration_members_only": true,
+    "evaluation_members_rendered_at_fixed_t150_only": true,
+    "thermal_model_run": false,
+    "parameter_fitting_performed": false,
+    "production_semantics_changed": false,
+    "full_campaign_dispatched": false,
+    "workers_wrote_files": false
+  }
+}

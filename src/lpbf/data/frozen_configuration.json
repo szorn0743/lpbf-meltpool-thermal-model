@@ -1,0 +1,148 @@
+{
+  "accepted_configuration": {
+    "beam": {
+      "gaussian_radius_mm": 0.04,
+      "geometry_fitted": false,
+      "machine_spot_diameter_mm": 0.08,
+      "machine_spot_diameter_um": 80.0
+    },
+    "numerical": {
+      "grid_spacing_um": 16.0,
+      "hw_extraction_method": "interpolated_liquidus_contour",
+      "hw_physical_convention": "H=major side; W=minor side; H>=W for nonzero footprints",
+      "production_grid": "16um",
+      "production_timestep_s": 3.3333333333333337e-06,
+      "production_timestep_us": 3.3333333333333335
+    },
+    "source": {
+      "calibration_factor": 0.565625,
+      "depth_mm": 0.08,
+      "status": "accepted_patch_12_1_calibrated_source"
+    },
+    "ted": {
+      "instantaneous_reflectivity_validated": false,
+      "model_status": "provisional_engineering_approximation",
+      "parameters_frozen_for_coupon_characterization": true,
+      "startup_transient_retained": true,
+      "startup_transient_used_in_power_modulation": true,
+      "treatment_identifier": "frozen_provisional_patch_12_0_treatment"
+    },
+    "transport": {
+      "additional_transport_extension": null,
+      "base_liquid_conductivity_W_mK": 30.0,
+      "effective_liquid_conductivity_W_mK": 60.0,
+      "liquid_conductivity_enhancement_factor": 2.0,
+      "model": "existing_isotropic_liquid_conductivity_closure"
+    }
+  },
+  "authoritative_starting_checkpoint": "lpbf_patch_12_2_3_completed",
+  "frozen_parameter_fields": {
+    "boundary_conditions": {
+      "ambient_temperature_C": 25.0,
+      "bottom_boundary_mode": "solid_absorbing",
+      "convection_coefficient_W_m2K": 10.0,
+      "emissivity": 0.35,
+      "far_field_temperature_C": 25.0,
+      "h_solid_W_m2K": 1000.0,
+      "side_boundary_mode": "solid_absorbing",
+      "stefan_boltzmann_W_m2K4": 5.670374419e-08,
+      "top_surface_mode": "convection"
+    },
+    "comparison": {
+      "enabled": true,
+      "experimental_pixel_size_um": 8.0,
+      "hw_geometry_method": "interpolated_liquidus_contour",
+      "progress_every_rows": 5000,
+      "sample_frequency_hz": 100000.0
+    },
+    "geometry": {
+      "Lx_mm": 0.624,
+      "Ly_mm": 0.624,
+      "Lz_mm": 0.336
+    },
+    "grid": {
+      "Nx": 39,
+      "Ny": 39,
+      "Nz": 21
+    },
+    "heat_source": {
+      "absorptivity": 0.35,
+      "calibration_factor": 0.565625,
+      "center_x_mm": null,
+      "center_y_mm": null,
+      "depth_mm": 0.08,
+      "gaussian_radius_mm": 0.04
+    },
+    "initial_condition": {
+      "initial_temperature_C": 25.0
+    },
+    "input": {
+      "default_spot_size_um": 80.0,
+      "h5_baseline_max_samples": 2000000,
+      "h5_fallback_fs_hz": null,
+      "laser_drive_threshold": null,
+      "ted_baseline_evidence_policy": "robust_laser_off_segments",
+      "ted_baseline_policy": "global_laser_off_median",
+      "ted_clip_acceptance_sigma_multiplier": 3.0,
+      "ted_off_segment_outlier_sigma_multiplier": 3.0,
+      "ted_reference_intercept": -0.0341,
+      "ted_reference_plate_effective_reflectivity": 0.6,
+      "ted_reference_slope": 0.001547
+    },
+    "material": {
+      "T_boiling_C": 2860.0,
+      "T_liquidus_C": 1400.0,
+      "T_solidus_C": 1375.0,
+      "cp_liquid_J_kgK": 820.0,
+      "cp_mushy_J_kgK": 650.0,
+      "cp_solid_J_kgK": 500.0,
+      "density_kg_m3": 7950.0,
+      "k_liquid_W_mK": 30.0,
+      "k_mushy_W_mK": 22.0,
+      "k_solid_W_mK": 15.0,
+      "latent_heat_fusion_J_kg": 260000.0,
+      "liquid_conductivity_enhancement_factor": 2.0,
+      "name": "316L stainless steel, phase-aware first-pass engineering model"
+    },
+    "moving_window": {
+      "large_jump_policy": "reset_to_bulk",
+      "reset_distance_threshold_mm": 0.168,
+      "reset_on_new_powered_scan_after_off": false,
+      "spot_size_um_is_diameter": true
+    },
+    "time": {
+      "dt_s": 3.3333333333333337e-06,
+      "explicit_stability_safety_factor": 0.9,
+      "total_time_s": 0.002
+    }
+  },
+  "integrity": {
+    "canonical_configuration_sha256": "ca5b370658401ac5a1ea5d74de33b89b47cadbb2e18f1929a1b07acf5d57a358"
+  },
+  "notes": [
+    "Coupon incident power is a process condition from the coupon manifest, not a fitted model parameter, so it is intentionally not frozen here.",
+    "HDF5 paths, output paths, layer selection, and output filenames are runtime/provenance fields and may vary without changing frozen physics.",
+    "The frozen field set is re-applied by experiment_configuration.apply_frozen_experiment_configuration before coupon execution."
+  ],
+  "patch_version": "13.0.3",
+  "runtime_process_fields": {
+    "allowed": [
+      "input.h5_path_select",
+      "input.h5_use_file_dialog",
+      "heat_source.incident_power_W",
+      "comparison.layer_name",
+      "comparison.output_h5_filename",
+      "output.*"
+    ],
+    "coupon_process_source": "experiment_config/coupon_manifest.json",
+    "purpose": "Fields intentionally outside the frozen model lock because they vary by coupon, selected dataset, or output destination."
+  },
+  "schema": "lpbf_frozen_coupon_experiment_configuration",
+  "schema_version": "13.0.3",
+  "ted_treatment_identifier": "frozen_provisional_patch_12_0_treatment",
+  "validation_reservations": {
+    "layer52_available_for_fitting": false,
+    "layer52_available_for_model_selection": false,
+    "layer52_reserved_for_independent_validation": true
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "execution": {
+    "start_method": "spawn",
+    "workers": 4
+  },
+  "field_dtype": "float64",
+  "git_commit": "09327ef5168dae123792e78dbb98347420924d43",
+  "git_worktree_dirty": false,
+  "guardrails": {
+    "full_campaign_dispatched": false,
+    "held_out_members_used": false,
+    "parameter_fitting_performed": false,
+    "parameter_selection_performed": false,
+    "production_semantics_changed": false,
+    "workers_wrote_files": false
+  },
+  "member_sha256": {
+    "20260904:part_1": "497fa0e5fcfe00456fdc89964b5023557fb180254a2b6a09a4d51410707719f2",
+    "20260904:part_3": "8626d2153f0ae188cc3bba5af747d7dc589d73876dec396fc3c3038632828759",
+    "20260904:part_4": "207be7398b527a6fb76d0d1928f6bec6c78ab12b75cc8cbcced97ae260ddced1",
+    "20260904:part_6": "45675033e7a925bab1319f6c86d2b88416bb3894acdf29bfa4e8c7bc55b97afd"
+  },
+  "module_sha256": "116a82ab5915743778e6db6cb0e30e6333e294d5a4b38f4bab657c10867870c0",
+  "patch_version": "22.3.8",
+  "plan_sha256": "1488b85b1cd724f8712cd5b7570ec9399e654a6b97d7b19fe738c93fd25fe183",
+  "production_hw_association_policy_version": "22.3.7",
+  "production_hw_semantics_version": "22.3.7",
+  "runtime": {
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.15"
+  },
+  "schema": "lpbf_patch22_3_8_field_capture",
+  "scored_frame_rule_version": "22.3.7",
+  "step": "step1_field_capture",
+  "units": [
+    {
+      "candidate_id": "anchor_low_ck_high_eta",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/anchor_low_ck_high_eta__20260904_part_1.npz",
+        "sha256": "bf86613724e0b29397116af324c2753deea0c70de5ce8f1129e40887341c8df4"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_low_ck_high_eta__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "anchor_low_ck_high_eta",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/anchor_low_ck_high_eta__20260904_part_3.npz",
+        "sha256": "225caec1074f56338a96fa29d77567a623614a49b22cc1acc01ad108e6f0e00a"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_low_ck_high_eta__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "anchor_low_ck_high_eta",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/anchor_low_ck_high_eta__20260904_part_4.npz",
+        "sha256": "84a374a7add3e9c24e6c4008c8475448a9c4410cb38e3083d9dc6ad56f120041"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_low_ck_high_eta__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "anchor_low_ck_high_eta",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/anchor_low_ck_high_eta__20260904_part_6.npz",
+        "sha256": "f658ad404b7d56f7cafc79fa816223267fd52e0d9035bbd147d5bfa917ae3cc1"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_low_ck_high_eta__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "anchor_transport_guard_edge",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/anchor_transport_guard_edge__20260904_part_1.npz",
+        "sha256": "e9bf7fa4e4bddcbca83d6d90878d9ace99143a3b4841668314fc9a61951c929d"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_transport_guard_edge__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "anchor_transport_guard_edge",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/anchor_transport_guard_edge__20260904_part_3.npz",
+        "sha256": "b006903c99226a34c6f8a17b9bb42400a55de4aaa8fbcc622d4b5e7b365d60e9"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_transport_guard_edge__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "anchor_transport_guard_edge",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/anchor_transport_guard_edge__20260904_part_4.npz",
+        "sha256": "496fc2ea3115ae1557a5fca9f895d1b228050e1850d33ce621e399e2b2ef7646"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_transport_guard_edge__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "anchor_transport_guard_edge",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/anchor_transport_guard_edge__20260904_part_6.npz",
+        "sha256": "ee6279303ccb90e1decbe6eaedb009f5b184487df5a7722b7416426a64526fd5"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/anchor_transport_guard_edge__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_01",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_01__20260904_part_1.npz",
+        "sha256": "ebe2e05de0603aa59c75bb2ec92a31d98b9350e94ae2118e38c3a9ff5df4b5c1"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_01__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_01",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_01__20260904_part_3.npz",
+        "sha256": "cdcb3a64268cbc94841ad89e1d1915ee8690427332ef8a7e9bad4fca3ec6126c"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_01__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_01",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_01__20260904_part_4.npz",
+        "sha256": "7321825128ee73d6aba8e4803e0fc88a7ad0564248d9798b5ec9808489c25029"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_01__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_01",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_01__20260904_part_6.npz",
+        "sha256": "847ac32ad5d52955d8787e0ca3052e271e670860ac2626029abd73ee2e9b2873"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_01__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_02",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_02__20260904_part_1.npz",
+        "sha256": "0dc3adfa287c7caad4dde513efb4842056b24917ea92246521b2db77f626bba8"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_02__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_02",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_02__20260904_part_3.npz",
+        "sha256": "afb66e16546a31ee92a74a35dca6f6e1ae63078592bf7361daf302641ff21b27"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_02__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_02",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_02__20260904_part_4.npz",
+        "sha256": "8d909b883d61cdfad776de8a91847a9c2d5d32e7e5dbf1ab90b0a46b4ccf429d"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_02__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_02",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_02__20260904_part_6.npz",
+        "sha256": "81278ee9664857b14365c0f172bbdc01ffd7840ea4551202d3680fb2d05f10df"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_02__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_03",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_03__20260904_part_1.npz",
+        "sha256": "afd0b26994b87b7cd318623e034641a5d46a9669325995832b897e55a7594890"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_03__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_03",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_03__20260904_part_3.npz",
+        "sha256": "b69215a19d0376c3e92505b83b6a55ba48971e6e46e3900c0ecbccd313f7962d"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_03__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_03",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_03__20260904_part_4.npz",
+        "sha256": "dad7272f74bce619c158c7d60f8e65dbd460ca728a61295e54b2c05a5002d4d4"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_03__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_03",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_03__20260904_part_6.npz",
+        "sha256": "ee8d3f0bfcc083a3e8556010b8512d1d5c95f0c53f76e993b7d7e18a492d7222"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_03__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_04",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_04__20260904_part_1.npz",
+        "sha256": "67afc06cc1e941915608a5be7708d671365ec78fce5b6a87f2cfc536946390a0"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_04__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_04",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_04__20260904_part_3.npz",
+        "sha256": "5fb94cca3bafb5260f1349dd5b7e6476966d242edff2cd34fc84cccfe39b60bc"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_04__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_04",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_04__20260904_part_4.npz",
+        "sha256": "fc39ce3f82a201027ace8858a0859daddf5cff57fff391249c6ea79bb7b2e91e"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_04__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_04",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_04__20260904_part_6.npz",
+        "sha256": "8716583faa1146f44e43bb9f0783a18a3fa2d56e0e20235f65ba5cb7af3b8804"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_04__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_05",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_05__20260904_part_1.npz",
+        "sha256": "d0108abb9e7e8091745351068dea9aab21315ca6abf34fe127116e2a4615731f"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_05__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_05",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_05__20260904_part_3.npz",
+        "sha256": "40fa46750aeca90b67d758ab63e302c17d91515ef65bdce0b5615290d91abe21"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_05__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_05",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_05__20260904_part_4.npz",
+        "sha256": "e6cda7c250df6bf49159c22f362efcb191482c5ce72f1e4c3ef01832eb082a4e"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_05__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_05",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_05__20260904_part_6.npz",
+        "sha256": "75ef55d0d7366dc711cc9665b6cede402d497bdf6d8bd7c62e9c7cc84d888a5d"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_05__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_06",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_06__20260904_part_1.npz",
+        "sha256": "4eac6902b1b20cc065afac4c351449ae5a961ceb3a0dd13c8fe280d7067a0d29"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_06__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_06",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_06__20260904_part_3.npz",
+        "sha256": "4194690edfedbd0e0dbe735827e85dd03c0efeced011cba4d452343101063f40"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_06__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_06",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_06__20260904_part_4.npz",
+        "sha256": "d7283429585d64dc3fe70f73d03bd5aafb2fa2ea91ebb58df442f2ca599320e8"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_06__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_06",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_06__20260904_part_6.npz",
+        "sha256": "afb8ab930f998bf4bf43e147060778769adfef97c899ed5943531c1dd8fec2cc"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_06__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_07",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_07__20260904_part_1.npz",
+        "sha256": "f7322d3bf7dede437a15b195e674e64fea20e037cae76ed54506b90038987550"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_07__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_07",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_07__20260904_part_3.npz",
+        "sha256": "80fca72a551bf6bf8187b4b2b812021d2bd1537cabf262e598bb75a674bfe9de"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_07__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_07",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_07__20260904_part_4.npz",
+        "sha256": "73a6e8862f1dc5d98190089aea7718f78aa688ad3844c8ba3e77f4ae68b17b0e"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_07__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_07",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_07__20260904_part_6.npz",
+        "sha256": "5b1fa52b1a991c2ab0c3a7999725d12efc5a196083b20b21249dd9f16744cbb4"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_07__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_08",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_08__20260904_part_1.npz",
+        "sha256": "afde0ed9843f067e021cc1c454b5bab7668652f24cbeb51a36345aa5ad87b8ec"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_08__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_08",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_08__20260904_part_3.npz",
+        "sha256": "31096bf9e17d0d362227d1cddbbeed3f749572fd7e4dccb3756cae2ca1f66438"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_08__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_08",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_08__20260904_part_4.npz",
+        "sha256": "f8e2251010807fa9dceefbbc25b563255bbef0bad09f4aa0b8a47d315774170a"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_08__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_08",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_08__20260904_part_6.npz",
+        "sha256": "f11d7027ee7afabdc2c54b7dd4a9dd7a60bc8c73e18022f98158844848756387"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_08__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_09",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_09__20260904_part_1.npz",
+        "sha256": "87ab4a187736b98b04c925f8d18258ca3dc8efe91793a352aeea8df1cac9a4aa"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_09__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_09",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_09__20260904_part_3.npz",
+        "sha256": "648d0cfcd4207476fb83c7ade986b62f80e2b7c4e6d13563cd12367079474312"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_09__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_09",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_09__20260904_part_4.npz",
+        "sha256": "79c427de13398d76b8433aecd5c5ce8760d074577b91f5ba57ccf252d9b22325"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_09__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_09",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_09__20260904_part_6.npz",
+        "sha256": "64660ea669c7435c50daea1e9193b9bccec6d55d4064112308a44ca4d5d47b63"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_09__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_10",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_10__20260904_part_1.npz",
+        "sha256": "c23fb03e5d97528b9eeff4e4a7abf8e9504696ca8169bf2318e35ef56880f197"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_10__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_10",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_10__20260904_part_3.npz",
+        "sha256": "f414fdee1d9b0efda37ed78edb9d69ad235c7cd96d791b4df0f48c2fb5bf7b6d"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_10__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_10",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_10__20260904_part_4.npz",
+        "sha256": "6fd010b7eb0ef8b6fe39987958e464954031a301d9e26db52fa329ca15a1eb86"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_10__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_10",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_10__20260904_part_6.npz",
+        "sha256": "e97fd4982ba222848eea4d544ea8305cc1b6a14071ba92c53f020c607664bce4"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_10__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_11",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_11__20260904_part_1.npz",
+        "sha256": "b1f4a44fb8c13221a86df6ddabbdd29c4c84b378fc410c96169ad631e9bf7890"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_11__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_11",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_11__20260904_part_3.npz",
+        "sha256": "8254a773626dc0412d86e19dd8842de4ee4e378b9b59cd827fcecf1d6a46df77"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_11__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_11",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_11__20260904_part_4.npz",
+        "sha256": "52107ef79ba6f41c5d0b8519d11c40e26414d306ace560637e01ca19ca870a10"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_11__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_11",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_11__20260904_part_6.npz",
+        "sha256": "b0ce2eac85fbc3f25f0a07226177cedb3f51558dce2fe096268d7e3bf8d1ef29"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_11__20260904_part_6.json"
+    },
+    {
+      "candidate_id": "halton_12",
+      "capture_file": {
+        "frames": 1518,
+        "path": "fields/halton_12__20260904_part_1.npz",
+        "sha256": "75ffabdd729c50a7b0bd2c4a00e730ed44e16c996ec4b1ba5e72e5fa677d8ac0"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1518,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_1",
+      "requested_frame_count": 1518,
+      "returned_frame_count": 1518,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_12__20260904_part_1.json"
+    },
+    {
+      "candidate_id": "halton_12",
+      "capture_file": {
+        "frames": 648,
+        "path": "fields/halton_12__20260904_part_3.npz",
+        "sha256": "677ffe705fe7314ae28e3c0a5393d184cbfce832b1a85328626646d5810d83d0"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 648,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_3",
+      "requested_frame_count": 648,
+      "returned_frame_count": 648,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_12__20260904_part_3.json"
+    },
+    {
+      "candidate_id": "halton_12",
+      "capture_file": {
+        "frames": 1611,
+        "path": "fields/halton_12__20260904_part_4.npz",
+        "sha256": "20489a08aff34b89c01cdf4290c024c40d4ab51ce426e35da5224e0b75a28e61"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 1611,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_4",
+      "requested_frame_count": 1611,
+      "returned_frame_count": 1611,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_12__20260904_part_4.json"
+    },
+    {
+      "candidate_id": "halton_12",
+      "capture_file": {
+        "frames": 657,
+        "path": "fields/halton_12__20260904_part_6.npz",
+        "sha256": "779786e76d3b4047a3d033370ac6054be5c6567910932c84c8ccf8b7a3513841"
+      },
+      "capture_gate_failures": [],
+      "captured_frame_count": 657,
+      "evaluation_status": "PASS",
+      "member_identity": "20260904:part_6",
+      "requested_frame_count": 657,
+      "returned_frame_count": 657,
+      "stage_a_gate_failures": [],
+      "unit_file": "units/halton_12__20260904_part_6.json"
+    }
+  ]
+}

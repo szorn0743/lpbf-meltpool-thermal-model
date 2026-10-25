@@ -1,0 +1,451 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "confirm_c1",
+      "coded": [
+        -1.0,
+        0.8354817708333329,
+        -1.0
+      ],
+      "coordinates": {
+        "abs_depth_identifiable_coordinate": -3.0,
+        "eta_directional": 0.0,
+        "liquid_conductivity_enhancement_factor": 2.4177408854166664
+      },
+      "guard_value": 0.7243672598296406,
+      "origin": "confirmation"
+    }
+  ],
+  "complete": true,
+  "execution": {
+    "requested_workers": 4,
+    "start_method": "spawn",
+    "units_reused": 0,
+    "units_run": 9,
+    "wall_time_s": 1146.0,
+    "workers": 4
+  },
+  "guardrails": {
+    "full_campaign_dispatched": false,
+    "held_out_members_used": false,
+    "production_semantics_changed": false,
+    "workers_wrote_files": false
+  },
+  "patch": "22.4.3.2",
+  "proposal_sha256": "ff356ad3372dfdd575c1032376f1e08d64557b0cfc033fd79a6210f2a6e67ceb",
+  "provenance": {
+    "beam_share_floor": 0.02,
+    "campaign_dispatch_lock": {
+      "CAMPAIGN_DISPATCH_AUTHORIZED_BY": null,
+      "pass": true
+    },
+    "coverage_floor": 0.95,
+    "design_sha256": "2fa0b8bc991a6bfdfeb2fa9191ba690ce20d18a1bddf08e7153fdae24ae3bf8c",
+    "git_commit": "78dc07df8c9016f3d0d9850213cd1e1d6173a543",
+    "git_worktree_dirty": false,
+    "held_out_members_read": [],
+    "member_sha256": {
+      "20260730:part_1": "c8b2142e9736eb85c5c685152c521641a4757bdabe11949ede0e4472ee8ddb6b",
+      "20260730:part_3": "75f079f2f634a33ecb4e4dff433e86ee1efb913572194064ca4cd4848b761b3d",
+      "20260730:part_5": "73af67d01388335c4aaba36e43f0109d3a3fb070887e7e9718e6963e8e3a7b1e",
+      "20260730:part_6": "eaaaace6db115145639f5c3417752cf066d03e098f1c5d5483af1113de9be589",
+      "20260731:part_1": "a37f51d37cf23c8c87f0867c166c1917132229b43764fce6a648b7993b7c7a69",
+      "20260731:part_3": "edc6fe77788b24eb21b5465c27934606aa6226a84878502a2f97dff5e6112780",
+      "20260731:part_5": "48585ec5a93ee676aa46250693327377c8e4403be76dc9fef09e963a0516fac4",
+      "20260731:part_6": "2e20de47186921a4fc5110164585050d0c4d05bf2d92385a1a35aa851e81d2f8",
+      "20260910:part_1": "3bf156a6acaa8b5158f5f647b63b365acfe3026591044e95761a9deba398a927"
+    },
+    "members_read": [
+      "20260730:part_1",
+      "20260730:part_3",
+      "20260730:part_5",
+      "20260730:part_6",
+      "20260731:part_1",
+      "20260731:part_3",
+      "20260731:part_5",
+      "20260731:part_6",
+      "20260910:part_1"
+    ],
+    "module_sha256": "d31422f1513a83502f4cfcb67e7ad5dcbe33b91d4562aeb202fdb3d9320776a1",
+    "objective_contract_version": "22.4.3.2",
+    "objective_module_sha256": "fa7c356f5f711ed8b1ec864e0a02cbbf2296f9c3711d4b1a7a24c6aa115efcfb",
+    "pixel_floor": 1.0,
+    "plan_sha256": "ac103ea24ec30cd085562bce74ff2ab982e8a77ae04bc6ae865bde7122c7ce0d",
+    "production_hw_association_policy_version": "22.3.7",
+    "production_hw_semantics_version": "22.3.7",
+    "runtime": {
+      "numpy": "2.5.4",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.15"
+    },
+    "scored_frame_rule_version": "22.3.7",
+    "window_cells": 99
+  },
+  "schema": "lpbf_patch22_4_3_2_window_calibration",
+  "scores": {
+    "confirm_c1": {
+      "H_component": 0.42324158755994323,
+      "J": 0.29807293620968767,
+      "W_component": 0.1729042848594321,
+      "candidate_id": "confirm_c1",
+      "captured_frame_count": 8943,
+      "condition_rows": [
+        {
+          "H_mean_log": 0.6273568366179891,
+          "W_mean_log": 0.028348799493724725,
+          "condition_objective_contribution": 0.30564852542009935,
+          "e_H": 0.7180091864569607,
+          "e_W": 0.30945089918048757,
+          "exact_condition_id": "P140_V700",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.9553585398602134,
+          "median_W_ratio": 0.8800381740411393,
+          "member_identities": [
+            "20260910:part_1"
+          ]
+        },
+        {
+          "H_mean_log": 0.4270504445554411,
+          "W_mean_log": -0.2727500703111022,
+          "condition_objective_contribution": 0.33613999772011294,
+          "e_H": 0.6578322939570956,
+          "e_W": 0.4894248343386053,
+          "exact_condition_id": "P140_V850",
+          "floored_frame_count": 7,
+          "median_H_ratio": 1.6930006932764423,
+          "median_W_ratio": 0.7286766469065606,
+          "member_identities": [
+            "20260730:part_1",
+            "20260731:part_1"
+          ]
+        },
+        {
+          "H_mean_log": 0.48530708962193425,
+          "W_mean_log": -0.22559076249129,
+          "condition_objective_contribution": 0.29615997433858954,
+          "e_H": 0.6374479263685912,
+          "e_W": 0.4312540896566226,
+          "exact_condition_id": "P160_V950",
+          "floored_frame_count": 3,
+          "median_H_ratio": 1.7600872744002145,
+          "median_W_ratio": 0.7360805247634447,
+          "member_identities": [
+            "20260730:part_3",
+            "20260731:part_3"
+          ]
+        },
+        {
+          "H_mean_log": 0.5136974977419193,
+          "W_mean_log": -0.18081553919268392,
+          "condition_objective_contribution": 0.24674035281255924,
+          "e_H": 0.5968692019799569,
+          "e_W": 0.37044279093124216,
+          "exact_condition_id": "P180_V1050",
+          "floored_frame_count": 2,
+          "median_H_ratio": 1.7657022414039707,
+          "median_W_ratio": 0.7482468818019843,
+          "member_identities": [
+            "20260730:part_5",
+            "20260731:part_5"
+          ]
+        },
+        {
+          "H_mean_log": 0.4481105184358144,
+          "W_mean_log": -0.2047645827822047,
+          "condition_objective_contribution": 0.3056758307570772,
+          "e_H": 0.6366590263920459,
+          "e_W": 0.45389089617185174,
+          "exact_condition_id": "P190_V1100",
+          "floored_frame_count": 4,
+          "median_H_ratio": 1.735245119576356,
+          "median_W_ratio": 0.7432196935017904,
+          "member_identities": [
+            "20260730:part_6",
+            "20260731:part_6"
+          ]
+        }
+      ],
+      "coupon_rows": [
+        {
+          "coupon_scalar_objective": 0.21696652279980944,
+          "coverage": 1.0,
+          "e_H": 0.55447691461339,
+          "e_W": 0.35565207262215465,
+          "exact_condition_id": "P140_V850",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.6934076949360681,
+          "median_W_ratio": 0.722045669834534,
+          "median_r_H": 0.5267428695402046,
+          "median_r_W": -0.32566688747364414,
+          "member_identity": "20260730:part_1",
+          "scored_frame_count": 1056
+        },
+        {
+          "coupon_scalar_objective": 0.23076086994457629,
+          "coverage": 1.0,
+          "e_H": 0.5875339426168122,
+          "e_W": 0.34106539865881585,
+          "exact_condition_id": "P160_V950",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.7654947906871639,
+          "median_W_ratio": 0.7316476206636764,
+          "median_r_H": 0.5684309809575213,
+          "median_r_W": -0.31245628333164777,
+          "member_identity": "20260730:part_3",
+          "scored_frame_count": 964
+        },
+        {
+          "coupon_scalar_objective": 0.22826248600656002,
+          "coverage": 1.0,
+          "e_H": 0.584648845758773,
+          "e_W": 0.3386896797454191,
+          "exact_condition_id": "P180_V1050",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.7655268251269982,
+          "median_W_ratio": 0.7437005572848849,
+          "median_r_H": 0.5684491303388438,
+          "median_r_W": -0.29611680193218587,
+          "member_identity": "20260730:part_5",
+          "scored_frame_count": 869
+        },
+        {
+          "coupon_scalar_objective": 0.22183658591949623,
+          "coverage": 1.0,
+          "e_H": 0.5662378606310868,
+          "e_W": 0.3507817797818501,
+          "exact_condition_id": "P190_V1100",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.7435672985680586,
+          "median_W_ratio": 0.7413575327738069,
+          "median_r_H": 0.55593318608352,
+          "median_r_W": -0.29927226968241394,
+          "member_identity": "20260730:part_6",
+          "scored_frame_count": 847
+        },
+        {
+          "coupon_scalar_objective": 0.45531347264041644,
+          "coverage": 1.0,
+          "e_H": 0.7470220914447744,
+          "e_W": 0.5937886325741745,
+          "exact_condition_id": "P140_V850",
+          "floored_frame_count": 7,
+          "median_H_ratio": 1.6905022096837168,
+          "median_W_ratio": 0.7350850669267485,
+          "median_r_H": 0.5250256502833858,
+          "median_r_W": -0.3077690491510427,
+          "member_identity": "20260731:part_1",
+          "scored_frame_count": 1115
+        },
+        {
+          "coupon_scalar_objective": 0.36155907873260273,
+          "coverage": 1.0,
+          "e_H": 0.6837277118388415,
+          "e_W": 0.5056031779259577,
+          "exact_condition_id": "P160_V950",
+          "floored_frame_count": 3,
+          "median_H_ratio": 1.745790632524121,
+          "median_W_ratio": 0.7408894378676134,
+          "median_r_H": 0.5572075375836267,
+          "median_r_W": -0.29990387147486286,
+          "member_identity": "20260731:part_3",
+          "scored_frame_count": 971
+        },
+        {
+          "coupon_scalar_objective": 0.26521821961855846,
+          "coverage": 1.0,
+          "e_H": 0.6088443279667763,
+          "e_W": 0.3996811523449679,
+          "exact_condition_id": "P180_V1050",
+          "floored_frame_count": 2,
+          "median_H_ratio": 1.7672787773437233,
+          "median_W_ratio": 0.7532903163270841,
+          "median_r_H": 0.5694409465789267,
+          "median_r_W": -0.2833046172404329,
+          "member_identity": "20260731:part_5",
+          "scored_frame_count": 896
+        },
+        {
+          "coupon_scalar_objective": 0.38951507559465826,
+          "coverage": 1.0,
+          "e_H": 0.7000315114056406,
+          "e_W": 0.5375742127636435,
+          "exact_condition_id": "P190_V1100",
+          "floored_frame_count": 4,
+          "median_H_ratio": 1.7310048554763715,
+          "median_W_ratio": 0.7472851011488173,
+          "median_r_H": 0.5487020532826647,
+          "median_r_W": -0.29130850541300757,
+          "member_identity": "20260731:part_6",
+          "scored_frame_count": 856
+        },
+        {
+          "coupon_scalar_objective": 0.30564852542009935,
+          "coverage": 1.0,
+          "e_H": 0.7180091864569607,
+          "e_W": 0.30945089918048757,
+          "exact_condition_id": "P140_V700",
+          "floored_frame_count": 0,
+          "median_H_ratio": 1.9553585398602134,
+          "median_W_ratio": 0.8800381740411393,
+          "median_r_H": 0.6705735729702099,
+          "median_r_W": -0.12778999285854847,
+          "member_identity": "20260910:part_1",
+          "scored_frame_count": 1369
+        }
+      ],
+      "coverage": 1.0,
+      "coverage_by_coupon": {
+        "20260730:part_1": 1.0,
+        "20260730:part_3": 1.0,
+        "20260730:part_5": 1.0,
+        "20260730:part_6": 1.0,
+        "20260731:part_1": 1.0,
+        "20260731:part_3": 1.0,
+        "20260731:part_5": 1.0,
+        "20260731:part_6": 1.0,
+        "20260910:part_1": 1.0
+      },
+      "coverage_flag": false,
+      "e_H": 0.6505702018690552,
+      "e_W": 0.41581761008816365,
+      "failures": [],
+      "floored_by_quantity": {
+        "experimental_H": 0,
+        "experimental_W": 0,
+        "simulated_H": 16,
+        "simulated_W": 16
+      },
+      "floored_frame_count": 16,
+      "fraction_peak_above_boiling": 0.03444034440344403,
+      "low_coverage_coupons": [],
+      "median_peak_surface_K": 2117.3551007591514,
+      "no_laser_associated_melt_count": 15,
+      "penalty_applied": false,
+      "production_status_counts": {
+        "NO_LASER_ASSOCIATED_MELT": 15,
+        "SELECTED": 8927,
+        "ZERO_FOOTPRINT": 1
+      },
+      "scored_frame_count": 8943,
+      "sensitivity": {
+        "H_only": 0.42324158755994323,
+        "W_only": 0.1729042848594321,
+        "pixel_22_3_7": 79.88655461956147,
+        "pixel_22_3_7_status": "PASS"
+      },
+      "status": "PASS",
+      "zero_prediction_frame_count": 16
+    }
+  },
+  "stage": "confirm",
+  "units": [
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 1056,
+      "gate_failures": [],
+      "member_identity": "20260730:part_1",
+      "ok": true,
+      "requested_frame_count": 1056,
+      "returned_frame_count": 1056,
+      "unit_sha256": "b2f344588277f0d6acf16bbe17026888adff77e0d74e19eeba211ec986921511",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260730:part_1"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 964,
+      "gate_failures": [],
+      "member_identity": "20260730:part_3",
+      "ok": true,
+      "requested_frame_count": 964,
+      "returned_frame_count": 964,
+      "unit_sha256": "f64073ece0967444ae046a128efebb5126162f864c528f0c797c09bbf42ca7e6",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260730:part_3"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 869,
+      "gate_failures": [],
+      "member_identity": "20260730:part_5",
+      "ok": true,
+      "requested_frame_count": 869,
+      "returned_frame_count": 869,
+      "unit_sha256": "9f59432d4f5bb0c5dca876083ace31f2e489eb76693091dc54743a15e8892406",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260730:part_5"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 847,
+      "gate_failures": [],
+      "member_identity": "20260730:part_6",
+      "ok": true,
+      "requested_frame_count": 847,
+      "returned_frame_count": 847,
+      "unit_sha256": "89c3c9c45112a1a4956527889f0b52d33e33e0485bf2cbbbb49299fe24fc07ac",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260730:part_6"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 1115,
+      "gate_failures": [],
+      "member_identity": "20260731:part_1",
+      "ok": true,
+      "requested_frame_count": 1115,
+      "returned_frame_count": 1115,
+      "unit_sha256": "474d36b876dc1f6332bcaae9c3288a712c921705c0da7dd5b14977bc4b8e7e45",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260731:part_1"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 971,
+      "gate_failures": [],
+      "member_identity": "20260731:part_3",
+      "ok": true,
+      "requested_frame_count": 971,
+      "returned_frame_count": 971,
+      "unit_sha256": "069071cb2855803daca5163e372d441b58a5a138a4ca3e415bc0d3402cb9bb1a",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260731:part_3"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 896,
+      "gate_failures": [],
+      "member_identity": "20260731:part_5",
+      "ok": true,
+      "requested_frame_count": 896,
+      "returned_frame_count": 896,
+      "unit_sha256": "69d1a70bfa645f022825348742f8095cfa72d84338cb64afbb61127f42171afe",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260731:part_5"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 856,
+      "gate_failures": [],
+      "member_identity": "20260731:part_6",
+      "ok": true,
+      "requested_frame_count": 856,
+      "returned_frame_count": 856,
+      "unit_sha256": "7f64458472cf964a3bd46597f37aa89df4c044044b237d77a88c035691cee0b5",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260731:part_6"
+    },
+    {
+      "candidate_id": "confirm_c1",
+      "capture_file": null,
+      "captured_frame_count": 1369,
+      "gate_failures": [],
+      "member_identity": "20260910:part_1",
+      "ok": true,
+      "requested_frame_count": 1369,
+      "returned_frame_count": 1369,
+      "unit_sha256": "096e021a69c691535f01092868516620b51d60211c787d86d96fd209d952530f",
+      "work_unit_id": "22.4.3.2:confirm_c1@20260910:part_1"
+    }
+  ]
+}

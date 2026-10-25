@@ -1,0 +1,38 @@
+calibration unit 1/9: 20260730:part_6
+calibration unit 2/9: 20260730:part_5
+calibration unit 3/9: 20260730:part_3
+calibration unit 4/9: 20260730:part_1
+calibration unit 5/9: 20260731:part_3
+calibration unit 6/9: 20260731:part_5
+calibration unit 7/9: 20260731:part_6
+calibration unit 8/9: 20260731:part_1
+calibration unit 9/9: 20260910:part_1
+evaluation unit 1/15: 20260730:part_4
+evaluation unit 2/15: 20260731:part_4
+evaluation unit 3/15: 20260730:part_2
+evaluation unit 4/15: 20260731:part_2
+evaluation unit 5/15: 20260904:part_3
+evaluation unit 6/15: 20260904:part_2
+evaluation unit 7/15: 20260904:part_1
+evaluation unit 8/15: 20260904:part_6
+evaluation unit 9/15: 20260904:part_5
+evaluation unit 10/15: 20260904:part_4
+evaluation unit 11/15: 20260910:part_4
+evaluation unit 12/15: 20260910:part_5
+evaluation unit 13/15: 20260910:part_2
+evaluation unit 14/15: 20260910:part_3
+evaluation unit 15/15: 20260910:part_6
+{
+  "reading_S": "S_DESCRIPTIVE",
+  "t150": {
+    "lam850_uniform_sig0.0": 1950.0,
+    "lam850_uniform_sig2.0": 1825.0
+  },
+  "execution": {
+    "requested_workers": 4,
+    "start_method": "spawn",
+    "units": 24,
+    "wall_time_s": 269.3
+  }
+}
+exit 0

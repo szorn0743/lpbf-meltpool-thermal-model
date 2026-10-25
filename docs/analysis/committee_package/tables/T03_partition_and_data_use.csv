@@ -1,0 +1,25 @@
+member,a25_role,stages,descriptive_camera_summary_2026_10_12,examined_by_22_3_8_before_window_choice,model_compared_before_freeze,first_model_comparison,used_for_22_4_3_2_selection
+20260730:part_1,calibration,S01 S03 S04 S05 S06 S08 S09 S11 S12 S13 S14 S18 S19 S22 S24,true,true,true,22.4.3 interrupted 272-unit campaign (2026-10-13),true
+20260730:part_2,in-window held out,S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260730:part_3,calibration,S01 S03 S04 S06 S08 S09 S11 S12 S14 S19 S22 S24,true,true,true,22.4.3 interrupted 272-unit campaign (2026-10-13),true
+20260730:part_4,in-window held out,S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260730:part_5,calibration,S01 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260730:part_6,calibration,S01 S02 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260731:part_1,calibration,S01 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260731:part_2,in-window held out,S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260731:part_3,calibration,S01 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260731:part_4,in-window held out,S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260731:part_5,calibration,S01 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260731:part_6,calibration,S01 S02 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260904:part_1,"out, examined",S01 S03 S08 S12 S14 S16 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260904:part_2,"out, blind",S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260904:part_3,"out, examined",S01 S02 S03 S08 S12 S14 S16 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260904:part_4,"out, examined",S01 S02 S03 S08 S12 S14 S16 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260904:part_5,in-window held out,S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260904:part_6,"out, examined",S01 S02 S03 S08 S12 S14 S16 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260910:part_1,calibration,S01 S03 S08 S12 S14 S19 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),true
+20260910:part_2,"out, blind",S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260910:part_3,"out, examined",S01 S03 S08 S12 S14 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260910:part_4,"out, examined",S01 S03 S08 S12 S14 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false
+20260910:part_5,"out, blind",S01 S22 S24,true,false,false,"22.4.3.2 evaluate (V, X) and synthetic camera (S) (2026-10-16)",false
+20260910:part_6,"out, examined",S01 S03 S08 S12 S14 S22 S24,true,true,true,22.3.8 Steps 2-3 replay and synthetic camera (2026-10-14),false

@@ -1,0 +1,313 @@
+{
+  "schema": "lpbf_patch21_3_coarse_global_search_design",
+  "schema_version": "21.3.0",
+  "patch": "21.3",
+  "design_status": "FROZEN_IMPLEMENTATION_PENDING_LOCAL_GLOBAL_SEARCH",
+  "purpose": "Prospectively freeze a coarse global, space-filling calibration search over the accepted Patch 21.2 three-coordinate contract before any local refinement.",
+  "predecessor": {
+    "status": "PASS_PATCH_21_2_OPTIMIZER_CONTRACT_ACCEPTED",
+    "review_status_sha256": "fd254c54c0112c7981c17165aa6c52ecada602ef72bd44fc951ccfc23356bc28",
+    "scientific_review_sha256": "3abc9f3a817f5b08852f3f05ef6147eedec1c096a1323dcc95373228c674b5b0",
+    "source_results_sha256": "50cf1034d4e197b87e9b003ef932746eac19efbd4a2828c35ab5c45095c7163f",
+    "patch21_2_design_identity": "548e1fd9d1ef4f7d20c90b4e8acbd1d07b350c45ada9c8575fd8e46b6133046a",
+    "patch21_0_contract_identity": "f22212a98fbdbd59e92812aaeada0c105d68da2ca0eedcec3779d9ef8e317a5d",
+    "canonical_manifest_identity": "8e72d1fc069051dc1f7c3a9a234e6dbd882dce911936e3f427c1a9b6b793e018"
+  },
+  "parameter_space": {
+    "coefficient_order": [
+      "abs_depth_identifiable_coordinate",
+      "liquid_conductivity_enhancement_factor",
+      "eta_directional"
+    ],
+    "coordinate_bounds": {
+      "abs_depth_identifiable_coordinate": {
+        "minimum": -3.0,
+        "maximum": 3.0
+      },
+      "liquid_conductivity_enhancement_factor": {
+        "minimum": 1.5,
+        "maximum": 2.5
+      },
+      "eta_directional": {
+        "minimum": 0.0,
+        "maximum": 1.0
+      }
+    },
+    "policy_scope": "global_shared_across_all_16_calibration_members",
+    "coupled_guard": {
+      "quantity": "directional.selected_over_safe_limit",
+      "maximum_allowed": 0.95,
+      "failure_behavior": "reject_before_thermal_execution"
+    },
+    "quadratic_boiling_strength": {
+      "value": 0.5,
+      "optimizer_controlled": false
+    },
+    "process_conditioned_parameters_selected": false
+  },
+  "search_design": {
+    "method": "hybrid_boundary_anchors_plus_halton_low_discrepancy",
+    "candidate_count": 17,
+    "anchor_count": 5,
+    "halton_candidate_count": 12,
+    "halton_bases": [
+      2,
+      3,
+      5
+    ],
+    "halton_rule": "map radical-inverse coordinates linearly to frozen box bounds; retain candidates only when the frozen coupled prethermal guard passes",
+    "halton_indices_used": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "halton_indices_skipped_by_guard": [
+      8
+    ],
+    "expected_trials_per_candidate": 16,
+    "expected_maximum_atomic_trial_count": 272,
+    "candidate_order_is_frozen": true,
+    "all_frozen_candidates_must_be_prethermally_admissible": true,
+    "candidates": [
+      {
+        "candidate_id": "anchor_center",
+        "role": "accepted_patch21_2_reference_anchor",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.0,
+          "liquid_conductivity_enhancement_factor": 2.0,
+          "eta_directional": 0.5
+        }
+      },
+      {
+        "candidate_id": "anchor_t_min",
+        "role": "abs_depth_lower_bound_anchor",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -3.0,
+          "liquid_conductivity_enhancement_factor": 2.0,
+          "eta_directional": 0.5
+        }
+      },
+      {
+        "candidate_id": "anchor_t_max",
+        "role": "abs_depth_upper_bound_anchor",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 3.0,
+          "liquid_conductivity_enhancement_factor": 2.0,
+          "eta_directional": 0.5
+        }
+      },
+      {
+        "candidate_id": "anchor_transport_guard_edge",
+        "role": "high_conductivity_guard_edge_anchor",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.0,
+          "liquid_conductivity_enhancement_factor": 2.5,
+          "eta_directional": 0.4
+        }
+      },
+      {
+        "candidate_id": "anchor_low_ck_high_eta",
+        "role": "low_conductivity_high_directionality_anchor",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.0,
+          "liquid_conductivity_enhancement_factor": 1.5,
+          "eta_directional": 1.0
+        }
+      },
+      {
+        "candidate_id": "halton_01",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.0,
+          "liquid_conductivity_enhancement_factor": 1.8333333333333333,
+          "eta_directional": 0.2
+        },
+        "halton_index": 1
+      },
+      {
+        "candidate_id": "halton_02",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -1.5,
+          "liquid_conductivity_enhancement_factor": 2.1666666666666665,
+          "eta_directional": 0.4
+        },
+        "halton_index": 2
+      },
+      {
+        "candidate_id": "halton_03",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 1.5,
+          "liquid_conductivity_enhancement_factor": 1.6111111111111112,
+          "eta_directional": 0.6
+        },
+        "halton_index": 3
+      },
+      {
+        "candidate_id": "halton_04",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -2.25,
+          "liquid_conductivity_enhancement_factor": 1.9444444444444444,
+          "eta_directional": 0.8
+        },
+        "halton_index": 4
+      },
+      {
+        "candidate_id": "halton_05",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.75,
+          "liquid_conductivity_enhancement_factor": 2.2777777777777777,
+          "eta_directional": 0.04
+        },
+        "halton_index": 5
+      },
+      {
+        "candidate_id": "halton_06",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -0.75,
+          "liquid_conductivity_enhancement_factor": 1.7222222222222223,
+          "eta_directional": 0.24000000000000002
+        },
+        "halton_index": 6
+      },
+      {
+        "candidate_id": "halton_07",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 2.25,
+          "liquid_conductivity_enhancement_factor": 2.0555555555555554,
+          "eta_directional": 0.44
+        },
+        "halton_index": 7
+      },
+      {
+        "candidate_id": "halton_08",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 0.375,
+          "liquid_conductivity_enhancement_factor": 1.537037037037037,
+          "eta_directional": 0.8400000000000001
+        },
+        "halton_index": 9
+      },
+      {
+        "candidate_id": "halton_09",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -1.125,
+          "liquid_conductivity_enhancement_factor": 1.8703703703703702,
+          "eta_directional": 0.08
+        },
+        "halton_index": 10
+      },
+      {
+        "candidate_id": "halton_10",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 1.875,
+          "liquid_conductivity_enhancement_factor": 2.2037037037037037,
+          "eta_directional": 0.28
+        },
+        "halton_index": 11
+      },
+      {
+        "candidate_id": "halton_11",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": -1.875,
+          "liquid_conductivity_enhancement_factor": 1.6481481481481481,
+          "eta_directional": 0.48000000000000004
+        },
+        "halton_index": 12
+      },
+      {
+        "candidate_id": "halton_12",
+        "role": "admissible_halton_low_discrepancy",
+        "coordinates": {
+          "abs_depth_identifiable_coordinate": 1.125,
+          "liquid_conductivity_enhancement_factor": 1.9814814814814814,
+          "eta_directional": 0.6799999999999999
+        },
+        "halton_index": 13
+      }
+    ],
+    "minimum_successful_candidate_count_for_review": 12,
+    "reference_repeatability_anchor": {
+      "candidate_id": "anchor_center",
+      "accepted_patch21_2_objective": 551.4944680148168,
+      "maximum_relative_difference": 1e-08,
+      "must_pass": true
+    }
+  },
+  "data_partition": {
+    "calibration_member_count": 16,
+    "calibration_unique_condition_count": 12,
+    "validation_member_count": 8,
+    "validation_unique_condition_count": 6,
+    "calibration_members_only": true,
+    "validation_partition_may_be_used": false
+  },
+  "objective_contract": {
+    "primary_metrics": [
+      "H_pixels",
+      "W_pixels"
+    ],
+    "normalization_scales_pixels": {
+      "H_pixels": 0.9,
+      "W_pixels": 0.65
+    },
+    "metric_weights": {
+      "H_pixels": 0.5,
+      "W_pixels": 0.5
+    },
+    "replicate_policy": "average exact-condition replicate residual contributions before equal condition weighting",
+    "failed_candidate_scalar_penalty": 1000000000000.0,
+    "failed_rows_fabricated_residuals": false,
+    "temperature_diagnostics_in_primary_objective": false
+  },
+  "execution_contract": {
+    "atomic_evaluator": "lpbf.calibration_evaluation.evaluate_calibration_trial",
+    "observation_contract": "deterministic_middle_track",
+    "temperature_clipping_permitted": false,
+    "resume_requires_exact_candidate_member_design_frame_and_policy_identity": true,
+    "candidate_failure_behavior": "apply frozen 1e12 candidate penalty and continue to later prospectively declared candidates",
+    "unexpected_infrastructure_or_provenance_error_behavior": "fail closed"
+  },
+  "analysis_contract": {
+    "rank_successful_candidates_by_frozen_objective": true,
+    "report_H_and_W_components_separately": true,
+    "report_coordinate_objective_pearson_correlations_for_successful_candidates": true,
+    "report_temperature_and_numerical_diagnostics_for_every_trial": true,
+    "coarse_incumbent_is_not_final_parameter_selection": true,
+    "local_refinement_performed": false
+  },
+  "selection_lock": {
+    "search_design_selected": true,
+    "optimizer_algorithm_selected": false,
+    "local_refinement_performed": false,
+    "final_parameter_values_selected": false,
+    "process_conditioned_policy_selected": false,
+    "calibration_bounds_adapted": false,
+    "objective_weights_adapted": false,
+    "validation_partition_used": false
+  },
+  "exit_criterion": {
+    "design_only_status": "PASS_PATCH_21_3_DESIGN_ONLY_VERIFICATION",
+    "local_run_status": "READY_FOR_PATCH_21_3_SCIENTIFIC_REVIEW",
+    "final_acceptance_status": "PASS_PATCH_21_3_GLOBAL_SEARCH_COMPLETE",
+    "scientific_review_required_before_patch21_4_local_refinement": true
+  }
+}

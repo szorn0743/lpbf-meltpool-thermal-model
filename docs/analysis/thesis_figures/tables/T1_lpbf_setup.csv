@@ -1,0 +1,20 @@
+parameter,value,source
+Machine,Aconity Mini laser powder bed fusion system,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Laser wavelength,1070 nm,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Laser spot diameter (nominal),"80 µm, all coupons",process record (A17)
+Feedstock,m4p 316L.03 stainless steel powder,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Build plate,316L stainless steel,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Atmosphere,"Argon, O₂ < 300 ppm",owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Fume extraction,Pump at 50 % duty cycle,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Coupon geometry (programmed),≈ 4 mm × 4 mm × 6.48 mm,owner (thesis section 3.2.1); not recorded in the repository or the coupon files; footprint consistent with the HDF5 part boundaries (4.10–4.30 mm × 4.05–4.10 mm)
+Layers per coupon,216,owner (thesis section 3.2.1); not recorded in the repository or the coupon files
+Layer thickness,30 µm,A17; committee common.LAYER_MM
+Hatch spacing,80 µm,A17; committee common.HATCH_MM
+Scan strategy,"Contour pass, then hatch infill; hatch direction rotates by 45° between layers (0°, 45°, 90°, 135°)",owner (thesis section 3.2.1); not recorded in the repository or the coupon files; rotation seen in layers 51–53 of the coupon files
+Layer analysed,Layer 53 of every coupon; 54 laser-on scan tracks per coupon (track 1 = contour),full_coupon_dataset_manifest.json; HDF5 Laser Drive
+Laser power,140–190 W,process record (A17)
+Scan speed,600–1400 mm/s,process record (A17)
+Volumetric energy density,"41.7–125.0 J/mm³ (24 coupons, 18 conditions)","computed, P / (v h t)"
+Process data acquisition,200 kHz,lpbf.model.input_data
+Coaxial camera,"Teledyne DALSA Genie Nano M640-NIR, 8-bit; 64 × 24 px region; ≈ 8 kHz; 40 µs exposure",ledger A24 (exposure: owner); HDF5 gige_image
+Camera scale (nominal),"8 µm/px, not independently calibrated",ledger A24

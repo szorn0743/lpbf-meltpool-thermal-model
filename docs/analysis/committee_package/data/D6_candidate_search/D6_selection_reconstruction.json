@@ -1,0 +1,42 @@
+{
+  "rule": "lowest measured J among candidates with status PASS and no coverage flag; near-best: J <= 1.10 J_min (plan 22.4.3.2)",
+  "candidates_scored": 19,
+  "candidates_eligible": 19,
+  "selected_reconstructed": "confirm_c1",
+  "selected_recorded": "confirm_c1",
+  "J_min_reconstructed": 0.29807293620968767,
+  "J_min_recorded": 0.29807293620968767,
+  "near_best_reconstructed": [
+    "confirm_c1",
+    "confirm_c2"
+  ],
+  "near_best_recorded": [
+    "confirm_c1",
+    "confirm_c2"
+  ],
+  "surrogate_refit": {
+    "points": 17,
+    "r_squared": 0.999476098034388,
+    "loo_rmse": 0.029932246031406696,
+    "r_squared_recorded": 0.999476098034388,
+    "loo_rmse_recorded": 0.029932246031408413,
+    "max_abs_coefficient_difference": 4.0245584642661925e-16
+  },
+  "reading_C": {
+    "coordinates_at_edge_reconstructed": [
+      "abs_depth_identifiable_coordinate",
+      "eta_directional"
+    ],
+    "coordinates_at_edge_recorded": [
+      "abs_depth_identifiable_coordinate",
+      "eta_directional"
+    ],
+    "guard_value": 0.7243672598296406,
+    "guard_edge_threshold": 0.9025,
+    "guard_at_edge": false,
+    "reading_reconstructed": "C_EDGE",
+    "reading_recorded": "C_EDGE"
+  },
+  "freeze_content_sha256": "754e2a4a5b6274df65c0c7a90a34b84f98247e02e46fd2c85beaf43620de9de2",
+  "status": "PASS"
+}

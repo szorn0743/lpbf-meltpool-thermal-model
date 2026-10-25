@@ -1,0 +1,2 @@
+member,frame_index,scan_track_id,threshold,H_px_remeasured,W_px_remeasured,H_px_stored,W_px_stored,component_count,area_px,box_x,box_y
+20260730:part_3,3298,38,150,11.0,9.0,11.144827586206702,9.072413793103351,1,98,51.000 40.000 40.000 51.000,14.000 14.000 5.000 5.000

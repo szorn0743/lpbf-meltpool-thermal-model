@@ -1,0 +1,3 @@
+member,frame_index,scan_track_id,condition,ved_J_mm3,camera_H_px,camera_W_px,camera_H_px_remeasured,camera_W_px_remeasured,model_H_px,model_W_px,liquidus_K,wavelength_nm,emissivity,case,T150_K,sigma_px,offset_x_px,offset_y_px,H_px,W_px
+20260730:part_3,3298,38,P160_V950,70.17543859649123,11.144827586206702,9.072413793103351,11.0,9.0,20.410675048828125,6.608652591705322,1673.15,850.0,uniform,sigma0,1950.0,0.0,45,88,4.0,3.0
+20260730:part_3,3298,38,P160_V950,70.17543859649123,11.144827586206702,9.072413793103351,11.0,9.0,20.410675048828125,6.608652591705322,1673.15,850.0,uniform,sigma2,1825.0,2.0,45,88,5.0,4.0

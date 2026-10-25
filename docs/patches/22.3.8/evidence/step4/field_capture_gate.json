@@ -1,0 +1,1308 @@
+{
+  "G5_global": {
+    "dispatch_lock": {
+      "CAMPAIGN_DISPATCH_AUTHORIZED_BY": null,
+      "pass": true
+    },
+    "frozen_core": {
+      "files": 8,
+      "pass": true
+    },
+    "pass": true
+  },
+  "full_test_suite": "run separately: python -m pytest -q",
+  "patch_version": "22.3.8",
+  "require_references": false,
+  "schema": "lpbf_patch22_3_8_field_capture",
+  "status": "PASS_PATCH_22_3_8_FIELD_CAPTURE_GATE",
+  "units": [
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_low_ck_high_eta",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_low_ck_high_eta",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_low_ck_high_eta",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_low_ck_high_eta",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_transport_guard_edge",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_transport_guard_edge",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_transport_guard_edge",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "anchor_transport_guard_edge",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_01",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_01",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_01",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_01",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_02",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 562,
+        "selected_hw_bit_identical": 562
+      },
+      "G4_census": null,
+      "candidate_id": "halton_02",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_02",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_02",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_03",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_03",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_03",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_03",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_04",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 397,
+        "selected_hw_bit_identical": 397
+      },
+      "G4_census": null,
+      "candidate_id": "halton_04",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_04",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_04",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_05",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_05",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_05",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_05",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_06",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 641,
+        "selected_hw_bit_identical": 641
+      },
+      "G4_census": null,
+      "candidate_id": "halton_06",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_06",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_06",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_07",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_07",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_07",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_07",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_08",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_08",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_08",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_08",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_09",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 621,
+        "selected_hw_bit_identical": 621
+      },
+      "G4_census": null,
+      "candidate_id": "halton_09",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_09",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_09",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_10",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_10",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_10",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_10",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_11",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 483,
+        "selected_hw_bit_identical": 483
+      },
+      "G4_census": null,
+      "candidate_id": "halton_11",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_11",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_11",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1518,
+        "pass": true,
+        "requested": 1518,
+        "returned": 1518,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1518,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1518,
+        "selected_hw_bit_identical": 1518
+      },
+      "G4_census": null,
+      "candidate_id": "halton_12",
+      "member_identity": "20260904:part_1",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 648,
+        "pass": true,
+        "requested": 648,
+        "returned": 648,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 648,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 648,
+        "selected_hw_bit_identical": 648
+      },
+      "G4_census": null,
+      "candidate_id": "halton_12",
+      "member_identity": "20260904:part_3",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 1611,
+        "pass": true,
+        "requested": 1611,
+        "returned": 1611,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 1611,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 1611,
+        "selected_hw_bit_identical": 1611
+      },
+      "G4_census": null,
+      "candidate_id": "halton_12",
+      "member_identity": "20260904:part_4",
+      "pass": true
+    },
+    {
+      "G1_counts": {
+        "capture_gate_failures": [],
+        "captured": 657,
+        "pass": true,
+        "requested": 657,
+        "returned": 657,
+        "stage_a_gate_failures": []
+      },
+      "G2_stage_a": null,
+      "G3_round_trip": {
+        "frames": 657,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "pass": true,
+        "selected_frames": 657,
+        "selected_hw_bit_identical": 657
+      },
+      "G4_census": null,
+      "candidate_id": "halton_12",
+      "member_identity": "20260904:part_6",
+      "pass": true
+    }
+  ]
+}

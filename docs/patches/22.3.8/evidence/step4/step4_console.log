@@ -1,0 +1,118 @@
+unit 1/68 done: anchor_center 20260904:part_3
+unit 2/68 done: anchor_center 20260904:part_6
+unit 3/68 done: anchor_low_ck_high_eta 20260904:part_3
+unit 4/68 done: anchor_center 20260904:part_1
+unit 5/68 done: anchor_center 20260904:part_4
+unit 6/68 done: anchor_low_ck_high_eta 20260904:part_1
+unit 7/68 done: anchor_low_ck_high_eta 20260904:part_6
+unit 8/68 done: anchor_t_max 20260904:part_3
+unit 9/68 done: anchor_low_ck_high_eta 20260904:part_4
+unit 10/68 done: anchor_t_max 20260904:part_6
+unit 11/68 done: anchor_t_min 20260904:part_3
+unit 12/68 done: anchor_t_max 20260904:part_1
+unit 13/68 done: anchor_t_max 20260904:part_4
+unit 14/68 done: anchor_t_min 20260904:part_1
+unit 15/68 done: anchor_t_min 20260904:part_6
+unit 16/68 done: anchor_transport_guard_edge 20260904:part_3
+unit 17/68 done: anchor_t_min 20260904:part_4
+unit 18/68 done: anchor_transport_guard_edge 20260904:part_6
+unit 19/68 done: anchor_transport_guard_edge 20260904:part_1
+unit 20/68 done: halton_01 20260904:part_3
+unit 21/68 done: halton_01 20260904:part_6
+unit 22/68 done: anchor_transport_guard_edge 20260904:part_4
+unit 23/68 done: halton_01 20260904:part_1
+unit 24/68 done: halton_02 20260904:part_3
+unit 25/68 done: halton_02 20260904:part_6
+unit 26/68 done: halton_02 20260904:part_1
+unit 27/68 done: halton_01 20260904:part_4
+unit 28/68 done: halton_03 20260904:part_3
+unit 29/68 done: halton_02 20260904:part_4
+unit 30/68 done: halton_03 20260904:part_6
+unit 31/68 done: halton_03 20260904:part_1
+unit 32/68 done: halton_04 20260904:part_3
+unit 33/68 done: halton_04 20260904:part_1
+unit 34/68 done: halton_04 20260904:part_6
+unit 35/68 done: halton_03 20260904:part_4
+unit 36/68 done: halton_05 20260904:part_3
+unit 37/68 done: halton_05 20260904:part_6
+unit 38/68 done: halton_04 20260904:part_4
+unit 39/68 done: halton_06 20260904:part_3
+unit 40/68 done: halton_05 20260904:part_1
+unit 41/68 done: halton_05 20260904:part_4
+unit 42/68 done: halton_06 20260904:part_6
+unit 43/68 done: halton_06 20260904:part_1
+unit 44/68 done: halton_07 20260904:part_3
+unit 45/68 done: halton_07 20260904:part_6
+unit 46/68 done: halton_06 20260904:part_4
+unit 47/68 done: halton_07 20260904:part_1
+unit 48/68 done: halton_08 20260904:part_3
+unit 49/68 done: halton_08 20260904:part_6
+unit 50/68 done: halton_07 20260904:part_4
+unit 51/68 done: halton_08 20260904:part_1
+unit 52/68 done: halton_09 20260904:part_3
+unit 53/68 done: halton_09 20260904:part_6
+unit 54/68 done: halton_08 20260904:part_4
+unit 55/68 done: halton_09 20260904:part_1
+unit 56/68 done: halton_10 20260904:part_3
+unit 57/68 done: halton_09 20260904:part_4
+unit 58/68 done: halton_10 20260904:part_6
+unit 59/68 done: halton_10 20260904:part_1
+unit 60/68 done: halton_11 20260904:part_3
+unit 61/68 done: halton_11 20260904:part_6
+unit 62/68 done: halton_11 20260904:part_1
+unit 63/68 done: halton_10 20260904:part_4
+unit 64/68 done: halton_12 20260904:part_3
+unit 65/68 done: halton_12 20260904:part_6
+unit 66/68 done: halton_11 20260904:part_4
+unit 67/68 done: halton_12 20260904:part_1
+unit 68/68 done: halton_12 20260904:part_4
+{
+  "reading": "Q_B_BOX_DOES_NOT_REACH_CAMERA",
+  "candidates_meeting_core": [],
+  "candidates_with_L_in_band": [],
+  "closest_L_candidates": [
+    {
+      "candidate_id": "anchor_t_max",
+      "L_median_member_H_ratio": 1.3787878077013578
+    },
+    {
+      "candidate_id": "halton_10",
+      "L_median_member_H_ratio": 1.4375
+    },
+    {
+      "candidate_id": "halton_07",
+      "L_median_member_H_ratio": 1.4583333333333335
+    },
+    {
+      "candidate_id": "halton_03",
+      "L_median_member_H_ratio": 1.682001334779403
+    },
+    {
+      "candidate_id": "halton_12",
+      "L_median_member_H_ratio": 1.6875270725834501
+    }
+  ],
+  "consistency_with_step3": [
+    {
+      "candidate_id": "anchor_center",
+      "step3": 2.6158541146810954,
+      "step4": 2.6158541146810954,
+      "difference": 0.0
+    },
+    {
+      "candidate_id": "anchor_t_min",
+      "step3": 2.4523577256636186,
+      "step4": 2.4523577256636186,
+      "difference": 0.0
+    },
+    {
+      "candidate_id": "anchor_t_max",
+      "step3": 1.3787878077013578,
+      "step4": 1.3787878077013578,
+      "difference": 0.0
+    }
+  ]
+}
+exit=0 elapsed_s=2198
+
+[exited with code 0]

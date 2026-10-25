@@ -1,0 +1,314 @@
+{
+  "primary": {
+    "candidate_id": "anchor_center",
+    "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+    "status_counts": {
+      "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+      "DEFINED": 16244,
+      "ISOTHERM_TOUCHES_RENDER_EDGE": 52,
+      "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+    },
+    "pooled_H_ratio_quantiles": {
+      "5": 0.8333333333333334,
+      "25": 1.2727272727272727,
+      "50": 1.9876667313283956,
+      "75": 4.935195298876394,
+      "95": 6.036011339083093
+    },
+    "pooled_level_K_quantiles": {
+      "5": 1399.4459620789503,
+      "25": 1585.6172463862417,
+      "50": 1744.9674527106731,
+      "75": 2040.980400402058,
+      "95": 2567.1608886520567
+    },
+    "median_of_member_H_ratio": 3.61839375547801,
+    "liquidus_K": 1673.15,
+    "fraction_level_below_liquidus": 0.41092095542969714,
+    "members": [
+      {
+        "member_identity": "20260730:part_1",
+        "frames": 1056,
+        "defined": 1056,
+        "median_H_ratio": 3.357763533158736,
+        "median_level_K": 1618.0629218356044
+      },
+      {
+        "member_identity": "20260730:part_3",
+        "frames": 964,
+        "defined": 964,
+        "median_H_ratio": 3.7320842141109396,
+        "median_level_K": 1612.3010336324417
+      },
+      {
+        "member_identity": "20260730:part_5",
+        "frames": 869,
+        "defined": 869,
+        "median_H_ratio": 4.413413009676683,
+        "median_level_K": 1636.1055177569347
+      },
+      {
+        "member_identity": "20260730:part_6",
+        "frames": 847,
+        "defined": 846,
+        "median_H_ratio": 4.751285467910989,
+        "median_level_K": 1638.441023230539
+      },
+      {
+        "member_identity": "20260731:part_1",
+        "frames": 1115,
+        "defined": 1115,
+        "median_H_ratio": 2.7004155306998094,
+        "median_level_K": 1668.7621558113299
+      },
+      {
+        "member_identity": "20260731:part_3",
+        "frames": 971,
+        "defined": 971,
+        "median_H_ratio": 3.2524232864379883,
+        "median_level_K": 1615.005018862672
+      },
+      {
+        "member_identity": "20260731:part_5",
+        "frames": 896,
+        "defined": 896,
+        "median_H_ratio": 3.5047032968450806,
+        "median_level_K": 1643.0148219562118
+      },
+      {
+        "member_identity": "20260731:part_6",
+        "frames": 856,
+        "defined": 856,
+        "median_H_ratio": 4.2441232967843305,
+        "median_level_K": 1646.1077101874516
+      },
+      {
+        "member_identity": "20260904:part_1",
+        "frames": 1518,
+        "defined": 1518,
+        "median_H_ratio": 1.0909090909090908,
+        "median_level_K": 2073.1269452851657
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "frames": 647,
+        "defined": 644,
+        "median_H_ratio": 3.945993943647905,
+        "median_level_K": 1603.7981979443048
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "frames": 1611,
+        "defined": 1611,
+        "median_H_ratio": 1.2857142857142858,
+        "median_level_K": 2191.1924714207908
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "frames": 657,
+        "defined": 644,
+        "median_H_ratio": 5.016016516963701,
+        "median_level_K": 1619.662520161995
+      },
+      {
+        "member_identity": "20260910:part_1",
+        "frames": 1366,
+        "defined": 1366,
+        "median_H_ratio": 1.724697642856174,
+        "median_level_K": 1827.1809650718392
+      },
+      {
+        "member_identity": "20260910:part_3",
+        "frames": 1375,
+        "defined": 1370,
+        "median_H_ratio": 1.6641006469726562,
+        "median_level_K": 1974.951509867593
+      },
+      {
+        "member_identity": "20260910:part_4",
+        "frames": 776,
+        "defined": 775,
+        "median_H_ratio": 4.710494353985694,
+        "median_level_K": 1563.6319413948518
+      },
+      {
+        "member_identity": "20260910:part_6",
+        "frames": 775,
+        "defined": 743,
+        "median_H_ratio": 5.2963870366414385,
+        "median_level_K": 1635.9593669868582
+      }
+    ]
+  },
+  "corners": {
+    "anchor_t_min": {
+      "candidate_id": "anchor_t_min",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+        "DEFINED": 4425,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 5,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8,
+        "25": 1.25,
+        "50": 1.9414509441006884,
+        "75": 3.6629711786905923,
+        "95": 5.262428716023763
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1114.1891944957576,
+        "25": 1552.210882757105,
+        "50": 1698.469558805668,
+        "75": 1860.4257180510576,
+        "95": 2230.5438267693457
+      },
+      "median_of_member_H_ratio": 2.4523577256636186,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.4280225988700565,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.8961875221946023,
+          "median_level_K": 1696.019982919655
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 3.008527929132635,
+          "median_level_K": 1343.0824251813383
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1609,
+          "median_H_ratio": 1.82052361276687,
+          "median_level_K": 1796.4661957098533
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 653,
+          "median_H_ratio": 4.406063715616862,
+          "median_level_K": 1326.3595408052383
+        }
+      ]
+    },
+    "anchor_center": {
+      "candidate_id": "anchor_center",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4417,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 15,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7857142857142857,
+        "25": 1.041666625942212,
+        "50": 1.25,
+        "75": 1.6692818861741285,
+        "95": 5.754708723588423
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1389.8648488561314,
+        "25": 1827.3698626094526,
+        "50": 2062.2592256858916,
+        "75": 2244.614526804521,
+        "95": 2599.4268234723295
+      },
+      "median_of_member_H_ratio": 2.6158541146810954,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.17726964002716777,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0909090909090908,
+          "median_level_K": 2073.1269452851657
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.945993943647905,
+          "median_level_K": 1603.7981979443048
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.2857142857142858,
+          "median_level_K": 2191.1924714207908
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 644,
+          "median_H_ratio": 5.016016516963701,
+          "median_level_K": 1619.662520161995
+        }
+      ]
+    },
+    "anchor_t_max": {
+      "candidate_id": "anchor_t_max",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4429,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 3,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7713891809636896,
+        "25": 0.9899494171142578,
+        "50": 1.1428571428571428,
+        "75": 1.4545454545454546,
+        "95": 2.6902580769856765
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1775.8141279392871,
+        "25": 2219.7885332122414,
+        "50": 2534.141718655607,
+        "75": 2689.516013458693,
+        "95": 3052.4399748524306
+      },
+      "median_of_member_H_ratio": 1.3787878077013578,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.017159629713253556,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0,
+          "median_level_K": 2578.627055644287
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 1.5909089487360488,
+          "median_level_K": 1950.3273452888027
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.1666666666666667,
+          "median_level_K": 2616.6517518452592
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 655,
+          "median_H_ratio": 2.0,
+          "median_level_K": 1988.198959965713
+        }
+      ]
+    }
+  }
+}

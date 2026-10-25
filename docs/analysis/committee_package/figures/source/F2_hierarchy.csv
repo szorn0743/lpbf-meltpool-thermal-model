@@ -1,0 +1,15 @@
+level,count,note
+laser_on_mapped_frames,26703,sync-mapped camera frames on powered process rows
+camera_invalid_frames,3,non-finite camera H/W; never in residuals
+eligible_frames,26700,A22 eligible
+excluded_by_rule,2571,first and last eligible frame of each track (A22)
+undefined_frames,0,"tied, unenclosed or no geometry; excluded and counted (A23)"
+scored_frames,24129,"frame residual r = ln(max(model, 1) / max(camera, 1))"
+no_pool_frames,483,scored as H = W = 0 (D1)
+scan_tracks,1244,track = mean of r² over its frames
+coupons,24,coupon = mean over its tracks; coverage floor 95 % (A23)
+conditions,18,condition = mean over its replicate coupons
+conditions_with_two_coupons,6,July replicate pairs
+calibration_conditions,5,"group = mean over its conditions; e = sqrt, J = 0.5 e_H² + 0.5 e_W²"
+in_window_held_out_conditions,3,
+out_of_window_conditions,10,

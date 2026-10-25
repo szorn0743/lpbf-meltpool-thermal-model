@@ -1,0 +1,2011 @@
+{
+  "schema": "lpbf_patch22_3_8_step3_synthetic_camera",
+  "patch_version": "22.3.8",
+  "reading": "R_B_MODEL_HOT_ZONE_TOO_ELONGATED_STOP_AND_RECONSIDER",
+  "readings": {
+    "R_A_SYNTHETIC_CAMERA_REPRODUCES_CAMERA": "M1-M5 hold for some case and T150 (anchor_center, 16 members)",
+    "R_B_MODEL_HOT_ZONE_TOO_ELONGATED_STOP_AND_RECONSIDER": "no case and T150 satisfies M1 at threshold 150 together with M2",
+    "R_C_PARTIAL_MATCH": "M1 at 150 and M2 can be met together, but not all of M1-M5"
+  },
+  "primary": {
+    "candidate_id": "anchor_center",
+    "members": [
+      "20260730:part_1",
+      "20260730:part_3",
+      "20260730:part_5",
+      "20260730:part_6",
+      "20260731:part_1",
+      "20260731:part_3",
+      "20260731:part_5",
+      "20260731:part_6",
+      "20260904:part_1",
+      "20260904:part_3",
+      "20260904:part_4",
+      "20260904:part_6",
+      "20260910:part_1",
+      "20260910:part_3",
+      "20260910:part_4",
+      "20260910:part_6"
+    ],
+    "grid_points": 1752,
+    "grid_points_core_pass": 0,
+    "grid_points_all_pass": 0,
+    "grid_points_pass_by_criterion": {
+      "M1_pass": 0,
+      "M1_150_pass": 0,
+      "M2_pass": 0,
+      "M3_pass": 0,
+      "M4_pass": 111,
+      "M5_pass": 0
+    },
+    "feasible_core": {
+      "lam750_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      }
+    },
+    "feasible_all": {
+      "lam750_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam750_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam850_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_uniform_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig0.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig1.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig2.0": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      },
+      "lam950_liquid_half_sig2.6": {
+        "intervals_K": [],
+        "any_below_liquidus": false
+      }
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam750_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6029689720535814,
+          "100": 1.4285714377462528,
+          "150": 1.2897058871559959,
+          "200": 1.242346972280005,
+          "250": 1.1225
+        },
+        "coverage": {
+          "60": 0.9450417404502909,
+          "100": 0.9538433134346729,
+          "150": 0.9566844591692741,
+          "200": 0.9370513528437328,
+          "250": 0.9215505590367367
+        },
+        "M2_members_ok": 3,
+        "M3_W_ratio": {
+          "60": 0.590797483921051,
+          "250": 0.8249578475952148
+        },
+        "M4_model_sat": 0.657461404800415,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam750_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2000.0,
+        "M1_HW_ratio": {
+          "60": 1.6172489837220052,
+          "100": 1.428571442333665,
+          "150": 1.2756410495824322,
+          "200": 1.1793820106358504,
+          "250": 1.1666666666666667
+        },
+        "coverage": {
+          "60": 0.9346698709840627,
+          "100": 0.9554434119022709,
+          "150": 0.9629425118105405,
+          "200": 0.9426958709123259,
+          "250": 0.9302125568251628
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 0.70710688829422,
+          "250": 1.0
+        },
+        "M4_model_sat": 0.6704403012990952,
+        "M4_camera_sat": 0.5613266583229036,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam750_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam750_uniform_sig2.6",
+        "available": false
+      },
+      {
+        "case_id": "lam750_liquid_half_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6029689720535814,
+          "100": 1.4285714377462528,
+          "150": 1.2897058871559959,
+          "200": 1.242346972280005,
+          "250": 1.1225
+        },
+        "coverage": {
+          "60": 0.9450417404502909,
+          "100": 0.9538433134346729,
+          "150": 0.9566844591692741,
+          "200": 0.9370513528437328,
+          "250": 0.9215505590367367
+        },
+        "M2_members_ok": 3,
+        "M3_W_ratio": {
+          "60": 0.590797483921051,
+          "250": 0.8249578475952148
+        },
+        "M4_model_sat": 0.657461404800415,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam750_liquid_half_sig1.0",
+        "available": true,
+        "T150_K": 2000.0,
+        "M1_HW_ratio": {
+          "60": 1.6024932766183395,
+          "100": 1.4267856840672817,
+          "150": 1.2730082905361866,
+          "200": 1.1793820106358504,
+          "250": 1.1666666666666667
+        },
+        "coverage": {
+          "60": 0.9341006830255502,
+          "100": 0.9554434119022709,
+          "150": 0.9629425118105405,
+          "200": 0.9426345174550586,
+          "250": 0.9303354220420199
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 0.7142857313156128,
+          "250": 1.0
+        },
+        "M4_model_sat": 0.669849693775177,
+        "M4_camera_sat": 0.5613266583229036,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam750_liquid_half_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam750_liquid_half_sig2.6",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6192123994869734,
+          "100": 1.4285714377462528,
+          "150": 1.292857190038395,
+          "200": 1.1636363636363638,
+          "250": 1.1225
+        },
+        "coverage": {
+          "60": 0.9411206678472046,
+          "100": 0.9529201797033664,
+          "150": 0.9566844591692741,
+          "200": 0.9347199214675747,
+          "250": 0.9192161199164517
+        },
+        "M2_members_ok": 3,
+        "M3_W_ratio": {
+          "60": 0.6063390374183655,
+          "250": 0.800000011920929
+        },
+        "M4_model_sat": 0.6157910823822021,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2025.0,
+        "M1_HW_ratio": {
+          "60": 1.6573787608107533,
+          "100": 1.4174107142857144,
+          "150": 1.2756410495824322,
+          "200": 1.1818089878887477,
+          "250": 1.0888888888888888
+        },
+        "coverage": {
+          "60": 0.9246774601568429,
+          "100": 0.9483660532955874,
+          "150": 0.9554573900239278,
+          "200": 0.9354561629547825,
+          "250": 0.9165745177540239
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.6929436922073364,
+          "250": 0.9486832022666931
+        },
+        "M4_model_sat": 0.6332502961158752,
+        "M4_camera_sat": 0.5612299465240642,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      },
+      {
+        "case_id": "lam850_liquid_half_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6192123994869734,
+          "100": 1.4285714377462528,
+          "150": 1.292857190038395,
+          "200": 1.1636363636363638,
+          "250": 1.1225
+        },
+        "coverage": {
+          "60": 0.9411206678472046,
+          "100": 0.9529201797033664,
+          "150": 0.9566844591692741,
+          "200": 0.9347199214675747,
+          "250": 0.9192161199164517
+        },
+        "M2_members_ok": 3,
+        "M3_W_ratio": {
+          "60": 0.6063390374183655,
+          "250": 0.800000011920929
+        },
+        "M4_model_sat": 0.6157910823822021,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_liquid_half_sig1.0",
+        "available": true,
+        "T150_K": 2025.0,
+        "M1_HW_ratio": {
+          "60": 1.6396853132445794,
+          "100": 1.40625,
+          "150": 1.2726045058693325,
+          "200": 1.18678135305702,
+          "250": 1.0888888888888888
+        },
+        "coverage": {
+          "60": 0.9239185428788262,
+          "100": 0.9482429687980799,
+          "150": 0.9554573900239278,
+          "200": 0.9355175164120498,
+          "250": 0.9165745177540239
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.7071067690849304,
+          "250": 0.9486832618713379
+        },
+        "M4_model_sat": 0.6322843730449677,
+        "M4_camera_sat": 0.5612299465240642,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_liquid_half_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_liquid_half_sig2.6",
+        "available": false
+      },
+      {
+        "case_id": "lam950_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6852939814046168,
+          "100": 1.4285714106203389,
+          "150": 1.2799144816842802,
+          "200": 1.1636363636363638,
+          "250": 1.12
+        },
+        "coverage": {
+          "60": 0.9333417657475335,
+          "100": 0.951689334728291,
+          "150": 0.9565617522547396,
+          "200": 0.9315908951469415,
+          "250": 0.9164516525371668
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.6156673431396484,
+          "250": 0.7777777910232544
+        },
+        "M4_model_sat": 0.5671575367450714,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam950_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2025.0,
+        "M1_HW_ratio": {
+          "60": 1.7612086840607897,
+          "100": 1.4532159197312033,
+          "150": 1.3007413553791487,
+          "200": 1.2121212121212122,
+          "250": 1.12
+        },
+        "coverage": {
+          "60": 0.9170882873766759,
+          "100": 0.9471967505692658,
+          "150": 0.9550892692803239,
+          "200": 0.9317136020614761,
+          "250": 0.9131957242904534
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.7003010511398315,
+          "250": 0.899954080581665
+        },
+        "M4_model_sat": 0.5933499336242676,
+        "M4_camera_sat": 0.5612299465240642,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam950_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam950_uniform_sig2.6",
+        "available": false
+      },
+      {
+        "case_id": "lam950_liquid_half_sig0.0",
+        "available": true,
+        "T150_K": 2100.0,
+        "M1_HW_ratio": {
+          "60": 1.6852939814046168,
+          "100": 1.4285714106203389,
+          "150": 1.2799144816842802,
+          "200": 1.1636363636363638,
+          "250": 1.12
+        },
+        "coverage": {
+          "60": 0.9333417657475335,
+          "100": 0.951689334728291,
+          "150": 0.9565617522547396,
+          "200": 0.9315908951469415,
+          "250": 0.9164516525371668
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.6160714626312256,
+          "250": 0.7777777910232544
+        },
+        "M4_model_sat": 0.5671575367450714,
+        "M4_camera_sat": 0.5604707792207793,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam950_liquid_half_sig1.0",
+        "available": true,
+        "T150_K": 2025.0,
+        "M1_HW_ratio": {
+          "60": 1.735484769923412,
+          "100": 1.4194139285887437,
+          "150": 1.2756410495824322,
+          "200": 1.21128757966498,
+          "250": 1.11111119674281
+        },
+        "coverage": {
+          "60": 0.9153807235011384,
+          "100": 0.9469505815742507,
+          "150": 0.9550279158230567,
+          "200": 0.9317749555187435,
+          "250": 0.9131342916820249
+        },
+        "M2_members_ok": 2,
+        "M3_W_ratio": {
+          "60": 0.711512565612793,
+          "250": 0.8999999165534973
+        },
+        "M4_model_sat": 0.5909244418144226,
+        "M4_camera_sat": 0.5612299465240642,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true,
+          "M5_pass": false
+        }
+      },
+      {
+        "case_id": "lam950_liquid_half_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam950_liquid_half_sig2.6",
+        "available": false
+      }
+    ]
+  },
+  "corners": {
+    "anchor_t_min": {
+      "members": [
+        "20260904:part_1",
+        "20260904:part_3",
+        "20260904:part_4",
+        "20260904:part_6"
+      ],
+      "grid_points_core_pass": 0,
+      "feasible_core": {
+        "lam750_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        }
+      },
+      "closest_approach_descriptive": [
+        {
+          "case_id": "lam750_uniform_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig0.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.6",
+          "available": false
+        }
+      ]
+    },
+    "anchor_center": {
+      "members": [
+        "20260904:part_1",
+        "20260904:part_3",
+        "20260904:part_4",
+        "20260904:part_6"
+      ],
+      "grid_points_core_pass": 0,
+      "feasible_core": {
+        "lam750_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        }
+      },
+      "closest_approach_descriptive": [
+        {
+          "case_id": "lam750_uniform_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 2.0800263976054056,
+            "100": 1.6691060049902509,
+            "150": 1.4742531219669135,
+            "200": 1.3282828972504055,
+            "250": 1.3081169172179452
+          },
+          "coverage": {
+            "60": 0.8670958841112899,
+            "100": 0.9224332881049299,
+            "150": 0.9519512745319197,
+            "200": 0.9300383660573234,
+            "250": 0.9149321266968325
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8731282353401184,
+            "250": 1.4907877445220947
+          },
+          "M4_model_sat": 0.6972945034503937,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 1.9719082431757835,
+            "100": 1.6550575481790517,
+            "150": 1.4742531219669135,
+            "200": 1.3282828972504055,
+            "250": 1.3081169172179452
+          },
+          "coverage": {
+            "60": 0.47045297769602207,
+            "100": 0.9217548620533695,
+            "150": 0.9519512745319197,
+            "200": 0.9300383660573234,
+            "250": 0.9149321266968325
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8588541746139526,
+            "250": 1.4907877445220947
+          },
+          "M4_model_sat": 0.6972945034503937,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 2.2148394495277115,
+            "100": 1.7348350311422382,
+            "150": 1.4742531219669135,
+            "200": 1.2606060606060607,
+            "250": 1.2899351004294113
+          },
+          "coverage": {
+            "60": 0.8054725224189468,
+            "100": 0.9156490275893261,
+            "150": 0.9521768554026618,
+            "200": 0.9284585872263598,
+            "250": 0.9126696832579185
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8837878108024597,
+            "250": 1.4161763191223145
+          },
+          "M4_model_sat": 0.6632106304168701,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 0.8487966086411091,
+            "100": 1.7477294546613558,
+            "150": 1.4742531219669135,
+            "200": 1.2606060606060607,
+            "250": 1.2899351004294113
+          },
+          "coverage": {
+            "60": 0.20694412508622673,
+            "100": 0.9147444595205789,
+            "150": 0.9515001127904353,
+            "200": 0.9284585872263598,
+            "250": 0.9126696832579185
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8571428656578064,
+            "250": 1.4161763191223145
+          },
+          "M4_model_sat": 0.6628352403640747,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 2.4940888395734575,
+            "100": 1.7695314409397225,
+            "150": 1.4810404695400485,
+            "200": 1.2606060606060607,
+            "250": 1.2821968863779363
+          },
+          "coverage": {
+            "60": 0.6475051736031272,
+            "100": 0.9099954771596562,
+            "150": 0.9521768554026618,
+            "200": 0.9243962988038817,
+            "250": 0.9088235294117647
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8447366952896118,
+            "250": 1.40549898147583
+          },
+          "M4_model_sat": 0.6341074407100677,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_uniform_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 1875.0,
+          "M1_HW_ratio": {
+            "60": 0.847189938308387,
+            "100": 1.757111244556695,
+            "150": 1.4810404695400485,
+            "200": 1.2606060606060607,
+            "250": 1.2821968863779363
+          },
+          "coverage": {
+            "60": 0.20349505633478962,
+            "100": 0.9075079149706016,
+            "150": 0.9515001127904353,
+            "200": 0.9248476641841571,
+            "250": 0.9092760180995475
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.8586296439170837,
+            "250": 1.40549898147583
+          },
+          "M4_model_sat": 0.6338240206241608,
+          "M4_camera_sat": 0.5266098062282801,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_liquid_half_sig1.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.0",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.6",
+          "available": false
+        }
+      ]
+    },
+    "anchor_t_max": {
+      "members": [
+        "20260904:part_1",
+        "20260904:part_3",
+        "20260904:part_4",
+        "20260904:part_6"
+      ],
+      "grid_points_core_pass": 0,
+      "feasible_core": {
+        "lam750_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam750_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam850_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_uniform_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig0.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig1.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.0": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        },
+        "lam950_liquid_half_sig2.6": {
+          "intervals_K": [],
+          "any_below_liquidus": false
+        }
+      },
+      "closest_approach_descriptive": [
+        {
+          "case_id": "lam750_uniform_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.3278181525933077,
+            "100": 1.2519419215496477,
+            "150": 1.1289256198347108,
+            "200": 1.0666666739776567,
+            "250": 1.0329545238865043
+          },
+          "coverage": {
+            "60": 0.9404460795585192,
+            "100": 0.9520578923563998,
+            "150": 0.952402436273404,
+            "200": 0.9286842699164974,
+            "250": 0.8997737556561086
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.7905692458152771,
+            "250": 1.1666666269302368
+          },
+          "M4_model_sat": 0.6512605249881744,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam750_uniform_sig1.0",
+          "available": true,
+          "T150_K": 2350.0,
+          "M1_HW_ratio": {
+            "60": 1.3784313733502724,
+            "100": 1.2522130050699738,
+            "150": 1.1340909090909093,
+            "200": 1.107070707070707,
+            "250": 1.107954503656017
+          },
+          "coverage": {
+            "60": 0.9383766383076569,
+            "100": 0.9552238805970149,
+            "150": 0.9641326415519964,
+            "200": 0.9440306928458587,
+            "250": 0.9233031674208145
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9166666865348816,
+            "250": 1.375
+          },
+          "M4_model_sat": 0.6998168528079987,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_uniform_sig2.0",
+          "available": true,
+          "T150_K": 2200.0,
+          "M1_HW_ratio": {
+            "60": 1.2704901960784314,
+            "100": 1.1500000337174823,
+            "150": 1.0871212121212122,
+            "200": 1.0151515151515151,
+            "250": 0.9882304796723972
+          },
+          "coverage": {
+            "60": 0.8891699241204875,
+            "100": 0.9371325192220714,
+            "150": 0.9600721858786375,
+            "200": 0.9381629429022794,
+            "250": 0.9233031674208145
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.9798989295959473
+          },
+          "M4_model_sat": 0.7187103629112244,
+          "M4_camera_sat": 0.5264980103901846,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam750_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.3278181525933077,
+            "100": 1.2519419215496477,
+            "150": 1.1289256198347108,
+            "200": 1.0666666739776567,
+            "250": 1.0329545238865043
+          },
+          "coverage": {
+            "60": 0.9404460795585192,
+            "100": 0.9520578923563998,
+            "150": 0.952402436273404,
+            "200": 0.9286842699164974,
+            "250": 0.8997737556561086
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.7905692458152771,
+            "250": 1.1666666269302368
+          },
+          "M4_model_sat": 0.6512605249881744,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam750_liquid_half_sig1.0",
+          "available": true,
+          "T150_K": 2350.0,
+          "M1_HW_ratio": {
+            "60": 1.3784313733502724,
+            "100": 1.2522130050699738,
+            "150": 1.1340909090909093,
+            "200": 1.107070707070707,
+            "250": 1.107954503656017
+          },
+          "coverage": {
+            "60": 0.9383766383076569,
+            "100": 0.9552238805970149,
+            "150": 0.9641326415519964,
+            "200": 0.9440306928458587,
+            "250": 0.9233031674208145
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9166666865348816,
+            "250": 1.375
+          },
+          "M4_model_sat": 0.6996927857398987,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.0",
+          "available": true,
+          "T150_K": 2200.0,
+          "M1_HW_ratio": {
+            "60": 1.2704901960784314,
+            "100": 1.1500000337174823,
+            "150": 1.0935314326193586,
+            "200": 1.0151515151515151,
+            "250": 0.9882304796723972
+          },
+          "coverage": {
+            "60": 0.8884801103702,
+            "100": 0.9369063772048847,
+            "150": 0.9598466050078953,
+            "200": 0.9381629429022794,
+            "250": 0.9233031674208145
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.9805172681808472
+          },
+          "M4_model_sat": 0.7187528610229492,
+          "M4_camera_sat": 0.5264678899082569,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam750_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_uniform_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.2533333333333334,
+            "100": 1.1997409997409998,
+            "150": 1.1194805060521715,
+            "200": 1.1244187910854577,
+            "250": 1.032954503656017
+          },
+          "coverage": {
+            "60": 0.9376868245573695,
+            "100": 0.9520578923563998,
+            "150": 0.9526280171441461,
+            "200": 0.9257503949447078,
+            "250": 0.88710407239819
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.8181818127632141,
+            "250": 1.1428571939468384
+          },
+          "M4_model_sat": 0.6139037609100342,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_uniform_sig1.0",
+          "available": true,
+          "T150_K": 2350.0,
+          "M1_HW_ratio": {
+            "60": 1.4397759279917097,
+            "100": 1.3075397877141262,
+            "150": 1.1340909090909093,
+            "200": 1.1323232610873255,
+            "250": 1.061079462786347
+          },
+          "coverage": {
+            "60": 0.9307886870544952,
+            "100": 0.9520578923563998,
+            "150": 0.9643582224227385,
+            "200": 0.9435793274655834,
+            "250": 0.9226244343891403
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9166666865348816,
+            "250": 1.3333333730697632
+          },
+          "M4_model_sat": 0.6680683791637421,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_uniform_sig2.0",
+          "available": true,
+          "T150_K": 2200.0,
+          "M1_HW_ratio": {
+            "60": 1.3410576351752823,
+            "100": 1.1934813628878973,
+            "150": 1.1245411138673433,
+            "200": 1.0436179805800405,
+            "250": 1.087499998314128
+          },
+          "coverage": {
+            "60": 0.8785927799494136,
+            "100": 0.9319312528267752,
+            "150": 0.9605233476201218,
+            "200": 0.936357481381178,
+            "250": 0.9171945701357466
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.7677671909332275
+          },
+          "M4_model_sat": 0.6781600713729858,
+          "M4_camera_sat": 0.5264830196844222,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam850_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam850_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.2533333333333334,
+            "100": 1.1997409997409998,
+            "150": 1.1194805060521715,
+            "200": 1.1244187910854577,
+            "250": 1.032954503656017
+          },
+          "coverage": {
+            "60": 0.9376868245573695,
+            "100": 0.9520578923563998,
+            "150": 0.9526280171441461,
+            "200": 0.9257503949447078,
+            "250": 0.88710407239819
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.8181818127632141,
+            "250": 1.1428571939468384
+          },
+          "M4_model_sat": 0.6139037609100342,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_liquid_half_sig1.0",
+          "available": true,
+          "T150_K": 2350.0,
+          "M1_HW_ratio": {
+            "60": 1.4397759279917097,
+            "100": 1.3075397877141262,
+            "150": 1.1340909090909093,
+            "200": 1.1272727466589165,
+            "250": 1.061079462786347
+          },
+          "coverage": {
+            "60": 0.9303288112209703,
+            "100": 0.9520578923563998,
+            "150": 0.9643582224227385,
+            "200": 0.9435793274655834,
+            "250": 0.9226244343891403
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9166666865348816,
+            "250": 1.3333333730697632
+          },
+          "M4_model_sat": 0.6680371165275574,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.0",
+          "available": true,
+          "T150_K": 2200.0,
+          "M1_HW_ratio": {
+            "60": 1.3410576351752823,
+            "100": 1.1934813222207654,
+            "150": 1.1223776582897322,
+            "200": 1.0436179805800405,
+            "250": 1.087499998314128
+          },
+          "coverage": {
+            "60": 0.8779029661991262,
+            "100": 0.9326096788783356,
+            "150": 0.9609745093616061,
+            "200": 0.9365831640713157,
+            "250": 0.9171945701357466
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.7677671909332275
+          },
+          "M4_model_sat": 0.6781600713729858,
+          "M4_camera_sat": 0.5264981494605875,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": false
+          }
+        },
+        {
+          "case_id": "lam850_liquid_half_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_uniform_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.3217460317460317,
+            "100": 1.1997409997409998,
+            "150": 1.1,
+            "200": 1.1244187910854577,
+            "250": 1.0473484476942372
+          },
+          "coverage": {
+            "60": 0.93400781788917,
+            "100": 0.9518317503392131,
+            "150": 0.9526280171441461,
+            "200": 0.9187542315504401,
+            "250": 0.8832579185520362
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.8326118290424347,
+            "250": 1.1428571939468384
+          },
+          "M4_model_sat": 0.5834785103797913,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_uniform_sig1.0",
+          "available": true,
+          "T150_K": 2325.0,
+          "M1_HW_ratio": {
+            "60": 1.4375849664910487,
+            "100": 1.2666667125572295,
+            "150": 1.170454580485695,
+            "200": 1.1727272727272728,
+            "250": 1.107954482582592
+          },
+          "coverage": {
+            "60": 0.9218211083007588,
+            "100": 0.9518317503392131,
+            "150": 0.966388450259418,
+            "200": 0.942450914014895,
+            "250": 0.9214932126696832
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9514859318733215,
+            "250": 1.3333333730697632
+          },
+          "M4_model_sat": 0.6408526748418808,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_uniform_sig2.0",
+          "available": true,
+          "T150_K": 2175.0,
+          "M1_HW_ratio": {
+            "60": 1.4002614379084968,
+            "100": 1.2533632929524017,
+            "150": 1.1548295454545454,
+            "200": 1.1003541912632822,
+            "250": 1.1038461478342028
+          },
+          "coverage": {
+            "60": 0.8689353874453898,
+            "100": 0.927860696517413,
+            "150": 0.9652605459057072,
+            "200": 0.937034529451591,
+            "250": 0.9147058823529411
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.6666666269302368
+          },
+          "M4_model_sat": 0.651562511920929,
+          "M4_camera_sat": 0.5264007724301842,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_uniform_sig2.6",
+          "available": false
+        },
+        {
+          "case_id": "lam950_liquid_half_sig0.0",
+          "available": true,
+          "T150_K": 2525.0,
+          "M1_HW_ratio": {
+            "60": 1.3217460317460317,
+            "100": 1.1997409997409998,
+            "150": 1.1,
+            "200": 1.1244187910854577,
+            "250": 1.0473484476942372
+          },
+          "coverage": {
+            "60": 0.93400781788917,
+            "100": 0.9518317503392131,
+            "150": 0.9526280171441461,
+            "200": 0.9187542315504401,
+            "250": 0.8832579185520362
+          },
+          "M2_members_ok": 1,
+          "M3_W_ratio": {
+            "60": 0.8326118290424347,
+            "250": 1.1428571939468384
+          },
+          "M4_model_sat": 0.5834785103797913,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": true,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_liquid_half_sig1.0",
+          "available": true,
+          "T150_K": 2325.0,
+          "M1_HW_ratio": {
+            "60": 1.447770149060391,
+            "100": 1.2630952772316015,
+            "150": 1.170454580485695,
+            "200": 1.1727272727272728,
+            "250": 1.107954503656017
+          },
+          "coverage": {
+            "60": 0.9213612324672339,
+            "100": 0.9518317503392131,
+            "150": 0.966388450259418,
+            "200": 0.942450914014895,
+            "250": 0.9214932126696832
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 0.9544268250465393,
+            "250": 1.3333333730697632
+          },
+          "M4_model_sat": 0.6408526748418808,
+          "M4_camera_sat": 0.5260695187165776,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.0",
+          "available": true,
+          "T150_K": 2175.0,
+          "M1_HW_ratio": {
+            "60": 1.4036449877904662,
+            "100": 1.252254049175654,
+            "150": 1.1548295454545454,
+            "200": 1.1003541912632822,
+            "250": 1.0954545396213309
+          },
+          "coverage": {
+            "60": 0.865716256610715,
+            "100": 0.9276345545002261,
+            "150": 0.9657117076471915,
+            "200": 0.937034529451591,
+            "250": 0.9147058823529411
+          },
+          "M2_members_ok": 0,
+          "M3_W_ratio": {
+            "60": 1.1538461446762085,
+            "250": 1.6666666269302368
+          },
+          "M4_model_sat": 0.651562511920929,
+          "M4_camera_sat": 0.5264007724301842,
+          "pass": {
+            "M1_pass": false,
+            "M1_150_pass": false,
+            "M2_pass": false,
+            "M3_pass": false,
+            "M4_pass": true
+          }
+        },
+        {
+          "case_id": "lam950_liquid_half_sig2.6",
+          "available": false
+        }
+      ]
+    }
+  },
+  "liquidus_K": 1673.15,
+  "no_point_estimate_adopted": true
+}

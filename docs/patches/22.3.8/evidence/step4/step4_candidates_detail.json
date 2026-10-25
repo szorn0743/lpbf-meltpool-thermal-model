@@ -1,0 +1,3614 @@
+[
+  {
+    "candidate_id": "anchor_center",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.0,
+      "liquid_conductivity_enhancement_factor": 2.0,
+      "eta_directional": 0.5
+    },
+    "level_free": {
+      "candidate_id": "anchor_center",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4417,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 15,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7857142857142857,
+        "25": 1.041666625942212,
+        "50": 1.25,
+        "75": 1.6692818861741285,
+        "95": 5.754708723588423
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1389.8648488561314,
+        "25": 1827.3698626094526,
+        "50": 2062.2592256858916,
+        "75": 2244.614526804521,
+        "95": 2599.4268234723295
+      },
+      "median_of_member_H_ratio": 2.6158541146810954,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.17726964002716777,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0909090909090908,
+          "median_level_K": 2073.1269452851657
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.945993943647905,
+          "median_level_K": 1603.7981979443048
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.2857142857142858,
+          "median_level_K": 2191.1924714207908
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 644,
+          "median_H_ratio": 5.016016516963701,
+          "median_level_K": 1619.662520161995
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 1875.0,
+        "M1_HW_ratio": {
+          "60": 2.2148394495277115,
+          "100": 1.7348350311422382,
+          "150": 1.4742531219669135,
+          "200": 1.2606060606060607,
+          "250": 1.2899351004294113
+        },
+        "coverage": {
+          "60": 0.8054725224189468,
+          "100": 0.9156490275893261,
+          "150": 0.9521768554026618,
+          "200": 0.9284585872263598,
+          "250": 0.9126696832579185
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8837878108024597,
+          "250": 1.4161763191223145
+        },
+        "M4_model_sat": 0.6632106304168701,
+        "M4_camera_sat": 0.5266098062282801,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.7106288785210837,
+        "v": -0.803623794367772,
+        "residual_rms": 0.05151219298210463
+      },
+      "log_W": {
+        "P": 0.8981119101172468,
+        "v": -0.7490176878061892,
+        "residual_rms": 0.014762144948299694
+      },
+      "log_HW": {
+        "P": 0.8443130497683615,
+        "v": -0.08019774427781268,
+        "residual_rms": 0.04038583481560987
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 1875.0,
+        "log_H": {
+          "P": 2.5638228615281404,
+          "v": -1.1831242165631335,
+          "residual_rms": 0.13923761409792057
+        },
+        "log_W": {
+          "P": 1.7533387204126272,
+          "v": -1.0862457913013344,
+          "residual_rms": 0.1093031718331528
+        }
+      },
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 42.83037185668945,
+        "median_liquidus_W_px": 11.487861633300781,
+        "median_liquidus_HW": 3.747322047012867,
+        "median_peak_K": 2858.4077276361286,
+        "p95_peak_K": 3509.462364948321,
+        "fraction_peak_above_boiling": 0.10408432147562582,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 19.55663013458252,
+        "median_liquidus_W_px": 5.912836074829102,
+        "median_liquidus_HW": 3.229471227944138,
+        "median_peak_K": 2083.6606818574746,
+        "p95_peak_K": 3656.8598679918423,
+        "fraction_peak_above_boiling": 0.1404320987654321,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 59.390174865722656,
+        "median_liquidus_W_px": 13.977867126464844,
+        "median_liquidus_HW": 4.273605480758345,
+        "median_peak_K": 3390.812858754224,
+        "p95_peak_K": 3945.9197151085136,
+        "fraction_peak_above_boiling": 0.9993792675356921,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 33.3228874206543,
+        "median_liquidus_W_px": 7.632064342498779,
+        "median_liquidus_HW": 4.3287470633930925,
+        "median_peak_K": 2401.9157022611803,
+        "p95_peak_K": 4028.6009629457944,
+        "fraction_peak_above_boiling": 0.1659056316590563,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "anchor_low_ck_high_eta",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.0,
+      "liquid_conductivity_enhancement_factor": 1.5,
+      "eta_directional": 1.0
+    },
+    "level_free": {
+      "candidate_id": "anchor_low_ck_high_eta",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4415,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 17,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8181818181818182,
+        "25": 1.2307692307692308,
+        "50": 1.5020816742190244,
+        "75": 2.0203052453226147,
+        "95": 5.864952087402344
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1379.4001948378034,
+        "25": 1803.5282141677055,
+        "50": 2061.689591661065,
+        "75": 2265.012862597251,
+        "95": 2637.86419323808
+      },
+      "median_of_member_H_ratio": 2.7730692892363575,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.1764439411098528,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.3076923076923077,
+          "median_level_K": 2070.1613872381104
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.962805245139382,
+          "median_level_K": 1601.3651830896486
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.5833333333333333,
+          "median_level_K": 2178.2624018403903
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 642,
+          "median_H_ratio": 5.158344839446824,
+          "median_level_K": 1626.5653614821545
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.7301652332771318,
+        "v": -0.8147242596358577,
+        "residual_rms": 0.052238164475055804
+      },
+      "log_W": {
+        "P": 0.8772942499439658,
+        "v": -0.7308564287684257,
+        "residual_rms": 0.014939489490778834
+      },
+      "log_HW": {
+        "P": 0.9099423648971142,
+        "v": -0.10554650242814068,
+        "residual_rms": 0.04475858380894787
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 46.1254768371582,
+        "median_liquidus_W_px": 11.259648323059082,
+        "median_liquidus_HW": 4.10362493553518,
+        "median_peak_K": 3002.2610088872284,
+        "p95_peak_K": 3721.7478159348702,
+        "fraction_peak_above_boiling": 0.1310935441370224,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 20.833765029907227,
+        "median_liquidus_W_px": 5.883155822753906,
+        "median_liquidus_HW": 3.431248607403546,
+        "median_peak_K": 2120.879068917197,
+        "p95_peak_K": 3843.933816688371,
+        "fraction_peak_above_boiling": 0.14814814814814814,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 64.18083190917969,
+        "median_liquidus_W_px": 13.623866081237793,
+        "median_liquidus_HW": 4.716349980861221,
+        "median_peak_K": 3551.7415651803267,
+        "p95_peak_K": 4108.11909041063,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 35.7255744934082,
+        "median_liquidus_W_px": 7.556808948516846,
+        "median_liquidus_HW": 4.716764292386092,
+        "median_peak_K": 2470.1903873275364,
+        "p95_peak_K": 4182.6342298772215,
+        "fraction_peak_above_boiling": 0.1704718417047184,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "anchor_t_max",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 3.0,
+      "liquid_conductivity_enhancement_factor": 2.0,
+      "eta_directional": 0.5
+    },
+    "level_free": {
+      "candidate_id": "anchor_t_max",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4429,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 3,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7713891809636896,
+        "25": 0.9899494171142578,
+        "50": 1.1428571428571428,
+        "75": 1.4545454545454546,
+        "95": 2.6902580769856765
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1775.8141279392871,
+        "25": 2219.7885332122414,
+        "50": 2534.141718655607,
+        "75": 2689.516013458693,
+        "95": 3052.4399748524306
+      },
+      "median_of_member_H_ratio": 1.3787878077013578,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.017159629713253556,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0,
+          "median_level_K": 2578.627055644287
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 1.5909089487360488,
+          "median_level_K": 1950.3273452888027
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.1666666666666667,
+          "median_level_K": 2616.6517518452592
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 655,
+          "median_H_ratio": 2.0,
+          "median_level_K": 1988.198959965713
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2525.0,
+        "M1_HW_ratio": {
+          "60": 1.2533333333333334,
+          "100": 1.1997409997409998,
+          "150": 1.1194805060521715,
+          "200": 1.1244187910854577,
+          "250": 1.032954503656017
+        },
+        "coverage": {
+          "60": 0.9376868245573695,
+          "100": 0.9520578923563998,
+          "150": 0.9526280171441461,
+          "200": 0.9257503949447078,
+          "250": 0.88710407239819
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 0.8181818127632141,
+          "250": 1.1428571939468384
+        },
+        "M4_model_sat": 0.6139037609100342,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": true,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2350.0,
+        "M1_HW_ratio": {
+          "60": 1.4397759279917097,
+          "100": 1.3075397877141262,
+          "150": 1.1340909090909093,
+          "200": 1.1323232610873255,
+          "250": 1.061079462786347
+        },
+        "coverage": {
+          "60": 0.9307886870544952,
+          "100": 0.9520578923563998,
+          "150": 0.9643582224227385,
+          "200": 0.9435793274655834,
+          "250": 0.9226244343891403
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9166666865348816,
+          "250": 1.3333333730697632
+        },
+        "M4_model_sat": 0.6680683791637421,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": true,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": true,
+        "T150_K": 2200.0,
+        "M1_HW_ratio": {
+          "60": 1.3410576351752823,
+          "100": 1.1934813628878973,
+          "150": 1.1245411138673433,
+          "200": 1.0436179805800405,
+          "250": 1.087499998314128
+        },
+        "coverage": {
+          "60": 0.8785927799494136,
+          "100": 0.9319312528267752,
+          "150": 0.9605233476201218,
+          "200": 0.936357481381178,
+          "250": 0.9171945701357466
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 1.1538461446762085,
+          "250": 1.7677671909332275
+        },
+        "M4_model_sat": 0.6781600713729858,
+        "M4_camera_sat": 0.5264830196844222,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": true,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.2151695896785584,
+        "v": -0.4361216644925925,
+        "residual_rms": 0.031558165070101785
+      },
+      "log_W": {
+        "P": 0.6424075568491191,
+        "v": -0.6264150973971272,
+        "residual_rms": 0.00792880395957618
+      },
+      "log_HW": {
+        "P": 0.5591491356285515,
+        "v": 0.18545045720200848,
+        "residual_rms": 0.021662937552659134
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2525.0,
+        "log_H": {
+          "P": 2.6409206860498244,
+          "v": -1.1923492415762271,
+          "residual_rms": 0.15856389033094503
+        },
+        "log_W": {
+          "P": 2.1497826805322933,
+          "v": -1.1923493280984228,
+          "residual_rms": 0.15856392698598107
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 2350.0,
+        "log_H": {
+          "P": 2.398212563018573,
+          "v": -1.0581257998807165,
+          "residual_rms": 0.1486618848099614
+        },
+        "log_W": {
+          "P": 1.568667119030199,
+          "v": -1.0681654542766497,
+          "residual_rms": 0.1494592501889051
+        }
+      },
+      "lam850_uniform_sig2.0": {
+        "T150_K": 2200.0,
+        "log_H": {
+          "P": 2.1106467462732916,
+          "v": -1.0101033187858512,
+          "residual_rms": 0.12137695394542508
+        },
+        "log_W": {
+          "P": 1.6211172212270846,
+          "v": -0.8276942558328028,
+          "residual_rms": 0.09213329815740506
+        }
+      },
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 61.7464599609375,
+        "median_liquidus_W_px": 14.82112979888916,
+        "median_liquidus_HW": 4.176425093487852,
+        "median_peak_K": 3669.176758239568,
+        "p95_peak_K": 4122.696939513785,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 40.06068229675293,
+        "median_liquidus_W_px": 8.580018520355225,
+        "median_liquidus_HW": 4.679828857295769,
+        "median_peak_K": 2665.987858965128,
+        "p95_peak_K": 4195.243691987143,
+        "fraction_peak_above_boiling": 0.16666666666666666,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 78.67378234863281,
+        "median_liquidus_W_px": 17.143901824951172,
+        "median_liquidus_HW": 4.6027410665357165,
+        "median_peak_K": 4106.632489172836,
+        "p95_peak_K": 4471.6673865010125,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 57.91065216064453,
+        "median_liquidus_W_px": 10.244489669799805,
+        "median_liquidus_HW": 5.624374043577896,
+        "median_peak_K": 3175.848626123754,
+        "p95_peak_K": 4541.3919209699825,
+        "fraction_peak_above_boiling": 0.5829528158295282,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "anchor_t_min",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -3.0,
+      "liquid_conductivity_enhancement_factor": 2.0,
+      "eta_directional": 0.5
+    },
+    "level_free": {
+      "candidate_id": "anchor_t_min",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+        "DEFINED": 4425,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 5,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8,
+        "25": 1.25,
+        "50": 1.9414509441006884,
+        "75": 3.6629711786905923,
+        "95": 5.262428716023763
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1114.1891944957576,
+        "25": 1552.210882757105,
+        "50": 1698.469558805668,
+        "75": 1860.4257180510576,
+        "95": 2230.5438267693457
+      },
+      "median_of_member_H_ratio": 2.4523577256636186,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.4280225988700565,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.8961875221946023,
+          "median_level_K": 1696.019982919655
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 3.008527929132635,
+          "median_level_K": 1343.0824251813383
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1609,
+          "median_H_ratio": 1.82052361276687,
+          "median_level_K": 1796.4661957098533
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 653,
+          "median_H_ratio": 4.406063715616862,
+          "median_level_K": 1326.3595408052383
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 2.910502404349065,
+        "v": -1.5584758576246505,
+        "residual_rms": 0.17311639095226816
+      },
+      "log_W": {
+        "P": 1.1018173288237965,
+        "v": -0.9125086644199493,
+        "residual_rms": 0.025161226207396248
+      },
+      "log_HW": {
+        "P": 2.2014290301853148,
+        "v": -0.8065145306367127,
+        "residual_rms": 0.19891968909700802
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 27.407660484313965,
+        "median_liquidus_W_px": 8.625176906585693,
+        "median_liquidus_HW": 3.1817076425229316,
+        "median_peak_K": 2313.4772549024883,
+        "p95_peak_K": 2911.7934482093797,
+        "fraction_peak_above_boiling": 0.015810276679841896,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 284,
+          "SELECTED": 301,
+          "ZERO_FOOTPRINT": 63
+        },
+        "selected_frames": 301,
+        "median_liquidus_H_px": 5.176331043243408,
+        "median_liquidus_W_px": 3.785569667816162,
+        "median_liquidus_HW": 1.0792006549462847,
+        "median_peak_K": 1752.220445755866,
+        "p95_peak_K": 3057.524891734725,
+        "fraction_peak_above_boiling": 0.020061728395061727,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 40.28749084472656,
+        "median_liquidus_W_px": 10.818586349487305,
+        "median_liquidus_HW": 3.716675355708968,
+        "median_peak_K": 2699.485921106044,
+        "p95_peak_K": 3410.7027063108035,
+        "fraction_peak_above_boiling": 0.08379888268156424,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 22,
+          "SELECTED": 635
+        },
+        "selected_frames": 635,
+        "median_liquidus_H_px": 15.207375526428223,
+        "median_liquidus_W_px": 5.2510151863098145,
+        "median_liquidus_HW": 2.7935435766812757,
+        "median_peak_K": 1978.6394657250842,
+        "p95_peak_K": 3527.1547040125824,
+        "fraction_peak_above_boiling": 0.1354642313546423,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "anchor_transport_guard_edge",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.0,
+      "liquid_conductivity_enhancement_factor": 2.5,
+      "eta_directional": 0.4
+    },
+    "level_free": {
+      "candidate_id": "anchor_transport_guard_edge",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4419,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 13,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7692307692307693,
+        "25": 0.9752756604096995,
+        "50": 1.131370735168457,
+        "75": 1.5020818710327148,
+        "95": 5.688562913374468
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1394.7972903581983,
+        "25": 1827.993436015609,
+        "50": 2054.9789740857696,
+        "75": 2205.665787199834,
+        "95": 2541.0479494424094
+      },
+      "median_of_member_H_ratio": 2.5377767006440752,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.18103643358225843,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0,
+          "median_level_K": 2063.7099638274035
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.932696258431008,
+          "median_level_K": 1605.883817487372
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.1428571428571428,
+          "median_level_K": 2173.73844561359
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 646,
+          "median_H_ratio": 4.899687063760283,
+          "median_level_K": 1612.7468487882434
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 1900.0,
+        "M1_HW_ratio": {
+          "60": 1.8779540474556122,
+          "100": 1.4221457458515043,
+          "150": 1.2810606060606062,
+          "200": 1.1871795354436223,
+          "250": 1.1366626512706492
+        },
+        "coverage": {
+          "60": 0.8576684295240286,
+          "100": 0.9310266847580281,
+          "150": 0.9537559214978569,
+          "200": 0.9350033852403521,
+          "250": 0.9153846153846154
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8731282353401184,
+          "250": 1.375
+        },
+        "M4_model_sat": 0.6575224101543427,
+        "M4_camera_sat": 0.5261653899889194,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.630310655598972,
+        "v": -0.8100048831354231,
+        "residual_rms": 0.04306610636351704
+      },
+      "log_W": {
+        "P": 0.9072072993393232,
+        "v": -0.7532094449529738,
+        "residual_rms": 0.013886855892545458
+      },
+      "log_HW": {
+        "P": 0.7928942167456858,
+        "v": -0.08482416008609661,
+        "residual_rms": 0.03917623705913642
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 1900.0,
+        "log_H": {
+          "P": 2.608567382473537,
+          "v": -1.238262860005819,
+          "residual_rms": 0.13628918405122825
+        },
+        "log_W": {
+          "P": 1.528355165646123,
+          "v": -1.1470398014725474,
+          "residual_rms": 0.06336395955073115
+        }
+      },
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 41.31215858459473,
+        "median_liquidus_W_px": 11.551412582397461,
+        "median_liquidus_HW": 3.595268676617705,
+        "median_peak_K": 2739.9428987624387,
+        "p95_peak_K": 3322.086144287264,
+        "fraction_peak_above_boiling": 0.0862977602108037,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 19.081308364868164,
+        "median_liquidus_W_px": 5.934847116470337,
+        "median_liquidus_HW": 3.093783950291087,
+        "median_peak_K": 2056.1154430641877,
+        "p95_peak_K": 3450.4541564151887,
+        "fraction_peak_above_boiling": 0.125,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 57.09663772583008,
+        "median_liquidus_W_px": 14.112039566040039,
+        "median_liquidus_HW": 4.057357936502212,
+        "median_peak_K": 3230.3076189542726,
+        "p95_peak_K": 3773.429416404718,
+        "fraction_peak_above_boiling": 0.9807572936064556,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 31.329559326171875,
+        "median_liquidus_W_px": 7.664576530456543,
+        "median_liquidus_HW": 4.083739660202807,
+        "median_peak_K": 2356.288859384651,
+        "p95_peak_K": 3851.506295687346,
+        "fraction_peak_above_boiling": 0.1598173515981735,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_01",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.0,
+      "liquid_conductivity_enhancement_factor": 1.8333333333333333,
+      "eta_directional": 0.2
+    },
+    "level_free": {
+      "candidate_id": "halton_01",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4418,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 14,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7857142857142857,
+        "25": 1.010152530084218,
+        "50": 1.25,
+        "75": 1.6724389521013787,
+        "95": 5.754708723588423
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1390.1772021188403,
+        "25": 1841.3625084722094,
+        "50": 2081.5126666002516,
+        "75": 2269.1438107446684,
+        "95": 2629.868416905428
+      },
+      "median_of_member_H_ratio": 2.6189227572079172,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.1749660479855138,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0999718983968099,
+          "median_level_K": 2090.0404679977582
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.9281486357101283,
+          "median_level_K": 1606.042279996614
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.309696878705706,
+          "median_level_K": 2213.571849393719
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 645,
+          "median_H_ratio": 5.005165835259725,
+          "median_level_K": 1617.7322343086098
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 1875.0,
+        "M1_HW_ratio": {
+          "60": 2.225345170578745,
+          "100": 1.7594461228649907,
+          "150": 1.5023056142099978,
+          "200": 1.3131313435937686,
+          "250": 1.3108328903062527
+        },
+        "coverage": {
+          "60": 0.8015635778339848,
+          "100": 0.9142921754862053,
+          "150": 0.9501466275659824,
+          "200": 0.923493568043331,
+          "250": 0.9074660633484163
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8854377567768097,
+          "250": 1.4927808046340942
+        },
+        "M4_model_sat": 0.6708283424377441,
+        "M4_camera_sat": 0.5264238773274919,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.7412205312272655,
+        "v": -0.7914209744271652,
+        "residual_rms": 0.051349648198002584
+      },
+      "log_W": {
+        "P": 0.8883872673623983,
+        "v": -0.7541343645518197,
+        "residual_rms": 0.015325294918432097
+      },
+      "log_HW": {
+        "P": 0.8758495360607799,
+        "v": -0.06513678997535854,
+        "residual_rms": 0.04014804765659158
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 1875.0,
+        "log_H": {
+          "P": 2.6053348788225343,
+          "v": -1.203446375375124,
+          "residual_rms": 0.14904165591305435
+        },
+        "log_W": {
+          "P": 1.7507142099462112,
+          "v": -1.0937171904420842,
+          "residual_rms": 0.1108192055541164
+        }
+      },
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 42.36823081970215,
+        "median_liquidus_W_px": 11.572733402252197,
+        "median_liquidus_HW": 3.67974426353583,
+        "median_peak_K": 2935.0206047102242,
+        "p95_peak_K": 3612.7882434384555,
+        "fraction_peak_above_boiling": 0.11198945981554677,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 19.55302906036377,
+        "median_liquidus_W_px": 5.924076080322266,
+        "median_liquidus_HW": 3.2134878280583994,
+        "median_peak_K": 2103.7519246321126,
+        "p95_peak_K": 3753.705912984583,
+        "fraction_peak_above_boiling": 0.14351851851851852,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 59.222015380859375,
+        "median_liquidus_W_px": 14.030951499938965,
+        "median_liquidus_HW": 4.231941140516242,
+        "median_peak_K": 3481.5394902603393,
+        "p95_peak_K": 4033.7491733422303,
+        "fraction_peak_above_boiling": 0.9993792675356921,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 33.56296920776367,
+        "median_liquidus_W_px": 7.63650369644165,
+        "median_liquidus_HW": 4.33953247996025,
+        "median_peak_K": 2436.1310795654967,
+        "p95_peak_K": 4113.1534430644815,
+        "fraction_peak_above_boiling": 0.1689497716894977,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_02",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -1.5,
+      "liquid_conductivity_enhancement_factor": 2.1666666666666665,
+      "eta_directional": 0.4
+    },
+    "level_free": {
+      "candidate_id": "halton_02",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+        "DEFINED": 4418,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 12,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7943747758865357,
+        "25": 1.0833333333333333,
+        "50": 1.3333333333333333,
+        "75": 1.9828057667688057,
+        "95": 5.40256361752952
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1239.1694593921206,
+        "25": 1673.7688592330423,
+        "50": 1862.6880774606889,
+        "75": 2041.304854572329,
+        "95": 2395.7762535366032
+      },
+      "median_of_member_H_ratio": 2.3972662819756403,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.2476233589859665,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.2222222222222223,
+          "median_level_K": 1863.6701608268218
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.4820325639512806,
+          "median_level_K": 1473.9929642821194
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1609,
+          "median_H_ratio": 1.3125,
+          "median_level_K": 1975.7546704806095
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 647,
+          "median_H_ratio": 4.725739297021952,
+          "median_level_K": 1438.814142308015
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 2.20448751624093,
+        "v": -1.080704603692448,
+        "residual_rms": 0.09559204635379183
+      },
+      "log_W": {
+        "P": 1.0978996054981371,
+        "v": -0.8549853575155932,
+        "residual_rms": 0.0326156042186167
+      },
+      "log_HW": {
+        "P": 1.2178720309875453,
+        "v": -0.2878241884891648,
+        "residual_rms": 0.07601891059178531
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 33.75046730041504,
+        "median_liquidus_W_px": 10.052901268005371,
+        "median_liquidus_HW": 3.365214392517789,
+        "median_peak_K": 2522.3200600399423,
+        "p95_peak_K": 3145.4511128227705,
+        "fraction_peak_above_boiling": 0.052700922266139656,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 86,
+          "SELECTED": 562
+        },
+        "selected_frames": 562,
+        "median_liquidus_H_px": 11.157718181610107,
+        "median_liquidus_W_px": 4.5640153884887695,
+        "median_liquidus_HW": 2.265014211471641,
+        "median_peak_K": 1891.0585535320333,
+        "p95_peak_K": 3292.7002902776135,
+        "fraction_peak_above_boiling": 0.08024691358024691,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 48.51289749145508,
+        "median_liquidus_W_px": 12.410564422607422,
+        "median_liquidus_HW": 3.9256135816717417,
+        "median_peak_K": 2971.8125408566266,
+        "p95_peak_K": 3632.299103807653,
+        "fraction_peak_above_boiling": 0.12290502793296089,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 23.50786590576172,
+        "median_liquidus_W_px": 6.4195756912231445,
+        "median_liquidus_HW": 3.5811632137028004,
+        "median_peak_K": 2150.2016850352416,
+        "p95_peak_K": 3724.8110245478665,
+        "fraction_peak_above_boiling": 0.1537290715372907,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_03",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 1.5,
+      "liquid_conductivity_enhancement_factor": 1.6111111111111112,
+      "eta_directional": 0.6
+    },
+    "level_free": {
+      "candidate_id": "halton_03",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4416,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 16,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8,
+        "25": 1.0909090909090908,
+        "50": 1.3333333333333333,
+        "75": 1.7276968020205448,
+        "95": 5.855942948659261
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1561.6628227859346,
+        "25": 1990.8685499498729,
+        "50": 2306.140930794718,
+        "75": 2490.5160636317723,
+        "95": 2867.2802864292053
+      },
+      "median_of_member_H_ratio": 1.682001334779403,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.10484601449275362,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.131370735168457,
+          "median_level_K": 2339.739636683188
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 1.9522379636764526,
+          "median_level_K": 1744.0865936682108
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.411764705882353,
+          "median_level_K": 2378.0846909835936
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 642,
+          "median_H_ratio": 2.683364986359549,
+          "median_level_K": 1741.2717445039352
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2200.0,
+        "M1_HW_ratio": {
+          "60": 1.6992441370019973,
+          "100": 1.4425926347394453,
+          "150": 1.3278926396202786,
+          "200": 1.2272727272727273,
+          "250": 1.254010707297535
+        },
+        "coverage": {
+          "60": 0.9027362612094735,
+          "100": 0.9335142469470827,
+          "150": 0.9503722084367245,
+          "200": 0.9284585872263598,
+          "250": 0.9108597285067873
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8333333134651184,
+          "250": 1.2857142686843872
+        },
+        "M4_model_sat": 0.6733754873275757,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2075.0,
+        "M1_HW_ratio": {
+          "60": 1.7640456062375534,
+          "100": 1.5291317690249298,
+          "150": 1.4281327201466234,
+          "200": 1.2494172945408653,
+          "250": 1.2795454043872205
+        },
+        "coverage": {
+          "60": 0.8829616003679006,
+          "100": 0.927860696517413,
+          "150": 0.951048951048951,
+          "200": 0.9331979237192507,
+          "250": 0.919683257918552
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9334333837032318,
+          "250": 1.5
+        },
+        "M4_model_sat": 0.6836582124233246,
+        "M4_camera_sat": 0.5264238773274919,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.3918991834901393,
+        "v": -0.5931461494922564,
+        "residual_rms": 0.033437855539456884
+      },
+      "log_W": {
+        "P": 0.719559178578081,
+        "v": -0.680359284276415,
+        "residual_rms": 0.008617684436339257
+      },
+      "log_HW": {
+        "P": 0.6861944205889914,
+        "v": 0.07806635453288047,
+        "residual_rms": 0.02622390974002126
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2200.0,
+        "log_H": {
+          "P": 2.814172735867997,
+          "v": -1.3132422166132518,
+          "residual_rms": 0.16623927944853212
+        },
+        "log_W": {
+          "P": 1.5327177133666272,
+          "v": -1.0861590950125617,
+          "residual_rms": 0.09226158357570058
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 2075.0,
+        "log_H": {
+          "P": 2.5299612609155275,
+          "v": -1.1931678024099643,
+          "residual_rms": 0.15984783858380242
+        },
+        "log_W": {
+          "P": 1.720946621416375,
+          "v": -1.1273279932272833,
+          "residual_rms": 0.1303242321483638
+        }
+      },
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 54.32747840881348,
+        "median_liquidus_W_px": 12.997601509094238,
+        "median_liquidus_HW": 4.196063492638359,
+        "median_peak_K": 3402.3709329124254,
+        "p95_peak_K": 3978.4899161271715,
+        "fraction_peak_above_boiling": 0.9993412384716732,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 30.74056053161621,
+        "median_liquidus_W_px": 7.178299427032471,
+        "median_liquidus_HW": 4.25393508884288,
+        "median_peak_K": 2384.41724547255,
+        "p95_peak_K": 4075.1954970532493,
+        "fraction_peak_above_boiling": 0.15895061728395063,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 72.09313201904297,
+        "median_liquidus_W_px": 15.307839393615723,
+        "median_liquidus_HW": 4.731061335429971,
+        "median_peak_K": 3881.668207929902,
+        "p95_peak_K": 4333.693592336011,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 46.630882263183594,
+        "median_liquidus_W_px": 8.75069808959961,
+        "median_liquidus_HW": 5.3267582015289054,
+        "median_peak_K": 2819.50496405367,
+        "p95_peak_K": 4396.467876374887,
+        "fraction_peak_above_boiling": 0.1902587519025875,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_04",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -2.25,
+      "liquid_conductivity_enhancement_factor": 1.9444444444444444,
+      "eta_directional": 0.8
+    },
+    "level_free": {
+      "candidate_id": "halton_04",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 3,
+        "DEFINED": 4419,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 10,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8181818181818182,
+        "25": 1.25,
+        "50": 1.6896158365102916,
+        "75": 3.600131401648888,
+        "95": 5.419712571989316
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1172.4753385843198,
+        "25": 1620.5554552661044,
+        "50": 1769.966822823645,
+        "75": 1940.0021185886635,
+        "95": 2309.3449540084807
+      },
+      "median_of_member_H_ratio": 2.4433323763936423,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.3643358225842951,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.5764815012613933,
+          "median_level_K": 1768.2691054598893
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 3.232550515068902,
+          "median_level_K": 1403.5295133630561
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1608,
+          "median_H_ratio": 1.654114237718383,
+          "median_level_K": 1880.9249038845123
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 648,
+          "median_H_ratio": 4.573887843132345,
+          "median_level_K": 1375.247867322091
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 2.7761164510453895,
+        "v": -1.3969982714936882,
+        "residual_rms": 0.1632751698960938
+      },
+      "log_W": {
+        "P": 1.1197197852949665,
+        "v": -0.8853282586647405,
+        "residual_rms": 0.03047205239239109
+      },
+      "log_HW": {
+        "P": 2.015102193156169,
+        "v": -0.6626924873664346,
+        "residual_rms": 0.17363344393541918
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 31.67110824584961,
+        "median_liquidus_W_px": 9.214357376098633,
+        "median_liquidus_HW": 3.4265772807787034,
+        "median_peak_K": 2423.643622307113,
+        "p95_peak_K": 3052.596179632245,
+        "fraction_peak_above_boiling": 0.037549407114624504,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 250,
+          "SELECTED": 397,
+          "ZERO_FOOTPRINT": 1
+        },
+        "selected_frames": 397,
+        "median_liquidus_H_px": 6.99489688873291,
+        "median_liquidus_W_px": 4.094653129577637,
+        "median_liquidus_HW": 1.3809850807296031,
+        "median_peak_K": 1819.178177975627,
+        "p95_peak_K": 3217.4505979277524,
+        "fraction_peak_above_boiling": 0.06635802469135803,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 45.903099060058594,
+        "median_liquidus_W_px": 11.487051963806152,
+        "median_liquidus_HW": 4.017738786176408,
+        "median_peak_K": 2845.408155192931,
+        "p95_peak_K": 3548.360878261381,
+        "fraction_peak_above_boiling": 0.10862818125387957,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 19.480409622192383,
+        "median_liquidus_W_px": 5.766283988952637,
+        "median_liquidus_HW": 3.242965583125289,
+        "median_peak_K": 2068.4462110268482,
+        "p95_peak_K": 3645.745485646507,
+        "fraction_peak_above_boiling": 0.15220700152207,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_05",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.75,
+      "liquid_conductivity_enhancement_factor": 2.2777777777777777,
+      "eta_directional": 0.04
+    },
+    "level_free": {
+      "candidate_id": "halton_05",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4418,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 14,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.75,
+        "25": 0.9150793412152458,
+        "50": 1.0833333333333333,
+        "75": 1.4142135040468236,
+        "95": 5.832252994366104
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1483.4449524033935,
+        "25": 1938.0872072928594,
+        "50": 2188.253350142653,
+        "75": 2342.218763101749,
+        "95": 2696.405539765058
+      },
+      "median_of_member_H_ratio": 1.6885126776165433,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.1498415572657311,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 0.9333332614027119,
+          "median_level_K": 2199.065393710263
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 2.2770253552330866,
+          "median_level_K": 1677.4427682800076
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.1,
+          "median_level_K": 2304.635635144764
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 645,
+          "median_H_ratio": 3.666666271762853,
+          "median_level_K": 1669.663834912707
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2025.0,
+        "M1_HW_ratio": {
+          "60": 1.5478004410784347,
+          "100": 1.3108333719679486,
+          "150": 1.1833035540422525,
+          "200": 1.090909131778764,
+          "250": 1.061079503656017
+        },
+        "coverage": {
+          "60": 0.8811220970338008,
+          "100": 0.9328358208955224,
+          "150": 0.9505977893074667,
+          "200": 0.9289099526066351,
+          "250": 0.9160633484162896
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8831712007522583,
+          "250": 1.344585657119751
+        },
+        "M4_model_sat": 0.6634387075901031,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 1925.0,
+        "M1_HW_ratio": {
+          "60": 1.7532580088192642,
+          "100": 1.454802268185488,
+          "150": 1.283244683333292,
+          "200": 1.0909090909090908,
+          "250": 1.1443182314763258
+        },
+        "coverage": {
+          "60": 0.8484709128535296,
+          "100": 0.9192672998643148,
+          "150": 0.9546582449808256,
+          "200": 0.9350033852403521,
+          "250": 0.9190045248868778
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9701424837112427,
+          "250": 1.5764814615249634
+        },
+        "M4_model_sat": 0.6752451062202454,
+        "M4_camera_sat": 0.5267957351290684,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.504219717891678,
+        "v": -0.6834661896031247,
+        "residual_rms": 0.033572917645861344
+      },
+      "log_W": {
+        "P": 0.8248014170976048,
+        "v": -0.7291674840964475,
+        "residual_rms": 0.008791873291602303
+      },
+      "log_HW": {
+        "P": 0.699862539656678,
+        "v": 0.028528028183910314,
+        "residual_rms": 0.026701477189271183
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2025.0,
+        "log_H": {
+          "P": 2.462147424163101,
+          "v": -1.2014984327994596,
+          "residual_rms": 0.11736795856290694
+        },
+        "log_W": {
+          "P": 1.4838531264488417,
+          "v": -1.1338401876636701,
+          "residual_rms": 0.06895596181983088
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 1925.0,
+        "log_H": {
+          "P": 2.4404922852127475,
+          "v": -1.1618874774656782,
+          "residual_rms": 0.13106890698584545
+        },
+        "log_W": {
+          "P": 1.1890954242587046,
+          "v": -1.025086948361652,
+          "residual_rms": 0.05331413569457205
+        }
+      },
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 44.71269989013672,
+        "median_liquidus_W_px": 12.50429630279541,
+        "median_liquidus_HW": 3.5846344282711264,
+        "median_peak_K": 2999.1943441804087,
+        "p95_peak_K": 3600.51822896065,
+        "fraction_peak_above_boiling": 0.12055335968379446,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 23.42988395690918,
+        "median_liquidus_W_px": 6.62378191947937,
+        "median_liquidus_HW": 3.4813678577401213,
+        "median_peak_K": 2186.1584635294525,
+        "p95_peak_K": 3708.4698218161334,
+        "fraction_peak_above_boiling": 0.14351851851851852,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 61.01647186279297,
+        "median_liquidus_W_px": 15.116291046142578,
+        "median_liquidus_HW": 4.051710330961218,
+        "median_peak_K": 3529.985520163498,
+        "p95_peak_K": 4021.4348925925706,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 36.56861114501953,
+        "median_liquidus_W_px": 8.29401969909668,
+        "median_liquidus_HW": 4.3785332222311,
+        "median_peak_K": 2523.87899986329,
+        "p95_peak_K": 4089.675293962397,
+        "fraction_peak_above_boiling": 0.1689497716894977,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_06",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -0.75,
+      "liquid_conductivity_enhancement_factor": 1.7222222222222223,
+      "eta_directional": 0.24000000000000002
+    },
+    "level_free": {
+      "candidate_id": "halton_06",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 1,
+        "DEFINED": 4417,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 14,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7857142857142857,
+        "25": 1.0909090909090908,
+        "50": 1.3552615301949638,
+        "75": 1.8738328534008106,
+        "95": 5.568789299490375
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1309.4721186744534,
+        "25": 1755.1490624325556,
+        "50": 1978.8428334416235,
+        "75": 2166.167795760829,
+        "95": 2541.179132977171
+      },
+      "median_of_member_H_ratio": 2.5989249168880404,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.19424949060448268,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.2,
+          "median_level_K": 1979.0786646670695
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 3.7880147298177085,
+          "median_level_K": 1535.8767028861557
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1610,
+          "median_H_ratio": 1.409835103958372,
+          "median_level_K": 2094.092749640541
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 644,
+          "median_H_ratio": 4.972719904279918,
+          "median_level_K": 1526.7715425447457
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.9394645539381044,
+        "v": -0.9282760458460875,
+        "residual_rms": 0.06914418404923428
+      },
+      "log_W": {
+        "P": 0.9363413608028037,
+        "v": -0.7861268374421522,
+        "residual_rms": 0.014191314531129262
+      },
+      "log_HW": {
+        "P": 1.0219916257179342,
+        "v": -0.1568940058317132,
+        "residual_rms": 0.05488841915804549
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 38.76531791687012,
+        "median_liquidus_W_px": 10.745207786560059,
+        "median_liquidus_HW": 3.6028840353554825,
+        "median_peak_K": 2792.547993170452,
+        "p95_peak_K": 3512.772548378509,
+        "fraction_peak_above_boiling": 0.09420289855072464,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 7,
+          "SELECTED": 641
+        },
+        "selected_frames": 641,
+        "median_liquidus_H_px": 15.374515533447266,
+        "median_liquidus_W_px": 5.3655219078063965,
+        "median_liquidus_HW": 2.82645097413249,
+        "median_peak_K": 2003.902148623837,
+        "p95_peak_K": 3667.7617719125374,
+        "fraction_peak_above_boiling": 0.1404320987654321,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 54.96260452270508,
+        "median_liquidus_W_px": 13.21553897857666,
+        "median_liquidus_HW": 4.17368378899582,
+        "median_peak_K": 3333.3960341114134,
+        "p95_peak_K": 3948.0555206392037,
+        "fraction_peak_above_boiling": 0.9987585350713842,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 28.74359893798828,
+        "median_liquidus_W_px": 6.984492778778076,
+        "median_liquidus_HW": 4.078135633241222,
+        "median_peak_K": 2314.1728310244034,
+        "p95_peak_K": 4040.2520037858308,
+        "fraction_peak_above_boiling": 0.1659056316590563,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_07",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 2.25,
+      "liquid_conductivity_enhancement_factor": 2.0555555555555554,
+      "eta_directional": 0.44
+    },
+    "level_free": {
+      "candidate_id": "halton_07",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4426,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 6,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7713891809636896,
+        "25": 1.0,
+        "50": 1.1428571428571428,
+        "75": 1.4757294062155277,
+        "95": 4.527477594865089
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1670.5116501580828,
+        "25": 2114.5965665061767,
+        "50": 2412.0910959706507,
+        "75": 2563.888195306933,
+        "95": 2922.892524379642
+      },
+      "median_of_member_H_ratio": 1.4583333333333335,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.053999096249435156,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0,
+          "median_level_K": 2443.3396517861893
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 1.75,
+          "median_level_K": 1823.4578874078286
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.1666666666666667,
+          "median_level_K": 2500.70479527275
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 652,
+          "median_H_ratio": 2.095469817200946,
+          "median_level_K": 1856.6664191073332
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2350.0,
+        "M1_HW_ratio": {
+          "60": 1.3718254911201528,
+          "100": 1.25312905039421,
+          "150": 1.1454545454545455,
+          "200": 1.0454545454545454,
+          "250": 1.0811687893703028
+        },
+        "coverage": {
+          "60": 0.9280294320533456,
+          "100": 0.9450474898236092,
+          "150": 0.9501466275659824,
+          "200": 0.9250733468742948,
+          "250": 0.8875565610859728
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 0.831890344619751,
+          "250": 1.2000000476837158
+        },
+        "M4_model_sat": 0.6274265944957733,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": true,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2200.0,
+        "M1_HW_ratio": {
+          "60": 1.4836865195594213,
+          "100": 1.305954974433801,
+          "150": 1.1704545454545454,
+          "200": 1.1132866784628495,
+          "250": 1.107954462786347
+        },
+        "coverage": {
+          "60": 0.9096343987123476,
+          "100": 0.944142921754862,
+          "150": 0.9609745093616061,
+          "200": 0.9368088467614534,
+          "250": 0.9169683257918552
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9486832618713379,
+          "250": 1.4142134189605713
+        },
+        "M4_model_sat": 0.6712786257266998,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.3315494914652484,
+        "v": -0.5207632093041192,
+        "residual_rms": 0.0346612994355221
+      },
+      "log_W": {
+        "P": 0.6948574892358509,
+        "v": -0.6610217316511575,
+        "residual_rms": 0.0069270998991434185
+      },
+      "log_HW": {
+        "P": 0.6253338709000711,
+        "v": 0.1313743817350458,
+        "residual_rms": 0.025021845676798993
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2350.0,
+        "log_H": {
+          "P": 2.71907206740406,
+          "v": -1.285034698051569,
+          "residual_rms": 0.1487436054687436
+        },
+        "log_W": {
+          "P": 2.290542066467355,
+          "v": -1.2340995392759617,
+          "residual_rms": 0.1703222309932702
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 2200.0,
+        "log_H": {
+          "P": 2.185732775574378,
+          "v": -1.0573374668908326,
+          "residual_rms": 0.10641697312355247
+        },
+        "log_W": {
+          "P": 1.7417796967377799,
+          "v": -1.119511846765985,
+          "residual_rms": 0.12770640594149765
+        }
+      },
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 56.44113540649414,
+        "median_liquidus_W_px": 14.005589008331299,
+        "median_liquidus_HW": 4.04646913797383,
+        "median_peak_K": 3446.064155978197,
+        "p95_peak_K": 3954.9820256642397,
+        "fraction_peak_above_boiling": 0.9993412384716732,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 33.87353706359863,
+        "median_liquidus_W_px": 7.88939905166626,
+        "median_liquidus_HW": 4.302147102671125,
+        "median_peak_K": 2484.695155772086,
+        "p95_peak_K": 4043.039342168457,
+        "fraction_peak_above_boiling": 0.1574074074074074,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 73.59030151367188,
+        "median_liquidus_W_px": 16.448429107666016,
+        "median_liquidus_HW": 4.5039573254282725,
+        "median_peak_K": 3919.4790271529737,
+        "p95_peak_K": 4330.414454864089,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 50.7338981628418,
+        "median_liquidus_W_px": 9.52578067779541,
+        "median_liquidus_HW": 5.292619695776211,
+        "median_peak_K": 2928.690294574158,
+        "p95_peak_K": 4385.828760792211,
+        "fraction_peak_above_boiling": 0.1948249619482496,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_08",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 0.375,
+      "liquid_conductivity_enhancement_factor": 1.537037037037037,
+      "eta_directional": 0.8400000000000001
+    },
+    "level_free": {
+      "candidate_id": "halton_08",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4413,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 19,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8125000695423071,
+        "25": 1.1818181818181819,
+        "50": 1.4444444444444444,
+        "75": 1.9125004362199263,
+        "95": 5.989641397649589
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1422.3959863286855,
+        "25": 1857.3361388624817,
+        "50": 2121.6045822268707,
+        "75": 2318.288383483794,
+        "95": 2694.972297805346
+      },
+      "median_of_member_H_ratio": 2.652310430494129,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.16315431679129844,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.2307692307692308,
+          "median_level_K": 2134.3147614686363
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.76615932252672,
+          "median_level_K": 1647.1233945243082
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.5384615384615385,
+          "median_level_K": 2227.496991219003
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 640,
+          "median_H_ratio": 4.729984985158232,
+          "median_level_K": 1662.4108978052031
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.6442308863928259,
+        "v": -0.7589905240512993,
+        "residual_rms": 0.04550807503181531
+      },
+      "log_W": {
+        "P": 0.8306908918459848,
+        "v": -0.7197887297558851,
+        "residual_rms": 0.01287124850571847
+      },
+      "log_HW": {
+        "P": 0.8236228227143361,
+        "v": -0.0512100961112284,
+        "residual_rms": 0.035333234379265444
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 47.91662788391113,
+        "median_liquidus_W_px": 11.7193284034729,
+        "median_liquidus_HW": 4.109439350832881,
+        "median_peak_K": 3096.942315845097,
+        "p95_peak_K": 3782.60364146689,
+        "fraction_peak_above_boiling": 0.3010540184453228,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 22.996807098388672,
+        "median_liquidus_W_px": 6.206651449203491,
+        "median_liquidus_HW": 3.666472156844919,
+        "median_peak_K": 2178.742027340933,
+        "p95_peak_K": 3904.991238351674,
+        "fraction_peak_above_boiling": 0.15123456790123457,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 66.1328353881836,
+        "median_liquidus_W_px": 14.073049545288086,
+        "median_liquidus_HW": 4.709625712286178,
+        "median_peak_K": 3635.3725160392187,
+        "p95_peak_K": 4166.134674910913,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 38.07624053955078,
+        "median_liquidus_W_px": 7.846979141235352,
+        "median_liquidus_HW": 4.839854712299487,
+        "median_peak_K": 2545.0292513400564,
+        "p95_peak_K": 4232.3838760097415,
+        "fraction_peak_above_boiling": 0.1719939117199391,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_09",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -1.125,
+      "liquid_conductivity_enhancement_factor": 1.8703703703703702,
+      "eta_directional": 0.08
+    },
+    "level_free": {
+      "candidate_id": "halton_09",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+        "DEFINED": 4417,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 13,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7777777777777778,
+        "25": 1.0621322393417358,
+        "50": 1.3,
+        "75": 1.8633899207774598,
+        "95": 5.476063262779018
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1274.5635659588925,
+        "25": 1719.908775025393,
+        "50": 1930.521187834303,
+        "75": 2116.712115288632,
+        "95": 2485.411975177171
+      },
+      "median_of_member_H_ratio": 2.493760426839193,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.21236133122028525,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.1818181818181819,
+          "median_level_K": 1930.4134985891633
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 3.6541875203450522,
+          "median_level_K": 1505.5252767423647
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1609,
+          "median_H_ratio": 1.3333333333333333,
+          "median_level_K": 2046.4905214821483
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 645,
+          "median_H_ratio": 4.821015912254222,
+          "median_level_K": 1472.043840158149
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.9649945588574498,
+        "v": -0.9789960180187307,
+        "residual_rms": 0.06892410514928804
+      },
+      "log_W": {
+        "P": 1.0245601901855697,
+        "v": -0.8276202500146116,
+        "residual_rms": 0.025919784545891167
+      },
+      "log_HW": {
+        "P": 1.0969586712189048,
+        "v": -0.19725529420706,
+        "residual_rms": 0.06241791785356973
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 35.612361907958984,
+        "median_liquidus_W_px": 10.50398874282837,
+        "median_liquidus_HW": 3.4024743865829707,
+        "median_peak_K": 2681.3524261249386,
+        "p95_peak_K": 3386.6613327633086,
+        "fraction_peak_above_boiling": 0.08498023715415019,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 27,
+          "SELECTED": 621
+        },
+        "selected_frames": 621,
+        "median_liquidus_H_px": 13.535872459411621,
+        "median_liquidus_W_px": 4.94647216796875,
+        "median_liquidus_HW": 2.540937489413227,
+        "median_peak_K": 1948.0389344333703,
+        "p95_peak_K": 3533.6671389360113,
+        "fraction_peak_above_boiling": 0.125,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 50.83962631225586,
+        "median_liquidus_W_px": 12.902256965637207,
+        "median_liquidus_HW": 3.9564558347204017,
+        "median_peak_K": 3194.995269311379,
+        "p95_peak_K": 3842.424270304182,
+        "fraction_peak_above_boiling": 0.8770949720670391,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 25.457822799682617,
+        "median_liquidus_W_px": 6.739602565765381,
+        "median_liquidus_HW": 3.7925949958256355,
+        "median_peak_K": 2238.4101182702666,
+        "p95_peak_K": 3931.9380537780708,
+        "fraction_peak_above_boiling": 0.1582952815829528,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_10",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 1.875,
+      "liquid_conductivity_enhancement_factor": 2.2037037037037037,
+      "eta_directional": 0.28
+    },
+    "level_free": {
+      "candidate_id": "halton_10",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4420,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 12,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7660322984059652,
+        "25": 0.9285714285714286,
+        "50": 1.1,
+        "75": 1.4142135627344714,
+        "95": 5.558384024420696
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1626.8839779852415,
+        "25": 2064.8429363250416,
+        "50": 2350.0016282030874,
+        "75": 2497.3735057681915,
+        "95": 2852.629655790885
+      },
+      "median_of_member_H_ratio": 1.4375,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.08484162895927602,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 0.9899494171142578,
+          "median_level_K": 2372.9955250676753
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 645,
+          "median_H_ratio": 1.75,
+          "median_level_K": 1774.9331673212364
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.125,
+          "median_level_K": 2443.62923157538
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 646,
+          "median_H_ratio": 2.0923506996848364,
+          "median_level_K": 1801.7875227335026
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2200.0,
+        "M1_HW_ratio": {
+          "60": 1.365934065934066,
+          "100": 1.284188034188034,
+          "150": 1.1895881895881895,
+          "200": 1.1168831469098164,
+          "250": 1.056818152559212
+        },
+        "coverage": {
+          "60": 0.9169924120487468,
+          "100": 0.9407507914970602,
+          "150": 0.9544326641100834,
+          "200": 0.9331979237192507,
+          "250": 0.919683257918552
+        },
+        "M2_members_ok": 1,
+        "M3_W_ratio": {
+          "60": 0.8768123984336853,
+          "250": 1.3333333730697632
+        },
+        "M4_model_sat": 0.6693300008773804,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 2150.0,
+        "M1_HW_ratio": {
+          "60": 1.4063725490196077,
+          "100": 1.2197278754281913,
+          "150": 1.1704544749593209,
+          "200": 1.107070707070707,
+          "250": 1.0819804996901952
+        },
+        "coverage": {
+          "60": 0.8962979995401241,
+          "100": 0.9355495251017639,
+          "150": 0.9512745319196932,
+          "200": 0.9223651545926428,
+          "250": 0.9002262443438914
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9486832618713379,
+          "250": 1.4142136573791504
+        },
+        "M4_model_sat": 0.6618391573429108,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.3646426722169833,
+        "v": -0.5589838103874365,
+        "residual_rms": 0.03272729974583655
+      },
+      "log_W": {
+        "P": 0.7313411515329423,
+        "v": -0.6805373092029299,
+        "residual_rms": 0.005838925737702949
+      },
+      "log_HW": {
+        "P": 0.629102267167828,
+        "v": 0.10945065815660548,
+        "residual_rms": 0.024612897299756686
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2200.0,
+        "log_H": {
+          "P": 2.3683873744619097,
+          "v": -1.1364771989933877,
+          "residual_rms": 0.10786014862785637
+        },
+        "log_W": {
+          "P": 1.415550082211878,
+          "v": -1.113581030506807,
+          "residual_rms": 0.07753873207595985
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 2150.0,
+        "log_H": {
+          "P": 2.4990259138690494,
+          "v": -1.2078455449667331,
+          "residual_rms": 0.14412473153548988
+        },
+        "log_W": {
+          "P": 1.7417796967377799,
+          "v": -1.119511846765985,
+          "residual_rms": 0.12770640594149765
+        }
+      },
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 52.95479965209961,
+        "median_liquidus_W_px": 13.672135829925537,
+        "median_liquidus_HW": 3.8811068869741794,
+        "median_peak_K": 3305.4836840143544,
+        "p95_peak_K": 3828.905993460704,
+        "fraction_peak_above_boiling": 0.9993412384716732,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 30.88770866394043,
+        "median_liquidus_W_px": 7.591765880584717,
+        "median_liquidus_HW": 4.053707550704923,
+        "median_peak_K": 2393.29933283826,
+        "p95_peak_K": 3934.110096722688,
+        "fraction_peak_above_boiling": 0.15432098765432098,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 69.89111328125,
+        "median_liquidus_W_px": 16.240020751953125,
+        "median_liquidus_HW": 4.327530582698944,
+        "median_peak_K": 3801.340072557819,
+        "p95_peak_K": 4219.241194134684,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 46.46815872192383,
+        "median_liquidus_W_px": 9.230734825134277,
+        "median_liquidus_HW": 4.987626663959419,
+        "median_peak_K": 2799.1714791124177,
+        "p95_peak_K": 4289.9730790914155,
+        "fraction_peak_above_boiling": 0.1841704718417047,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_11",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -1.875,
+      "liquid_conductivity_enhancement_factor": 1.6481481481481481,
+      "eta_directional": 0.48000000000000004
+    },
+    "level_free": {
+      "candidate_id": "halton_11",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "CAMERA_WIDER_THAN_MODEL_AT_FLOOR": 2,
+        "DEFINED": 4419,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 11,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.8,
+        "25": 1.2010407447814941,
+        "50": 1.6489019393920898,
+        "75": 2.8945412164206035,
+        "95": 5.396754965915449
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1202.7135745218293,
+        "25": 1665.3215390392688,
+        "50": 1822.5802436454615,
+        "75": 2009.0162590565883,
+        "95": 2400.507516263629
+      },
+      "median_of_member_H_ratio": 2.525069807354569,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.2751753790450328,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.5,
+          "median_level_K": 1823.2494692762912
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 3.396025428863797,
+          "median_level_K": 1437.7759247764413
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1609,
+          "median_H_ratio": 1.6541141858453408,
+          "median_level_K": 1943.8865777369065
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 648,
+          "median_H_ratio": 4.692008354341479,
+          "median_level_K": 1405.6523270966063
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 2.439434896208255,
+        "v": -1.204330897930339,
+        "residual_rms": 0.11966679834447991
+      },
+      "log_W": {
+        "P": 1.1003948436908273,
+        "v": -0.8658855754994633,
+        "residual_rms": 0.030895880160821343
+      },
+      "log_HW": {
+        "P": 1.7476303977351266,
+        "v": -0.5039933499646803,
+        "residual_rms": 0.13766043529556674
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": null,
+      "lam850_uniform_sig1.0": null,
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 33.52277374267578,
+        "median_liquidus_W_px": 9.608914375305176,
+        "median_liquidus_HW": 3.483239230494176,
+        "median_peak_K": 2567.3801555145374,
+        "p95_peak_K": 3300.2447319265993,
+        "fraction_peak_above_boiling": 0.07905138339920949,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "NO_LASER_ASSOCIATED_MELT": 165,
+          "SELECTED": 483
+        },
+        "selected_frames": 483,
+        "median_liquidus_H_px": 9.511146545410156,
+        "median_liquidus_W_px": 4.33723258972168,
+        "median_liquidus_HW": 1.7256595350039663,
+        "median_peak_K": 1867.4086025086167,
+        "p95_peak_K": 3474.3374818635866,
+        "fraction_peak_above_boiling": 0.11728395061728394,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 48.71352005004883,
+        "median_liquidus_W_px": 11.910788536071777,
+        "median_liquidus_HW": 4.103525728135341,
+        "median_peak_K": 3055.348906278693,
+        "p95_peak_K": 3773.1230825056527,
+        "fraction_peak_above_boiling": 0.14959652389819988,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 22.306167602539062,
+        "median_liquidus_W_px": 6.083458423614502,
+        "median_liquidus_HW": 3.5258971742128935,
+        "median_peak_K": 2145.460315379021,
+        "p95_peak_K": 3876.3154802275903,
+        "fraction_peak_above_boiling": 0.1567732115677321,
+        "liquidus_K": 1673.15
+      }
+    ]
+  },
+  {
+    "candidate_id": "halton_12",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": 1.125,
+      "liquid_conductivity_enhancement_factor": 1.9814814814814814,
+      "eta_directional": 0.6799999999999999
+    },
+    "level_free": {
+      "candidate_id": "halton_12",
+      "basis": "per frame: highest isotherm of the 8-um temperature image (camera orientation, no PSF) whose camera-convention W reaches the camera's threshold-150 W; model H there / camera H",
+      "status_counts": {
+        "DEFINED": 4416,
+        "ISOTHERM_TOUCHES_RENDER_EDGE": 16,
+        "MODEL_PEAK_WIDER_THAN_CAMERA": 1
+      },
+      "pooled_H_ratio_quantiles": {
+        "5": 0.7905693932492851,
+        "25": 1.0,
+        "50": 1.2259990769565459,
+        "75": 1.6012324412663776,
+        "95": 5.933928148183344
+      },
+      "pooled_level_K_quantiles": {
+        "5": 1519.931965568665,
+        "25": 1953.2805428701424,
+        "50": 2219.8296700636893,
+        "75": 2392.583575130137,
+        "95": 2752.5759858814763
+      },
+      "median_of_member_H_ratio": 1.6875270725834501,
+      "liquidus_K": 1673.15,
+      "fraction_level_below_liquidus": 0.1297554347826087,
+      "members": [
+        {
+          "member_identity": "20260904:part_1",
+          "frames": 1518,
+          "defined": 1518,
+          "median_H_ratio": 1.0714285714285714,
+          "median_level_K": 2246.8294498663417
+        },
+        {
+          "member_identity": "20260904:part_3",
+          "frames": 647,
+          "defined": 644,
+          "median_H_ratio": 2.1023268724396273,
+          "median_level_K": 1699.4102962902916
+        },
+        {
+          "member_identity": "20260904:part_4",
+          "frames": 1611,
+          "defined": 1611,
+          "median_H_ratio": 1.2727272727272727,
+          "median_level_K": 2333.1929138494943
+        },
+        {
+          "member_identity": "20260904:part_6",
+          "frames": 657,
+          "defined": 643,
+          "median_H_ratio": 2.870004971822103,
+          "median_level_K": 1693.7076673150436
+        }
+      ]
+    },
+    "feasible_core": {
+      "lam850_uniform_sig0.0": [],
+      "lam850_uniform_sig1.0": [],
+      "lam850_uniform_sig2.0": [],
+      "lam850_uniform_sig2.6": []
+    },
+    "closest_approach_descriptive": [
+      {
+        "case_id": "lam850_uniform_sig0.0",
+        "available": true,
+        "T150_K": 2075.0,
+        "M1_HW_ratio": {
+          "60": 1.6884705537802351,
+          "100": 1.4425925925925926,
+          "150": 1.324810633827282,
+          "200": 1.221212208944002,
+          "250": 1.1988635875986864
+        },
+        "coverage": {
+          "60": 0.8999770062083238,
+          "100": 0.9407507914970602,
+          "150": 0.958041958041958,
+          "200": 0.9386143082825548,
+          "250": 0.9169683257918552
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.8661796450614929,
+          "250": 1.3408070802688599
+        },
+        "M4_model_sat": 0.6745689511299133,
+        "M4_camera_sat": 0.5260695187165776,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": true
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig1.0",
+        "available": true,
+        "T150_K": 1975.0,
+        "M1_HW_ratio": {
+          "60": 1.835318535842602,
+          "100": 1.5323152686981727,
+          "150": 1.4080087217862944,
+          "200": 1.2132231249369332,
+          "250": 1.2546068044562266
+        },
+        "coverage": {
+          "60": 0.8689353874453898,
+          "100": 0.9242424242424242,
+          "150": 0.959395443266411,
+          "200": 0.9334236064093884,
+          "250": 0.9138009049773755
+        },
+        "M2_members_ok": 0,
+        "M3_W_ratio": {
+          "60": 0.9539734721183777,
+          "250": 1.5360589027404785
+        },
+        "M4_model_sat": 0.679986983537674,
+        "M4_camera_sat": 0.5266098062282801,
+        "pass": {
+          "M1_pass": false,
+          "M1_150_pass": false,
+          "M2_pass": false,
+          "M3_pass": false,
+          "M4_pass": false
+        }
+      },
+      {
+        "case_id": "lam850_uniform_sig2.0",
+        "available": false
+      },
+      {
+        "case_id": "lam850_uniform_sig2.6",
+        "available": false
+      }
+    ],
+    "liquidus_slopes": {
+      "log_H": {
+        "P": 1.4809433271863335,
+        "v": -0.6579473825692406,
+        "residual_rms": 0.03741689662247749
+      },
+      "log_W": {
+        "P": 0.7633277338275886,
+        "v": -0.6992957009678322,
+        "residual_rms": 0.004948814739864915
+      },
+      "log_HW": {
+        "P": 0.6876775514473401,
+        "v": 0.0329915876883633,
+        "residual_rms": 0.025609121466177054
+      }
+    },
+    "synthetic_slopes_at_closest_approach": {
+      "lam850_uniform_sig0.0": {
+        "T150_K": 2075.0,
+        "log_H": {
+          "P": 2.647447488638512,
+          "v": -1.2305197025909593,
+          "residual_rms": 0.13956956440635426
+        },
+        "log_W": {
+          "P": 1.4278060233830339,
+          "v": -1.1172162277526327,
+          "residual_rms": 0.07599868465172299
+        }
+      },
+      "lam850_uniform_sig1.0": {
+        "T150_K": 1975.0,
+        "log_H": {
+          "P": 2.57603854539383,
+          "v": -1.1904798080702852,
+          "residual_rms": 0.1540578953811016
+        },
+        "log_W": {
+          "P": 1.7917025166615284,
+          "v": -1.1577296188123474,
+          "residual_rms": 0.1290608055978501
+        }
+      },
+      "lam850_uniform_sig2.0": null,
+      "lam850_uniform_sig2.6": null
+    },
+    "physics_members": [
+      {
+        "member_identity": "20260904:part_1",
+        "scored_frames": 1518,
+        "production_status_counts": {
+          "SELECTED": 1518
+        },
+        "selected_frames": 1518,
+        "median_liquidus_H_px": 50.475236892700195,
+        "median_liquidus_W_px": 12.638567447662354,
+        "median_liquidus_HW": 4.002856565900613,
+        "median_peak_K": 3135.625893090654,
+        "p95_peak_K": 3750.840155920118,
+        "fraction_peak_above_boiling": 0.5204216073781291,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_3",
+        "scored_frames": 648,
+        "production_status_counts": {
+          "SELECTED": 648
+        },
+        "selected_frames": 648,
+        "median_liquidus_H_px": 26.820637702941895,
+        "median_liquidus_W_px": 6.919501066207886,
+        "median_liquidus_HW": 3.9108068431033107,
+        "median_peak_K": 2273.31875648033,
+        "p95_peak_K": 3850.8081261685743,
+        "fraction_peak_above_boiling": 0.14969135802469136,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_4",
+        "scored_frames": 1611,
+        "production_status_counts": {
+          "SELECTED": 1611
+        },
+        "selected_frames": 1611,
+        "median_liquidus_H_px": 67.95403289794922,
+        "median_liquidus_W_px": 15.160459518432617,
+        "median_liquidus_HW": 4.520457906535542,
+        "median_peak_K": 3657.962953918622,
+        "p95_peak_K": 4139.154327909419,
+        "fraction_peak_above_boiling": 1.0,
+        "liquidus_K": 1673.15
+      },
+      {
+        "member_identity": "20260904:part_6",
+        "scored_frames": 657,
+        "production_status_counts": {
+          "SELECTED": 657
+        },
+        "selected_frames": 657,
+        "median_liquidus_H_px": 41.93781280517578,
+        "median_liquidus_W_px": 8.466156005859375,
+        "median_liquidus_HW": 4.892900319611296,
+        "median_peak_K": 2635.319209547524,
+        "p95_peak_K": 4200.457645610184,
+        "fraction_peak_above_boiling": 0.1735159817351598,
+        "liquidus_K": 1673.15
+      }
+    ]
+  }
+]

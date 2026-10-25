@@ -1,0 +1,88 @@
+{
+  "schema": "lpbf_patch22_3_8_step4_sensitivity_map",
+  "patch_version": "22.3.8",
+  "reading": "Q_B_BOX_DOES_NOT_REACH_CAMERA",
+  "readings": {
+    "Q_A_BOX_REACHES_CAMERA": "a candidate meets S-core on the corners and has its L median in [0.87, 1.15]",
+    "Q_B_BOX_DOES_NOT_REACH_CAMERA": "no candidate meets S-core and every L median lies outside [0.87, 1.15]",
+    "Q_C_PARTIAL": "S-core or the L band is met by some candidate, but not both by the same candidate"
+  },
+  "candidates_meeting_core": [],
+  "candidates_with_L_in_band": [],
+  "closest_L_candidates": [
+    {
+      "candidate_id": "anchor_t_max",
+      "L_median_member_H_ratio": 1.3787878077013578
+    },
+    {
+      "candidate_id": "halton_10",
+      "L_median_member_H_ratio": 1.4375
+    },
+    {
+      "candidate_id": "halton_07",
+      "L_median_member_H_ratio": 1.4583333333333335
+    },
+    {
+      "candidate_id": "halton_03",
+      "L_median_member_H_ratio": 1.682001334779403
+    },
+    {
+      "candidate_id": "halton_12",
+      "L_median_member_H_ratio": 1.6875270725834501
+    }
+  ],
+  "L_response": {
+    "basis": "least squares of log(L median) on [1, t, ck, eta] across the frozen-design candidates (descriptive)",
+    "candidates": 17,
+    "intercept": 1.1451526828632725,
+    "coefficients": {
+      "abs_depth_identifiable_coordinate": -0.11446055498094165,
+      "liquid_conductivity_enhancement_factor": -0.20767058212796147,
+      "eta_directional": 0.04224554781485272
+    },
+    "r_squared": 0.6550163550023227
+  },
+  "camera_corner_slopes": {
+    "log_H": {
+      "P": 0.572354867206872,
+      "v": -0.16976442754164245,
+      "residual_rms": 0.028414829618130577
+    },
+    "log_W": {
+      "P": 0.7018792717224301,
+      "v": -0.20085159306669753,
+      "residual_rms": 0.018324866218125013
+    }
+  },
+  "consistency_with_step3": {
+    "checked": true,
+    "candidates": [
+      {
+        "candidate_id": "anchor_center",
+        "step3": 2.6158541146810954,
+        "step4": 2.6158541146810954,
+        "difference": 0.0
+      },
+      {
+        "candidate_id": "anchor_t_min",
+        "step3": 2.4523577256636186,
+        "step4": 2.4523577256636186,
+        "difference": 0.0
+      },
+      {
+        "candidate_id": "anchor_t_max",
+        "step3": 1.3787878077013578,
+        "step4": 1.3787878077013578,
+        "difference": 0.0
+      }
+    ]
+  },
+  "cases": [
+    "lam850_uniform_sig0.0",
+    "lam850_uniform_sig1.0",
+    "lam850_uniform_sig2.0",
+    "lam850_uniform_sig2.6"
+  ],
+  "liquidus_K": 1673.15,
+  "no_selection_performed": true
+}

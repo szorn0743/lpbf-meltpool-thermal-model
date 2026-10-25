@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "path": "src/lpbf/model/_accepted_core/__init__.py",
+      "sha256": "ccaf65196b8511232a552b35ab9cd4e18d02be94dd16b25925cd04c830566ded"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/comparison.py",
+      "sha256": "137749286a27da2793429f125d20cdc76ca28884e1ec9398922d82e6f7d767fa"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/heat_source.py",
+      "sha256": "616dc7bf7555356444cceaa76cdb74279a959fe1ad23fc59afb55e1b75c04dc7"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/input_data.py",
+      "sha256": "b2f34183a6c760ffe532e9fa11b3598cf57697110733e13a061ad9564246832c"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/moving_window.py",
+      "sha256": "d029b889a3b777c0a6217ef4e38dbaa232f6bcb0c2e4b4cd812c9766351b8449"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/parameters.py",
+      "sha256": "aa003069d2d812bfaf0424f9ae9e8e8aa0ef01bcba1a12602dede8c8a8e54a51"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/simulation.py",
+      "sha256": "8f9e37ecb32a6a8418843100762b726b2f81258f5a2c3f887967c6f62d113f23"
+    },
+    {
+      "path": "src/lpbf/model/_accepted_core/solver.py",
+      "sha256": "1927525022e96d3b10bfff0f885c89f1f9e3a2e0d7dd724e9b92c64ded97f12b"
+    }
+  ],
+  "schema": "lpbf_patch22_3_4_accepted_core_hashes",
+  "schema_version": "22.3.4"
+}

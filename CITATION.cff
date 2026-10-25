@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis."
+title: "Reduced-order thermal simulation for laser powder bed fusion: code and records"
+type: software
+authors:
+  - family-names: Zorn
+    given-names: Samuel Henry
+    affiliation: San Diego State University
+license: MIT
+keywords:
+  - laser powder bed fusion
+  - thermal model
+  - melt pool
+  - calibration
+  - coaxial camera
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: "Reduced Order Thermal Simulation for Laser Powder Bed Fusion"
+  authors:
+    - family-names: Zorn
+      given-names: Samuel Henry
+  department: Mechanical Engineering
+  institution:
+    name: San Diego State University
+  year: 2026

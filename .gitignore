@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.venv-analysis/
+
+# The data bundle is distributed separately (see data/README.md).
+data/*
+!data/README.md
+!data/SHA256SUMS.txt
+patch22_4_3_2_output/
+
+# New runs
+rerun_*/
+*_output/

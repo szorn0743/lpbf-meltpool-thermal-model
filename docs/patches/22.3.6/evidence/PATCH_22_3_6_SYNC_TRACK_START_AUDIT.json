@@ -1,0 +1,311 @@
+{
+  "calibration_members_only": true,
+  "diagnostic_only": true,
+  "held_out_members_opened": false,
+  "members": [
+    {
+      "input_filename": "part_1_20260730.h5",
+      "member_identity": "20260730:part_1",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0004186999285593629,
+        "dark_gap_before_first_median_s": 9.114999556913972e-05,
+        "eligible_frame_count": 1162,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 2,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_3_20260730.h5",
+      "member_identity": "20260730:part_3",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.00045410008169710636,
+        "dark_gap_before_first_median_s": 9.154999861493707e-05,
+        "eligible_frame_count": 1071,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_5_20260730.h5",
+      "member_identity": "20260730:part_5",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0003206999972462654,
+        "dark_gap_before_first_median_s": 0.00010429997928440571,
+        "eligible_frame_count": 976,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_6_20260730.h5",
+      "member_identity": "20260730:part_6",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0004187999293208122,
+        "dark_gap_before_first_median_s": 0.00011704995995387435,
+        "eligible_frame_count": 954,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_1_20260731.h5",
+      "member_identity": "20260731:part_1",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0002698999596759677,
+        "dark_gap_before_first_median_s": 0.00010389997623860836,
+        "eligible_frame_count": 1221,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 2,
+        "single_frame_track_count": 0,
+        "track_count": 53
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_3_20260731.h5",
+      "member_identity": "20260731:part_3",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0002750999992713332,
+        "dark_gap_before_first_median_s": 0.00010080001084133983,
+        "eligible_frame_count": 1078,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_5_20260731.h5",
+      "member_identity": "20260731:part_5",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0001946999691426754,
+        "dark_gap_before_first_median_s": 0.00010545010445639491,
+        "eligible_frame_count": 1003,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_6_20260731.h5",
+      "member_identity": "20260731:part_6",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.00020890007726848125,
+        "dark_gap_before_first_median_s": 9.355001384392381e-05,
+        "eligible_frame_count": 963,
+        "first_frame_rising_edge_anchor_fraction": 1.0,
+        "first_maps_to_track_start_fraction": 1.0,
+        "last_frame_falling_edge_anchor_fraction": 0.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_1_20260904.h5",
+      "member_identity": "20260904:part_1",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0010009000543504953,
+        "dark_gap_before_first_median_s": 0.00021264998940750957,
+        "eligible_frame_count": 1626,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 2,
+        "single_frame_track_count": 0,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_3_20260904.h5",
+      "member_identity": "20260904:part_3",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0010560000082477927,
+        "dark_gap_before_first_median_s": 0.0002117999829351902,
+        "eligible_frame_count": 755,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 0.9814814814814815,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_4_20260904.h5",
+      "member_identity": "20260904:part_4",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0005162000888958573,
+        "dark_gap_before_first_median_s": 0.00027195003349334,
+        "eligible_frame_count": 1719,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 2,
+        "single_frame_track_count": 0,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_6_20260904.h5",
+      "member_identity": "20260904:part_6",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0005884000565856695,
+        "dark_gap_before_first_median_s": 0.00021670002024620771,
+        "eligible_frame_count": 763,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 5,
+        "single_frame_track_count": 0,
+        "track_count": 53
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_1_20260910.h5",
+      "member_identity": "20260910:part_1",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0010500999633222818,
+        "dark_gap_before_first_median_s": 0.0001984999980777502,
+        "eligible_frame_count": 1477,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 0.9814814814814815,
+        "last_maps_to_track_end_fraction": 0.018518518518518517,
+        "short_track_count_lt_4_frames": 2,
+        "single_frame_track_count": 0,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_3_20260910.h5",
+      "member_identity": "20260910:part_3",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0006260001100599766,
+        "dark_gap_before_first_median_s": 0.00024449999909847975,
+        "eligible_frame_count": 1484,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 3,
+        "single_frame_track_count": 0,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_4_20260910.h5",
+      "member_identity": "20260910:part_4",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0007382000330835581,
+        "dark_gap_before_first_median_s": 0.00023100001271814108,
+        "eligible_frame_count": 883,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.0,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 4,
+        "single_frame_track_count": 1,
+        "track_count": 54
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    },
+    {
+      "input_filename": "part_6_20260910.h5",
+      "member_identity": "20260910:part_6",
+      "summary": {
+        "dark_gap_before_first_max_s": 0.0006171001587063074,
+        "dark_gap_before_first_median_s": 0.00025410018861293793,
+        "eligible_frame_count": 885,
+        "first_frame_rising_edge_anchor_fraction": 0.0,
+        "first_maps_to_track_start_fraction": 0.018867924528301886,
+        "last_frame_falling_edge_anchor_fraction": 1.0,
+        "last_maps_to_track_end_fraction": 0.0,
+        "short_track_count_lt_4_frames": 3,
+        "single_frame_track_count": 0,
+        "track_count": 53
+      },
+      "sync_method": "robust augmented hierarchical six-group edge matching with piecewise interpolation through gige_time",
+      "sync_version": null
+    }
+  ],
+  "schema": "lpbf_patch22_3_6_sync_track_start_audit",
+  "schema_version": "22.3.6",
+  "status": "PASS_PATCH_22_3_6_SYNC_TRACK_START_AUDIT",
+  "summary": {
+    "dark_gap_before_first_median_s": 0.0001786999637261033,
+    "eligible_frame_count": 18020,
+    "first_frame_rising_edge_anchor_fraction": 0.5005807200929152,
+    "first_maps_to_track_start_fraction": 0.5017421602787456,
+    "last_frame_falling_edge_anchor_fraction": 0.49709639953542395,
+    "last_maps_to_track_end_fraction": 0.0011614401858304297,
+    "member_count": 16,
+    "short_track_count_lt_4_frames": 55,
+    "single_frame_track_count": 10,
+    "track_count": 861
+  },
+  "tracks_csv": "C:\\Users\\samue\\python_projects\\Thesis\\Source\\Claude\\patch22_3_6_association_census_output\\PATCH_22_3_6_SYNC_TRACK_START_AUDIT_TRACKS.csv"
+}

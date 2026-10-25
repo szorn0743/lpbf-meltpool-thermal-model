@@ -1,0 +1,25 @@
+member,acquisition_date,set_design,part,power_W,speed_mm_s,ved_J_mm3,condition,replicate_pair,a8_role,a25_role,tracks_scored,scored_frames
+20260730:part_1,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,1,140.0,850.0,68.62745098039215,P140_V850,0730/0731 pair,calibration,calibration,51,1056
+20260730:part_2,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,2,150.0,900.0,69.44444444444444,P150_V900,0730/0731 pair,held_out,in_window_held_out,52,1000
+20260730:part_3,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,3,160.0,950.0,70.17543859649123,P160_V950,0730/0731 pair,calibration,calibration,52,964
+20260730:part_4,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,4,170.0,1000.0,70.83333333333334,P170_V1000,0730/0731 pair,held_out,in_window_held_out,49,914
+20260730:part_5,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,5,180.0,1050.0,71.42857142857143,P180_V1050,0730/0731 pair,calibration,calibration,52,869
+20260730:part_6,2026-07-30,candidate_replicate_set_A_diagonal_development_locus,6,190.0,1100.0,71.96969696969698,P190_V1100,0730/0731 pair,calibration,calibration,52,847
+20260731:part_1,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,1,140.0,850.0,68.62745098039215,P140_V850,0730/0731 pair,calibration,calibration,53,1115
+20260731:part_2,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,2,150.0,900.0,69.44444444444444,P150_V900,0730/0731 pair,held_out,in_window_held_out,52,1052
+20260731:part_3,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,3,160.0,950.0,70.17543859649123,P160_V950,0730/0731 pair,calibration,calibration,52,971
+20260731:part_4,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,4,170.0,1000.0,70.83333333333334,P170_V1000,0730/0731 pair,held_out,in_window_held_out,52,946
+20260731:part_5,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,5,180.0,1050.0,71.42857142857143,P180_V1050,0730/0731 pair,calibration,calibration,52,896
+20260731:part_6,2026-07-31,candidate_replicate_set_B_existing_accepted_locus,6,190.0,1100.0,71.96969696969698,P190_V1100,0730/0731 pair,calibration,calibration,52,856
+20260904:part_1,2026-09-04,speed_sweep,1,140.0,600.0,97.22222222222223,P140_V600,single,calibration,out_of_window_examined,52,1518
+20260904:part_2,2026-09-04,speed_sweep,2,140.0,1000.0,58.333333333333336,P140_V1000,single,held_out,out_of_window_blind,52,936
+20260904:part_3,2026-09-04,speed_sweep,3,140.0,1400.0,41.66666666666667,P140_V1400,single,calibration,out_of_window_examined,51,648
+20260904:part_4,2026-09-04,speed_sweep,4,180.0,600.0,125.0,P180_V600,single,calibration,out_of_window_examined,52,1611
+20260904:part_5,2026-09-04,speed_sweep,5,180.0,1000.0,75.0,P180_V1000,single,held_out,in_window_held_out,52,884
+20260904:part_6,2026-09-04,speed_sweep,6,180.0,1400.0,53.57142857142858,P180_V1400,single,calibration,out_of_window_examined,52,657
+20260910:part_1,2026-09-10,power_sweep,1,140.0,700.0,83.33333333333334,P140_V700,single,calibration,calibration,53,1369
+20260910:part_2,2026-09-10,power_sweep,2,160.0,700.0,95.23809523809524,P160_V700,single,held_out,out_of_window_blind,52,1313
+20260910:part_3,2026-09-10,power_sweep,3,180.0,700.0,107.14285714285715,P180_V700,single,calibration,out_of_window_examined,52,1376
+20260910:part_4,2026-09-10,power_sweep,4,140.0,1200.0,48.611111111111114,P140_V1200,single,calibration,out_of_window_examined,51,776
+20260910:part_5,2026-09-10,power_sweep,5,160.0,1200.0,55.55555555555556,P160_V1200,single,held_out,out_of_window_blind,52,776
+20260910:part_6,2026-09-10,power_sweep,6,180.0,1200.0,62.5,P180_V1200,single,calibration,out_of_window_examined,52,779

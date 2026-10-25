@@ -1,0 +1,24 @@
+# Selected calibration state
+
+| Quantity | Candidate 1 (selected) | Candidate 2 (second best) |
+|---|---|---|
+| Origin | confirmation (surrogate minimizer) | confirmation (flat valley) |
+| t | −3 | −3 |
+| c_k | 2.418 | 2.370 |
+| η | 0.000 | 0.401 |
+| α | 0.490 | 0.490 |
+| δ (mm) | 0.0983 | 0.0983 |
+| J | 0.2981 | 0.3154 |
+| e_H | 0.651 | 0.675 |
+| e_W | 0.416 | 0.418 |
+| ½ Q_H / ½ Q_W | 0.212 / 0.086 | 0.228 / 0.088 |
+| Rank by J | 1 of 19 | 2 of 19 |
+| Stability guard value (≤ 0.95) | 0.724 | 0.900 |
+| Coverage | 1.000 | 1.000 |
+| Scored frames | 8,943 | 8,943 |
+| Frames without a pool | 16 | 15 |
+| Frames with peak above 3133 K | 3.4% | 3.5% |
+| Median peak surface T (K) | 2117 | 2116 |
+
+- Both on the 9 calibration coupons. Candidate 1 lies at the lower bounds of t and η; c_k is interior. The near-best set (J ≤ 1.10 J_min) contains only these two candidates.
+- Committee D6_candidates.csv (recorded calibrate and confirm stages). Candidate 1 and Candidate 2 are confirm_c1 and confirm_c2 in the 22.4.3.2 records.

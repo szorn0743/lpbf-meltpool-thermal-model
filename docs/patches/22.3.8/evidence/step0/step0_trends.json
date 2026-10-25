@@ -1,0 +1,59 @@
+{
+  "basis": "layer53 member medians at threshold 150; regressors [1, log P, log v]; member bootstrap",
+  "log_H": {
+    "members": 16,
+    "bootstrap_replicates_used": 2000,
+    "slope_log_power": 0.9276276561538246,
+    "slope_log_power_ci95": [
+      0.6477864396039125,
+      1.2094943614096922
+    ],
+    "slope_log_speed": -0.1621308438882586,
+    "slope_log_speed_ci95": [
+      -0.3456264108045057,
+      -0.004804198330906197
+    ]
+  },
+  "log_W": {
+    "members": 16,
+    "bootstrap_replicates_used": 2000,
+    "slope_log_power": 0.5463570793936513,
+    "slope_log_power_ci95": [
+      0.32727876488872104,
+      0.739238052749077
+    ],
+    "slope_log_speed": -0.20701524099032448,
+    "slope_log_speed_ci95": [
+      -0.366108223625714,
+      -0.07057813204274384
+    ]
+  },
+  "log_HW": {
+    "members": 16,
+    "bootstrap_replicates_used": 2000,
+    "slope_log_power": 0.24003946542804366,
+    "slope_log_power_ci95": [
+      0.010584139703823483,
+      0.5392150732267754
+    ],
+    "slope_log_speed": 0.028611708054432416,
+    "slope_log_speed_ci95": [
+      -0.15074516146022585,
+      0.1741467842453379
+    ]
+  },
+  "rosenthal_liquid_pool_reference": {
+    "log_H": {
+      "P": 1.0,
+      "v": 0.0
+    },
+    "log_W": {
+      "P": 0.5,
+      "v": -0.5
+    },
+    "log_HW": {
+      "P": 0.5,
+      "v": 0.5
+    }
+  }
+}

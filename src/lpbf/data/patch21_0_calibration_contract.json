@@ -1,0 +1,481 @@
+{
+  "authoritative_evidence": {
+    "canonical_manifest_identity": "8e72d1fc069051dc1f7c3a9a234e6dbd882dce911936e3f427c1a9b6b793e018",
+    "canonical_manifest_sha256": "dbc4e3747ca338d65e501bef7eb4a185e07d5f417cb7d441a982f549cbc0bd46",
+    "patch20_15_authorization_sha256": "a806af9b9a390cb70df07fe509785faab2d09f455303dc9883dbb9ec80a26e9a",
+    "patch20_15_identifiability_sha256": "d70203ac4a437c15c0cf2c49c8234cb1a104e6a8b13098e68c2d81d3486e0eab",
+    "patch20_15_review_sha256": "85c0b170a4e1e3cab55ce73fc6053be1e5eb13a53003bd9423b8d0483e29d975"
+  },
+  "coupled_transport_guard": {
+    "candidate_outside_guard": "inadmissible_before_thermal_execution",
+    "evaluated_at_selected_dt_s": 2.5e-06,
+    "guard_quantity": "directional.selected_over_safe_limit",
+    "known_near_marginal_states_excluded": [
+      {
+        "eta_directional": 0.5,
+        "liquid_conductivity_enhancement_factor": 2.5,
+        "selected_over_safe_limit": 0.9986833358899627
+      },
+      {
+        "eta_directional": 1.0,
+        "liquid_conductivity_enhancement_factor": 2.0,
+        "selected_over_safe_limit": 0.9986833358899627
+      }
+    ],
+    "known_rejected_state": {
+      "eta_directional": 1.0,
+      "liquid_conductivity_enhancement_factor": 2.5,
+      "selected_over_safe_limit": 1.2483541698624536
+    },
+    "margin_fraction_below_frozen_limit": 0.05,
+    "maximum_allowed": 0.95,
+    "preflight_required_for_every_candidate": true,
+    "required": true,
+    "underlying_frozen_solver_preflight_limit": 1.0
+  },
+  "data_partition": {
+    "calibration_condition_ids": [
+      "P140_V1200",
+      "P140_V1400",
+      "P140_V600",
+      "P140_V700",
+      "P140_V850",
+      "P160_V950",
+      "P180_V1050",
+      "P180_V1200",
+      "P180_V1400",
+      "P180_V600",
+      "P180_V700",
+      "P190_V1100"
+    ],
+    "calibration_member_count": 16,
+    "calibration_members": [
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P140_V850",
+        "expected_filename": "part_1_20260730.h5",
+        "part_number": 1,
+        "power_W": 140.0,
+        "sha256": "c8b2142e9736eb85c5c685152c521641a4757bdabe11949ede0e4472ee8ddb6b",
+        "speed_mm_s": 850.0
+      },
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P160_V950",
+        "expected_filename": "part_3_20260730.h5",
+        "part_number": 3,
+        "power_W": 160.0,
+        "sha256": "75f079f2f634a33ecb4e4dff433e86ee1efb913572194064ca4cd4848b761b3d",
+        "speed_mm_s": 950.0
+      },
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P180_V1050",
+        "expected_filename": "part_5_20260730.h5",
+        "part_number": 5,
+        "power_W": 180.0,
+        "sha256": "73af67d01388335c4aaba36e43f0109d3a3fb070887e7e9718e6963e8e3a7b1e",
+        "speed_mm_s": 1050.0
+      },
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P190_V1100",
+        "expected_filename": "part_6_20260730.h5",
+        "part_number": 6,
+        "power_W": 190.0,
+        "sha256": "eaaaace6db115145639f5c3417752cf066d03e098f1c5d5483af1113de9be589",
+        "speed_mm_s": 1100.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P140_V850",
+        "expected_filename": "part_1_20260731.h5",
+        "part_number": 1,
+        "power_W": 140.0,
+        "sha256": "a37f51d37cf23c8c87f0867c166c1917132229b43764fce6a648b7993b7c7a69",
+        "speed_mm_s": 850.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P160_V950",
+        "expected_filename": "part_3_20260731.h5",
+        "part_number": 3,
+        "power_W": 160.0,
+        "sha256": "edc6fe77788b24eb21b5465c27934606aa6226a84878502a2f97dff5e6112780",
+        "speed_mm_s": 950.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P180_V1050",
+        "expected_filename": "part_5_20260731.h5",
+        "part_number": 5,
+        "power_W": 180.0,
+        "sha256": "48585ec5a93ee676aa46250693327377c8e4403be76dc9fef09e963a0516fac4",
+        "speed_mm_s": 1050.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P190_V1100",
+        "expected_filename": "part_6_20260731.h5",
+        "part_number": 6,
+        "power_W": 190.0,
+        "sha256": "2e20de47186921a4fc5110164585050d0c4d05bf2d92385a1a35aa851e81d2f8",
+        "speed_mm_s": 1100.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P140_V600",
+        "expected_filename": "part_1_20260904.h5",
+        "part_number": 1,
+        "power_W": 140.0,
+        "sha256": "497fa0e5fcfe00456fdc89964b5023557fb180254a2b6a09a4d51410707719f2",
+        "speed_mm_s": 600.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P140_V1400",
+        "expected_filename": "part_3_20260904.h5",
+        "part_number": 3,
+        "power_W": 140.0,
+        "sha256": "8626d2153f0ae188cc3bba5af747d7dc589d73876dec396fc3c3038632828759",
+        "speed_mm_s": 1400.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P180_V600",
+        "expected_filename": "part_4_20260904.h5",
+        "part_number": 4,
+        "power_W": 180.0,
+        "sha256": "207be7398b527a6fb76d0d1928f6bec6c78ab12b75cc8cbcced97ae260ddced1",
+        "speed_mm_s": 600.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P180_V1400",
+        "expected_filename": "part_6_20260904.h5",
+        "part_number": 6,
+        "power_W": 180.0,
+        "sha256": "45675033e7a925bab1319f6c86d2b88416bb3894acdf29bfa4e8c7bc55b97afd",
+        "speed_mm_s": 1400.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P140_V700",
+        "expected_filename": "part_1_20260910.h5",
+        "part_number": 1,
+        "power_W": 140.0,
+        "sha256": "3bf156a6acaa8b5158f5f647b63b365acfe3026591044e95761a9deba398a927",
+        "speed_mm_s": 700.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P180_V700",
+        "expected_filename": "part_3_20260910.h5",
+        "part_number": 3,
+        "power_W": 180.0,
+        "sha256": "989558912063f9dd7f4586c9c3e57e4d5b4616369a7b83a58f074ebf7126a34f",
+        "speed_mm_s": 700.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P140_V1200",
+        "expected_filename": "part_4_20260910.h5",
+        "part_number": 4,
+        "power_W": 140.0,
+        "sha256": "f2892aca0242bab1b6227e5f8feb045ee3058deb6d2f96b026848c4a8ae607b4",
+        "speed_mm_s": 1200.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P180_V1200",
+        "expected_filename": "part_6_20260910.h5",
+        "part_number": 6,
+        "power_W": 180.0,
+        "sha256": "fb9f8e75d7c43c838a52bdc86f365e3f517c4509a843159c780490a21a2305bf",
+        "speed_mm_s": 1200.0
+      }
+    ],
+    "calibration_unique_condition_count": 12,
+    "exact_condition_leakage_permitted": false,
+    "partition_unit": "unique_nominal_power_speed_condition",
+    "validation_condition_ids": [
+      "P140_V1000",
+      "P150_V900",
+      "P160_V1200",
+      "P160_V700",
+      "P170_V1000",
+      "P180_V1000"
+    ],
+    "validation_fraction_unique_conditions": 0.3333333333333333,
+    "validation_member_count": 8,
+    "validation_members": [
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P150_V900",
+        "expected_filename": "part_2_20260730.h5",
+        "part_number": 2,
+        "power_W": 150.0,
+        "sha256": "a328662ca33360938ad0fa314f4087e37fd5f049427818971c3ca43dd7eb0faa",
+        "speed_mm_s": 900.0
+      },
+      {
+        "acquisition_set_id": "20260730",
+        "condition_id": "P170_V1000",
+        "expected_filename": "part_4_20260730.h5",
+        "part_number": 4,
+        "power_W": 170.0,
+        "sha256": "12f0c296144722bc69748efd926ab4c359a71295501803a9d2ea185dc65061c6",
+        "speed_mm_s": 1000.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P150_V900",
+        "expected_filename": "part_2_20260731.h5",
+        "part_number": 2,
+        "power_W": 150.0,
+        "sha256": "c12915e64e7f03ae3ed2c157f5286d8840ed63284e62a051b15e3e370c29fa5a",
+        "speed_mm_s": 900.0
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "condition_id": "P170_V1000",
+        "expected_filename": "part_4_20260731.h5",
+        "part_number": 4,
+        "power_W": 170.0,
+        "sha256": "46eee3aa7b0fbfa6609554b90da5f3a96be41a33d757ccf8ed4de0111473663d",
+        "speed_mm_s": 1000.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P140_V1000",
+        "expected_filename": "part_2_20260904.h5",
+        "part_number": 2,
+        "power_W": 140.0,
+        "sha256": "02e5a243c46c508b917c6d80b8bc4c42d3cb383ffe42aba3f79c8c02b754961e",
+        "speed_mm_s": 1000.0
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "condition_id": "P180_V1000",
+        "expected_filename": "part_5_20260904.h5",
+        "part_number": 5,
+        "power_W": 180.0,
+        "sha256": "c6b0d472d47d0632d1f4ede42267df5066442c6b16ca55627cbc297dd5691c51",
+        "speed_mm_s": 1000.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P160_V700",
+        "expected_filename": "part_2_20260910.h5",
+        "part_number": 2,
+        "power_W": 160.0,
+        "sha256": "a993d377e759e3f855907dd1eaf91fca3baa94a3df8ff0226ad709bde8e2a5b6",
+        "speed_mm_s": 700.0
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "condition_id": "P160_V1200",
+        "expected_filename": "part_5_20260910.h5",
+        "part_number": 5,
+        "power_W": 160.0,
+        "sha256": "351eb0929d4d2056468d3d17f9b43318082d641cfbef9ed8c4e563a5cc5561ff",
+        "speed_mm_s": 1200.0
+      }
+    ],
+    "validation_unique_condition_count": 6,
+    "validation_usage_lock": {
+      "bound_adaptation_permitted": false,
+      "first_authorized_use": "Patch 21.5 held-out validation after parameter freeze",
+      "optimizer_selection_permitted": false,
+      "parameter_fitting_permitted": false
+    }
+  },
+  "exit_criterion": "PASS_PATCH_21_0_CALIBRATION_CONTRACT_FROZEN",
+  "fit_status": {
+    "parameter_fitting_performed": false,
+    "preferred_parameter_values_selected": false
+  },
+  "local_feasibility_gate": {
+    "expected_trial_count": 28,
+    "experimental_agreement_is_a_pass_gate": false,
+    "member_selection": "four calibration-partition members, one per acquisition set, frozen below",
+    "members": [
+      {
+        "acquisition_set_id": "20260730",
+        "part_number": 3
+      },
+      {
+        "acquisition_set_id": "20260731",
+        "part_number": 5
+      },
+      {
+        "acquisition_set_id": "20260904",
+        "part_number": 4
+      },
+      {
+        "acquisition_set_id": "20260910",
+        "part_number": 4
+      }
+    ],
+    "pass_gates": [
+      "every candidate passes the Patch 21 coupled transport guard before thermal execution",
+      "all 28 atomic evaluator records complete with status PASS",
+      "selected observation has FINITE_MELT with H>0 and W>0",
+      "no liquidus contour boundary contact at the selected observation",
+      "no nonfinite or negative-temperature cells at the selected observation",
+      "energy_balance_relative_error <= 1e-9",
+      "temperature clipping remains false",
+      "all mandatory temperature and execution diagnostics remain present"
+    ],
+    "required_before_patch21_0_pass": true,
+    "states": [
+      {
+        "abs_depth_identifiable_coordinate": 0.0,
+        "eta_directional": 0.5,
+        "liquid_conductivity_enhancement_factor": 2.0,
+        "state_id": "reference"
+      },
+      {
+        "abs_depth_identifiable_coordinate": -3.0,
+        "eta_directional": 0.5,
+        "liquid_conductivity_enhancement_factor": 2.0,
+        "state_id": "abs_depth_low"
+      },
+      {
+        "abs_depth_identifiable_coordinate": 3.0,
+        "eta_directional": 0.5,
+        "liquid_conductivity_enhancement_factor": 2.0,
+        "state_id": "abs_depth_high"
+      },
+      {
+        "abs_depth_identifiable_coordinate": 0.0,
+        "eta_directional": 0.4,
+        "liquid_conductivity_enhancement_factor": 2.5,
+        "state_id": "transport_high_Ck_margin"
+      },
+      {
+        "abs_depth_identifiable_coordinate": 0.0,
+        "eta_directional": 1.0,
+        "liquid_conductivity_enhancement_factor": 1.9,
+        "state_id": "transport_high_eta_margin"
+      },
+      {
+        "abs_depth_identifiable_coordinate": -3.0,
+        "eta_directional": 0.4,
+        "liquid_conductivity_enhancement_factor": 2.5,
+        "state_id": "combined_shortening_edge"
+      },
+      {
+        "abs_depth_identifiable_coordinate": 3.0,
+        "eta_directional": 1.0,
+        "liquid_conductivity_enhancement_factor": 1.9,
+        "state_id": "combined_opposite_edge"
+      }
+    ],
+    "validation_partition_members_may_be_used": false
+  },
+  "model_structure": {
+    "coupon_specific_tuning_permitted": false,
+    "parameter_policy_scope": "shared_across_all_coupons",
+    "process_conditioned_parameters_selected": false,
+    "quadratic_boiling_role": "fixed_regulator_not_optimizer_coordinate",
+    "quadratic_boiling_strength": 0.5,
+    "temperature_clipping_permitted": false
+  },
+  "objective": {
+    "H_over_W_primary_objective": false,
+    "condition_weighting": "equal_weight_per_unique_nominal_power_speed_condition",
+    "failed_candidate_scalar_penalty": 1000000000000.0,
+    "failure_penalty_semantics": "optimizer bookkeeping only; no fabricated H/W residuals and no scientific interpretation of the penalty magnitude",
+    "formula": "0.5*mean_condition(mean_member((Hsim-Hexp)/0.90)^2)+0.5*mean_condition(mean_member((Wsim-Wexp)/0.65)^2)",
+    "mandatory_secondary_diagnostics": true,
+    "metric_weights": {
+      "H_pixels": 0.5,
+      "W_pixels": 0.5
+    },
+    "normalization_basis": "Patch 16.3 frozen experimental repeatability/error floors",
+    "normalization_scales_pixels": {
+      "H_pixels": 0.9,
+      "W_pixels": 0.65
+    },
+    "primary_observables": [
+      "H_pixels",
+      "W_pixels"
+    ],
+    "replicate_handling": "within each unique nominal condition, average standardized squared residuals across member replicates before condition averaging",
+    "temperature_diagnostics_in_objective": false
+  },
+  "optimizer_parameterization": {
+    "absorptivity_deposition_depth_reparameterization": {
+      "coordinate_bounds": [
+        -3.0,
+        3.0
+      ],
+      "coordinate_name": "abs_depth_identifiable_coordinate",
+      "coordinate_units": "dimensionless_step_coordinate",
+      "mapping": {
+        "absorptivity": "0.565625 + coordinate * 0.6304852492389345 * 0.04",
+        "deposition_depth_mm": "0.075 + coordinate * -0.7762012306690312 * 0.01"
+      },
+      "method": "principal_observable_direction_from_patch20_15_two_column_gram_matrix",
+      "null_direction_fixed": true,
+      "patch20_15_column_cosine": -0.9874171400211816,
+      "patch20_15_column_norms": {
+        "absorptivity": 0.6365659254613959,
+        "deposition_depth_mm": 0.7816680483612487
+      },
+      "patch20_15_step_scales": {
+        "absorptivity": 0.04,
+        "deposition_depth_mm": 0.01
+      },
+      "principal_direction_normalized_step_coordinates": {
+        "absorptivity": 0.6304852492389345,
+        "deposition_depth_mm": -0.7762012306690312
+      },
+      "rationale": "Patch 20.15 showed absorptivity and deposition depth are practically non-separable. The weak/null direction is removed; one observable principal direction is retained instead of independently optimizing both coordinates.",
+      "realized_bounds_from_coordinate_bounds": {
+        "absorptivity": [
+          0.48996677009132794,
+          0.6412832299086721
+        ],
+        "deposition_depth_mm": [
+          0.051713963079929065,
+          0.09828603692007093
+        ]
+      },
+      "reference_state": {
+        "absorptivity": 0.565625,
+        "deposition_depth_mm": 0.075
+      }
+    },
+    "bounds_basis": "Patch 19.9 characterized physical spans, selected here as Patch 21.0 hard outer bounds only together with the tighter coupled numerical-feasibility guard.",
+    "coefficient_count": 3,
+    "coefficient_order": [
+      "abs_depth_identifiable_coordinate",
+      "liquid_conductivity_enhancement_factor",
+      "eta_directional"
+    ],
+    "direct_coordinate_bounds": {
+      "eta_directional": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "units": "dimensionless"
+      },
+      "liquid_conductivity_enhancement_factor": {
+        "maximum": 2.5,
+        "minimum": 1.5,
+        "units": "dimensionless"
+      }
+    }
+  },
+  "optimizer_selection": {
+    "selected": false,
+    "selection_deferred_to": "Patch 21.2/21.3 runner verification and coarse search design"
+  },
+  "patch": "21.0",
+  "predecessor_status": "PASS_PATCH_20_16_CORRECTIVE_PRECALIBRATION_CODEBASE_FROZEN",
+  "purpose": "Freeze the first calibration contract without fitting model parameters. Local HDF5-backed domain-feasibility verification is required before PASS_PATCH_21_0_CALIBRATION_CONTRACT_FROZEN.",
+  "schema": "lpbf_patch21_0_calibration_contract",
+  "schema_version": "21.0.0",
+  "status": "FROZEN_IMPLEMENTATION_PENDING_LOCAL_FEASIBILITY_GATE"
+}

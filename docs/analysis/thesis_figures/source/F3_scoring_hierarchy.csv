@@ -1,0 +1,12 @@
+panel,step,label
+a,1,Camera frames synchronized to the process record
+a,2,Frames on laser-on rows within a scan track
+a,3,"Eligible frames: finite, non-negative camera H and W"
+a,4,Track-edge rule: first and last eligible frame of each track excluded
+a,5,Frames with undefined model geometry excluded and counted against coverage
+a,6,Scored Frames
+b,1,"Scored frame: log ratio of model to camera, for H and for W"
+b,2,Scan track: mean squared log ratio over the track's frames
+b,3,Coupon: mean over the coupon's tracks
+b,4,Process condition: mean over replicate coupons of the same condition
+b,5,Analysis group: mean over the group's unique conditions

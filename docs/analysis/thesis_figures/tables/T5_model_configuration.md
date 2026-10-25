@@ -1,0 +1,49 @@
+# Final numerical-model configuration
+
+| Quantity | Symbol | Role | Units | Value or treatment |
+|---|---|---|---|---|
+| Process inputs |  |  |  |  |
+| Laser trajectory | x, y | prescribed | mm | X-Machine, Y-Machine at 200 kHz |
+| Laser state | – | prescribed | – | on if Laser Drive > 2.5 V |
+| Laser power | P | prescribed | W | nominal value per coupon (process record) |
+| Process interval | Δt_process | prescribed | µs | 5 |
+| Discretization |  |  |  |  |
+| Cell size | Δx | fixed | µm | 16 (cubic cells) |
+| Moving window | N_x × N_y × N_z | fixed | cells | 99 × 99 × 21 (1.584 × 1.584 × 0.336 mm) |
+| Thermal time step | Δt | fixed | µs | 2.5 (2 substeps per process row) |
+| Explicit stability safety factor | s | fixed | – | 0.90 |
+| Transport stability guard | Δt / Δt_safe | fixed | – | ≤ 0.95 for every candidate |
+| Boundary-loss stability | F_boundary | fixed | – | < 0.90 (audited to 7000 K) |
+| Window motion | – | fixed | – | whole-cell field shifts; sub-cell offset kept in the source position |
+| Window reset distance | d_reset | fixed | mm | 0.168 (field reset to 298.15 K) |
+| Initial and bulk temperature | T_bulk | fixed | K | 298.15 |
+| Heat source |  |  |  |  |
+| Lateral profile | R | fixed | mm | Gaussian, 1/e² radius 0.04 |
+| Depth profile | b(s; δ) | fixed | – | normalized truncated exponential |
+| Absorbed power | P_abs | fixed | W | α P m_TED with m_TED = 1 |
+| Boundaries |  |  |  |  |
+| Top surface | h_conv, T_∞ | fixed | W/(m²·K), K | convection, 10, 298.15; radiation inactive |
+| Sides and bottom | h_solid, T_far | fixed | W/(m²·K), K | solid-absorbing, 1000, 298.15 |
+| Boiling regulator |  |  |  |  |
+| Threshold | T_b | fixed | K | 3133.15 |
+| Strength | b | fixed | – | 0.5 |
+| Reference conductance | h_ref | fixed | W/(m²·K) | 8.0 × 10⁶ |
+| Reference superheat | ΔT_ref | fixed | K | 1000 |
+| Transition width | – | fixed | K | 250 (smoothstep); energy sink, no cap |
+| Observation |  |  |  |  |
+| Liquid mask | T ≥ T_l | fixed | – | top-surface cells, 4-connected components |
+| Laser association | B_m | fixed | – | largest beam share, at least 2% |
+| Footprint geometry | H_sim, W_sim | fixed | px | interpolated liquidus contour, minimum-area rectangle; 8 µm/px nominal |
+| Enclosure | – | fixed | – | component touching the window edge: undefined |
+| Scoring |  |  |  |  |
+| Scored frames | – | fixed | – | first and last eligible frame of each track excluded |
+| Pixel floor and weights | – | fixed | px, – | 1 px; w_H = w_W = 0.5 |
+| Coverage floor | – | fixed | – | 95% per coupon (flag only) |
+| Calibrated reduced-order parameters |  |  |  |  |
+| Absorptivity | α | calibrated via t | – | α(t), t ∈ [−3, 3]; selected 0.490 |
+| Deposition depth | δ | calibrated via t | mm | δ(t), coupled to α; selected 0.0983 |
+| Liquid conductivity factor | c_k | calibrated | – | [1.5, 2.5]; selected 2.418 |
+| Directional transport | η | calibrated | – | [0, 1]; selected 0 |
+
+- Material properties are listed separately. Absorptivity and deposition depth share one calibration coordinate, t.
+- Read at build time from the code the 22.4.3.2 runner imported: lpbf.model.parameters, current_configuration, experiments.current_framework, runtime.parameters, geometry, laser_component_association, hierarchical_objective, log_ratio_objective.

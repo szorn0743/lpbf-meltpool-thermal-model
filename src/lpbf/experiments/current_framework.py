@@ -27,12 +27,11 @@ import numpy as np
 
 from lpbf.data.full_coupon_manifest import load_full_coupon_manifest
 from lpbf.geometry import SUPPORTED_ODD_WINDOW_CELLS, resize_xy_window
-from lpbf.infrastructure import canonical_sha256, sha256_file
+from lpbf.infrastructure import sha256_file
 from lpbf.model import current_execution
 from lpbf.model import comparison as supported_comparison
 from lpbf.model.laser_component_association import POLICY_VERSION as PRODUCTION_HW_ASSOCIATION_POLICY_VERSION
 from lpbf.model.current_configuration import (
-    CURRENT_CALIBRATABLE_PARAMETER_NAMES,
     CURRENT_FIXED_CONFIGURATION,
     CurrentPhysicsParameters,
     validate_current_physics_parameters,
@@ -40,14 +39,12 @@ from lpbf.model.current_configuration import (
 from lpbf.model.temperature_diagnostics import canonicalize_high_temperature_diagnostics
 from lpbf.model.parameter_policy import ParameterPolicy
 from lpbf.model.production_hw import PRODUCTION_HW_DEFINITION, PRODUCTION_HW_SEMANTICS_VERSION
-from lpbf.provenance.artifacts import ArtifactBundleSpec, package_artifacts
 from lpbf.runtime.parameters import exact_fixed_time_params
 from lpbf.provenance.schema_registry import (
     schema_envelope,
-    validate_readable_schema,
 )
 
-from .dataset import DatasetMember, resolve_full_coupon_members, resolve_legacy_six_members
+from .dataset import DatasetMember
 from .errors import CurrentExperimentFrameworkError
 from .policy import (
     PolicyRealization,
@@ -73,31 +70,6 @@ LEGACY_79_CELL_REPLAY_PATCHES = frozenset({"20.15", "20.16", "21.0", "21.1", "21
 FROZEN_CALIBRATION_WINDOW_CELLS = PRODUCTION_CALIBRATION_WINDOW_CELLS
 CALIBRATION_TRIAL_EVALUATION_SCHEMA = "lpbf_calibration_trial_evaluation"
 CALIBRATION_TRIAL_EVALUATION_SCHEMA_VERSION = "20.10.0"
-
-
-def checkpoint_contract_identity(
-    *,
-    schema: str,
-    schema_version: str,
-    expected_trial_identities: Sequence[str],
-) -> str:
-    """Hash the complete ordered deterministic restart contract."""
-
-    if not schema or not schema_version:
-        raise CurrentExperimentFrameworkError("checkpoint schema/version must be non-empty")
-    identities = tuple(str(value) for value in expected_trial_identities)
-    if not identities or any(not value for value in identities):
-        raise CurrentExperimentFrameworkError("expected trial identities must be non-empty")
-    if len(set(identities)) != len(identities):
-        raise CurrentExperimentFrameworkError("expected trial identities must be unique")
-    return canonical_sha256(
-        {
-            **schema_envelope("experiment_checkpoint_contract"),
-            "experiment_schema": str(schema),
-            "experiment_schema_version": str(schema_version),
-            "expected_trial_identities": list(identities),
-        }
-    )
 
 
 def boiling_boundary_stability_record(
@@ -188,24 +160,6 @@ class EnergyAccountingRecord:
             "cumulative_absorbed_laser_energy_J": self.cumulative_absorbed_laser_energy_J,
             "energy_balance_relative_error": self.energy_balance_relative_error,
         }
-
-
-def classify_current_peak_temperature(
-    Tmax_K: float,
-    *,
-    nominal_limit_K: float = NOMINAL_HIGH_TEMPERATURE_LIMIT_K,
-    screening_ceiling_K: float = SCREENING_HIGH_TEMPERATURE_CEILING_K,
-) -> str:
-    """Classify finite raw peak temperature using the accepted current thresholds."""
-
-    value = float(Tmax_K)
-    if not math.isfinite(value):
-        raise CurrentExperimentFrameworkError("cannot classify a nonfinite Tmax")
-    if value <= float(nominal_limit_K):
-        return "PREFERRED"
-    if value <= float(screening_ceiling_K):
-        return "REVIEW_REQUIRED"
-    return "SCREENING_FAIL"
 
 
 def require_energy_accounting(
@@ -468,7 +422,6 @@ def build_temperature_instrumented_runner(
         )
 
     return run
-
 
 
 @dataclass(frozen=True)
@@ -1388,27 +1341,6 @@ def evaluate_calibration_trial(
         manifest_identity=manifest_identity,
     )
 
-def package_experiment_results(
-    output_directory: str | Path,
-    *,
-    zip_filename: str,
-    generated_names: Sequence[str],
-    authority_paths: Sequence[str | Path] = (),
-    manifest_filename: str,
-    compresslevel: int = 9,
-) -> Path:
-    """Create the standard deterministic manifest + ZIP result bundle."""
-
-    spec = ArtifactBundleSpec(
-        zip_filename=str(zip_filename),
-        generated_names=tuple(str(name) for name in generated_names),
-        authority_paths=tuple(Path(path) for path in authority_paths),
-        manifest_filename=str(manifest_filename),
-        compresslevel=int(compresslevel),
-    )
-    return package_artifacts(Path(output_directory), spec)
-
-
 __all__ = [
     "CALIBRATION_TRIAL_EVALUATION_SCHEMA",
     "CALIBRATION_TRIAL_EVALUATION_SCHEMA_VERSION",
@@ -1430,16 +1362,12 @@ __all__ = [
     "boiling_boundary_stability_record",
     "build_temperature_instrumented_runner",
     "cell_volume_mm3",
-    "classify_current_peak_temperature",
-    "checkpoint_contract_identity",
     "current_numerical_stability_preflight",
     "evaluate_calibration_trial",
     "execute_temperature_traced_trial",
     "normalized_policy_definition",
     "normalize_policy_realization_record_for_read",
-    "package_experiment_results",
     "realize_policy_for_trial",
     "realized_parameter_vector",
     "require_energy_accounting",
-    "resolve_legacy_six_members",
 ]

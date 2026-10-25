@@ -562,87 +562,6 @@ def resolve_manifest_files(
     return tuple(resolved)
 
 
-def validate_patch16_registry_semantics(
-    registry_payload: Mapping[str, Any],
-    manifest: FullCouponManifest,
-) -> None:
-    """Require the accepted Patch 16 six-member registry to match 20260731.
-
-    This function exists for compatibility/audit only.  It never supplies
-    process conditions to current execution.
-    """
-
-    rows = registry_payload.get("coupons")
-    if not isinstance(rows, Sequence) or isinstance(rows, (str, bytes)):
-        raise FullCouponManifestError("Patch 16 registry coupons must be an array")
-    by_part = {member.key.part_number: member for member in manifest.members_for_set(LEGACY_ACCEPTED_SET_ID)}
-    if set(by_part) != set(PART_NUMBERS):
-        raise FullCouponManifestError("canonical 20260731 set is incomplete")
-    if len(rows) != len(PART_NUMBERS):
-        raise FullCouponManifestError("Patch 16 registry must contain exactly six members")
-    for row in rows:
-        if not isinstance(row, Mapping):
-            raise FullCouponManifestError("Patch 16 registry coupon row must be an object")
-        part = int(row.get("coupon_id", -1))
-        if part not in by_part:
-            raise FullCouponManifestError(f"Patch 16 registry contains unexpected coupon_id {part}")
-        current = by_part[part]
-        comparisons = {
-            "laser_power_W": (float(row["laser_power_W"]), current.nominal_power_W),
-            "scan_speed_mm_s": (float(row["scan_speed_mm_s"]), current.nominal_speed_mm_s),
-            "spot_diameter_mm": (float(row["spot_diameter_mm"]), current.spot_diameter_mm),
-        }
-        for field, (legacy, canonical) in comparisons.items():
-            if not math.isclose(legacy, canonical, rel_tol=0.0, abs_tol=1.0e-12):
-                raise FullCouponManifestError(
-                    f"legacy/current process-condition conflict for 20260731 part {part}: "
-                    f"{field} {legacy} != {canonical}"
-                )
-        legacy_hash = _normalize_sha256(
-            row.get("sha256"), field=f"Patch16 coupon {part}.sha256", allow_unresolved=False
-        )
-        if legacy_hash != current.sha256:
-            raise FullCouponManifestError(
-                f"legacy/current SHA-256 conflict for 20260731 part {part}"
-            )
-
-
-def validate_patch13_manifest_semantics(
-    legacy_payload: Mapping[str, Any],
-    manifest: FullCouponManifest,
-) -> None:
-    """Detect semantic conflicts in the superseded Patch 13 process mapping.
-
-    The Patch 13 manifest remains historical/read-compatibility evidence.  Any
-    attempt to use its process mapping as if it were current must pass this
-    semantic comparison; the known conflicting historical payload therefore
-    fails closed rather than silently overriding the canonical campaign data.
-    """
-
-    rows = legacy_payload.get("coupons")
-    if not isinstance(rows, Sequence) or isinstance(rows, (str, bytes)):
-        raise FullCouponManifestError("Patch 13 coupon manifest coupons must be an array")
-    by_part = {member.key.part_number: member for member in manifest.members_for_set(LEGACY_ACCEPTED_SET_ID)}
-    for row in rows:
-        if not isinstance(row, Mapping):
-            raise FullCouponManifestError("Patch 13 coupon row must be an object")
-        part = int(row.get("coupon_id", -1))
-        if part not in by_part:
-            raise FullCouponManifestError(f"Patch 13 manifest contains unexpected coupon_id {part}")
-        current = by_part[part]
-        checks = {
-            "power_W": (float(row["power_W"]), current.nominal_power_W),
-            "travel_speed_mm_s": (float(row["travel_speed_mm_s"]), current.nominal_speed_mm_s),
-            "spot_size_mm": (float(row["spot_size_mm"]), current.spot_diameter_mm),
-        }
-        for field, (legacy, canonical) in checks.items():
-            if not math.isclose(legacy, canonical, rel_tol=0.0, abs_tol=1.0e-12):
-                raise FullCouponManifestError(
-                    f"legacy/current process-condition conflict for 20260731 part {part}: "
-                    f"{field} {legacy} != {canonical}"
-                )
-
-
 __all__ = [
     "ACQUISITION_SET_IDS",
     "CAMPAIGN_ID",
@@ -663,6 +582,4 @@ __all__ = [
     "resolve_manifest_files",
     "select_manifest_members",
     "validate_full_coupon_manifest_payload",
-    "validate_patch13_manifest_semantics",
-    "validate_patch16_registry_semantics",
 ]

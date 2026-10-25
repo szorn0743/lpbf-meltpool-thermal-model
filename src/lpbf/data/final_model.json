@@ -1,0 +1,204 @@
+{
+  "schema": "lpbf_final_model_configuration",
+  "package_version": "1.0.0",
+  "numerical_model": {
+    "window_cells_xy": 99,
+    "grid_spacing_um": 16.0,
+    "window_size_mm": 1.584,
+    "depth_cells": 21,
+    "depth_mm": 0.336,
+    "thermal_timestep_s": 2.5e-06,
+    "thermal_substeps_per_process_row": 2,
+    "process_row_period_s": 5e-06,
+    "process_sample_frequency_hz": 200000.0,
+    "explicit_stability_safety_factor": 0.9,
+    "boundary_explicit_fraction_limit": 0.9,
+    "energy_balance_relative_error_limit": 1e-09,
+    "boiling_audit_maximum_temperature_K": 7000.0,
+    "frozen_core_hash_manifest": "src/lpbf/data/accepted_core_hashes.json",
+    "frozen_configuration_sha256": "ca5b370658401ac5a1ea5d74de33b89b47cadbb2e18f1929a1b07acf5d57a358"
+  },
+  "material": {
+    "T_boiling_C": 2860.0,
+    "T_liquidus_C": 1400.0,
+    "T_solidus_C": 1375.0,
+    "cp_liquid_J_kgK": 820.0,
+    "cp_mushy_J_kgK": 650.0,
+    "cp_solid_J_kgK": 500.0,
+    "density_kg_m3": 7950.0,
+    "k_liquid_W_mK": 30.0,
+    "k_mushy_W_mK": 22.0,
+    "k_solid_W_mK": 15.0,
+    "latent_heat_fusion_J_kg": 260000.0,
+    "liquid_conductivity_enhancement_factor": 2.0,
+    "name": "316L stainless steel, phase-aware first-pass engineering model",
+    "T_solidus_K": 1648.15,
+    "T_liquidus_K": 1673.15,
+    "T_boiling_K": 3133.15,
+    "note": "liquid_conductivity_enhancement_factor in this block is the pre-calibration default; the calibrated value is under selected_parameters"
+  },
+  "boundary_conditions": {
+    "ambient_temperature_C": 25.0,
+    "bottom_boundary_mode": "solid_absorbing",
+    "convection_coefficient_W_m2K": 10.0,
+    "emissivity": 0.35,
+    "far_field_temperature_C": 25.0,
+    "h_solid_W_m2K": 1000.0,
+    "side_boundary_mode": "solid_absorbing",
+    "stefan_boltzmann_W_m2K4": 5.670374419e-08,
+    "top_surface_mode": "convection"
+  },
+  "initial_condition": {
+    "initial_temperature_C": 25.0
+  },
+  "laser_source": {
+    "machine_spot_diameter_um": 80.0,
+    "gaussian_radius_mm": 0.04,
+    "laser_drive_on_threshold_V": 2.5,
+    "absorptivity_semantics": "global_alpha_times_neutral_m_TED",
+    "deposition_depth_mode": "normalized_truncated_exponential",
+    "ted_treatment_identifier": "frozen_provisional_patch_12_0_treatment",
+    "input": {
+      "default_spot_size_um": 80.0,
+      "h5_baseline_max_samples": 2000000,
+      "h5_fallback_fs_hz": null,
+      "laser_drive_threshold": null,
+      "ted_baseline_evidence_policy": "robust_laser_off_segments",
+      "ted_baseline_policy": "global_laser_off_median",
+      "ted_clip_acceptance_sigma_multiplier": 3.0,
+      "ted_off_segment_outlier_sigma_multiplier": 3.0,
+      "ted_reference_intercept": -0.0341,
+      "ted_reference_plate_effective_reflectivity": 0.6,
+      "ted_reference_slope": 0.001547
+    }
+  },
+  "moving_window": {
+    "large_jump_policy": "reset_to_bulk",
+    "reset_distance_threshold_mm": 0.168,
+    "reset_on_new_powered_scan_after_off": false,
+    "spot_size_um_is_diameter": true
+  },
+  "boiling_regulator": {
+    "quadratic_boiling_strength": 0.5,
+    "quadratic_boiling_loss_law": "smoothstep_quadratic",
+    "optimizer_controlled": false,
+    "reported_boiling_K": 3133.0
+  },
+  "observation": {
+    "model_hw_definition": "laser_associated_component_interpolated_liquidus_contour",
+    "model_hw_semantics_version": "22.3.7",
+    "association_policy_version": "22.3.7",
+    "beam_share_floor": 0.02,
+    "camera_pixel_size_um_nominal": 8.0,
+    "camera_threshold": 150,
+    "camera_layer": "layer53",
+    "camera_frame_rows_cols": [
+      24,
+      64
+    ]
+  },
+  "scoring": {
+    "scored_frame_rule_id": "exclude_first_and_last_eligible_frame_of_each_scan_track",
+    "scored_frame_rule_version": "22.3.7",
+    "coverage_floor": 0.95,
+    "objective_contract_version": "22.4.3.2",
+    "residual": "ln(max(sim, pixel_floor) / max(exp, pixel_floor)) for H and W",
+    "pixel_floor": 1.0,
+    "h_weight": 0.5,
+    "w_weight": 0.5,
+    "aggregation_hierarchy": [
+      "camera_frame",
+      "scan_track",
+      "coupon",
+      "exact_condition_replicate",
+      "unique_calibration_condition"
+    ],
+    "pixel_objective_sensitivity": {
+      "h_scale_px": 0.9,
+      "w_scale_px": 0.65,
+      "h_weight": 0.5,
+      "w_weight": 0.5
+    }
+  },
+  "calibration": {
+    "coordinates": [
+      "abs_depth_identifiable_coordinate",
+      "liquid_conductivity_enhancement_factor",
+      "eta_directional"
+    ],
+    "coordinate_bounds": {
+      "abs_depth_identifiable_coordinate": [
+        -3.0,
+        3.0
+      ],
+      "liquid_conductivity_enhancement_factor": [
+        1.5,
+        2.5
+      ],
+      "eta_directional": [
+        0.0,
+        1.0
+      ]
+    },
+    "coupled_guard": {
+      "candidate_outside_guard": "inadmissible_before_thermal_execution",
+      "evaluated_at_selected_dt_s": 2.5e-06,
+      "guard_quantity": "directional.selected_over_safe_limit",
+      "known_near_marginal_states_excluded": [
+        {
+          "eta_directional": 0.5,
+          "liquid_conductivity_enhancement_factor": 2.5,
+          "selected_over_safe_limit": 0.9986833358899627
+        },
+        {
+          "eta_directional": 1.0,
+          "liquid_conductivity_enhancement_factor": 2.0,
+          "selected_over_safe_limit": 0.9986833358899627
+        }
+      ],
+      "known_rejected_state": {
+        "eta_directional": 1.0,
+        "liquid_conductivity_enhancement_factor": 2.5,
+        "selected_over_safe_limit": 1.2483541698624536
+      },
+      "margin_fraction_below_frozen_limit": 0.05,
+      "maximum_allowed": 0.95,
+      "preflight_required_for_every_candidate": true,
+      "required": true,
+      "underlying_frozen_solver_preflight_limit": 1.0
+    },
+    "design_candidates": 17,
+    "design_method": "hybrid_boundary_anchors_plus_halton_low_discrepancy",
+    "energy_density_window_J_mm3": [
+      65.0,
+      85.0
+    ],
+    "hatch_mm": 0.08,
+    "layer_mm": 0.03,
+    "members_per_role": {
+      "calibration": 9,
+      "in_window_held_out": 5,
+      "out_of_window_examined": 7,
+      "out_of_window_blind": 3
+    }
+  },
+  "selected_parameters": {
+    "candidate_id": "confirm_c1",
+    "coordinates": {
+      "abs_depth_identifiable_coordinate": -3.0,
+      "liquid_conductivity_enhancement_factor": 2.4177408854166664,
+      "eta_directional": 0.0
+    },
+    "absorptivity": 0.48996677009132794,
+    "deposition_depth_mm": 0.09828603692007093,
+    "liquid_conductivity_enhancement_factor": 2.4177408854166664,
+    "eta_directional": 0.0,
+    "calibration_objective_J": 0.29807293620968767,
+    "calibration_e_H": 0.6505702018690552,
+    "calibration_e_W": 0.41581761008816365,
+    "reading_C": "C_EDGE",
+    "selection_freeze_file": "results/calibration/selection_freeze.json",
+    "selection_freeze_sha256": "43184dff94c9d3b75cee1c8924abf7b195b72fbb5b32d301733fc21dad4292a8",
+    "selection_freeze_content_sha256": "754e2a4a5b6274df65c0c7a90a34b84f98247e02e46fd2c85beaf43620de9de2"
+  }
+}

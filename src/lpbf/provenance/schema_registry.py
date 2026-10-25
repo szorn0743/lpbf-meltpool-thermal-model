@@ -162,26 +162,12 @@ def validate_readable_schema(record: Mapping[str, Any], key: str) -> None:
         )
 
 
-def current_schema_registry_dict() -> dict[str, Any]:
-    return {
-        "schema": SCHEMA_REGISTRY_SCHEMA,
-        "schema_version": SCHEMA_REGISTRY_SCHEMA_VERSION,
-        "write_policy": "current writers emit only each schema's write_version",
-        "migration_policy": (
-            "legacy versions are read-only and retained only where required for accepted "
-            "Patch 19.x scientific reproduction or Patch 20.3/20.4 provenance migration"
-        ),
-        "schemas": [definition.to_dict() for definition in _DEFINITIONS],
-    }
-
-
 __all__ = [
     "SCHEMA_DEFINITIONS",
     "SCHEMA_REGISTRY_SCHEMA",
     "SCHEMA_REGISTRY_SCHEMA_VERSION",
     "SchemaDefinition",
     "SchemaRegistryError",
-    "current_schema_registry_dict",
     "schema_definition",
     "schema_envelope",
     "validate_readable_schema",

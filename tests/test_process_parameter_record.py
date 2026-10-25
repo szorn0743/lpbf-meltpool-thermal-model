@@ -70,27 +70,13 @@ def test_record_energy_densities_follow_from_hatch_and_layer_thickness():
 
 def test_calibration_contract_power_speed_match_record():
     record = _record_rows()
-    partition = json.loads((ROOT / "src/lpbf/data/patch21_0_calibration_contract.json").read_text())["data_partition"]
+    partition = json.loads((ROOT / "src/lpbf/data/calibration_contract.json").read_text())["data_partition"]
     members = partition["calibration_members"] + partition["validation_members"]
     assert {(m["acquisition_set_id"], m["part_number"]) for m in members} == set(record)
     for m in members:
         row = record[(m["acquisition_set_id"], m["part_number"])]
         assert float(row["Power (W)"]) == m["power_W"]
         assert float(row["Travel Speed (mm/s)"]) == m["speed_mm_s"]
-
-
-def test_campaign_execution_process_conditions_match_record():
-    from lpbf.patch22_4_3_parallel_coarse_calibration_execution import EXPECTED_PROCESS_CONDITIONS
-
-    record = _record_rows()
-    from_code = {
-        (set_id, part): condition
-        for set_id, conditions in EXPECTED_PROCESS_CONDITIONS.items()
-        for part, condition in enumerate(conditions, start=1)
-    }
-    assert set(from_code) == set(record)
-    for key, (power, speed) in from_code.items():
-        assert (float(record[key]["Power (W)"]), float(record[key]["Travel Speed (mm/s)"])) == (power, speed), key
 
 
 def test_coupon_manifest_process_conditions_match_record():

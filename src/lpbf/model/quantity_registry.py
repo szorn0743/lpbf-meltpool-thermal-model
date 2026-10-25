@@ -286,17 +286,6 @@ def quantity_definition(name: str) -> QuantityDefinition:
         raise KeyError(f"unknown current quantity: {name!r}") from exc
 
 
-def require_quantity_role(name: str, role: str) -> QuantityDefinition:
-    """Return a registry entry only when its scientific role matches exactly."""
-
-    definition = quantity_definition(name)
-    if definition.quantity_role != role:
-        raise ValueError(
-            f"quantity {name!r} has role {definition.quantity_role!r}, expected {role!r}"
-        )
-    return definition
-
-
 def current_quantity_registry_dict() -> dict[str, Any]:
     """Return the authoritative JSON-safe Patch 20.12 registry."""
 
@@ -348,5 +337,4 @@ __all__ = [
     "QuantityDefinition",
     "current_quantity_registry_dict",
     "quantity_definition",
-    "require_quantity_role",
 ]

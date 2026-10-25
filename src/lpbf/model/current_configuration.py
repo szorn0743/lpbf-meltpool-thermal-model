@@ -12,7 +12,6 @@ remain intentionally unselected at this checkpoint.
 from __future__ import annotations
 
 from dataclasses import dataclass, replace
-import json
 import math
 from types import MappingProxyType
 from typing import Any, Mapping
@@ -383,78 +382,6 @@ def current_parameter_configuration_dict() -> dict[str, Any]:
     }
 
 
-def validate_optimizer_parameter_names(names: Any) -> tuple[str, ...]:
-    """Validate the *legacy Patch 19.x* direct four-parameter optimizer vector.
-
-    This compatibility function intentionally preserves the accepted Patch 19.9
-    experiment design, which perturbed all four physical parameters directly.
-    Patch 20.12 current calibration code must instead use the registry-bound
-    optimizer-coefficient contract in :mod:`lpbf.model.parameter_policy`, where
-    a future optimizer vector may be a justified subset or transformation.
-    Quadratic boiling remains excluded in both contracts.
-    """
-    try:
-        normalized = tuple(str(name) for name in names)
-    except TypeError as exc:
-        raise CurrentConfigurationError("optimizer parameter names must be iterable") from exc
-    if normalized != CURRENT_FIT_PARAMETER_NAMES:
-        if QUADRATIC_BOILING_PARAMETER_NAME in normalized:
-            raise CurrentConfigurationError(
-                "quadratic_boiling_strength is a fixed regulator and may not be optimizer-controlled"
-            )
-        raise CurrentConfigurationError(
-            "optimizer parameter order must exactly match the frozen four-parameter calibration vector: "
-            + repr(CURRENT_FIT_PARAMETER_NAMES)
-        )
-    return normalized
-
-
-def serialize_current_parameter_configuration(*, indent: int | None = 2) -> str:
-    return json.dumps(
-        current_parameter_configuration_dict(),
-        sort_keys=True,
-        indent=indent,
-        allow_nan=False,
-    )
-
-
-def serialize_current_physics_parameters(
-    physics: CurrentPhysicsParameters,
-    *,
-    indent: int | None = None,
-) -> str:
-    return json.dumps(
-        physics.to_serializable_dict(),
-        sort_keys=True,
-        indent=indent,
-        allow_nan=False,
-        separators=None if indent is not None else (",", ":"),
-    )
-
-
-def deserialize_current_physics_parameters(
-    payload: str | bytes | bytearray | Mapping[str, Any],
-) -> CurrentPhysicsParameters:
-    if isinstance(payload, (str, bytes, bytearray)):
-        decoded = json.loads(payload)
-    elif isinstance(payload, Mapping):
-        decoded = dict(payload)
-    else:
-        raise TypeError("serialized parameter payload must be JSON text or a mapping")
-
-    if decoded.get("schema") != CURRENT_PARAMETER_STATE_SCHEMA:
-        raise CurrentConfigurationError("unexpected current-parameter serialization schema")
-    if decoded.get("schema_version") != CURRENT_PARAMETER_STATE_SCHEMA_VERSION:
-        raise CurrentConfigurationError("unexpected current-parameter schema version")
-    values = decoded.get("values")
-    if not isinstance(values, Mapping):
-        raise CurrentConfigurationError("serialized current parameters require a values mapping")
-    try:
-        return CurrentPhysicsParameters.from_dict(values)
-    except (TypeError, ValueError, OverflowError) as exc:
-        raise CurrentConfigurationError(str(exc)) from exc
-
-
 def _validate_scalar_bound(name: str, value: float, bounds: ParameterBounds) -> None:
     if not math.isfinite(value):
         raise CurrentConfigurationError(f"{name} must be finite")
@@ -579,10 +506,6 @@ __all__ = [
     "ParameterBounds",
     "build_current_trial_parameters",
     "current_parameter_configuration_dict",
-    "deserialize_current_physics_parameters",
     "parameter_definition",
-    "serialize_current_parameter_configuration",
-    "serialize_current_physics_parameters",
     "validate_current_physics_parameters",
-    "validate_optimizer_parameter_names",
 ]

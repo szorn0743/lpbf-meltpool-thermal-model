@@ -1,0 +1,60 @@
+{
+  "register": "T3 data-use history per coupon",
+  "compiled": "2026-10-19, from the stage manifests, evidence folders and git history (times PDT)",
+  "how_to_read": [
+    "'read' means the stage opened that coupon's experimental data; 'compared' means camera H/W were set against a model prediction.",
+    "Each coupon HDF5 file holds the whole layer's camera stream (all six parts). Stages from 22.3.8 Step 0 on selected only their own frames through the sync mapping.",
+    "The selection freeze is commit d01ac72, 2026-10-16 14:33:56. The A25 window was chosen on 2026-10-15 (22.3.8 close 47eaa2b 15:22; plan draft 1b32171 15:25; approval fca4e30 15:35)."
+  ],
+  "stages": {
+    "S01": {"patch": "21.3.0", "stage": "24-member characterization", "kind": "read", "compared": false, "date": "2026-10-12 01:19", "commit": "8b29404 (tag patch-21.3); output gitignored", "purpose": "descriptive camera H/W and sync inventory; no thermal run, no fitting; validation_used = false", "evidence": "data/characterization/patch21_3_full_characterization_20261012_011936/"},
+    "S02": {"patch": "22.3.1-22.3.4 (pre-repo)", "stage": "99-cell reference panel and 22.3.2 audit", "kind": "read", "compared": false, "date": null, "commit": "44fc251 (imported, tag patch-22.4.3.1)", "purpose": "window-size and association diagnostics at single frames; files hold simulated H/W only", "evidence": "PATCH_22_3_1_99_CELL_REFERENCE.json; PATCH_22_3_2_LASER_COMPONENT_ASSOCIATION_AUDIT.json"},
+    "S03": {"patch": "22.4.3", "stage": "real-data preflight", "kind": "read", "compared": false, "date": "2026-10-12 01:29", "commit": "44fc251", "purpose": "campaign gates; held_out_validation_members_absent = true", "evidence": "archive/runs/patch22_4_3_preflight_20261012_012948/"},
+    "S04": {"patch": "22.4.3", "stage": "interrupted 272-unit campaign", "kind": "read", "compared": true, "date": "2026-10-13 11:51-14:34", "commit": "44fc251; outputs outside the repo", "purpose": "coarse calibration under 22.3.4 semantics; 24 units, all failed (A13)", "evidence": "interrupted development run of 2026-10-13 (not included in this repository)"},
+    "S05": {"patch": "22.3.5", "stage": "frame-13768 regression", "kind": "read", "compared": false, "date": "2026-10-13 19:30", "commit": "277cf8d", "purpose": "O4", "evidence": "docs/patches/22.3.5/evidence/"},
+    "S06": {"patch": "22.3.5.1 / 22.3.5.3", "stage": "targeted replay of 568 rows (serial and 4-worker)", "kind": "read", "compared": false, "date": "2026-10-13 19:36-23:05", "commit": "93f3834, cbac505", "purpose": "association reclassification (O3)", "evidence": "docs/patches/22.3.5.1/evidence/, docs/patches/22.3.5.3/evidence/"},
+    "S08": {"patch": "22.3.6", "stage": "sync track-edge audit", "kind": "read", "compared": false, "date": "2026-10-14 00:33", "commit": "cd197e5", "purpose": "anchor convention (O11); held_out_members_opened = false", "evidence": "docs/patches/22.3.6/evidence/PATCH_22_3_6_SYNC_TRACK_START_AUDIT*"},
+    "S09": {"patch": "22.3.6", "stage": "association census", "kind": "read", "compared": true, "date": "2026-10-14 00:33-01:04", "commit": "cd197e5", "purpose": "residual-case classes (A14)", "evidence": "docs/patches/22.3.6/evidence/PATCH_22_3_6_ASSOCIATION_CENSUS_*"},
+    "S11": {"patch": "22.3.7", "stage": "Stage A (two attempts)", "kind": "read", "compared": true, "date": "2026-10-14 14:06-14:50", "commit": "c2901c3, 9367868", "purpose": "verify A21-A23; O13 re-measured", "evidence": "docs/patches/22.3.7/evidence/"},
+    "S12": {"patch": "22.3.8", "stage": "Step 0 camera characterization", "kind": "read", "compared": false, "date": "2026-10-14 16:51", "commit": "669f2fd", "purpose": "what the camera blob measures; raw images of layers 52 and 53; trends against P and v", "evidence": "docs/patches/22.3.8/evidence/step0/"},
+    "S13": {"patch": "22.3.8", "stage": "Step 1 capture gate", "kind": "read", "compared": true, "date": "2026-10-14 17:39", "commit": "f430906", "purpose": "regression against Stage A", "evidence": "docs/patches/22.3.8/evidence/step1/"},
+    "S14": {"patch": "22.3.8", "stage": "Steps 2-3 replay and synthetic camera", "kind": "read", "compared": true, "date": "2026-10-14 19:19-20:17", "commit": "421fe34, 16ef975", "purpose": "anchor_center model vs camera; source of the 22.4.3.2 out-of-window expectation", "evidence": "docs/patches/22.3.8/evidence/step2/, step3/"},
+    "S16": {"patch": "22.3.8", "stage": "Step 4 sensitivity map (corners) and Gate 2 (c)", "kind": "read", "compared": true, "date": "2026-10-14 22:57 - 2026-10-15 14:48", "commit": "0b20bad, 3fb2150, 28a1d51", "purpose": "A9 box vs camera on the four 20260904 corners; camera provenance (A24)", "evidence": "docs/patches/22.3.8/evidence/step4/; PATCH_22_3_8_FINDINGS.md"},
+    "S18": {"patch": "22.4.3.2", "stage": "smoke", "kind": "read", "compared": true, "date": "2026-10-15 15:54-16:00", "commit": "78dc07d", "purpose": "runner check", "evidence": "docs/patches/22.4.3.2/evidence/smoke/"},
+    "S19": {"patch": "22.4.3.2", "stage": "calibrate, confirm and selection freeze", "kind": "read", "compared": true, "date": "2026-10-15 16:01 - 2026-10-16 14:33", "commit": "78dc07d, ec53a55, d01ac72", "purpose": "window calibration and selection; held_out_members_read = []", "evidence": "docs/patches/22.4.3.2/evidence/calibrate/, confirm/, pre_fix/, selection_freeze.json"},
+    "S22": {"patch": "22.4.3.2", "stage": "evaluate (V, X) and synthetic camera (S)", "kind": "read", "compared": true, "date": "2026-10-16 15:43-18:15", "commit": "2fdc58c", "purpose": "held-out and out-of-window evaluation after the freeze", "evidence": "docs/patches/22.4.3.2/evidence/evaluate/, synthetic/"},
+    "S24": {"patch": "analysis", "stage": "per-coupon note and this package", "kind": "read", "compared": true, "date": "2026-10-19", "commit": "a169772 and this package", "purpose": "descriptive, post hoc; evaluate unit files only, no HDF5", "evidence": "docs/analysis/"}
+  },
+  "members": {
+    "20260730:part_1": ["S01", "S03", "S04", "S05", "S06", "S08", "S09", "S11", "S12", "S13", "S14", "S18", "S19", "S22", "S24"],
+    "20260730:part_2": ["S01", "S22", "S24"],
+    "20260730:part_3": ["S01", "S03", "S04", "S06", "S08", "S09", "S11", "S12", "S14", "S19", "S22", "S24"],
+    "20260730:part_4": ["S01", "S22", "S24"],
+    "20260730:part_5": ["S01", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260730:part_6": ["S01", "S02", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260731:part_1": ["S01", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260731:part_2": ["S01", "S22", "S24"],
+    "20260731:part_3": ["S01", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260731:part_4": ["S01", "S22", "S24"],
+    "20260731:part_5": ["S01", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260731:part_6": ["S01", "S02", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260904:part_1": ["S01", "S03", "S08", "S12", "S14", "S16", "S22", "S24"],
+    "20260904:part_2": ["S01", "S22", "S24"],
+    "20260904:part_3": ["S01", "S02", "S03", "S08", "S12", "S14", "S16", "S22", "S24"],
+    "20260904:part_4": ["S01", "S02", "S03", "S08", "S12", "S14", "S16", "S22", "S24"],
+    "20260904:part_5": ["S01", "S22", "S24"],
+    "20260904:part_6": ["S01", "S02", "S03", "S08", "S12", "S14", "S16", "S22", "S24"],
+    "20260910:part_1": ["S01", "S03", "S08", "S12", "S14", "S19", "S22", "S24"],
+    "20260910:part_2": ["S01", "S22", "S24"],
+    "20260910:part_3": ["S01", "S03", "S08", "S12", "S14", "S22", "S24"],
+    "20260910:part_4": ["S01", "S03", "S08", "S12", "S14", "S22", "S24"],
+    "20260910:part_5": ["S01", "S22", "S24"],
+    "20260910:part_6": ["S01", "S03", "S08", "S12", "S14", "S22", "S24"]
+  },
+  "findings": [
+    "Before the freeze, the camera data of the 16 A8 calibration members (the 9 calibration and 7 examined out-of-window coupons) had been read and compared with the model; 20260730 parts 1 and 3 from 2026-10-13, all 16 by 2026-10-14.",
+    "The 8 A8 held-out members were not read by any stage from the 22.4.3 preflight to the 22.4.3.2 freeze; every manifest of that period records them as absent or unread. Their first model comparison was the evaluate stage (2fdc58c), started about 70 minutes after the freeze commit.",
+    "No coupon was entirely unopened: the Patch 21.3.0 characterization (2026-10-12) read all 24 files and wrote camera H/W summaries for the held-out members too (medians, quantiles, track-evolution slopes), with no model comparison. Whether those summaries were looked at before the freeze is not recorded. The 22.3.8 plan also discloses a discarded spot-check pass that pooled the whole 20260730 layer-53 file, including held-out parts 2 and 4. The 22.4.3.2 plan's 'never opened' is therefore true for model comparison and for every stage from 22.4.3 on, not for the 21.3.0 descriptive summary.",
+    "When the window was chosen (2026-10-15), 22.3.8 had compared the model with the camera on all 16 A8 calibration members, including all 9 A25 calibration members; the window choice was not blind to the calibration data (A25 caveat)."
+  ]
+}

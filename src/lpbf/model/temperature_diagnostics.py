@@ -133,24 +133,6 @@ _NONNEGATIVE_KEYS = {
 }
 
 
-def diagnostic_disposition_contract() -> dict[str, Any]:
-    """Return the frozen Patch 19.8.5 policy in a JSON-safe form."""
-
-    return {
-        "schema": CONTRACT_SCHEMA,
-        "schema_version": PATCH_VERSION,
-        "status": "PASS_PATCH_19_8_5_HIGH_TEMPERATURE_DIAGNOSTIC_DISPOSITION_FROZEN",
-        "primary_calibration_observables": list(PRIMARY_CALIBRATION_OBSERVABLES),
-        "temperature_diagnostic_role": TEMPERATURE_DIAGNOSTIC_ROLE,
-        "required_output_contexts": list(REQUIRED_OUTPUT_CONTEXTS),
-        "nominal_high_temperature_reference_K": NOMINAL_HIGH_TEMPERATURE_REFERENCE_K,
-        "descriptive_screening_reference_K": DESCRIPTIVE_SCREENING_REFERENCE_K,
-        "screening_reference_blocks_calibration": SCREENING_REFERENCE_BLOCKS_CALIBRATION,
-        "temperature_clipping_permitted": TEMPERATURE_CLIPPING_PERMITTED,
-        "mandatory_diagnostics": [item.to_dict() for item in MANDATORY_HIGH_TEMPERATURE_DIAGNOSTICS],
-    }
-
-
 def _finite_number(value: Any, *, name: str) -> float:
     try:
         result = float(value)
@@ -285,19 +267,6 @@ def attach_high_temperature_diagnostics(
     return result
 
 
-def require_high_temperature_diagnostics_visible(output_payload: Mapping[str, Any]) -> dict[str, Any]:
-    """Fail closed if a governed output silently omits mandatory diagnostics."""
-
-    if not isinstance(output_payload, Mapping):
-        raise TypeError("output_payload must be a mapping")
-    record = output_payload.get("high_temperature_diagnostics")
-    if not isinstance(record, Mapping):
-        raise TemperatureDiagnosticContractError(
-            "governed output is missing high_temperature_diagnostics"
-        )
-    return validate_high_temperature_diagnostics(record)
-
-
 __all__ = [
     "CANONICAL_RECORD_SCHEMA",
     "CANONICAL_RECORD_SCHEMA_VERSION",
@@ -316,7 +285,5 @@ __all__ = [
     "TemperatureDiagnosticDefinition",
     "attach_high_temperature_diagnostics",
     "canonicalize_high_temperature_diagnostics",
-    "diagnostic_disposition_contract",
-    "require_high_temperature_diagnostics_visible",
     "validate_high_temperature_diagnostics",
 ]

@@ -1,4 +1,4 @@
-"""Committee statistical-output package (docs/analysis/committee_package): consistency with the frozen records.
+"""Committee statistical-output package (results/committee_package): consistency with the frozen records.
 
 The recomputation tests need the gitignored Patch 22.4.3.2 evaluate unit files and skip without them. The
 committed-output tests compare the package's own CSVs with each other and need nothing outside the repo.
@@ -16,12 +16,12 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-PACKAGE = Path(__file__).resolve().parents[1] / "docs" / "analysis" / "committee_package"
+PACKAGE = Path(__file__).resolve().parents[1] / "results" / "committee_package"
 sys.path.insert(0, str(PACKAGE / "scripts"))
 
 import common as C  # noqa: E402
 
-needs_units = pytest.mark.skipif(not C.units_available(), reason="c1 evaluate unit files (gitignored) not present")
+needs_units = pytest.mark.skipif(not C.units_available(), reason="c1 evaluate unit files (data bundle) not present")
 
 
 def _csv(path: Path) -> list[dict[str, str]]:
@@ -120,7 +120,7 @@ def test_figure_sources_equal_the_tables_and_datasets():
 
 
 def test_pooled_groups_in_the_tables_equal_the_evaluate_manifest():
-    manifest = json.loads((Path(__file__).resolve().parents[1] / "docs/patches/22.4.3.2/evidence/evaluate/stage_manifest.json").read_text(encoding="utf-8"))
+    manifest = json.loads((Path(__file__).resolve().parents[1] / "results/calibration/evaluate/stage_manifest.json").read_text(encoding="utf-8"))
     groups = {r["name"]: r for r in _csv(PACKAGE / "data" / "D4_conditions_groups.csv") if r["level"] == "group"}
     cal = manifest["calibration_score_selected"]
     held = manifest["readings"]["V"]["confirm_c1"]["held_out"]
@@ -144,7 +144,7 @@ def test_exclusion_ledger_reconciles_with_the_accounting_table():
     assert len(frames) == sum(int(r["scored_frames"]) for r in t4.values()) == 24129
 
 
-needs_characterization = pytest.mark.skipif(not C.CHARACTERIZATION.is_dir(), reason="Patch 21.3 characterization (gitignored) not present")
+needs_characterization = pytest.mark.skipif(not C.CHARACTERIZATION.is_dir(), reason="Patch 21.3 characterization (data bundle) not present")
 
 
 # ---------------------------------------------------------------------- pass 2: recomputation
@@ -216,7 +216,7 @@ def test_stage_manifests_record_the_same_fixed_controls():
 
 
 def test_selection_is_reconstructed_from_the_committed_archive():
-    from lpbf.patch22_4_3_2_window_calibration import fit_quadratic
+    from lpbf.calibration import fit_quadratic
 
     recon = json.loads((PACKAGE / "data" / "D6_candidate_search" / "D6_selection_reconstruction.json").read_text(encoding="utf-8"))
     assert recon["status"] == "PASS" and recon["selected_reconstructed"] == recon["selected_recorded"] == C.CANDIDATE
@@ -226,7 +226,7 @@ def test_selection_is_reconstructed_from_the_committed_archive():
     assert min(eligible, key=lambda r: float(r["J"]))["candidate"] == C.CANDIDATE
     design = [r for r in cands if r["origin"] == "frozen_design"]
     fit = fit_quadratic([[float(r[f"coded_x{k}"]) for k in (1, 2, 3)] for r in design], [float(r["J"]) for r in design])
-    recorded = json.loads((Path(__file__).resolve().parents[1] / "docs/patches/22.4.3.2/evidence/calibration_reading.json").read_text(encoding="utf-8"))["surrogate"]["fit"]
+    recorded = json.loads((Path(__file__).resolve().parents[1] / "results/calibration/calibration_reading.json").read_text(encoding="utf-8"))["surrogate"]["fit"]
     assert max(abs(a - b) for a, b in zip(fit["coefficients"], recorded["coefficients"])) < 1e-9
 
 

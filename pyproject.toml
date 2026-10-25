@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpbf-meltpool-thermal-model"
+version = "1.0.0"
+description = "Reduced-order thermal model of laser powder bed fusion melt pools, calibrated to coaxial-camera melt-pool dimensions (master's thesis code)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Samuel Henry Zorn" }]
+requires-python = ">=3.13,<3.14"
+# Pinned to the versions the thesis results were produced with (requirements.lock.txt); the numerical
+# provenance of the recorded run depends on them.
+dependencies = [
+    "numpy==2.5.4",
+    "numba==0.68.0",
+    "llvmlite==0.50.0",
+    "h5py==3.16.0",
+    "opencv-python==5.0.0.93",
+]
+
+[project.optional-dependencies]
+# Figure rendering only (committee package, thesis figures). Keep it out of the environment used for thermal runs.
+analysis = ["matplotlib==3.11.2"]
+test = ["pytest==9.1.1"]
+
+[project.urls]
+Repository = "https://github.com/szorn0743/lpbf-meltpool-thermal-model"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"lpbf.data" = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"

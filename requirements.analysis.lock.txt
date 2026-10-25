@@ -1,0 +1,25 @@
+# Analysis environment for the figure builds (results/committee_package, results/thesis_figures): the lock plus matplotlib.
+# = requirements.lock.txt (unchanged pins) + matplotlib 3.11.2 and its dependencies. Install into .venv-analysis;
+# never into .venv, whose pins carry numerical provenance (ledger A16).
+colorama==0.4.6
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.67.0
+h5py==3.16.0
+iniconfig==2.3.1
+kiwisolver==1.5.1
+llvmlite==0.50.0
+matplotlib==3.11.2
+numba==0.68.0
+numpy==2.5.4
+opencv-python==5.0.0.93
+packaging==26.3
+pillow==13.0.0
+pluggy==1.6.0
+Pygments==2.21.0
+pyparsing==3.3.3
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+setuptools==84.0.0
+six==1.17.0
+wheel==0.48.0

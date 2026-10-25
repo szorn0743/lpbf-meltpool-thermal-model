@@ -1,4 +1,4 @@
-"""Thesis tables and figures (docs/analysis/thesis_figures): committed outputs agree with the frozen records.
+"""Thesis tables and figures (results/thesis_figures): committed outputs agree with the frozen records.
 
 Runs in the production .venv (no matplotlib): the tables are rebuilt from the committee data and the code the
 22.4.3.2 runner imported and compared byte for byte; the figures are checked through their hash list and sources.
@@ -15,8 +15,8 @@ from pathlib import Path
 import pytest
 
 REPO = Path(__file__).resolve().parents[1]
-PACKAGE = REPO / "docs" / "analysis" / "thesis_figures"
-COMMITTEE = REPO / "docs" / "analysis" / "committee_package"
+PACKAGE = REPO / "results" / "thesis_figures"
+COMMITTEE = REPO / "results" / "committee_package"
 
 
 @pytest.fixture(scope="module")
@@ -148,7 +148,7 @@ def test_threshold_and_isotherm_figure_uses_the_presentation_levels_and_names_on
     """F13 (owner, 2026-10-23): the presentation 'camera thresholds and model isotherms' levels; the caption names only
     the two scored levels (150 counts, 1673 K liquidus)."""
 
-    pres = _rows(REPO / "docs" / "analysis" / "presentation_figures" / "source" / "levels_feature_frame.csv")
+    pres = _rows(REPO / "results" / "figure_sources" / "source" / "levels_feature_frame.csv")
     f13 = _rows(PACKAGE / "source" / "F13_thresholds_and_isotherms.csv")
     assert [(r["source"], float(r["level"])) for r in f13 if r["drawn"] == "True"] == \
         [(r["source"], float(r["level"])) for r in pres if r["touches_edge"] == "false"]

@@ -32,9 +32,7 @@ from lpbf.model.quantity_registry import (
     CALIBRATABLE,
     CURRENT_CALIBRATABLE_PARAMETER_NAMES,
     CURRENT_FIXED_REGULATOR_PARAMETER_NAMES,
-    CURRENT_PARAMETER_UNITS,
     CURRENT_PROCESS_PREDICTOR_NAMES,
-    CURRENT_PROCESS_PREDICTOR_UNITS,
     FIXED_REGULATOR,
     GLOBAL,
     PROCESS_CONDITIONED,
@@ -44,7 +42,6 @@ from lpbf.model.quantity_registry import (
 from lpbf.provenance.schema_registry import (
     schema_definition,
     schema_envelope,
-    validate_readable_schema,
 )
 
 
@@ -683,91 +680,6 @@ def validate_policy_definition(definition: Mapping[str, Any]) -> dict[str, Any]:
     return {**payload, "policy_identity": computed_identity}
 
 
-def normalize_policy_definition_for_read(definition: Mapping[str, Any]) -> dict[str, Any]:
-    """Normalize current definitions; retain older versions as explicit read-only data.
-
-    Accepted Patch 20.4 policy records predate coefficient metadata and therefore
-    cannot be safely executed under the hardened contract.  They remain readable
-    as provenance and are labeled ``read_only_legacy_policy`` rather than being
-    silently upgraded into an executable current policy.
-    """
-
-    payload = dict(definition)
-    validate_readable_schema(payload, "parameter_policy")
-    if payload.get("schema_version") == PARAMETER_POLICY_SCHEMA_VERSION:
-        return validate_policy_definition(payload)
-    return {
-        **payload,
-        "read_only_legacy_policy": True,
-        "execution_under_patch20_12_permitted": False,
-        "migration_reason": (
-            "legacy policy lacks Patch 20.12 registry-bound coefficient, predictor, "
-            "mapping, transformation, and constraint metadata"
-        ),
-    }
-
-
-@dataclass(frozen=True)
-class BoundedScalarMapping:
-    """Deterministic test/readiness mapping with caller-supplied candidate bounds.
-
-    This utility does not select calibration bounds.  Patch 20.12 additionally
-    binds its target name and units to the authoritative quantity registry.
-    """
-
-    parameter_name: str
-    minimum: float
-    maximum: float
-    units: str
-
-    def __post_init__(self) -> None:
-        name = str(self.parameter_name).strip()
-        units = str(self.units).strip()
-        if not name:
-            raise ParameterPolicyError("parameter_name must be non-empty")
-        if not units:
-            raise ParameterPolicyError("units must be non-empty")
-        try:
-            definition = quantity_definition(name)
-        except KeyError as exc:
-            raise ParameterPolicyError(f"unknown bounded-mapping parameter: {name!r}") from exc
-        if definition.quantity_role != CALIBRATABLE:
-            raise ParameterPolicyError("bounded mapping may target only calibratable quantities")
-        if units != definition.units:
-            raise ParameterPolicyError(
-                f"bounded mapping units for {name} must be {definition.units!r}"
-            )
-        minimum = _finite("minimum", self.minimum)
-        maximum = _finite("maximum", self.maximum)
-        if not minimum < maximum:
-            raise ParameterPolicyError("bounded mapping requires minimum < maximum")
-        object.__setattr__(self, "parameter_name", name)
-        object.__setattr__(self, "units", units)
-        object.__setattr__(self, "minimum", minimum)
-        object.__setattr__(self, "maximum", maximum)
-
-    def map_unit_coordinate(self, coordinate: float) -> float:
-        coordinate = _finite("unit coordinate", coordinate)
-        if coordinate < 0.0 or coordinate > 1.0:
-            raise ParameterPolicyError("unit coordinate must satisfy 0 <= value <= 1")
-        return self.minimum + coordinate * (self.maximum - self.minimum)
-
-    def definition_dict(self) -> dict[str, Any]:
-        return {
-            "mapping_type": "affine_unit_interval",
-            "parameter_name": self.parameter_name,
-            "units": self.units,
-            "candidate_bounds": {
-                "minimum": self.minimum,
-                "maximum": self.maximum,
-                "selected_as_calibration_bounds": False,
-            },
-            "input_domain": [0.0, 1.0],
-            "deterministic": True,
-            "registry_bound": True,
-        }
-
-
 @dataclass(frozen=True)
 class ConstantPolicyCoefficients:
     """Policy coefficients for the global M0 compatibility baseline."""
@@ -1088,14 +1000,12 @@ __all__ = [
     "PROCESS_CONDITION_SCHEMA",
     "PROCESS_CONDITION_SCHEMA_VERSION",
     "SHARED_POLICY_SCOPE",
-    "BoundedScalarMapping",
     "ConstantParameterPolicy",
     "ConstantPolicyCoefficients",
     "OptimizerCoefficientVector",
     "ParameterPolicy",
     "ParameterPolicyError",
     "ProcessCondition",
-    "normalize_policy_definition_for_read",
     "optimizer_coefficient_vector",
     "realize_parameter_policy",
     "validate_policy_definition",

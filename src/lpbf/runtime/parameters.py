@@ -3,7 +3,6 @@ from __future__ import annotations
 
 from dataclasses import replace
 from pathlib import Path
-from typing import Any
 
 from lpbf.data.coupon_inputs import CouponCondition
 from lpbf.runtime.configuration import (
@@ -62,38 +61,3 @@ def exact_fixed_time_params(path: str | Path, condition: CouponCondition):
     return replace(params, time=replace(params.time, dt_s=THERMAL_DT_S))
 
 
-def explicit_stability_record(params: Any) -> dict[str, Any]:
-    """Report the exact explicit stability quantities used by the accepted model."""
-    raw = float(
-        params.time.explicit_stability_limit_s(
-            params.material, params.geometry, params.grid
-        )
-    )
-    safe = float(
-        params.time.explicit_stability_limit_with_safety_s(
-            params.material, params.geometry, params.grid
-        )
-    )
-    selected = float(params.time.dt_s)
-    return {
-        "solver_scheme": "3D forward-Euler finite-volume diffusion",
-        "selected_dt_s": selected,
-        "raw_explicit_limit_s": raw,
-        "safe_explicit_limit_s": safe,
-        "safety_factor": float(params.time.explicit_stability_safety_factor),
-        "selected_over_raw_limit": selected / raw,
-        "selected_over_safe_limit": selected / safe,
-        "passes_raw_limit": bool(selected <= raw),
-        "passes_safe_limit": bool(selected <= safe),
-        "grid_spacing_um": float(
-            params.grid.uniform_spacing_m(params.geometry) * 1.0e6
-        ),
-        "liquid_conductivity_enhancement_factor": float(
-            params.material.liquid_conductivity_enhancement_factor
-        ),
-        "effective_liquid_conductivity_W_mK": float(
-            params.material.k_liquid_effective_W_mK
-        ),
-        "alpha_liquid_effective_m2_s": float(params.material.alpha_liquid_effective_m2_s),
-        "status": "PASS" if selected <= safe else "FAIL_CLOSED_NUMERICAL_STABILITY",
-    }

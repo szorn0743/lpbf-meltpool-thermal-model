@@ -1,0 +1,53 @@
+{
+  "schema": "lpbf_dataset_split",
+  "description": "The frozen data roles of the thesis. Members are '<acquisition_set>:part_<n>'. The four roles follow from the calibration/held-out partition of calibration_contract.json and the volumetric energy density window; dataset_split.py checks that derivation against this file, which is authoritative.",
+  "energy_density": {
+    "formula": "VED_J_mm3 = power_W / (speed_mm_s * hatch_mm * layer_mm)",
+    "hatch_mm": 0.08,
+    "layer_mm": 0.03,
+    "calibration_window_J_mm3": [65.0, 85.0]
+  },
+  "roles": {
+    "calibration": [
+      "20260730:part_1",
+      "20260730:part_3",
+      "20260730:part_5",
+      "20260730:part_6",
+      "20260731:part_1",
+      "20260731:part_3",
+      "20260731:part_5",
+      "20260731:part_6",
+      "20260910:part_1"
+    ],
+    "in_window_held_out": [
+      "20260730:part_2",
+      "20260730:part_4",
+      "20260731:part_2",
+      "20260731:part_4",
+      "20260904:part_5"
+    ],
+    "out_of_window_examined": [
+      "20260904:part_1",
+      "20260904:part_3",
+      "20260904:part_4",
+      "20260904:part_6",
+      "20260910:part_3",
+      "20260910:part_4",
+      "20260910:part_6"
+    ],
+    "out_of_window_blind": [
+      "20260904:part_2",
+      "20260910:part_2",
+      "20260910:part_5"
+    ]
+  },
+  "calibration_conditions": ["P140_V700", "P140_V850", "P160_V950", "P180_V1050", "P190_V1100"],
+  "cross_campaign_held_out": "20260904:part_5",
+  "notes": {
+    "calibration": "Nine coupons inside the window; used for the search, the confirmation candidates and the selection freeze.",
+    "in_window_held_out": "Five held-out coupons inside the window; read only by the evaluation stage, after the selection freeze.",
+    "out_of_window_examined": "Seven calibration-partition coupons outside the window; already examined by the camera diagnostic before the calibration.",
+    "out_of_window_blind": "Three held-out coupons outside the window; never read before the evaluation stage.",
+    "cross_campaign_held_out": "The one in-window held-out coupon from the September acquisition campaign (different synchronization convention)."
+  }
+}

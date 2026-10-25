@@ -22,32 +22,28 @@ from dataclasses import dataclass, replace
 from importlib.resources import files
 import json
 import math
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any, Mapping
 
-from lpbf.data.full_coupon_manifest import FullCouponManifest, load_full_coupon_manifest
 from lpbf.geometry import resize_xy_window
 from lpbf.model.current_configuration import (
     CURRENT_CALIBRATABLE_PARAMETER_NAMES,
     CURRENT_FIXED_CONFIGURATION,
-    CURRENT_FIXED_REGULATOR_PARAMETER_NAMES,
     CurrentPhysicsParameters,
 )
 from lpbf.model.parameter_policy import (
     DERIVED_COEFFICIENTS,
     DIRECT_COEFFICIENT,
     OptimizerCoefficientVector,
-    ParameterPolicyError,
     ProcessCondition,
     SHARED_POLICY_SCOPE,
     ConstantParameterPolicy,
     validate_policy_definition,
 )
 from lpbf.model.quantity_registry import (
-    FIXED_REGULATOR,
     GLOBAL,
     quantity_definition,
 )
-from lpbf.execution.api import current_numerical_stability_preflight
+from lpbf.experiments.current_framework import current_numerical_stability_preflight
 from lpbf.model.parameters import get_model_parameters
 from lpbf.runtime.configuration import (
     apply_frozen_experiment_configuration,
@@ -57,7 +53,7 @@ from lpbf.runtime.parameters import THERMAL_DT_S
 
 
 PATCH_VERSION = "21.0.0"
-CONTRACT_RESOURCE = "patch21_0_calibration_contract.json"
+CONTRACT_RESOURCE = "calibration_contract.json"
 POLICY_TYPE = "patch21_0_global_identifiable_subspace"
 POLICY_VERSION = "1"
 ABS_DEPTH_COORDINATE = "abs_depth_identifiable_coordinate"
@@ -357,18 +353,6 @@ class Patch21GlobalParameterPolicy:
         return validate_policy_definition(base)
 
 
-def patch21_policy_from_values(
-    abs_depth_identifiable_coordinate: float,
-    liquid_conductivity_enhancement_factor: float,
-    eta_directional: float,
-) -> Patch21GlobalParameterPolicy:
-    return Patch21GlobalParameterPolicy.from_values(
-        abs_depth_identifiable_coordinate,
-        liquid_conductivity_enhancement_factor,
-        eta_directional,
-    )
-
-
 def _frozen_preflight_params() -> Any:
     """Construct the HDF5-independent numerical state used by the atomic evaluator."""
 
@@ -438,82 +422,6 @@ def member_identity(acquisition_set_id: str, part_number: int) -> str:
     return f"{str(acquisition_set_id)}:part_{int(part_number)}"
 
 
-def validate_patch21_partition(
-    manifest: FullCouponManifest | None = None,
-    contract: Mapping[str, Any] | None = None,
-) -> dict[str, Any]:
-    """Prove exact member coverage and condition-level leakage prevention."""
-
-    current = load_full_coupon_manifest() if manifest is None else manifest.require_hash_complete()
-    design = load_patch21_0_contract() if contract is None else contract
-    if current.canonical_identity != design["authoritative_evidence"]["canonical_manifest_identity"]:
-        raise Patch210ContractError("Patch 21.0 partition manifest identity mismatch")
-
-    partition = design["data_partition"]
-    calibration = list(partition["calibration_members"])
-    validation = list(partition["validation_members"])
-    rows = calibration + validation
-    if len(rows) != 24:
-        raise Patch210ContractError("Patch 21.0 partition must cover exactly 24 members")
-
-    declared: dict[tuple[str, int], Mapping[str, Any]] = {}
-    for row in rows:
-        key = (str(row["acquisition_set_id"]), int(row["part_number"]))
-        if key in declared:
-            raise Patch210ContractError(f"duplicate partition member {key}")
-        declared[key] = row
-
-    manifest_keys = {
-        (member.key.acquisition_set_id, member.key.part_number): member
-        for member in current.enabled_members
-    }
-    if set(declared) != set(manifest_keys):
-        raise Patch210ContractError("Patch 21.0 partition does not exactly cover canonical members")
-
-    for key, row in declared.items():
-        member = manifest_keys[key]
-        expected = {
-            "expected_filename": member.expected_filename,
-            "sha256": member.sha256,
-            "power_W": float(member.nominal_power_W),
-            "speed_mm_s": float(member.nominal_speed_mm_s),
-            "condition_id": condition_id(member.nominal_power_W, member.nominal_speed_mm_s),
-        }
-        for field, value in expected.items():
-            if row[field] != value:
-                raise Patch210ContractError(
-                    f"partition field mismatch for {key} {field}: {row[field]!r} != {value!r}"
-                )
-
-    calibration_conditions = {str(row["condition_id"]) for row in calibration}
-    validation_conditions = {str(row["condition_id"]) for row in validation}
-    if calibration_conditions & validation_conditions:
-        raise Patch210ContractError("exact P/v condition leakage across calibration/validation split")
-    if calibration_conditions != set(partition["calibration_condition_ids"]):
-        raise Patch210ContractError("calibration condition IDs disagree with frozen partition")
-    if validation_conditions != set(partition["validation_condition_ids"]):
-        raise Patch210ContractError("validation condition IDs disagree with frozen partition")
-    if len(calibration) != int(partition["calibration_member_count"]):
-        raise Patch210ContractError("calibration member count mismatch")
-    if len(validation) != int(partition["validation_member_count"]):
-        raise Patch210ContractError("validation member count mismatch")
-    if len(calibration_conditions) != int(partition["calibration_unique_condition_count"]):
-        raise Patch210ContractError("calibration unique-condition count mismatch")
-    if len(validation_conditions) != int(partition["validation_unique_condition_count"]):
-        raise Patch210ContractError("validation unique-condition count mismatch")
-
-    return {
-        "status": "PASS",
-        "manifest_identity": current.canonical_identity,
-        "member_count": len(rows),
-        "calibration_member_count": len(calibration),
-        "validation_member_count": len(validation),
-        "calibration_unique_condition_count": len(calibration_conditions),
-        "validation_unique_condition_count": len(validation_conditions),
-        "condition_leakage_count": 0,
-    }
-
-
 def calibration_member_identities(contract: Mapping[str, Any] | None = None) -> frozenset[str]:
     design = load_patch21_0_contract() if contract is None else contract
     return frozenset(
@@ -530,138 +438,6 @@ def validation_member_identities(contract: Mapping[str, Any] | None = None) -> f
     )
 
 
-def patch21_calibration_objective(
-    records: Sequence[Mapping[str, Any]],
-    *,
-    contract: Mapping[str, Any] | None = None,
-) -> dict[str, Any]:
-    """Compute the frozen condition-balanced H/W objective on calibration data only.
-
-    Each record represents one member at one candidate and must contain member
-    identity, nominal P/v, status, and experimental/simulated H/W values.  A
-    failed/invalid candidate returns the frozen scalar optimizer bookkeeping
-    penalty; failed rows are never converted into fabricated H/W residuals.
-    """
-
-    design = load_patch21_0_contract() if contract is None else contract
-    objective = design["objective"]
-    allowed = calibration_member_identities(design)
-    validation = validation_member_identities(design)
-    expected_count = int(design["data_partition"]["calibration_member_count"])
-    penalty = float(objective["failed_candidate_scalar_penalty"])
-
-    if not records:
-        raise Patch210ContractError("calibration objective requires member records")
-
-    seen: set[str] = set()
-    grouped: dict[str, list[Mapping[str, Any]]] = {}
-    failure_rows: list[dict[str, Any]] = []
-    for raw in records:
-        row = dict(raw)
-        identity = str(row["member_identity"])
-        if identity in validation:
-            raise Patch210ContractError(
-                f"held-out validation member {identity} may not enter calibration objective"
-            )
-        if identity not in allowed:
-            raise Patch210ContractError(f"unknown/non-calibration member {identity}")
-        if identity in seen:
-            raise Patch210ContractError(f"duplicate calibration objective member {identity}")
-        seen.add(identity)
-        if str(row.get("status")) != "PASS":
-            failure_rows.append(
-                {
-                    "member_identity": identity,
-                    "status": str(row.get("status")),
-                    "failure": row.get("failure"),
-                }
-            )
-            continue
-        cid = condition_id(row["power_W"], row["speed_mm_s"])
-        grouped.setdefault(cid, []).append(row)
-
-    if failure_rows:
-        return {
-            "schema": "lpbf_patch21_0_calibration_objective",
-            "schema_version": PATCH_VERSION,
-            "status": "FAILED_CANDIDATE_PENALTY",
-            "objective_value": penalty,
-            "penalty_applied": True,
-            "failed_member_records": failure_rows,
-            "fabricated_residuals_used": False,
-        }
-
-    if len(seen) != expected_count:
-        missing = sorted(allowed - seen)
-        raise Patch210ContractError(
-            f"calibration objective requires all {expected_count} frozen calibration members; missing={missing}"
-        )
-
-    h_scale = float(objective["normalization_scales_pixels"]["H_pixels"])
-    w_scale = float(objective["normalization_scales_pixels"]["W_pixels"])
-    h_weight = float(objective["metric_weights"]["H_pixels"])
-    w_weight = float(objective["metric_weights"]["W_pixels"])
-    h_by_condition: dict[str, float] = {}
-    w_by_condition: dict[str, float] = {}
-
-    for cid, group in sorted(grouped.items()):
-        h_terms: list[float] = []
-        w_terms: list[float] = []
-        for row in group:
-            h_exp = _finite("experimental_H_pixels", row["experimental_H_pixels"])
-            w_exp = _finite("experimental_W_pixels", row["experimental_W_pixels"])
-            h_sim = _finite("simulated_H_pixels", row["simulated_H_pixels"])
-            w_sim = _finite("simulated_W_pixels", row["simulated_W_pixels"])
-            h_terms.append(((h_sim - h_exp) / h_scale) ** 2)
-            w_terms.append(((w_sim - w_exp) / w_scale) ** 2)
-        h_by_condition[cid] = sum(h_terms) / len(h_terms)
-        w_by_condition[cid] = sum(w_terms) / len(w_terms)
-
-    expected_conditions = set(design["data_partition"]["calibration_condition_ids"])
-    if set(grouped) != expected_conditions:
-        raise Patch210ContractError("objective condition coverage does not match frozen calibration partition")
-
-    h_component = sum(h_by_condition.values()) / len(h_by_condition)
-    w_component = sum(w_by_condition.values()) / len(w_by_condition)
-    total = h_weight * h_component + w_weight * w_component
-    return {
-        "schema": "lpbf_patch21_0_calibration_objective",
-        "schema_version": PATCH_VERSION,
-        "status": "PASS",
-        "objective_value": float(total),
-        "penalty_applied": False,
-        "H_component_unweighted_condition_mean": float(h_component),
-        "W_component_unweighted_condition_mean": float(w_component),
-        "H_weight": h_weight,
-        "W_weight": w_weight,
-        "condition_count": len(grouped),
-        "member_count": len(seen),
-        "condition_H_terms": h_by_condition,
-        "condition_W_terms": w_by_condition,
-        "fabricated_residuals_used": False,
-        "temperature_diagnostics_in_objective": False,
-    }
-
-
-def local_feasibility_state_policies(
-    contract: Mapping[str, Any] | None = None,
-) -> tuple[tuple[str, Patch21GlobalParameterPolicy], ...]:
-    design = load_patch21_0_contract() if contract is None else contract
-    output: list[tuple[str, Patch21GlobalParameterPolicy]] = []
-    for row in design["local_feasibility_gate"]["states"]:
-        output.append(
-            (
-                str(row["state_id"]),
-                Patch21GlobalParameterPolicy.from_values(
-                    row[ABS_DEPTH_COORDINATE],
-                    row[CONDUCTIVITY_COORDINATE],
-                    row[DIRECTIONAL_COORDINATE],
-                ),
-            )
-        )
-    return tuple(output)
-
-
 __all__ = [
     "PATCH_VERSION",
     "COEFFICIENT_ORDER",
@@ -669,13 +445,9 @@ __all__ = [
     "Patch21OptimizerCoefficients",
     "Patch21GlobalParameterPolicy",
     "load_patch21_0_contract",
-    "patch21_policy_from_values",
     "patch21_candidate_admissibility",
-    "validate_patch21_partition",
     "calibration_member_identities",
     "validation_member_identities",
-    "patch21_calibration_objective",
-    "local_feasibility_state_policies",
     "condition_id",
     "member_identity",
 ]

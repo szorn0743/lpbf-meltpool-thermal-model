@@ -39,10 +39,6 @@ NO_LASER_ASSOCIATED_MELT_STATUS = "NO_LASER_ASSOCIATED_MELT"
 TIED_SHARE_STATUS = "FAIL_CLOSED_TIED_SHARE"
 
 
-class LaserComponentAssociationError(RuntimeError):
-    """Raised when a production association request cannot be resolved safely."""
-
-
 def surface_beam_profile(
     nx: int,
     ny: int,
@@ -409,7 +405,6 @@ __all__ = [
     "CONTINUOUS_DISTANCE_METRIC",
     "CONTINUOUS_DISTANCE_POLICY_VERSION",
     "LEGACY_COMPATIBILITY_DISTANCE_METRIC",
-    "LaserComponentAssociationError",
     "MAX_FALLBACK_DISTANCE_CELLS",
     "NO_BEAM_POWER_SELECTION_MODE",
     "NO_LASER_ASSOCIATED_MELT_STATUS",

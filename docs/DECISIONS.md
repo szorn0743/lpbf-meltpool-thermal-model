@@ -52,7 +52,7 @@ to make a gate pass.
 - Why: a census of the earlier one-cell distance rule found it failed 772 of 777 interior near misses although the
   pool boundary was within one cell; the beam-share outcome is identical for any floor from 0.5 % to 10 %.
 - Verified on 10,100 scored frames: production equals the offline rule with 0 mismatches.
-- Code: `lpbf.model.laser_component_association`, `lpbf.model.production_hw`; tests `tests/test_patch22_3_7_recovery.py`.
+- Code: `lpbf.model.laser_component_association`, `lpbf.model.production_hw`; tests `tests/test_association_and_frame_scoring.py` and `tests/test_melt_pool_geometry.py`.
 
 ### Provenance and integrity
 
@@ -62,7 +62,7 @@ to make a gate pass.
 that pin `"22.3.7"` fail closed on a bump.
 
 **A6. The numerical core is frozen.** The 8 files of `src/lpbf/model/_accepted_core/` are fixed by SHA-256 in
-`PATCH_22_3_4_ACCEPTED_CORE_HASHES.json`; `tests/test_accepted_core_hashes.py` checks them.
+`src/lpbf/data/accepted_core_hashes.json`; `tests/test_accepted_core_hashes.py` checks them.
 
 **A16. Dependencies are pinned** in `requirements.lock.txt` (Python 3.13). Numerical provenance depends on them.
 
@@ -100,7 +100,7 @@ fitting or selection that used them would no longer be held-out validation.
 **A9. Frozen calibration design.** Three global coordinates: `abs_depth_identifiable_coordinate` t ∈ [−3, 3],
 `liquid_conductivity_enhancement_factor` ck ∈ [1.5, 2.5], `eta_directional` η ∈ [0, 1], with the guard
 `directional.selected_over_safe_limit` ≤ 0.95 checked before any thermal run. 17 candidates: 5 anchors and 12 Halton
-points (`src/lpbf/data/patch21_3_coarse_global_search_design.json`). The original 17 × 16 = 272-unit campaign scope
+points (`src/lpbf/data/calibration_design.json`). The original 17 × 16 = 272-unit campaign scope
 is superseded (S10); its code is locked and never dispatched.
 
 **A10. Hierarchical objective.** Aggregation frame → track → coupon → exact-condition replicate → unique condition,
@@ -132,7 +132,7 @@ because it is a prediction (D1).
 - A selection at the box or guard edge is reported as a model limitation; the box is never widened.
 - Caveats: eight of the nine calibration members lie on one P/v line (68.6–72.0 J/mm³), and the window was chosen
   after the O13 diagnostic.
-- Plan: `docs/patches/22.4.3.2/PATCH_22_4_3_2_PLAN.md`.
+- Plan: `results/calibration/PREDECLARED_PLAN.md`.
 
 **A26. Objective contract 22.4.3.2: log-ratio residuals.** Per scored frame, in camera pixels,
 r_H = ln(max(H_sim, 1) / max(H_exp, 1)), r_W likewise, and f = 0.5·r_H² + 0.5·r_W². The 1 px floor keeps
@@ -141,7 +141,7 @@ penalty rules are A23. Code: `lpbf.log_ratio_objective`.
 
 **A27. The calibrated parameter set and its readings (Patch 22.4.3.2).**
 - **Selected:** `confirm_c1`: t = −3 (absorptivity 0.490, deposition depth 0.098 mm), ck = 2.418, η = 0. Freeze:
-  `docs/patches/22.4.3.2/evidence/selection_freeze.json` (SHA-256 `43184dff…92a8`). No code default was changed.
+  `results/calibration/selection_freeze.json` (SHA-256 `43184dff…92a8`). No code default was changed.
 - **C_EDGE.** J 0.298, e_H 0.651, e_W 0.416. In the window, H is 1.7–2.0× and W 0.73–0.88× the camera's. t and η are
   at their bounds; the box was not widened. A probe below t = −3 was not run; the descriptive extrapolation
   (t ≈ −4.6, J ≈ 0.24, shape still about 2× too long) is a limitation.
@@ -155,7 +155,7 @@ penalty rules are A23. Code: `lpbf.log_ratio_objective`.
   across VED.
 - **Failure modes** (reported, not fixed): the speed response; the liquidus length excess; boiling-regulator overrun
   at high t; the unvalidated camera (A24); narrow-window identifiability; an optimum outside the box.
-- Results: `docs/patches/22.4.3.2/PATCH_22_4_3_2_RESULTS.md`.
+- Results: `results/calibration/RESULTS.md`.
 
 ### Measurement interpretation
 
@@ -169,7 +169,7 @@ draft, 2026; not distributed here).
 fps, 40 µs exposure, threshold 150 on a 64 × 24 px crop. The scale of about 8 µm/px is a nominal optics value with no
 calibration, and no independent width measurement exists. Calibration results therefore mean "calibrated to the
 camera's H/W definition", not to the true melt-pool size. Scale-free results (ratios, process slopes) do not depend
-on the 8 µm/px question. Evidence: `docs/patches/22.3.8/PATCH_22_3_8_FINDINGS.md`.
+on the 8 µm/px question. Evidence: `results/camera_diagnostic/FINDINGS.md`.
 
 **A18. The Satterlee dissertation is a method reference**, not this project's process record. Its Table 4.1 process
 matrix is a different, earlier campaign; this project's 24 coupons come only from A17.
@@ -208,8 +208,8 @@ kept, never relabeled to an earlier count of 516.
   reached from the current tools. Not needed for the results here.
 - **O3 (closed).** The 22.3.5.1 targeted replay of the 568 rows: 233 corrected, 335 still fail closed.
 - **O4 (closed).** The frame-13768 regression for the continuous association rule passed.
-- **O5 (closed).** The campaign code no longer authorizes itself: `run_search` and `_thermal_worker` raise
-  `CampaignDispatchLocked`; `tests/test_patch22_3_5_2_campaign_dispatch_lock.py`.
+- **O5 (closed).** The development code's 272-unit campaign dispatcher was locked so that it could not authorize
+  itself; the dispatcher is not part of this package (see `PROVENANCE.md`).
 - **O8 (closed).** The calibration energy-density window is [65, 85] J/mm³ (A25).
 - **O11. The two acquisition campaigns use different sync-anchor conventions.** July (`0730`, `0731`): the first
   bright frame is pinned to the first laser-on row (431 of 431 tracks). September (`0904`, `0910`): it is pinned about
@@ -217,7 +217,7 @@ kept, never relabeled to an earlier count of 516.
   frame is pinned exactly 9 rows before the track end on 428 of 430 tracks (exceptions: `20260904:part_3` track 6 and
   `20260910:part_1` track 19). The only differing sync parameter is `selected_resample_factor` (1.1 vs 0.8). A
   campaign-dependent timing offset of about 50 µs (2–3 cells of travel) therefore exists at the anchors; whether it
-  persists mid-track is not determined. Evidence: `docs/patches/22.3.6/PATCH_22_3_6_SYNC_AUDIT_FINDINGS.md` and its
+  persists mid-track is not determined. Evidence: `results/synchronization_audit/FINDINGS.md` and its
   evidence CSV, which this entry corrects (428, not 430, of 430).
 - **O12 (closed).** The one-cell rule of Patch 22.3.5 was a net loss (net +179 undefined frames); resolved by A21.
 - **O13 (closed as a documented limitation).** The simulated pool length is about 3× the camera's. Patch 22.3.8 found
@@ -225,7 +225,7 @@ kept, never relabeled to an earlier count of 516.
   the design box reproduces the camera on the four corner coupons (reading Q-b); the model's width and length fall
   with speed 3–9× faster than the camera's. With the camera unvalidated (A24), the mismatch cannot be assigned to the
   model alone. Response: calibrate in the 65–85 J/mm³ window with a balanced log-ratio objective (A25, A26).
-  Evidence: `docs/patches/22.3.8/PATCH_22_3_8_FINDINGS.md`.
+  Evidence: `results/camera_diagnostic/FINDINGS.md`.
 - **O14 (closed).** D3 decided.
 
 ## Changelog (condensed)

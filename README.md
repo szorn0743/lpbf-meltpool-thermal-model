@@ -1,145 +1,182 @@
 # Reduced-order thermal simulation for laser powder bed fusion
 
-Code and records for the master's thesis *Reduced Order Thermal Simulation for Laser Powder Bed Fusion* (Samuel Henry
-Zorn, M.S. Mechanical Engineering, San Diego State University, 2026).
+**What this is.** The research software of a master's thesis: a reduced-order thermal model of single laser tracks
+in laser powder bed fusion (LPBF), calibrated against melt-pool dimensions measured by a coaxial near-infrared camera,
+together with the frozen configuration, the recorded calibration results and the scripts that produced the thesis's
+tables and figures.
 
-A reduced-order thermal model of single laser tracks is calibrated against melt-pool dimensions measured by a coaxial
-near-infrared camera during laser powder bed fusion of 24 coupons. The model's observable is the height H (length
-along travel) and width W of the liquidus contour of the melt pool that receives the laser's power; the camera's is
-the H/W of the thresholded bright blob in each frame. The thesis reports how well a calibrated model reproduces the
-camera inside and outside the calibration window, and where it fails.
+**Thesis.** *Reduced Order Thermal Simulation for Laser Powder Bed Fusion*, Samuel Henry Zorn, M.S. Mechanical
+Engineering, San Diego State University, 2026. Release `v1.0.0` of this repository is the code package submitted
+with it.
 
-## Results in brief
+## The scientific problem
 
-The calibrated parameter set is `confirm_c1` (absorptivity coordinate t = −3, liquid-conductivity factor ck = 2.418,
-directional factor η = 0), selected on 9 coupons in the 65–85 J/mm³ energy-density window.
+In LPBF a coaxial camera records the bright melt pool behind the laser at 8000 frames per second. The experiment
+provides, for each of 24 coupons (4 acquisition sets × 6 parts, one observed layer each), the synchronized process
+data and the camera's melt-pool length H and width W per frame. The model simulates the temperature field of the
+moving laser track and extracts the length and width of the liquidus contour of the melt pool that receives the
+laser's power. The question of the thesis is how well a calibrated reduced-order model reproduces the camera's H/W
+inside its calibration window of volumetric energy density, how it transfers to held-out coupons, and how it
+extrapolates outside the window.
 
-| Reading | Finding |
+## What the model claims, and what it does not
+
+- The model, calibrated on 9 coupons at 65–85 J/mm³, reproduces its own calibration error on 5 held-out coupons in
+  the same window (held-out errors within 3 % of the calibration errors). **It demonstrated transfer of its error
+  behaviour within the calibrated domain.**
+- **It did not demonstrate absolute melt-pool-size accuracy**: at the selected parameters the model's pool is
+  1.7–2.0× longer and 0.73–0.88× as wide as the camera's blob, and the camera's own dimensions are not validated
+  against an independent measurement (its pixel scale is a nominal 8 µm/px). Agreement here means agreement with the
+  camera's H/W definition, not with the true melt-pool size.
+- **It did not demonstrate reliable extrapolation outside that domain**: the error grows with the distance in energy
+  density, and the model's response to scan speed is 4× (W) to 9× (H) steeper than the camera's.
+- The selected parameters lie on the edge of the predeclared parameter box; the optimum is outside it.
+
+The recorded readings are: C_EDGE (calibration), V_PASS (held out, in window), X_PARTIAL (out of window), S (a
+synthetic camera does not follow the real one across energy density; descriptive). The full results and failure
+modes are in [`results/calibration/RESULTS.md`](results/calibration/RESULTS.md); the methods and every convention
+are in [`docs/DECISIONS.md`](docs/DECISIONS.md).
+
+## Installation
+
+Python 3.13 (the results were produced with 3.13.15 on Windows; the parallel stages use the `spawn` start method).
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .            # model + tests' dependencies, pinned to the recorded versions
+.\.venv\Scripts\python.exe -m pip install -e ".[test]"    # adds pytest
+```
+
+The thesis figures need matplotlib. Keep it in a second environment, because the numerical provenance of the model
+depends on the exact versions in the first one:
+
+```powershell
+py -3.13 -m venv .venv-analysis
+.\.venv-analysis\Scripts\python.exe -m pip install -e ".[analysis,test]"
+```
+
+`requirements.lock.txt` and `requirements.analysis.lock.txt` are the exact environments of the recorded run and of
+the figure builds. On Linux or macOS use `python3.13 -m venv` and `.venv/bin/python`.
+
+## Data
+
+| | Included in this repository | Not included |
+|---|---|---|
+| **Experimental data** | The process parameters of the 24 coupons (`docs/reference/LPBF_Process_Parameters.csv`); the camera-side frame counts, synchronization audit and per-coupon summaries used by the tables (`results/`). | The 24 coupon HDF5 files (1.1 GB zipped): process channels and camera frames. |
+| **Derived data** | Every table, dataset and figure source of the thesis and of the committee package (`results/committee_package/data`, `results/thesis_figures`), the stage manifests, the selection freeze and the synthetic-camera frames of the recorded calibration. | The per-unit files and temperature fields of the recorded calibration run (0.7 GB zipped); the characterization tables (5 MB zipped). |
+
+The data are not public yet; they are available from the author on request as three zip archives that unpack into
+`data/coupons/`, `data/characterization/` and `runs/recorded_calibration/`. [`data/README.md`](data/README.md)
+gives the layout, the file list and the SHA-256 of every file (`data/SHA256SUMS.txt`), and
+`python -m lpbf.reproduce check-data` reports what is present.
+
+Without the data you can install and test the package, run the synthetic example, read every result, and inspect
+the frozen configuration. With the data you can rebuild every table and figure from the recorded run (minutes),
+re-execute the calibration's smoke gate (6 min) or its evaluation stage (2.5 h), and re-run the whole calibration
+(about 10 h).
+
+## The minimal example
+
+```powershell
+python -m lpbf.reproduce example
+```
+
+writes a small **synthetic** coupon (two straight tracks, a constant "camera" melt pool), runs the frozen model on it
+at the thesis's parameters, extracts the melt pool, scores it, and writes `examples/synthetic/output/`. It takes about
+ten seconds and shows that installation, input parsing, the solver, melt-pool extraction and scoring work. Its numbers
+have no scientific meaning; see [`examples/synthetic/README.md`](examples/synthetic/README.md).
+
+## Reproducing the thesis analysis
+
+All commands run from the repository root; `python -m lpbf.reproduce --help` lists them.
+
+```powershell
+python -m lpbf.reproduce check-data              # which data files are present
+python -m lpbf.reproduce analysis                # figure sources -> committee package -> thesis tables/figures (.venv-analysis, ~2 min)
+python -m lpbf.reproduce smoke                   # the calibration's gate unit, bit-identical to the recorded one (~6 min)
+python -m lpbf.reproduce evaluate                # the selected candidate on all 24 coupons, 39 units (~2.5 h, 4 workers)
+python -m lpbf.reproduce calibrate               # the 17 design candidates on the 9 calibration coupons, 153 units (~6 h)
+python -m lpbf.reproduce confirm                 # the confirmation candidates (~1 h)
+python -m lpbf.reproduce freeze                  # selection by lowest measured objective (seconds)
+python -m lpbf.reproduce synthetic-camera        # reading S on the evaluate stage's fields (~5 min)
+python -m lpbf.reproduce characterize --data-dir data/coupons --output-dir <dir>   # HDF5 -> camera observation tables
+```
+
+The thermal stages write to `runs/calibration/` by default (`--output-dir` changes it); the recorded run of the thesis
+lives in `runs/recorded_calibration/` and is never overwritten. `evaluate` and `synthetic-camera` run against the
+recorded selection freeze (`results/calibration/selection_freeze.json`), whose SHA-256 is pinned in the frozen
+configuration; this check uses no git metadata, so it passes in a clone and in a source ZIP alike. The analysis
+builds are deterministic: `git diff` after `reproduce analysis` shows no change to the committed outputs.
+
+## Where the frozen configuration is
+
+[`src/lpbf/data/final_model.json`](src/lpbf/data/final_model.json) is the one readable record of the final model:
+numerics (99 × 99 window at 16 µm, 2.5 µs time step, 21 depth cells), material constants, boundary conditions, the
+laser source, the moving window, the fixed boiling regulator, the observation definitions on both sides (beam-share
+association with its 2 % floor; camera threshold 150 on 64 × 24 px frames), the scoring rules (scored-frame rule,
+95 % coverage floor, log-ratio residuals with a 1 px floor, the aggregation hierarchy), the calibration contract
+(bounds, guard, design, 65–85 J/mm³ window) and the selected parameters (`confirm_c1`: t = −3, ck = 2.418, η = 0,
+hence absorptivity 0.490 and deposition depth 0.098 mm) with the SHA-256 of the selection freeze they come from.
+
+It is assembled by `lpbf.configuration.final_configuration()` from the code's own constants and the recorded freeze,
+and `tests/test_configuration.py` fails if the committed file and the assembly ever differ. The data split is stored
+in [`src/lpbf/data/dataset_split.json`](src/lpbf/data/dataset_split.json) (calibration; held out, in window; out of
+window, examined; out of window, blind) and checked against its derivation from the partition and the window.
+
+## Running the tests
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+The suite passes from a git clone and from a source ZIP without `.git`. Without the data bundle the tests that read
+the recorded run are skipped; with it they also re-derive the thesis's hierarchy from the recorded unit files and
+compare it with the stage manifests. The suite includes focused tests of the scoring hierarchy
+(`tests/test_scoring_hierarchy.py`: frames do not weight tracks, tracks do not weight coupons, replicates do not
+weight conditions, log-ratio residuals, the pixel floor, edge-frame exclusion, undefined predictions, coverage),
+of the melt-pool association, of the frozen numerical core's hashes, of the frozen configuration, and the synthetic
+end-to-end example.
+
+## Expected outputs
+
+| Command | Output |
 |---|---|
-| **C_EDGE** (calibration) | Objective J = 0.298. The optimum lies on the edge of the parameter box. In the window, H is 1.7–2.0× and W 0.73–0.88× the camera's. |
-| **V_PASS** (held out, in window) | Errors on the held-out coupons are within 3 % of the calibration errors. |
-| **X_PARTIAL** (out of window) | Errors grow with distance in energy density; the model's speed response is 4× (W) to 9× (H) steeper than the camera's. |
-| **S** (descriptive) | No fixed synthetic-camera operator follows the real camera across energy density. |
+| `example` | `examples/synthetic/output/{synthetic_coupon.h5, example_result.json, frame_records.csv}` |
+| `smoke` | `runs/calibration/smoke/smoke_gate.json` with `status: PASS_PATCH_22_4_3_2_SMOKE_GATE`; equal to `results/calibration/smoke/smoke_gate.json` in every field except `execution` and `provenance` |
+| `calibrate`, `confirm`, `evaluate` | `runs/calibration/<stage>/{stage_manifest.json, units/*.json}` (+ `fields/*.npz` for `evaluate`); the unit files equal the recorded ones in `runs/recorded_calibration/` (compare their SHA-256 with `results/calibration/<stage>/stage_manifest.json`). `evaluate` alone, in a directory without the `confirm` stage, records `calibration_records_reproduced: null`. |
+| `freeze` | `runs/calibration/freeze/{selection_freeze.json, calibration_reading.json}`; `selected.candidate_id == "confirm_c1"` |
+| `analysis` | regenerates `results/figure_sources/source`, `results/committee_package/{data,tables,figures}` and `results/thesis_figures/{tables,figures,thesis_tables_and_figures.docx}` byte for byte |
 
-The camera's dimensions are not validated against an independent measurement, so these are agreements with the
-camera's H/W definition, not with the true melt-pool size. Details and failure modes:
-[`docs/patches/22.4.3.2/PATCH_22_4_3_2_RESULTS.md`](docs/patches/22.4.3.2/PATCH_22_4_3_2_RESULTS.md). Methods and
-every convention: [`docs/DECISIONS.md`](docs/DECISIONS.md).
+## Known limitations of the model
+
+Reported, not fixed (details in `results/calibration/RESULTS.md` and `results/camera_diagnostic/FINDINGS.md`):
+
+- the liquidus length excess: the modelled pool is 1.7–2.0× longer than the camera's blob in the window, and no fixed
+  synthetic-camera operator reconciles the two across energy density;
+- the speed response: the model's H and W fall with scan speed 4–9× faster than the camera's;
+- the optimum lies outside the predeclared box (t and η at their bounds); the box was not widened;
+- narrow-window identifiability: eight of the nine calibration coupons lie on one power/speed line;
+- the boiling regulator is overrun at high absorptivity;
+- the camera is unvalidated: its 8 µm/px scale is nominal and no independent width measurement exists, so the H
+  mismatch cannot be attributed to the model alone;
+- the two acquisition campaigns differ in their synchronization-anchor convention (about 50 µs at track edges), which
+  is why the first and last frame of every track are not scored.
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
-| `src/lpbf/` | The model and calibration code (Python package, run from source). |
-| `src/lpbf/model/_accepted_core/` | The frozen numerical core: heat source, moving window, solver. Fixed by SHA-256 in `PATCH_22_3_4_ACCEPTED_CORE_HASHES.json`. |
-| `src/lpbf/data/` | Frozen contracts: the coupon manifest, calibration/held-out partition, calibration design, runtime configuration. |
-| `tests/` | The pytest suite. |
-| `docs/DECISIONS.md` | Methods and decisions: every scoring and calibration convention, with the reasons. |
-| `docs/reference/` | The experimental process parameters of the 24 coupons (read-only record). |
-| `docs/patches/22.4.3.2/` | The calibration: predeclared plan, results, and the evidence of every stage (manifests, selection freeze). |
-| `docs/patches/22.3.8/` | The diagnostic of the H mismatch (camera-side checks, synthetic camera, design-box scan): plan, findings, evidence. |
-| `docs/patches/22.3.6/`, `22.3.7/` | The evidence files that the code above reads (association census, scored-frame verification, synchronization audit). |
-| `docs/analysis/committee_package/` | Statistical outputs for the thesis committee: tables, figures, datasets, registers. |
-| `docs/analysis/thesis_figures/` | The tables and figures of thesis Chapters 3–4, and a Word file of them. |
-| `docs/analysis/presentation_figures/` | Only the image sources that the thesis figures read, and the scripts that extract them. |
-| `data/` | Where the data bundle unpacks (not tracked; see below). |
+| `src/lpbf/` | The package. `model/_accepted_core/` is the frozen numerical core (hash-pinned); `model/` the production melt-pool association and H/W extraction; `calibration.py` the calibration stages; `frame_records.py`, `scored_frame_rule.py`, `hierarchical_objective.py`, `log_ratio_objective.py` the observation records and scoring; `camera_observations.py`, `synthetic_camera.py`, `observation_operators.py` the camera side; `characterization.py` the HDF5 → observation tables tool; `configuration.py`, `dataset_split.py`, `calibration_design.py` the frozen configuration; `synthetic_example.py`, `reproduce.py` the entry points. See [`docs/architecture.md`](docs/architecture.md). |
+| `src/lpbf/data/` | Frozen inputs: `final_model.json`, `dataset_split.json`, `calibration_contract.json`, `calibration_design.json`, `frozen_configuration.json`, `full_coupon_dataset_manifest.json`, `accepted_core_hashes.json`. |
+| `results/` | The thesis's results: the calibration (plan, results, stage manifests, freeze), the camera diagnostic, the synchronization audit, the smoke reference, the committee statistical package, the thesis tables and figures, and the figure image sources. See `results/README.md`. |
+| `docs/` | `DECISIONS.md` (methods and decisions), `architecture.md`, `reference/` (the process-parameter record). |
+| `tests/`, `examples/` | The test suite and the synthetic example. |
+| `data/`, `runs/` | Where the data bundle unpacks (gitignored). |
 
-Module names carry the development step that introduced them (`patch22_4_3_2_window_calibration` is the calibration
-runner of step 22.4.3.2). They were kept, unchanged, because the run records name them and pin their hashes. The ones
-that matter most:
+`PROVENANCE.md` records how this repository relates to the development repository that produced the results, which
+code is byte-identical to the code that ran, and how numerical equivalence was verified after the restructuring.
 
-| Module | Role |
-|---|---|
-| `lpbf.patch22_4_3_2_window_calibration` | The calibration runner: stages `smoke`, `calibrate`, `confirm`, `freeze`, `evaluate`. |
-| `lpbf.patch22_4_3_2_synthetic_camera` | Reading S: the synthetic camera applied to the selected model's fields. |
-| `lpbf.model.production_hw`, `lpbf.model.laser_component_association` | The model's H/W: beam-power-share association and liquidus-contour measurement. |
-| `lpbf.scored_frame_rule`, `lpbf.hierarchical_objective`, `lpbf.log_ratio_objective` | Which frames are scored, coverage, and the objective. |
-| `lpbf.patch22_3_8_camera_step0`, `lpbf.patch22_3_8_field_capture`, `lpbf.patch22_3_8_synthetic_camera` | Camera blob measurement, capture of model temperature fields, the synthetic camera. |
-| `lpbf.patch22_3_7_stage_a`, `lpbf.patch22_4_3_parallel_coarse_calibration_execution` | Frame-level evaluation of a candidate on a coupon (reused by the runner). |
-| `lpbf.execution` | Serial and parallel (Windows spawn) execution of work units. |
+## Citation and license
 
-## Setup
-
-Python 3.13 on Windows (the runs used 3.13.15 and the spawn start method). The package is not installed; it runs from
-`src/`.
-
-```powershell
-py -3.13 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.lock.txt
-$env:PYTHONPATH = "$PWD\src"
-.\.venv\Scripts\python.exe -m pytest -q
-```
-
-The figures need matplotlib, which is kept out of the model environment because the model's numerical provenance
-depends on the pinned versions. Build them in a second environment:
-
-```powershell
-py -3.13 -m venv .venv-analysis
-.\.venv-analysis\Scripts\python.exe -m pip install -r docs\analysis\committee_package\requirements.analysis.txt
-```
-
-On Linux or macOS use `python3.13 -m venv`, `.venv/bin/python` and `export PYTHONPATH="$PWD/src"`.
-
-## Data
-
-The experimental data and the recorded run outputs are **not public yet**; they are available from the author on
-request. They come as three zip archives that unpack into the repository root:
-
-| Archive | Unpacks to | Size (zipped) | Contents |
-|---|---|---|---|
-| `lpbf_coupon_hdf5.zip` | `data/coupons/` | 1.1 GB | The 24 coupon HDF5 files: synchronized process data and coaxial camera frames. |
-| `lpbf_characterization_patch21_3.zip` | `data/characterization/` | 5 MB | Per-coupon frame and track index of the eligible camera observations (Patch 21.3). |
-| `lpbf_run_outputs_22_4_3_2.zip` | `patch22_4_3_2_output/` | 0.7 GB | Every unit file and temperature field of the recorded calibration run. |
-
-`data/SHA256SUMS.txt` lists the SHA-256 of every unpacked file; check it from the repository root with
-`sha256sum -c data/SHA256SUMS.txt` (Git Bash, Linux) or `shasum -a 256 -c data/SHA256SUMS.txt` (macOS). Without the
-data, the tests that need it are skipped and everything else in this repository can still be read.
-
-## Reproducing the results
-
-Set `$env:PYTHONPATH = "$PWD\src"` first. Times are for 4 worker processes on the original machine.
-
-**Analysis outputs** (no thermal runs; need the data bundle):
-
-```powershell
-.\.venv-analysis\Scripts\python.exe docs\analysis\presentation_figures\scripts\build_sources.py   # image sources
-.\.venv-analysis\Scripts\python.exe docs\analysis\committee_package\scripts\run_all.py           # about 1 min
-.\.venv-analysis\Scripts\python.exe docs\analysis\thesis_figures\scripts\build.py                # about 10 s
-```
-
-The builds are deterministic: compare each package's `OUTPUT_SHA256SUMS.txt` with the committed copy (`git diff`).
-
-**The calibration** (thermal runs). Use a new output directory, so that the recorded run in `patch22_4_3_2_output/`
-is not reused or overwritten:
-
-```powershell
-$run = "rerun_22_4_3_2"
-$common = "--data-dir", "data\coupons", "--characterization-dir", "data\characterization\patch21_3_full_characterization_20261012_011936", "--output-dir", $run
-$freeze = "--freeze-file", "docs\patches\22.4.3.2\evidence\selection_freeze.json", "--freeze-sha256", "43184dff94c9d3b75cee1c8924abf7b195b72fbb5b32d301733fc21dad4292a8"
-
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_window_calibration smoke @common              # 1 unit, about 6 min
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_window_calibration calibrate @common          # 153 units, about 6 h
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_window_calibration confirm @common            # 18 units, about 1 h
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_window_calibration freeze --output-dir $run   # selection, seconds
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_window_calibration evaluate @common @freeze   # 39 units, about 2.5 h
-.\.venv\Scripts\python.exe -m lpbf.patch22_4_3_2_synthetic_camera --data-dir data\coupons --output-dir $run @freeze   # about 5 min
-```
-
-`evaluate` accepts only a selection freeze that is committed in this repository, so it uses the recorded one; compare
-it with the `selection_freeze.json` that your `freeze` stage writes. The smoke gate's result can be compared directly
-with `docs/patches/22.4.3.2/evidence/smoke/smoke_gate.json`.
-
-The code also contains the locked dispatcher of an earlier 272-unit coarse campaign that was superseded before it ran
-(`docs/DECISIONS.md` S10). It refuses to run and is kept only because the calibration runner reuses functions from
-its module.
-
-## Provenance
-
-This repository is a curated export of the private development repository; its history is not published. The code
-that produced the results is included byte for byte. `PROVENANCE.md` says which files were changed, how to check
-the code against the hashes in the run records, and what was left out.
-
-## License and citation
-
-Code: MIT License (see `LICENSE`). Citation metadata: `CITATION.cff`. The data, when released, will carry their own
-license.
+Code: MIT License (`LICENSE`). Please cite the thesis; `CITATION.cff` holds the metadata. The data, when released,
+will carry their own license.

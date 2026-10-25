@@ -18,7 +18,7 @@ Never edit this one.
 
 1. `tests/test_process_parameter_record.py` pins the SHA256, so any edit fails the test suite. The same test
    cross-checks the record against the code's own copies of these values:
-   - `src/lpbf/data/patch21_0_calibration_contract.json`: power and speed for all 24 members.
+   - `src/lpbf/data/calibration_contract.json`: power and speed for all 24 members.
    - `src/lpbf/data/full_coupon_dataset_manifest.json`: power, speed, spot size and both energy densities.
 
    All 120 values matched on 2026-10-13.

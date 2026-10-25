@@ -213,11 +213,3 @@ def write_reproducibility_metadata(
     return group
 
 
-def read_reproducibility_metadata(h5_file: h5py.File) -> dict[str, Any]:
-    """Read and decode a Patch 9.9.3 reproducibility record."""
-    payload = h5_file["reproducibility/metadata_json"][()]
-    if isinstance(payload, bytes):
-        text = payload.decode("utf-8")
-    else:
-        text = bytes(payload).decode("utf-8")
-    return json.loads(text)

@@ -18,7 +18,6 @@ from lpbf.data.full_coupon_manifest import (
     FullCouponManifestError,
     load_full_coupon_manifest,
     resolve_manifest_files,
-    select_manifest_members,
 )
 from lpbf.model.parameter_policy import ProcessCondition
 
@@ -112,20 +111,6 @@ def _dataset_member_from_resolved(item: Any, *, set_ordinal: int) -> DatasetMemb
     )
 
 
-def resolve_legacy_six_members(data_directory: str | Path) -> tuple[DatasetMember, ...]:
-    """Resolve the accepted 20260731 six members through the canonical authority."""
-
-    try:
-        manifest = load_full_coupon_manifest(require_complete_hashes=False)
-        selected = select_manifest_members(
-            manifest, acquisition_set_ids=(LEGACY_ACCEPTED_SET_ID,), require_hashes=True
-        )
-        resolved = resolve_manifest_files(data_directory, manifest=manifest, members=selected)
-    except FullCouponManifestError as exc:
-        raise CurrentExperimentFrameworkError(str(exc)) from exc
-    return tuple(_dataset_member_from_resolved(item, set_ordinal=2) for item in resolved)
-
-
 def resolve_full_coupon_members(
     data_directory: str | Path,
     *,
@@ -154,9 +139,7 @@ def resolve_full_coupon_members(
     )
 
 
-
 __all__ = [
     "DatasetMember",
     "resolve_full_coupon_members",
-    "resolve_legacy_six_members",
 ]

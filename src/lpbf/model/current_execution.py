@@ -26,7 +26,6 @@ from lpbf.model.current_configuration import (
     CurrentConfigurationError,
     CurrentPhysicsParameters,
     build_current_trial_parameters,
-    validate_current_physics_parameters,
 )
 from lpbf.model.deposition_depth_source import (
     DepositionDepthFieldBuilder,
@@ -487,33 +486,6 @@ def prepare_current_physics_process_condition(
     return CurrentPhysicsProcessCondition(base_params=base_params, preloaded=preloaded)
 
 
-def execute_current_physics(
-    process_condition: CurrentPhysicsProcessCondition,
-    physics: CurrentPhysicsParameters,
-    **kwargs: Any,
-) -> CurrentPhysicsExecutionResult:
-    """Run the computation-only four-parameter current model in memory."""
-
-    if not isinstance(process_condition, CurrentPhysicsProcessCondition):
-        raise TypeError("process_condition must be a CurrentPhysicsProcessCondition")
-    if not isinstance(physics, CurrentPhysicsParameters):
-        raise TypeError("physics must be a CurrentPhysicsParameters")
-    try:
-        validate_current_physics_parameters(
-            process_condition.base_params,
-            physics,
-            allow_legacy_deposition_control=False,
-        )
-    except CurrentConfigurationError as exc:
-        raise CurrentPhysicsExecutionError(str(exc)) from exc
-    return _execute_current_physics_simulation(
-        process_condition.base_params,
-        process_condition.preloaded,
-        physics,
-        **kwargs,
-    )
-
-
 def _execute_current_physics_simulation(
     base_params: Any,
     preloaded: Any,
@@ -588,6 +560,5 @@ __all__ = [
     "build_neutral_absorbed_power_treatment",
     "current_directional_stability_record",
     "current_physics_trial_parameters",
-    "execute_current_physics",
     "prepare_current_physics_process_condition",
 ]

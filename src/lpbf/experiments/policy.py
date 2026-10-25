@@ -8,7 +8,7 @@ caller.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Mapping, Sequence
+from typing import Any, Mapping
 
 from lpbf.infrastructure import canonical_sha256
 from lpbf.model.current_configuration import (

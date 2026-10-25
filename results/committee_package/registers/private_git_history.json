@@ -1,0 +1,36 @@
+{
+  "schema": "lpbf_private_git_history",
+  "note": "Git facts from the private development repository, whose history is not published. controls.py reads these for T16; see PROVENANCE.md.",
+  "evidence_added": {
+    "results/calibration/calibrate/stage_manifest.json": {
+      "commit": "d01ac72",
+      "date": "2026-10-16T14:33:56-07:00"
+    },
+    "results/calibration/confirm/stage_manifest.json": {
+      "commit": "d01ac72",
+      "date": "2026-10-16T14:33:56-07:00"
+    },
+    "results/calibration/evaluate/stage_manifest.json": {
+      "commit": "a7031e0",
+      "date": "2026-10-16T18:17:07-07:00"
+    },
+    "results/calibration/selection_freeze.json": {
+      "commit": "d01ac72",
+      "date": "2026-10-16T14:33:56-07:00"
+    },
+    "results/calibration/smoke/smoke_gate.json": {
+      "commit": "78dc07d",
+      "date": "2026-10-15T16:00:34-07:00"
+    },
+    "results/calibration/synthetic/stage_manifest.json": {
+      "commit": "a7031e0",
+      "date": "2026-10-16T18:17:07-07:00"
+    }
+  },
+  "commit_dates": {
+    "2fdc58c5a9e43b92493335a5f7bb517d5be85927": "2026-10-16T15:42:49-07:00",
+    "78dc07df8c9016f3d0d9850213cd1e1d6173a543": "2026-10-15T16:00:34-07:00",
+    "bebec6deeba0041b07efa27344bcc93f1ff0d409": "2026-10-15T15:54:00-07:00",
+    "ec53a55ebbd25407aaa2c798f47e1f100221c142": "2026-10-16T13:54:40-07:00"
+  }
+}

@@ -2,6 +2,9 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the thesis."
 title: "Reduced-order thermal simulation for laser powder bed fusion: code and records"
 type: software
+version: 1.0.0
+date-released: 2026-10-25
+repository-code: "https://github.com/szorn0743/lpbf-meltpool-thermal-model"
 authors:
   - family-names: Zorn
     given-names: Samuel Henry
@@ -13,6 +16,9 @@ keywords:
   - melt pool
   - calibration
   - coaxial camera
+# identifiers:
+#   - type: doi
+#     value: 10.xxxx/zenodo.xxxxxxx   # added when the release is archived
 preferred-citation:
   type: thesis
   thesis-type: "Master's thesis"

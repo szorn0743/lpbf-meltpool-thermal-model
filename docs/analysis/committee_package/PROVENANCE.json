@@ -1,16 +1,16 @@
 {
   "schema": "lpbf_committee_package_provenance",
   "pass": 2,
-  "run_started": "2026-10-19T20:56:15-07:00",
-  "git_head_at_run": "392d65db75ab67759975924b8c04d6d2a9594090",
-  "git_tracked_changes_at_run": true,
+  "run_started": "2026-10-24T18:30:40-07:00",
+  "git_head_at_run": "75acd918fd2129dd7a4f989d4016f1b3e15e3c11",
+  "git_tracked_changes_at_run": false,
   "scripts_sha256": {
     "docs/analysis/committee_package/scripts/bootstrap.py": "add36cdbe8d8460bfea6ca2f6562c484151aa53224a267996b28d0f460612684",
     "docs/analysis/committee_package/scripts/build_datasets.py": "5d9a739f1147508cb71ea82f76ab6b7d5cf2b94bff55addbcaa062dd4578ef53",
     "docs/analysis/committee_package/scripts/candidates.py": "ec84147ebc45b60660e16494150c03eb75b069b0b1c91ba30a891daad2c0a5fd",
-    "docs/analysis/committee_package/scripts/common.py": "14cacade6b89976d0d4a329fd5d973ae102e154faf9ae630a98771f295446307",
+    "docs/analysis/committee_package/scripts/common.py": "2f019d0f9ef44db2a1d19acb8de99146e875025bc9df92c3b6fde42b718d498a",
     "docs/analysis/committee_package/scripts/confounds.py": "20c375369014edf82b4cf251b634bd31d7995e827f23ea801bea943618d6bc04",
-    "docs/analysis/committee_package/scripts/controls.py": "4645aad2f741c1a883362394b7088b8134edb6a98bbeea7d38e4e4ea84723104",
+    "docs/analysis/committee_package/scripts/controls.py": "379ed2f0d5e2ae95581b635d7d9061ac41ef0ba6133f9761ce69dcb023107f3e",
     "docs/analysis/committee_package/scripts/field_figures.py": "e0b19147be9aed8d8438801a95e1efbacf0ca2f6c8c3a113cfe302d4a28ece83",
     "docs/analysis/committee_package/scripts/figures.py": "6732c27e75ba61d5808bab06847fe3ea5f1edbb54dfa3720b728193d8302582c",
     "docs/analysis/committee_package/scripts/figures_pass2.py": "ceed6d658186b2589149dc7c294c4929122f4e7bc16c018618e508d54dbce728",
@@ -176,9 +176,9 @@
     "patch22_4_3_2_output/evaluate/units/confirm_c2__20260904_part_5.json": "b5d90ef692023ef5d697cdcd2b9a990e9ec9310ee673fc4a8cb1e4c597c0a6d8"
   },
   "external_inputs_sha256": {
-    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\data_processing\\pyro\\all_coupons\\part_6_20260904.h5": "45675033e7a925bab1319f6c86d2b88416bb3894acdf29bfa4e8c7bc55b97afd",
-    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\data_processing\\pyro\\all_coupons\\part_3_20260730.h5": "75f079f2f634a33ecb4e4dff433e86ee1efb913572194064ca4cd4848b761b3d",
-    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\data_processing\\pyro\\all_coupons\\part_4_20260904.h5": "207be7398b527a6fb76d0d1928f6bec6c78ab12b75cc8cbcced97ae260ddced1"
+    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\lpbf-meltpool-thermal-model\\data\\coupons\\part_6_20260904.h5": "45675033e7a925bab1319f6c86d2b88416bb3894acdf29bfa4e8c7bc55b97afd",
+    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\lpbf-meltpool-thermal-model\\data\\coupons\\part_3_20260730.h5": "75f079f2f634a33ecb4e4dff433e86ee1efb913572194064ca4cd4848b761b3d",
+    "C:\\Users\\samue\\python_projects\\Thesis\\Source\\lpbf-meltpool-thermal-model\\data\\coupons\\part_4_20260904.h5": "207be7398b527a6fb76d0d1928f6bec6c78ab12b75cc8cbcced97ae260ddced1"
   },
   "field_files_sha256_checked_against_manifest": {
     "patch22_4_3_2_output/evaluate/fields/confirm_c1__20260730_part_1.npz": "c6ca02a41018deb281d985c66440d869cb7161d4e02e823a77614e20ed3df709",
